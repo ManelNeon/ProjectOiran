@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "YokaiShokan",
+			"Path": "..\\Source\\YokaiShokan.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "YokaiShokanEditor",
+			"Path": "..\\Source\\YokaiShokanEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
