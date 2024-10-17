@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeYokaiShokan_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xFE446DE0,
+				0x4ABEBD49,
 				0xDC578E09,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -29,5 +29,5 @@ void EmptyLinkFunctionForGeneratedCodeYokaiShokan_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_YokaiShokan.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_YokaiShokan(Z_Construct_UPackage__Script_YokaiShokan, TEXT("/Script/YokaiShokan"), Z_Registration_Info_UPackage__Script_YokaiShokan, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xFE446DE0, 0xDC578E09));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_YokaiShokan(Z_Construct_UPackage__Script_YokaiShokan, TEXT("/Script/YokaiShokan"), Z_Registration_Info_UPackage__Script_YokaiShokan, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x4ABEBD49, 0xDC578E09));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
