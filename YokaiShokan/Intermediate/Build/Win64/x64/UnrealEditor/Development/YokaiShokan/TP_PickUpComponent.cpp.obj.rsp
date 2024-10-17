@@ -1,11 +1,11 @@
-"C:\Users\simon\Documents\GitHub\YokaiShokan\YokaiShokan\Source\YokaiShokan\TP_PickUpComponent.cpp"
-/FI"C:\Users\simon\Documents\GitHub\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\Users\simon\Documents\GitHub\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\Definitions.YokaiShokan.h"
-/Yu"C:\Users\simon\Documents\GitHub\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\Users\simon\Documents\GitHub\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\Users\simon\Documents\GitHub\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\TP_PickUpComponent.cpp.obj"
-/sourceDependencies "C:\Users\simon\Documents\GitHub\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\TP_PickUpComponent.cpp.dep.json"
-@"C:\Users\simon\Documents\GitHub\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\YokaiShokan.Shared.rsp"
+"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Source\YokaiShokan\TP_PickUpComponent.cpp"
+/FI"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\Definitions.YokaiShokan.h"
+/Yu"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\TP_PickUpComponent.cpp.obj"
+/sourceDependencies "C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\TP_PickUpComponent.cpp.dep.json"
+@"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\YokaiShokan.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

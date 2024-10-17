@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\simon\\Documents\\GitHub\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokan\\YokaiShokan.Build.cs",
-		"C:\\Users\\simon\\Documents\\GitHub\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokan.Target.cs",
-		"C:\\Users\\simon\\Documents\\GitHub\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokanEditor.Target.cs"
+		"C:\\DesigndeJogosDigitais\\DJD\\3ano\\YokaiShokan\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokan\\YokaiShokan.Build.cs",
+		"C:\\DesigndeJogosDigitais\\DJD\\3ano\\YokaiShokan\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokan.Target.cs",
+		"C:\\DesigndeJogosDigitais\\DJD\\3ano\\YokaiShokan\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokanEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }

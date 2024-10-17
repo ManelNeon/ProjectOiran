@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\simon\\documents\\github\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\yokaishokan.init.gen.cpp",
+        "Source": "c:\\designdejogosdigitais\\djd\\3ano\\yokaishokan\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\yokaishokan.init.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\simon\\documents\\github\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\x64\\yokaishokaneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\designdejogosdigitais\\djd\\3ano\\yokaishokan\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\x64\\yokaishokaneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\simon\\documents\\github\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\yokaishokan\\definitions.yokaishokan.h"
+            "c:\\designdejogosdigitais\\djd\\3ano\\yokaishokan\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\yokaishokan\\definitions.yokaishokan.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
