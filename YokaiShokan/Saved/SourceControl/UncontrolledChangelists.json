@@ -7,7 +7,11 @@
 			"files": [
 				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/FW/7I05A8WF25MXFZAABTZMEN.uasset",
 				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/Levels/Prototype/L_VFXTest.umap",
-				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/VFX/Meshes/CylinderTut1.uasset"
+				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/VFX/Meshes/CylinderTut1.uasset",
+				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/VFX/Niagara/FXS_Slash.uasset",
+				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/VFX/Material_Instance/M_Mat01.uasset",
+				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/VFX/Meshes/SlashTut1.uasset",
+				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/VFX/Texture/T_Voronoi.uasset"
 			]
 		}
 	]
