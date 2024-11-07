@@ -5,6 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Lista de cambios no controlados predeterminada",
 			"files": [
+				"C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/Levels/Prototype/L_Blockout.umap",
+				"C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/Levels/Testing/L_VFXTest.umap",
+				"C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/Levels/Prototype/L_VFXTest.umap",
+				"C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/Levels/Game/L_Blockout.umap",
 				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/FW/7I05A8WF25MXFZAABTZMEN.uasset",
 				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/Levels/Prototype/L_VFXTest.umap",
 				"C:/Users/simon/Documents/GitHub/YokaiShokan/YokaiShokan/Content/VFX/Meshes/CylinderTut1.uasset",
