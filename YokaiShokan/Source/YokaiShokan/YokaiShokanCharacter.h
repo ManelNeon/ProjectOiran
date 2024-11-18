@@ -36,9 +36,23 @@ class AYokaiShokanCharacter : public ACharacter
 	/** Move Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* MoveAction;
+
+	/** Dash Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category =Input, meta=(AllowPrivateAccess = "true"))
+	UInputAction* DashAction;
 	
 public:
 	AYokaiShokanCharacter();
+
+	UPROPERTY(EditAnywhere , Category = "Character | Dash Movement", meta = (DisplayName = "Dash Multiplier"))
+	float DashMultiplier = 10;
+
+	UPROPERTY(EditAnywhere, Category = "Character | Dash Movement", meta = (DisplayName = "Dash Cooldown"))
+	float DashCooldown = 4;
+
+	//Because the dash is that much more powerful when jumping, this will nerf it
+	UPROPERTY(EditAnywhere, Category = "Character | Dash Movement", meta = (DisplayName = "Dash Jump Nerf"))
+	float DashJumpNerf = 10;
 
 protected:
 	virtual void BeginPlay();
@@ -55,6 +69,18 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
+
+	void DashPressed();
+
+	void EndDash();
+
+	bool _CanDash;
+
+	bool _IsDashing;
+
+	FVector2D _MovementVector;
+
+	FTimerHandle _MemberTimerHandle;
 
 protected:
 	// APawn interface
