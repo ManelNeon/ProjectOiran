@@ -32,18 +32,6 @@
     <Filter Include="Source\YokaiShokan">
       <UniqueIdentifier>{5E0356B1-552A-3179-AB00-380E1A37609E}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\YokaiShokan\TP_PickUpComponent.cpp">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\TP_PickUpComponent.h">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\YokaiShokan\TP_WeaponComponent.cpp">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\TP_WeaponComponent.h">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClInclude>
     <None Include="..\..\Source\YokaiShokan\YokaiShokan.Build.cs">
       <Filter>Source\YokaiShokan</Filter>
     </None>
@@ -69,12 +57,6 @@
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\YokaiShokanPlayerController.h">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\YokaiShokan\YokaiShokanProjectile.cpp">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\YokaiShokanProjectile.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
   </ItemGroup>

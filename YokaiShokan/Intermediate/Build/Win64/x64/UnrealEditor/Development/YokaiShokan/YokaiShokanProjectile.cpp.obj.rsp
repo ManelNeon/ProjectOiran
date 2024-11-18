@@ -1,11 +1,11 @@
-"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Source\YokaiShokan\YokaiShokanProjectile.cpp"
-/FI"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\Definitions.YokaiShokan.h"
-/Yu"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\YokaiShokanProjectile.cpp.obj"
-/sourceDependencies "C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\YokaiShokanProjectile.cpp.dep.json"
-@"C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\YokaiShokan.Shared.rsp"
+"C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Source\YokaiShokan\YokaiShokanProjectile.cpp"
+/FI"C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\Definitions.YokaiShokan.h"
+/Yu"C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\YokaiShokanEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\YokaiShokanProjectile.cpp.obj"
+/sourceDependencies "C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\YokaiShokanProjectile.cpp.dep.json"
+@"C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\YokaiShokan.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi
