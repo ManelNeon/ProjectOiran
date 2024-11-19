@@ -44,7 +44,7 @@ class AYokaiShokanCharacter : public ACharacter
 public:
 	AYokaiShokanCharacter();
 
-	UPROPERTY(EditAnywhere , Category = "Character | Dash Movement", meta = (DisplayName = "Dash Multiplier"))
+	UPROPERTY(EditAnywhere , Category = "Character | Dash Movement", meta = (DisplayName = "Dash Force"))
 	float DashMultiplier = 10;
 
 	UPROPERTY(EditAnywhere, Category = "Character | Dash Movement", meta = (DisplayName = "Dash Cooldown"))
