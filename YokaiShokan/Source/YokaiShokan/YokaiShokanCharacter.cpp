@@ -38,10 +38,9 @@ AYokaiShokanCharacter::AYokaiShokanCharacter()
 
 	_IsDashing = false;
 
-	_MovementVector = FVector2D(0, 0);
-
 	_CanDash = true;
 
+	_CurrentHealthPoints = HealthPoints;
 }
 
 void AYokaiShokanCharacter::BeginPlay()
@@ -81,7 +80,7 @@ void AYokaiShokanCharacter::Move(const FInputActionValue& Value)
 	if (_IsDashing) return;
 	
 	// input is a Vector2D
-	 _MovementVector = Value.Get<FVector2D>();
+	 FVector2D _MovementVector = Value.Get<FVector2D>();
 
 	if (Controller != nullptr)
 	{
@@ -127,8 +126,6 @@ void AYokaiShokanCharacter::DashPressed()
 	{
 		finalDirection.X /= DashJumpNerf;
 		finalDirection.Y /= DashJumpNerf;
-
-		bSimGravityDisabled = true;
 	}
 
 	LaunchCharacter(finalDirection, false, false);
@@ -136,13 +133,32 @@ void AYokaiShokanCharacter::DashPressed()
 	GetWorldTimerManager().SetTimer(_MemberTimerHandle, this, &AYokaiShokanCharacter::EndDash, 1, false, DashCooldown);
 
 	_IsDashing = false;
-
-	bSimGravityDisabled = false;
 }
 
 void AYokaiShokanCharacter::EndDash()
-{
+{	
 	UE_LOG(LogTemp, Warning, TEXT("Can Dash Again"));
 
 	_CanDash = true;
+}
+
+float AYokaiShokanCharacter::GetCurrentPercentageHealth()
+{
+	return (_CurrentHealthPoints / HealthPoints);
+}
+
+void AYokaiShokanCharacter::DamagePlayer(float damage)
+{
+	if (_CurrentHealthPoints - damage > 0)
+		_CurrentHealthPoints -= damage;
+	else
+	{
+		_CurrentHealthPoints = 0;
+		UE_LOG(LogTemp, Warning, TEXT("Is Dead"));
+	}
+}
+
+bool AYokaiShokanCharacter::GetDashAvailability()
+{
+	return _CanDash;
 }

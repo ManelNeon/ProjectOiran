@@ -19,9 +19,150 @@ YOKAISHOKAN_API UClass* Z_Construct_UClass_AYokaiShokanCharacter();
 YOKAISHOKAN_API UClass* Z_Construct_UClass_AYokaiShokanCharacter_NoRegister();
 // End Cross Module References
 
+// Begin Class AYokaiShokanCharacter Function DamagePlayer
+struct Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics
+{
+	struct YokaiShokanCharacter_eventDamagePlayer_Parms
+	{
+		float damage;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "DisplayName", "Damage Player" },
+		{ "ModuleRelativePath", "YokaiShokanCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_damage;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanCharacter_eventDamagePlayer_Parms, damage), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::NewProp_damage,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYokaiShokanCharacter, nullptr, "DamagePlayer", nullptr, nullptr, Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers), sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::YokaiShokanCharacter_eventDamagePlayer_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::Function_MetaDataParams), Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::YokaiShokanCharacter_eventDamagePlayer_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AYokaiShokanCharacter::execDamagePlayer)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_damage);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->DamagePlayer(Z_Param_damage);
+	P_NATIVE_END;
+}
+// End Class AYokaiShokanCharacter Function DamagePlayer
+
+// Begin Class AYokaiShokanCharacter Function GetCurrentPercentageHealth
+struct Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics
+{
+	struct YokaiShokanCharacter_eventGetCurrentPercentageHealth_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "DisplayName", "Get Current HP" },
+		{ "ModuleRelativePath", "YokaiShokanCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanCharacter_eventGetCurrentPercentageHealth_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYokaiShokanCharacter, nullptr, "GetCurrentPercentageHealth", nullptr, nullptr, Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::YokaiShokanCharacter_eventGetCurrentPercentageHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::YokaiShokanCharacter_eventGetCurrentPercentageHealth_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AYokaiShokanCharacter::execGetCurrentPercentageHealth)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetCurrentPercentageHealth();
+	P_NATIVE_END;
+}
+// End Class AYokaiShokanCharacter Function GetCurrentPercentageHealth
+
+// Begin Class AYokaiShokanCharacter Function GetDashAvailability
+struct Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics
+{
+	struct YokaiShokanCharacter_eventGetDashAvailability_Parms
+	{
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((YokaiShokanCharacter_eventGetDashAvailability_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(YokaiShokanCharacter_eventGetDashAvailability_Parms), &Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYokaiShokanCharacter, nullptr, "GetDashAvailability", nullptr, nullptr, Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::PropPointers), sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::YokaiShokanCharacter_eventGetDashAvailability_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::Function_MetaDataParams), Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::YokaiShokanCharacter_eventGetDashAvailability_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AYokaiShokanCharacter::execGetDashAvailability)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->GetDashAvailability();
+	P_NATIVE_END;
+}
+// End Class AYokaiShokanCharacter Function GetDashAvailability
+
 // Begin Class AYokaiShokanCharacter
 void AYokaiShokanCharacter::StaticRegisterNativesAYokaiShokanCharacter()
 {
+	UClass* Class = AYokaiShokanCharacter::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "DamagePlayer", &AYokaiShokanCharacter::execDamagePlayer },
+		{ "GetCurrentPercentageHealth", &AYokaiShokanCharacter::execGetCurrentPercentageHealth },
+		{ "GetDashAvailability", &AYokaiShokanCharacter::execGetDashAvailability },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AYokaiShokanCharacter);
 UClass* Z_Construct_UClass_AYokaiShokanCharacter_NoRegister()
@@ -114,6 +255,10 @@ struct Z_Construct_UClass_AYokaiShokanCharacter_Statics
 		{ "ToolTip", "Because the dash is that much more powerful when jumping, this will nerf it" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HealthPoints_MetaData[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanCharacter.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
@@ -134,9 +279,16 @@ struct Z_Construct_UClass_AYokaiShokanCharacter_Statics
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DashMultiplier;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DashCooldown;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DashJumpNerf;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_HealthPoints;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer, "DamagePlayer" }, // 3332916144
+		{ &Z_Construct_UFunction_AYokaiShokanCharacter_GetCurrentPercentageHealth, "GetCurrentPercentageHealth" }, // 2448417384
+		{ &Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability, "GetDashAvailability" }, // 1997439821
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AYokaiShokanCharacter>::IsAbstract,
 	};
@@ -150,6 +302,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AYokaiShokanCh
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashMultiplier = { "DashMultiplier", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, DashMultiplier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DashMultiplier_MetaData), NewProp_DashMultiplier_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashCooldown = { "DashCooldown", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, DashCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DashCooldown_MetaData), NewProp_DashCooldown_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashJumpNerf = { "DashJumpNerf", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, DashJumpNerf), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DashJumpNerf_MetaData), NewProp_DashJumpNerf_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_HealthPoints = { "HealthPoints", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, HealthPoints), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HealthPoints_MetaData), NewProp_HealthPoints_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AYokaiShokanCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_Mesh1P,
@@ -160,6 +313,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AYokaiSho
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashMultiplier,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashCooldown,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashJumpNerf,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_HealthPoints,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_LookAction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AYokaiShokanCharacter_Statics::PropPointers) < 2048);
@@ -173,11 +327,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AYokaiShokanCharacter_S
 	"Game",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_AYokaiShokanCharacter_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AYokaiShokanCharacter_Statics::PropPointers),
 	0,
 	0x008000A4u,
@@ -203,10 +357,10 @@ AYokaiShokanCharacter::~AYokaiShokanCharacter() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AYokaiShokanCharacter, AYokaiShokanCharacter::StaticClass, TEXT("AYokaiShokanCharacter"), &Z_Registration_Info_UClass_AYokaiShokanCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AYokaiShokanCharacter), 2838545249U) },
+		{ Z_Construct_UClass_AYokaiShokanCharacter, AYokaiShokanCharacter::StaticClass, TEXT("AYokaiShokanCharacter"), &Z_Registration_Info_UClass_AYokaiShokanCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AYokaiShokanCharacter), 1996789823U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_1343574605(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_4025123836(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

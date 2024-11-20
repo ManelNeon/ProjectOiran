@@ -54,6 +54,18 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Character | Dash Movement", meta = (DisplayName = "Dash Jump Nerf"))
 	float DashJumpNerf = 10;
 
+	UPROPERTY(EditAnywhere, Category = "Character | Stats")
+	float HealthPoints = 100;
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats", meta = (DisplayName = "Get Current HP"))
+	float GetCurrentPercentageHealth();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats", meta = (DisplayName = "Damage Player"))
+	void DamagePlayer(float damage);
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	bool GetDashAvailability();
+
 protected:
 	virtual void BeginPlay();
 
@@ -78,7 +90,7 @@ protected:
 
 	bool _IsDashing;
 
-	FVector2D _MovementVector;
+	float _CurrentHealthPoints = 100;
 
 	FTimerHandle _MemberTimerHandle;
 

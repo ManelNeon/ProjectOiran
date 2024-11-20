@@ -1,6 +1,6 @@
 /I "."
-/I "C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\UnrealEditor\Inc\YokaiShokan\UHT"
-/I "C:\DesigndeJogosDigitais\DJD\3ano\YokaiShokan\YokaiShokan\YokaiShokan\Source"
+/I "C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\UnrealEditor\Inc\YokaiShokan\UHT"
+/I "C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Source"
 /I "Runtime\Core\Public"
 /I "Runtime\Core\Internal"
 /I "Runtime\TraceLog\Public"

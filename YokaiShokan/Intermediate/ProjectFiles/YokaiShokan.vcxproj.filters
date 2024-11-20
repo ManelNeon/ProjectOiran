@@ -11,6 +11,7 @@
     <None Include="..\..\Source\YokaiShokanEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -32,6 +33,12 @@
     <Filter Include="Source\YokaiShokan">
       <UniqueIdentifier>{5E0356B1-552A-3179-AB00-380E1A37609E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\YokaiShokan\LevelRandomizer.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\LevelRandomizer.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
     <None Include="..\..\Source\YokaiShokan\YokaiShokan.Build.cs">
       <Filter>Source\YokaiShokan</Filter>
     </None>
