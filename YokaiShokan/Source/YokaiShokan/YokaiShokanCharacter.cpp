@@ -113,13 +113,9 @@ void AYokaiShokanCharacter::DashPressed()
 
 	FVector finalDirection = FVector(GetVelocity().X * DashMultiplier, GetVelocity().Y * DashMultiplier, 0);
 
-	UE_LOG(LogTemp, Warning, TEXT("%s"), *finalDirection.ToString());
-
 	if (finalDirection.X == 0 && finalDirection.Y == 0)
 	{
 		finalDirection = FVector(FirstPersonCameraComponent->GetForwardVector().X * 1000 * DashMultiplier, FirstPersonCameraComponent->GetForwardVector().Y * 1000 * DashMultiplier, 0);
-		UE_LOG(LogTemp, Warning, TEXT("Did the Thing"));
-		UE_LOG(LogTemp, Warning, TEXT("%s"), *finalDirection.ToString());
 	}
 
 	if (!CanJump())
@@ -137,8 +133,6 @@ void AYokaiShokanCharacter::DashPressed()
 
 void AYokaiShokanCharacter::EndDash()
 {	
-	UE_LOG(LogTemp, Warning, TEXT("Can Dash Again"));
-
 	_CanDash = true;
 }
 

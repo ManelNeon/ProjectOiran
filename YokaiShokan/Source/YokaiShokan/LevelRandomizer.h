@@ -9,8 +9,8 @@
 UENUM(BlueprintType)
 enum class ECurrentLevel : uint8
 {
-	FIRST_LEVEL,
-	SECOND_LEVEL,
+	FIRST_LEVEL, 
+	SECOND_LEVEL, 
 	TOTAL_LEVEL
 };
 
