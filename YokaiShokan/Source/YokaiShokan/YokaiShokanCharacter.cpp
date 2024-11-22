@@ -9,6 +9,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "KismetMathLibrary.generated.h"
+#include "YokaiShokanGameInstance.h"
 #include "Engine/LocalPlayer.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
@@ -39,13 +40,11 @@ AYokaiShokanCharacter::AYokaiShokanCharacter()
 	_IsDashing = false;
 
 	_CanDash = true;
-
-	_CurrentHealthPoints = HealthPoints;
 }
 
 void AYokaiShokanCharacter::BeginPlay()
 {
-	// Call the base class  
+	// Call the base class
 	Super::BeginPlay();
 }
 
@@ -66,7 +65,16 @@ void AYokaiShokanCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AYokaiShokanCharacter::Look);
 
-		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Triggered, this, &AYokaiShokanCharacter::DashPressed);
+		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::Dash);
+
+		EnhancedInputComponent->BindAction(LightAttackAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::LightAttack);
+
+		EnhancedInputComponent->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::HeavyAttack);
+
+		EnhancedInputComponent->BindAction(SpecialOneAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::SpecialAttackOne);
+
+		EnhancedInputComponent->BindAction(SpecialTwoAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::SpecialAttackTwo);
+
 	}
 	else
 	{
@@ -103,9 +111,57 @@ void AYokaiShokanCharacter::Look(const FInputActionValue& Value)
 	}
 }
 
-void AYokaiShokanCharacter::DashPressed()
+void AYokaiShokanCharacter::Jump()
 {
-	if (_IsDashing || !_CanDash) return;
+	if (_IsDashing) return;
+
+	Super::Jump();
+}
+
+void AYokaiShokanCharacter::HealPlayer(float amount)
+{
+	auto gameInstance = GetGameInstance();
+
+	auto yokaiGameInstance = Cast<UYokaiShokanGameInstance>(gameInstance);
+
+	yokaiGameInstance->HealPlayer(amount);
+
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Healed Player"));
+}
+
+void AYokaiShokanCharacter::DamagePlayer(float damage)
+{
+	auto gameInstance = GetGameInstance();
+
+	auto yokaiGameInstance = Cast<UYokaiShokanGameInstance>(gameInstance);
+
+	if (yokaiGameInstance->DamagePlayer(damage))
+	{
+		//damge player animation only
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Damaged Player"));
+		return;
+	}
+
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Dead Player"));
+}
+
+void AYokaiShokanCharacter::Dash()
+{
+	if (_IsDashing)
+	{
+		_IsDashing = false;
+
+		GetWorldTimerManager().SetTimer(_MemberTimerHandle, this, &AYokaiShokanCharacter::Dash, 1, false, DashCooldown - .2);
+
+		return;
+	}
+
+	if (!_CanDash)
+	{
+		_CanDash = true;
+
+		return;
+	}
 
 	_CanDash = false;
 	
@@ -126,33 +182,30 @@ void AYokaiShokanCharacter::DashPressed()
 
 	LaunchCharacter(finalDirection, false, false);
 
-	GetWorldTimerManager().SetTimer(_MemberTimerHandle, this, &AYokaiShokanCharacter::EndDash, 1, false, DashCooldown);
-
-	_IsDashing = false;
-}
-
-void AYokaiShokanCharacter::EndDash()
-{	
-	_CanDash = true;
-}
-
-float AYokaiShokanCharacter::GetCurrentPercentageHealth()
-{
-	return (_CurrentHealthPoints / HealthPoints);
-}
-
-void AYokaiShokanCharacter::DamagePlayer(float damage)
-{
-	if (_CurrentHealthPoints - damage > 0)
-		_CurrentHealthPoints -= damage;
-	else
-	{
-		_CurrentHealthPoints = 0;
-		UE_LOG(LogTemp, Warning, TEXT("Is Dead"));
-	}
+	GetWorldTimerManager().SetTimer(_MemberTimerHandle, this, &AYokaiShokanCharacter::Dash, 1, false, .2);
 }
 
 bool AYokaiShokanCharacter::GetDashAvailability()
 {
 	return _CanDash;
+}
+
+void AYokaiShokanCharacter::LightAttack()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Light Attack"));
+}
+
+void AYokaiShokanCharacter::HeavyAttack()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Heavy Attack"));
+}
+
+void AYokaiShokanCharacter::SpecialAttackOne()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Special Attack One"));
+}
+
+void AYokaiShokanCharacter::SpecialAttackTwo()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Special Attack Two"));
 }

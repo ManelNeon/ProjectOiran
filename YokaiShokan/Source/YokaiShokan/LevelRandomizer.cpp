@@ -43,7 +43,7 @@ FVector ALevelRandomizer::RandomizeLevel()
 	}
 
 	_CurrentLevel = static_cast<ECurrentLevel>(temporaryLevel);
-	
+
 	return LevelLocations[static_cast<int>(_CurrentLevel)];
 }
 

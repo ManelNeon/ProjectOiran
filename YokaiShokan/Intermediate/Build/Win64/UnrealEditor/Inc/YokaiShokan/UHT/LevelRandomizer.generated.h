@@ -14,11 +14,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define YOKAISHOKAN_LevelRandomizer_generated_h
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execRandomizeLevel);
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_20_INCLASS_NO_PURE_DECLS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesALevelRandomizer(); \
 	friend struct Z_Construct_UClass_ALevelRandomizer_Statics; \
@@ -27,7 +27,7 @@ public: \
 	DECLARE_SERIALIZER(ALevelRandomizer)
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_20_ENHANCED_CONSTRUCTORS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ALevelRandomizer(ALevelRandomizer&&); \
@@ -39,13 +39,13 @@ public: \
 	NO_API virtual ~ALevelRandomizer();
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_17_PROLOG
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_20_GENERATED_BODY \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_26_PROLOG
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_20_INCLASS_NO_PURE_DECLS \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_20_ENHANCED_CONSTRUCTORS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_29_INCLASS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,5 +64,15 @@ template<> YOKAISHOKAN_API UClass* StaticClass<class ALevelRandomizer>();
 enum class ECurrentLevel : uint8;
 template<> struct TIsUEnumClass<ECurrentLevel> { enum { Value = true }; };
 template<> YOKAISHOKAN_API UEnum* StaticEnum<ECurrentLevel>();
+
+#define FOREACH_ENUM_EREWARDS(op) \
+	op(ERewards::HEALTH) \
+	op(ERewards::SKILL_POINTS) \
+	op(ERewards::LORE_ITEM) \
+	op(ERewards::TOTAL_REWARDS) 
+
+enum class ERewards : uint8;
+template<> struct TIsUEnumClass<ERewards> { enum { Value = true }; };
+template<> YOKAISHOKAN_API UEnum* StaticEnum<ERewards>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

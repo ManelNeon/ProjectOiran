@@ -16,6 +16,16 @@ struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
+UENUM(BlueprintType)
+enum class AttackState : uint8
+{
+	LIGHT_ATTACK_DAGGER,
+	HEAVY_ATTACK_DAGGER,
+	SPECIAL_ATTACK_ONE_DAGGER,
+	SPECIAL_ATTACK_TWO_DAGGER,
+	TOTAL_ATTACKS
+};
+
 UCLASS(config=Game)
 class AYokaiShokanCharacter : public ACharacter
 {
@@ -40,6 +50,22 @@ class AYokaiShokanCharacter : public ACharacter
 	/** Dash Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category =Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* DashAction;
+
+	/** Light Attack Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* LightAttackAction;
+
+	/** Heavy Attack Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* HeavyAttackAction;
+
+	/** Special One Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* SpecialOneAction;
+
+	/** Special Two Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* SpecialTwoAction;
 	
 public:
 	AYokaiShokanCharacter();
@@ -54,20 +80,19 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Character | Dash Movement", meta = (DisplayName = "Dash Jump Nerf"))
 	float DashJumpNerf = 10;
 
-	UPROPERTY(EditAnywhere, Category = "Character | Stats")
-	float HealthPoints = 100;
-
-	UFUNCTION(BlueprintCallable, Category = "Character | Stats", meta = (DisplayName = "Get Current HP"))
-	float GetCurrentPercentageHealth();
-
-	UFUNCTION(BlueprintCallable, Category = "Character | Stats", meta = (DisplayName = "Damage Player"))
-	void DamagePlayer(float damage);
+	UFUNCTION(BlueprintCallable, Category = "Character | Dash Movement")
+	bool GetDashAvailability();
 
 	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
-	bool GetDashAvailability();
+	void HealPlayer(float amount);
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void DamagePlayer(float damage);
 
 protected:
 	virtual void BeginPlay();
+
+	virtual void Jump() override;
 
 public:
 		
@@ -82,15 +107,19 @@ protected:
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
 
-	void DashPressed();
+	void Dash();
 
-	void EndDash();
+	void LightAttack();
+
+	void HeavyAttack();
+
+	void SpecialAttackOne();
+
+	void SpecialAttackTwo();
 
 	bool _CanDash;
 
 	bool _IsDashing;
-
-	float _CurrentHealthPoints = 100;
 
 	FTimerHandle _MemberTimerHandle;
 

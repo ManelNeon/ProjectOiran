@@ -54,6 +54,12 @@
     <ClInclude Include="..\..\Source\YokaiShokan\YokaiShokanCharacter.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\YokaiShokanGameInstance.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\YokaiShokanGameInstance.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\YokaiShokanGameMode.cpp">
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>

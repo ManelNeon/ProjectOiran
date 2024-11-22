@@ -14,6 +14,15 @@ enum class ECurrentLevel : uint8
 	TOTAL_LEVEL
 };
 
+UENUM(BlueprintType)
+enum class ERewards : uint8
+{
+	HEALTH,
+	SKILL_POINTS,
+	LORE_ITEM,
+	TOTAL_REWARDS
+};
+
 UCLASS()
 class YOKAISHOKAN_API ALevelRandomizer : public AActor
 {
@@ -26,12 +35,20 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
 	TArray<FVector> LevelLocations;
 
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	TArray<FVector> RewardsLocations;
+
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	FVector BossLocation;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
 	FVector RandomizeLevel();
+
+	ERewards _CurrentReward;
 
 	ECurrentLevel _CurrentLevel;
 
