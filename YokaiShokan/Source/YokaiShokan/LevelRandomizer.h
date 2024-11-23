@@ -48,9 +48,19 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
 	FVector RandomizeLevel();
 
+	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
+	ERewards RandomizeReward();
+
+	UFUNCTION(BlueprintCallable, Category = "Level Randommizer")
+	void SetCurrentReward(ERewards newReward);
+
 	ERewards _CurrentReward;
 
 	ECurrentLevel _CurrentLevel;
+
+private:
+
+	uint8 _LevelCounter;
 
 public:	
 	// Called every frame
