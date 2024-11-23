@@ -10,8 +10,6 @@ ALevelRandomizer::ALevelRandomizer()
 	PrimaryActorTick.bCanEverTick = false;
 
 	_CurrentLevel = ECurrentLevel::TOTAL_LEVEL;
-
-	_CurrentReward = ERewards::TOTAL_REWARDS;
 	
 	for (size_t i{ 0 }; i < static_cast<size_t>(ECurrentLevel::TOTAL_LEVEL); ++i)
 	{
@@ -24,7 +22,6 @@ void ALevelRandomizer::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	_LevelCounter = 0;
 }
 
 // Called every frame
@@ -34,24 +31,8 @@ void ALevelRandomizer::Tick(float DeltaTime)
 
 }
 
-ERewards ALevelRandomizer::RandomReward()
-{
-	int temporaryReward = static_cast<int>(_CurrentReward);
-
-	int currentRewardHolder = temporaryReward;
-
-	while (temporaryReward == currentRewardHolder)
-	{
-		temporaryReward = FMath::RandRange(0, static_cast<int>(ERewards::TOTAL_REWARDS) - 1);
-	}
-
-	return static_cast<ERewards>(temporaryReward);
-}
-
 FVector ALevelRandomizer::RandomizeLevel()
 {
-	if (_LevelCounter == 3) return BossLocation;
-
 	int temporaryLevel = static_cast<int>(_CurrentLevel);
 
 	int currentLevelHolder = temporaryLevel;
@@ -62,10 +43,6 @@ FVector ALevelRandomizer::RandomizeLevel()
 	}
 
 	_CurrentLevel = static_cast<ECurrentLevel>(temporaryLevel);
-
-	_CurrentReward = RandomReward();
-
-	_LevelCounter++;
 
 	return LevelLocations[static_cast<int>(_CurrentLevel)];
 }
