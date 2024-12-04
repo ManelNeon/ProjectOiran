@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 enum class ERewards : uint8;
 #ifdef YOKAISHOKAN_LevelRandomizer_generated_h
 #error "LevelRandomizer.generated.h already included, missing '#pragma once' in LevelRandomizer.h"
@@ -16,6 +17,7 @@ enum class ERewards : uint8;
 #define YOKAISHOKAN_LevelRandomizer_generated_h
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execSpawnEnemies); \
 	DECLARE_FUNCTION(execSetCurrentReward); \
 	DECLARE_FUNCTION(execRandomizeReward); \
 	DECLARE_FUNCTION(execRandomizeLevel);

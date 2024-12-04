@@ -271,6 +271,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\YokaiShokanCharacter.h"/>
+    <ClCompile Include="..\..\Source\YokaiShokan\YokaiShokanEnemy.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\YokaiShokanEnemy.h"/>
     <ClCompile Include="..\..\Source\YokaiShokan\YokaiShokanGameInstance.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YokaiShokanModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a683a7ccf220a806df8d20c541a90b05d25c3ca5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a426d012772dad6a1ee6416ade78ff3889fb1ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("YokaiShokanModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YokaiShokanModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

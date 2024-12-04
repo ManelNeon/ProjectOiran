@@ -41,6 +41,12 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
 	FVector BossLocation;
 
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	TArray<FVector> LevelOneEnemySpawnLocations;
+
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	TArray<FVector> LevelTwoEnemySpawnLocations;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -54,9 +60,15 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Level Randommizer")
 	void SetCurrentReward(ERewards newReward);
 
+	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
+	TArray<AActor*> SpawnEnemies(int minimumQuantity, int maxQuantity);
+
 	ERewards _CurrentReward;
 
 	ECurrentLevel _CurrentLevel;
+
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	UClass* _BaseEnemyClass;
 
 private:
 

@@ -73,3 +73,32 @@ FVector ALevelRandomizer::RandomizeLevel()
 	return LevelLocations[static_cast<int>(_CurrentLevel)];
 }
 
+TArray<AActor*> ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
+{
+	TArray<AActor*> enemyArray;
+
+	if (_CurrentLevel == ECurrentLevel::FIRST_LEVEL)
+	{
+		for (size_t i{ 0 }; i < LevelOneEnemySpawnLocations.Num(); ++i)
+		{			
+			for (size_t y{ 0 }; y < FMath::RandRange(minimumQuantity, maxQuantity); ++y)
+			{
+				enemyArray.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
+				enemyArray[y]->SetActorLocation(LevelOneEnemySpawnLocations[i]);
+			}
+		}
+	}
+	else if (_CurrentLevel == ECurrentLevel::SECOND_LEVEL)
+	{
+		for (size_t i{ 0 }; i < LevelTwoEnemySpawnLocations.Num(); ++i)
+		{
+			for (size_t y{ 0 }; i < FMath::RandRange(minimumQuantity, maxQuantity); ++i)
+			{
+				enemyArray.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
+				enemyArray[y]->SetActorLocation(LevelTwoEnemySpawnLocations[i]);
+			}
+		}
+	}
+
+	return enemyArray;
+}
