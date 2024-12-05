@@ -79,24 +79,24 @@ TArray<AActor*> ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuant
 
 	if (_CurrentLevel == ECurrentLevel::FIRST_LEVEL)
 	{
-		for (size_t i{ 0 }; i < LevelOneEnemySpawnLocations.Num(); ++i)
-		{			
-			for (size_t y{ 0 }; y < FMath::RandRange(minimumQuantity, maxQuantity); ++y)
-			{
-				enemyArray.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
-				enemyArray[y]->SetActorLocation(LevelOneEnemySpawnLocations[i]);
-			}
+		for (size_t i{ 0 }; i < 5; ++i)
+		{
+			AActor* lmao = GetWorld()->SpawnActor(_BaseEnemyClass);
+			if (!lmao)
+				GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("No Pointer"));
+			//enemyArray.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
+			//enemyArray[i]->SetActorLocation(FVector(437.000000, 113.000000, 60.000000));
 		}
 	}
 	else if (_CurrentLevel == ECurrentLevel::SECOND_LEVEL)
 	{
-		for (size_t i{ 0 }; i < LevelTwoEnemySpawnLocations.Num(); ++i)
+		for (size_t i{ 0 }; i < 5; ++i)
 		{
-			for (size_t y{ 0 }; i < FMath::RandRange(minimumQuantity, maxQuantity); ++i)
-			{
-				enemyArray.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
-				enemyArray[y]->SetActorLocation(LevelTwoEnemySpawnLocations[i]);
-			}
+			AActor* lmao = GetWorld()->SpawnActor(_BaseEnemyClass);
+			if (!lmao)
+				GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("No Pointer"));
+			//enemyArray.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
+			//enemyArray[i]->SetActorLocation(FVector(437.000000, 11581.000000, 60.000000));
 		}
 	}
 

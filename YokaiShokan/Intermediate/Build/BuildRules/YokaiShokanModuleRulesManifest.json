@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Unreal\\UnrealProjects\\ProjectOiran\\YokaiShokan\\Source\\YokaiShokan\\YokaiShokan.Build.cs",
-		"D:\\Unreal\\UnrealProjects\\ProjectOiran\\YokaiShokan\\Source\\YokaiShokan.Target.cs",
-		"D:\\Unreal\\UnrealProjects\\ProjectOiran\\YokaiShokan\\Source\\YokaiShokanEditor.Target.cs"
+		"C:\\GameDev\\UnrealProjects\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokan\\YokaiShokan.Build.cs",
+		"C:\\GameDev\\UnrealProjects\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokan.Target.cs",
+		"C:\\GameDev\\UnrealProjects\\YokaiShokan\\YokaiShokan\\Source\\YokaiShokanEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }

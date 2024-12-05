@@ -47,6 +47,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
 	TArray<FVector> LevelTwoEnemySpawnLocations;
 
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	UClass* _BaseEnemyClass;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -66,9 +69,6 @@ protected:
 	ERewards _CurrentReward;
 
 	ECurrentLevel _CurrentLevel;
-
-	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
-	UClass* _BaseEnemyClass;
 
 private:
 
