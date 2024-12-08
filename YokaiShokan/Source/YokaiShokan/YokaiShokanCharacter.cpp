@@ -192,7 +192,6 @@ bool AYokaiShokanCharacter::GetDashAvailability()
 
 void AYokaiShokanCharacter::LightAttack()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Light Attack"));
 }
 
 void AYokaiShokanCharacter::HeavyAttack()

@@ -2,6 +2,7 @@
 
 
 #include "YokaiShokanGameInstance.h"
+#include "Kismet/GameplayStatics.h"
 
 void UYokaiShokanGameInstance::Init()
 {
@@ -34,5 +35,7 @@ bool UYokaiShokanGameInstance::DamagePlayer(float damage)
 
 	_CurrentHealth = 0;
 	
+	UGameplayStatics::OpenLevel(this, "L_MainMenu");
+
 	return false;
 }
