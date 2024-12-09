@@ -2,6 +2,12 @@
 	"AssetInfoVersion": 2,
 	"ShaderCodeToAssets": [
 		{
+			"ShaderMapHash": "E7FF4802CB06CAE67A87BBB71FC9BF6664C94F4A",
+			"Assets": [
+				"/Game/VFX/TreeVFX/MI_TreeGodRays"
+			]
+		},
+		{
 			"ShaderMapHash": "EAAB7D03C257D32B317B33AECB3FB2D64178F596",
 			"Assets": [
 				"/Engine/EngineMaterials/Widget3DPassThrough_Masked"
@@ -251,9 +257,22 @@
 			]
 		},
 		{
+			"ShaderMapHash": "F163C269B687F8870796785B40BDBAD246CCB7AA",
+			"Assets": [
+				"/Game/Meshes/Character/M_Sleeves"
+			]
+		},
+		{
 			"ShaderMapHash": "F8BBC7690A73A99607590DC7E492C8D61B669D81",
 			"Assets": [
 				"/Game/VFX/Material_Instance/M_Mat01"
+			]
+		},
+		{
+			"ShaderMapHash": "1445A56D54308CCAE11A57C309C37DDCE315102D",
+			"Assets": [
+				"/Game/Meshes/Character/M_HairpinBlack",
+				"/Game/Meshes/Character/M_HairpinRed"
 			]
 		},
 		{
@@ -266,6 +285,12 @@
 			"ShaderMapHash": "D16CBE73293ACD5CECA2C077B00B05A9711F428F",
 			"Assets": [
 				"/Interchange/gltf/M_ClearCoat"
+			]
+		},
+		{
+			"ShaderMapHash": "89000D76A1EDE6574A69682B173C7B3FC87AE783",
+			"Assets": [
+				"/Game/Meshes/Character/M_Arms"
 			]
 		},
 		{
@@ -284,6 +309,13 @@
 			"ShaderMapHash": "E9EFC1898F01C8A80218EE15D56C56AAA0F0EAC8",
 			"Assets": [
 				"/Game/VFX/Material_Instance/M_Mat01_Inst1"
+			]
+		},
+		{
+			"ShaderMapHash": "33C9CB8C787B925343FCEC842C5479D8FEB9B391",
+			"Assets": [
+				"/Engine/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01",
+				"/Game/VFX/TreeVFX/M_EV_TreeGodRays"
 			]
 		},
 		{
@@ -424,6 +456,12 @@
 			"ShaderMapHash": "6E48F2C718D6BC52B0CB6B43CDD479FC6DC8AC86",
 			"Assets": [
 				"/Engine/EngineMaterials/DefaultTextMaterialOpaque"
+			]
+		},
+		{
+			"ShaderMapHash": "682BCECB1BDC9CFE22AEA8B7E9021353784ED54D",
+			"Assets": [
+				"/Game/VFX/TreeVFX/M_MagicDust"
 			]
 		},
 		{
