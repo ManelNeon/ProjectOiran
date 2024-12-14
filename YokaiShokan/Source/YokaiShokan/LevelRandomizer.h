@@ -6,23 +6,6 @@
 #include "GameFramework/Actor.h"
 #include "LevelRandomizer.generated.h"
 
-UENUM(BlueprintType)
-enum class ECurrentLevel : uint8
-{
-	FIRST_LEVEL, 
-	SECOND_LEVEL, 
-	TOTAL_LEVEL
-};
-
-UENUM(BlueprintType)
-enum class ERewards : uint8
-{
-	HEALTH,
-	SKILL_POINTS,
-	LORE_ITEM,
-	TOTAL_REWARDS
-};
-
 UCLASS()
 class YOKAISHOKAN_API ALevelRandomizer : public AActor
 {
@@ -32,50 +15,35 @@ public:
 	// Sets default values for this actor's properties
 	ALevelRandomizer();
 
-	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
-	TArray<FVector> LevelLocations;
-
-	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
-	TArray<FVector> RewardsLocations;
-
-	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
-	FVector BossLocation;
-
-	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
-	TArray<FVector> LevelOneEnemySpawnLocations;
-
-	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
-	TArray<FVector> LevelTwoEnemySpawnLocations;
-
-	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
-	UClass* _BaseEnemyClass;
+	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
+	void DeleteEnemyFromList(AActor* actor);
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
-	FVector RandomizeLevel();
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	FVector _RewardSpawnLocation;
+
+	//Variable where we'll store the zone epicenter (to make the possible spawning zone)
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	TArray<FVector> _ZonesEpicenters;
+
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	TArray<int> _NumberOfWaves;
+
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	AActor* _ZoneDivider;
+	
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	UClass* _BaseEnemyClass;
 
 	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
-	ERewards RandomizeReward();
+	void SpawnEnemies(int minimumQuantity, int maxQuantity);
 
-	UFUNCTION(BlueprintCallable, Category = "Level Randommizer")
-	void SetCurrentReward(ERewards newReward);
+	TArray<AActor*> _EnemyList;
 
-	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
-	TArray<AActor*> SpawnEnemies(int minimumQuantity, int maxQuantity);
+	int _CurrentWave;
 
-	ERewards _CurrentReward;
-
-	ECurrentLevel _CurrentLevel;
-
-private:
-
-	uint8 _LevelCounter;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
+	int _CurrentZone;
 };

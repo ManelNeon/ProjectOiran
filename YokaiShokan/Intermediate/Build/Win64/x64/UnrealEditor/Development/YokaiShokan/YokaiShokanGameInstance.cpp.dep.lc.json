@@ -7,6 +7,8 @@
         "Includes": [
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\yokaishokan\\definitions.yokaishokan.h",
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\yokaishokangameinstance.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\levelrandomizer.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\levelrandomizer.generated.h",
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\yokaishokangameinstance.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",

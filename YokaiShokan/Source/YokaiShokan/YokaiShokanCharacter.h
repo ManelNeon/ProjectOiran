@@ -66,6 +66,9 @@ class AYokaiShokanCharacter : public ACharacter
 	/** Special Two Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* SpecialTwoAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sounds | Input", meta = (AllowPrivateAccess = "true"))
+	USoundBase* DashSound;
 	
 public:
 	AYokaiShokanCharacter();

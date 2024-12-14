@@ -253,15 +253,24 @@
     <None Include="..\..\Source\YokaiShokan.Target.cs"/>
     <None Include="..\..\Source\YokaiShokanEditor.Target.cs"/>
     <None Include="..\..\.vsconfig"/>
+    <None Include="..\..\ICO_Toki_White (1).ico"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
+    <ClCompile Include="..\..\Source\YokaiShokan\Enemy.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\Enemy.h"/>
     <ClCompile Include="..\..\Source\YokaiShokan\LevelRandomizer.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\LevelRandomizer.h"/>
+    <ClCompile Include="..\..\Source\YokaiShokan\NPCCharacter.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\NPCCharacter.h"/>
     <None Include="..\..\Source\YokaiShokan\YokaiShokan.Build.cs"/>
     <ClCompile Include="..\..\Source\YokaiShokan\YokaiShokan.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

@@ -8,27 +8,32 @@ AYokaiShokanEnemy::AYokaiShokanEnemy()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 // Called when the game starts or when spawned
 void AYokaiShokanEnemy::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	_CurrentHealth = _MaxHealth;
 }
 
-// Called every frame
-void AYokaiShokanEnemy::Tick(float DeltaTime)
+void AYokaiShokanEnemy::SetLevelRandomizer(ALevelRandomizer* levelManager)
 {
-	Super::Tick(DeltaTime);
-
+	_LevelManager = levelManager;
 }
 
-// Called to bind functionality to input
-void AYokaiShokanEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AYokaiShokanEnemy::DamageThis(float damage)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	_CurrentHealth -= damage;
 
+	if (_CurrentHealth <= 0)
+	{
+		_LevelManager->DeleteEnemyFromList(this);
+		Destroy();
+		return;
+	}
+
+	if (_CurrentHealth > _MaxHealth) _CurrentHealth = _MaxHealth;
 }
 

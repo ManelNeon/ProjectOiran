@@ -2,6 +2,7 @@
 
 
 #include "LevelRandomizer.h"
+#include "YokaiShokanEnemy.h"
 
 // Sets default values
 ALevelRandomizer::ALevelRandomizer()
@@ -9,100 +10,83 @@ ALevelRandomizer::ALevelRandomizer()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
-	_CurrentLevel = ECurrentLevel::TOTAL_LEVEL;
+	_CurrentZone = 0;
 
-	_CurrentReward = ERewards::TOTAL_REWARDS;
-	
-	for (size_t i{ 0 }; i < static_cast<size_t>(ECurrentLevel::TOTAL_LEVEL); ++i)
-	{
-		LevelLocations.Add(FVector(0,0,0));
-	}
+	_CurrentWave = 0;
 }
 
 // Called when the game starts or when spawned
 void ALevelRandomizer::BeginPlay()
 {
 	Super::BeginPlay();
+}
+
+void ALevelRandomizer::DeleteEnemyFromList(AActor* actor)
+{
+	int index = -1;
+
+	int numberOfEnemies = _EnemyList.Num();
+
+	UE_LOG(LogTemp, Warning, TEXT("Got Amount Of Enemies"));
+
+	for (int i{ 0 }; i < numberOfEnemies; ++i)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Looping Through Array"));
+		
+		if (_EnemyList[i] == actor)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Found Index"));
+			index = i;
+			break;
+		}
+	}
 	
-	_LevelCounter = 0;
-}
+	if (index == -1) UE_LOG(LogTemp, Warning, TEXT("Index is Out Of Range"));
 
-// Called every frame
-void ALevelRandomizer::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
+	_EnemyList.RemoveAt(index);
 
-}
+	UE_LOG(LogTemp, Warning, TEXT("Removed Index"));
 
-void ALevelRandomizer::SetCurrentReward(ERewards newReward)
-{
-	_CurrentReward = newReward;
-}
+	numberOfEnemies = _EnemyList.Num();
 
-ERewards ALevelRandomizer::RandomizeReward()
-{
-	int temporaryReward = static_cast<int>(_CurrentReward);
+	//Until Here, We're Deleting the enemy from the array, now we'll check if the number of enemies is 0 and move on to the next wave
 
-	int currentRewardHolder = temporaryReward;
+	if (numberOfEnemies != 0) return;
 
-	while (temporaryReward == currentRewardHolder)
+	//now we're checking if the wave is the last one, if not, we increment and then spawn new enemies
+	if (_CurrentWave < _NumberOfWaves[_CurrentZone] - 1)
 	{
-		temporaryReward = FMath::RandRange(0, static_cast<int>(ERewards::TOTAL_REWARDS) - 1);
+		_CurrentWave++;
+		SpawnEnemies(4, 6);
+		return;
 	}
 
-	return static_cast<ERewards>(temporaryReward);
+	//now that we have gone through all the waves, we'll destroy the _ZoneDivider if it's not a nullptr and we'll set the wave to zero and increment the zone, spawning new enemies
+	if(_ZoneDivider)
+		_ZoneDivider->Destroy();
+
+	_CurrentWave = 0;
+	_CurrentZone++;
+
+	SpawnEnemies(3, 5);
 }
 
-FVector ALevelRandomizer::RandomizeLevel()
+void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 {
-	if (_LevelCounter == 3) return BossLocation;
+	_EnemyList.Empty();
 
-	int temporaryLevel = static_cast<int>(_CurrentLevel);
+	int randomNumber = FMath::RandRange(minimumQuantity, maxQuantity);
 
-	int currentLevelHolder = temporaryLevel;
-
-	while (temporaryLevel == currentLevelHolder)
+	for (size_t i{ 0 }; i < randomNumber; ++i)
 	{
-		temporaryLevel = FMath::RandRange(0, static_cast<int>(ECurrentLevel::TOTAL_LEVEL) - 1);
+		_EnemyList.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
+
+		FVector randomLocation = FVector(_ZonesEpicenters[_CurrentZone].X + FMath::RandRange(-1500, 1500), _ZonesEpicenters[_CurrentZone].Y + FMath::RandRange(-1500, 1500), _ZonesEpicenters[_CurrentZone].Z);
+		
+		Cast<AYokaiShokanEnemy>(_EnemyList[i])->SetLevelRandomizer(this);
+		
+		_EnemyList[i]->SetActorLocation(randomLocation);
+
+		UE_LOG(LogTemp, Warning, TEXT("Enemy Added"));
 	}
-
-	_CurrentLevel = static_cast<ECurrentLevel>(temporaryLevel);
-
-	_LevelCounter++;
-
-	return LevelLocations[static_cast<int>(_CurrentLevel)];
-}
-
-TArray<AActor*> ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
-{
-	TArray<AActor*> enemyArray;
-
-	if (_CurrentLevel == ECurrentLevel::FIRST_LEVEL)
-	{
-		for (size_t i{ 0 }; i < LevelOneEnemySpawnLocations.Num(); ++i)
-		{
-			int randomQuantity = FMath::RandRange(minimumQuantity, maxQuantity);
-
-			for (size_t y{ 0 }; y < randomQuantity; ++y)
-			{
-				enemyArray.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
-				enemyArray[y]->SetActorLocation(LevelOneEnemySpawnLocations[i]);
-			}
-		}
-	}
-	else if (_CurrentLevel == ECurrentLevel::SECOND_LEVEL)
-	{
-		for (size_t i{ 0 }; i < LevelTwoEnemySpawnLocations.Num(); ++i)
-		{
-			int randomQuantity = FMath::RandRange(minimumQuantity, maxQuantity);
-
-			for (size_t y{ 0 }; y < randomQuantity; ++y)
-			{
-				enemyArray.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
-				enemyArray[y]->SetActorLocation(LevelTwoEnemySpawnLocations[i]);
-			}
-		}
-	}
-
-	return enemyArray;
 }

@@ -10,6 +10,7 @@
 #include "InputActionValue.h"
 #include "KismetMathLibrary.generated.h"
 #include "YokaiShokanGameInstance.h"
+#include "Kismet/GameplayStatics.h"
 #include "Engine/LocalPlayer.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
@@ -179,6 +180,8 @@ void AYokaiShokanCharacter::Dash()
 		finalDirection.X /= DashJumpNerf;
 		finalDirection.Y /= DashJumpNerf;
 	}
+
+	UGameplayStatics::PlaySound2D(GetWorld(), DashSound);
 
 	LaunchCharacter(finalDirection, false, false);
 

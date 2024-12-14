@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "LevelRandomizer.h"
 #include "GameFramework/Character.h"
 #include "YokaiShokanEnemy.generated.h"
 
@@ -15,15 +16,22 @@ public:
 	// Sets default values for this character's properties
 	AYokaiShokanEnemy();
 
+	void SetLevelRandomizer(ALevelRandomizer* levelManager);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UFUNCTION(BlueprintCallable, Category = "Enemy | Stats")
+	void DamageThis(float damage);
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	ALevelRandomizer* _LevelManager;
 
+	float _CurrentHealth;
+
+	UPROPERTY(EditAnywhere, Category = "Enemy | Stats")
+	float _MaxHealth;
+
+	UPROPERTY(EditAnywhere, Category = "Enemy | Stats")
+	float _DamageValue;
 };
