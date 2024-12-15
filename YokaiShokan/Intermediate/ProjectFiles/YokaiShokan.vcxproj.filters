@@ -52,6 +52,12 @@
     <ClInclude Include="..\..\Source\YokaiShokan\NPCCharacter.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\PickUp.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\PickUp.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
     <None Include="..\..\Source\YokaiShokan\YokaiShokan.Build.cs">
       <Filter>Source\YokaiShokan</Filter>
     </None>

@@ -3,6 +3,8 @@
 
 #include "LevelRandomizer.h"
 #include "YokaiShokanEnemy.h"
+#include "YokaiShokanGameInstance.h"
+#include "PickUp.h"
 
 // Sets default values
 ALevelRandomizer::ALevelRandomizer()
@@ -49,10 +51,19 @@ void ALevelRandomizer::DeleteEnemyFromList(AActor* actor)
 
 	numberOfEnemies = _EnemyList.Num();
 
+	UE_LOG(LogTemp, Warning, TEXT("Enemy List Size: %d"), numberOfEnemies);
+
 	//Until Here, We're Deleting the enemy from the array, now we'll check if the number of enemies is 0 and move on to the next wave
 
 	if (numberOfEnemies != 0) return;
 
+	UE_LOG(LogTemp, Warning, TEXT("No Enemies"));
+
+	WaveEnder();
+}
+
+void ALevelRandomizer::WaveEnder()
+{
 	//now we're checking if the wave is the last one, if not, we increment and then spawn new enemies
 	if (_CurrentWave < _NumberOfWaves[_CurrentZone] - 1)
 	{
@@ -61,14 +72,58 @@ void ALevelRandomizer::DeleteEnemyFromList(AActor* actor)
 		return;
 	}
 
+	if (_ZoneDivider == nullptr)
+	{
+		LevelEnder();
+		return;
+	}
+
 	//now that we have gone through all the waves, we'll destroy the _ZoneDivider if it's not a nullptr and we'll set the wave to zero and increment the zone, spawning new enemies
-	if(_ZoneDivider)
-		_ZoneDivider->Destroy();
+	_ZoneDivider->Destroy();
+
+	_ZoneDivider = nullptr;
 
 	_CurrentWave = 0;
 	_CurrentZone++;
 
 	SpawnEnemies(3, 5);
+}
+
+void ALevelRandomizer::LevelEnder()
+{
+	auto gameInstance = Cast<UYokaiShokanGameInstance>(GetGameInstance());
+
+	if (!gameInstance) return;
+
+	UE_LOG(LogTemp, Warning, TEXT("Found Game Instance"));
+
+	APickUp* pickUp = nullptr;
+
+	switch (gameInstance->GetCurrentReward())
+	{
+		case ERewards::HEALTH:
+			pickUp = Cast<APickUp>(GetWorld()->SpawnActor(_HealthPickupBP));
+			UE_LOG(LogTemp, Warning, TEXT("It's Health"));
+			pickUp->SetLevelRandomizer(this);
+			break;
+		case ERewards::SKILL_POINTS:
+			pickUp = Cast<APickUp>(GetWorld()->SpawnActor(_SkillPointsPickupBP));
+			UE_LOG(LogTemp, Warning, TEXT("It's Health"));
+			pickUp->SetLevelRandomizer(this);
+			break;
+		case ERewards::LORE_ITEM:
+			pickUp = Cast<APickUp>(GetWorld()->SpawnActor(_LoreItemPickupBP));
+			UE_LOG(LogTemp, Warning, TEXT("It's Health"));
+			pickUp->SetLevelRandomizer(this);
+			break;
+		case ERewards::TOTAL_REWARDS:
+			UE_LOG(LogTemp, Warning, TEXT("It's Nothing"));
+			break;
+	}
+
+	if (!pickUp) return;
+
+	pickUp->SetActorLocation(_RewardSpawnLocation);
 }
 
 void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
@@ -81,7 +136,11 @@ void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 	{
 		_EnemyList.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
 
-		FVector randomLocation = FVector(_ZonesEpicenters[_CurrentZone].X + FMath::RandRange(-1500, 1500), _ZonesEpicenters[_CurrentZone].Y + FMath::RandRange(-1500, 1500), _ZonesEpicenters[_CurrentZone].Z);
+		float xRangeValue = _ZonesEpicentersRange[_CurrentZone].X;
+
+		float yRangeValue = _ZonesEpicentersRange[_CurrentZone].Y;
+
+		FVector randomLocation = FVector(_ZonesEpicenters[_CurrentZone].X + FMath::RandRange(-xRangeValue, xRangeValue), _ZonesEpicenters[_CurrentZone].Y + FMath::RandRange(-yRangeValue, yRangeValue), _ZonesEpicenters[_CurrentZone].Z);
 		
 		Cast<AYokaiShokanEnemy>(_EnemyList[i])->SetLevelRandomizer(this);
 		

@@ -17,6 +17,8 @@ class AActor;
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSpawnEnemies); \
+	DECLARE_FUNCTION(execLevelEnder); \
+	DECLARE_FUNCTION(execWaveEnder); \
 	DECLARE_FUNCTION(execDeleteEnemyFromList);
 
 

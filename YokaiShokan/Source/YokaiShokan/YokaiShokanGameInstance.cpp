@@ -38,6 +38,16 @@ void UYokaiShokanGameInstance::SetIsInsideRoguelite(bool isInside)
 	_IsInsideRoguelite = isInside;
 }
 
+ERewards UYokaiShokanGameInstance::GetCurrentReward()
+{
+	return _CurrentReward;
+}
+
+void UYokaiShokanGameInstance::SetCurrentReward(ERewards currentReward)
+{
+	_CurrentReward = currentReward;
+}
+
 ERewards UYokaiShokanGameInstance::GetDifferentReward()
 {
 	int temporaryReward = static_cast<int>(_CurrentReward);

@@ -17,8 +17,10 @@ enum class ERewards : uint8;
 #define YOKAISHOKAN_YokaiShokanGameInstance_generated_h
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execGetDifferentReward); \
 	DECLARE_FUNCTION(execSetIsInsideRoguelite); \
+	DECLARE_FUNCTION(execGetDifferentReward); \
+	DECLARE_FUNCTION(execSetCurrentReward); \
+	DECLARE_FUNCTION(execGetCurrentReward); \
 	DECLARE_FUNCTION(execSetCurrentLevel); \
 	DECLARE_FUNCTION(execGetCurrentLevel); \
 	DECLARE_FUNCTION(execGetCurrentHealth); \

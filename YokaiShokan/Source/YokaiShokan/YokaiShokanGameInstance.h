@@ -44,10 +44,16 @@ public:
 	void SetCurrentLevel(ECurrentLevel currentLevel);
 
 	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")
-	void SetIsInsideRoguelite(bool isInside);
+	ERewards GetCurrentReward();
 
 	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")
+	void SetCurrentReward(ERewards currentReward);
+
+	UFUNCTION(BlueprintPure, Category = "Levels | Randomization")
 	ERewards GetDifferentReward();
+
+	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")
+	void SetIsInsideRoguelite(bool isInside);
 	
 	void HealPlayer(float amount);
 

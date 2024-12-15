@@ -259,6 +259,51 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetCurrentLevel)
 }
 // End Class UYokaiShokanGameInstance Function GetCurrentLevel
 
+// Begin Class UYokaiShokanGameInstance Function GetCurrentReward
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics
+{
+	struct YokaiShokanGameInstance_eventGetCurrentReward_Parms
+	{
+		ERewards ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Levels | Randomization" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetCurrentReward_Parms, ReturnValue), Z_Construct_UEnum_YokaiShokan_ERewards, METADATA_PARAMS(0, nullptr) }; // 312126965
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::NewProp_ReturnValue_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetCurrentReward", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::YokaiShokanGameInstance_eventGetCurrentReward_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::YokaiShokanGameInstance_eventGetCurrentReward_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetCurrentReward)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(ERewards*)Z_Param__Result=P_THIS->GetCurrentReward();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetCurrentReward
+
 // Begin Class UYokaiShokanGameInstance Function GetDifferentReward
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics
 {
@@ -284,7 +329,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokai
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetDifferentReward", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::YokaiShokanGameInstance_eventGetDifferentReward_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetDifferentReward", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::YokaiShokanGameInstance_eventGetDifferentReward_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics::YokaiShokanGameInstance_eventGetDifferentReward_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward()
 {
@@ -350,6 +395,52 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetCurrentLevel)
 }
 // End Class UYokaiShokanGameInstance Function SetCurrentLevel
 
+// Begin Class UYokaiShokanGameInstance Function SetCurrentReward
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics
+{
+	struct YokaiShokanGameInstance_eventSetCurrentReward_Parms
+	{
+		ERewards currentReward;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Levels | Randomization" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FBytePropertyParams NewProp_currentReward_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_currentReward;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::NewProp_currentReward_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::NewProp_currentReward = { "currentReward", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetCurrentReward_Parms, currentReward), Z_Construct_UEnum_YokaiShokan_ERewards, METADATA_PARAMS(0, nullptr) }; // 312126965
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::NewProp_currentReward_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::NewProp_currentReward,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "SetCurrentReward", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::YokaiShokanGameInstance_eventSetCurrentReward_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::YokaiShokanGameInstance_eventSetCurrentReward_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetCurrentReward)
+{
+	P_GET_ENUM(ERewards,Z_Param_currentReward);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetCurrentReward(ERewards(Z_Param_currentReward));
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function SetCurrentReward
+
 // Begin Class UYokaiShokanGameInstance Function SetIsInsideRoguelite
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetIsInsideRoguelite_Statics
 {
@@ -406,8 +497,10 @@ void UYokaiShokanGameInstance::StaticRegisterNativesUYokaiShokanGameInstance()
 		{ "GetCurrentHealth", &UYokaiShokanGameInstance::execGetCurrentHealth },
 		{ "GetCurrentHealthPercentage", &UYokaiShokanGameInstance::execGetCurrentHealthPercentage },
 		{ "GetCurrentLevel", &UYokaiShokanGameInstance::execGetCurrentLevel },
+		{ "GetCurrentReward", &UYokaiShokanGameInstance::execGetCurrentReward },
 		{ "GetDifferentReward", &UYokaiShokanGameInstance::execGetDifferentReward },
 		{ "SetCurrentLevel", &UYokaiShokanGameInstance::execSetCurrentLevel },
+		{ "SetCurrentReward", &UYokaiShokanGameInstance::execSetCurrentReward },
 		{ "SetIsInsideRoguelite", &UYokaiShokanGameInstance::execSetIsInsideRoguelite },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -436,8 +529,10 @@ struct Z_Construct_UClass_UYokaiShokanGameInstance_Statics
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentHealth, "GetCurrentHealth" }, // 480227573
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentHealthPercentage, "GetCurrentHealthPercentage" }, // 1430771872
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel, "GetCurrentLevel" }, // 524536052
-		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward, "GetDifferentReward" }, // 3570132785
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward, "GetCurrentReward" }, // 3994782522
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward, "GetDifferentReward" }, // 1419401698
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentLevel, "SetCurrentLevel" }, // 3818652800
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward, "SetCurrentReward" }, // 897470113
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetIsInsideRoguelite, "SetIsInsideRoguelite" }, // 3515282623
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -496,10 +591,10 @@ struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_
 		{ ERewards_StaticEnum, TEXT("ERewards"), &Z_Registration_Info_UEnum_ERewards, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 312126965U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UYokaiShokanGameInstance, UYokaiShokanGameInstance::StaticClass, TEXT("UYokaiShokanGameInstance"), &Z_Registration_Info_UClass_UYokaiShokanGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UYokaiShokanGameInstance), 2321338005U) },
+		{ Z_Construct_UClass_UYokaiShokanGameInstance, UYokaiShokanGameInstance::StaticClass, TEXT("UYokaiShokanGameInstance"), &Z_Registration_Info_UClass_UYokaiShokanGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UYokaiShokanGameInstance), 1124828805U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_1695698408(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_180605865(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::EnumInfo));
