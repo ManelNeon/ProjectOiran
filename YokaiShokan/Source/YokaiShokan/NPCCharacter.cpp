@@ -85,8 +85,6 @@ void ANPCCharacter::StartDialogue()
 {
 	auto size = DialogueArray.Num() - 1;
 
-	if (_DialogueIndex >= size) return;
-
 	if (!_CurrentDialogueBox) return;
 
 	_CharIndex = 0;
@@ -99,6 +97,8 @@ void ANPCCharacter::StartDialogue()
 
 		return;
 	}
+
+	if (_DialogueIndex >= size) return;
 
 	_DialogueIndex++;
 
@@ -113,10 +113,14 @@ void ANPCCharacter::RunThroughDialogue()
 {
 	if (!_IsPlaying) return;
 
+	if (!_CurrentDialogueBox) return;
+
 	FString currentText = _CurrentDialogueBox->GetTextBlock()->GetText().ToString();
 
 	currentText += DialogueArray[_DialogueIndex][_CharIndex];
 
+	if (!_CurrentDialogueBox) return;
+	
 	_CurrentDialogueBox->GetTextBlock()->SetText(FText::FromString(currentText));
 
 	_CharIndex++;
@@ -135,4 +139,8 @@ void ANPCCharacter::RestartDialogue()
 	_CharIndex = 0;
 
 	_DialogueIndex = -1;
+
+	_IsPlaying = false;
+
+	_CurrentDialogueBox = nullptr;
 }
