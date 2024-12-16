@@ -259,10 +259,10 @@
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
-    <ClCompile Include="..\..\Source\YokaiShokan\Enemy.cpp">
+    <ClCompile Include="..\..\Source\YokaiShokan\DialogueBox.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\Enemy.h"/>
+    <ClInclude Include="..\..\Source\YokaiShokan\DialogueBox.h"/>
     <ClCompile Include="..\..\Source\YokaiShokan\LevelRandomizer.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

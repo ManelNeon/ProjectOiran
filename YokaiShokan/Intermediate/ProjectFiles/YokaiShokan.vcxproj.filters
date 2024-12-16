@@ -34,10 +34,10 @@
     <Filter Include="Source\YokaiShokan">
       <UniqueIdentifier>{5E0356B1-552A-3179-AB00-380E1A37609E}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\YokaiShokan\Enemy.cpp">
+    <ClCompile Include="..\..\Source\YokaiShokan\DialogueBox.cpp">
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\Enemy.h">
+    <ClInclude Include="..\..\Source\YokaiShokan\DialogueBox.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\LevelRandomizer.cpp">

@@ -10,19 +10,24 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
+class UDialogueBox;
 #ifdef YOKAISHOKAN_NPCCharacter_generated_h
 #error "NPCCharacter.generated.h already included, missing '#pragma once' in NPCCharacter.h"
 #endif
 #define YOKAISHOKAN_NPCCharacter_generated_h
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execRotateTowardsPlayer); \
-	DECLARE_FUNCTION(execOnExitRange); \
-	DECLARE_FUNCTION(execOnEnterRange); \
-	DECLARE_FUNCTION(execInteract);
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execRestartDialogue); \
+	DECLARE_FUNCTION(execRunThroughDialogue); \
+	DECLARE_FUNCTION(execStartDialogue); \
+	DECLARE_FUNCTION(execSetCurrentDialogueBox); \
+	DECLARE_FUNCTION(execGetCurrentDialogueBox); \
+	DECLARE_FUNCTION(execGetTarget); \
+	DECLARE_FUNCTION(execSetTarget); \
+	DECLARE_FUNCTION(execRotateTowardsPlayer);
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesANPCCharacter(); \
 	friend struct Z_Construct_UClass_ANPCCharacter_Statics; \
@@ -31,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(ANPCCharacter)
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ANPCCharacter(ANPCCharacter&&); \
@@ -43,13 +48,13 @@ public: \
 	NO_API virtual ~ANPCCharacter();
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_10_PROLOG
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_13_GENERATED_BODY \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_11_PROLOG
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_13_INCLASS_NO_PURE_DECLS \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_13_ENHANCED_CONSTRUCTORS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_14_INCLASS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

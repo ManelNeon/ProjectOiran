@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "DialogueBox.h"
 #include "Components/SphereComponent.h"
 #include "NPCCharacter.generated.h"
 
@@ -20,25 +21,49 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UFUNCTION(BlueprintCallable, Category = "NPC")
-	void Interact();
-
-	UFUNCTION(BlueprintCallable, Category = "NPC")
-	bool OnEnterRange(AActor* OtherActor);
-
-	UFUNCTION(BlueprintCallable, Category = "NPC")
-	bool OnExitRange(AActor* OtherActor);
+	UPROPERTY(EditAnywhere, Category = "NPC")
+	TArray<FString> DialogueArray;
 
 	UFUNCTION()
 	void RotateTowardsPlayer(AActor* Target, float RotationSpeed, float DeltaTime);
 
+	UFUNCTION(BlueprintCallable, Category = "NPC | Functions")
+	void SetTarget(AActor* target);
+
+	UFUNCTION(BlueprintCallable, Category = "NPC | Functions")
+	AActor* GetTarget();
+
+	UFUNCTION(BlueprintPure, Category = "NPC | Functions")
+	UDialogueBox* GetCurrentDialogueBox();
+
+	UFUNCTION(BlueprintCallable, Category = "NPC | Functions")
+	void SetCurrentDialogueBox(UDialogueBox* dialogueBox);
+
+	UFUNCTION(BlueprintCallable, Category = "NPC | Functions")
+	void StartDialogue();
+
+	UFUNCTION(BlueprintCallable, Category = "NPC | Functions")
+	void RunThroughDialogue();
+
+	UFUNCTION(BlueprintCallable, Category = "NPC | Functions")
+	void RestartDialogue();
+
+	UDialogueBox* _CurrentDialogueBox;
+
+	bool _IsPlaying;
+	
+	FString _CurrentString;
+
+	int _CharIndex;
+
+	int _DialogueIndex;
+
 	AActor* _Target;
+
+	FTimerHandle _TimerHandle;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 };

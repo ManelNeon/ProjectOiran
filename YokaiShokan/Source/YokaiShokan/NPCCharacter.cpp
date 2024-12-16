@@ -18,6 +18,12 @@ ANPCCharacter::ANPCCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	_Target = nullptr;
+
+	_CurrentString = "";
+
+	_CharIndex = 0;
+
+	_DialogueIndex = -1;
 }
 
 // Called when the game starts or when spawned
@@ -55,36 +61,78 @@ void ANPCCharacter::RotateTowardsPlayer(AActor* Target, float RotationSpeed, flo
 	this->SetActorRotation(NewRotation);
 }
 
-// Called to bind functionality to input
-void ANPCCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ANPCCharacter::SetTarget(AActor* target)
 {
-
+	_Target = target;
 }
 
-void ANPCCharacter::Interact()
+AActor* ANPCCharacter::GetTarget()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Yellow, TEXT("HELLO WORLD AHEA"));
+	return _Target;
 }
 
-bool ANPCCharacter::OnEnterRange(AActor* OtherActor)
+UDialogueBox* ANPCCharacter::GetCurrentDialogueBox()
 {
-	auto player = Cast<AYokaiShokanCharacter>(OtherActor);
-
-	if (!player) return false;
-
-	_Target = player;
-
-	return true;
+	return _CurrentDialogueBox;
 }
 
-bool ANPCCharacter::OnExitRange(AActor* OtherActor)
+void ANPCCharacter::SetCurrentDialogueBox(UDialogueBox* dialogueBox)
 {
-	auto player = Cast<AYokaiShokanCharacter>(OtherActor);
-
-	if (!player) return false;
-	
-	_Target = nullptr;
-
-	return true;
+	_CurrentDialogueBox = dialogueBox;
 }
 
+void ANPCCharacter::StartDialogue()
+{
+	auto size = DialogueArray.Num() - 1;
+
+	if (_DialogueIndex >= size) return;
+
+	if (!_CurrentDialogueBox) return;
+
+	_CharIndex = 0;
+
+	if (_IsPlaying)
+	{
+		_IsPlaying = false;
+
+		_CurrentDialogueBox->GetTextBlock()->SetText(FText::FromString(DialogueArray[_DialogueIndex]));
+
+		return;
+	}
+
+	_DialogueIndex++;
+
+	_IsPlaying = true;
+
+	_CurrentDialogueBox->GetTextBlock()->SetText(FText::FromString(""));
+
+	GetWorldTimerManager().SetTimer(_TimerHandle, this, &ANPCCharacter::RunThroughDialogue, 0.05f, false);
+}
+
+void ANPCCharacter::RunThroughDialogue()
+{
+	if (!_IsPlaying) return;
+
+	FString currentText = _CurrentDialogueBox->GetTextBlock()->GetText().ToString();
+
+	currentText += DialogueArray[_DialogueIndex][_CharIndex];
+
+	_CurrentDialogueBox->GetTextBlock()->SetText(FText::FromString(currentText));
+
+	_CharIndex++;
+
+	if (_CharIndex >= DialogueArray[_DialogueIndex].Len())
+	{
+		_IsPlaying = false;
+		return;
+	}
+
+	GetWorldTimerManager().SetTimer(_TimerHandle, this, &ANPCCharacter::RunThroughDialogue, 0.05f, false);
+}
+
+void ANPCCharacter::RestartDialogue()
+{
+	_CharIndex = 0;
+
+	_DialogueIndex = -1;
+}
