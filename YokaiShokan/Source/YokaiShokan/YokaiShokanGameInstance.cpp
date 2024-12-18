@@ -11,6 +11,10 @@ void UYokaiShokanGameInstance::Init()
 	_CurrentLevel = ECurrentLevel::TOTAL_LEVEL;
 
 	_CurrentReward = ERewards::TOTAL_REWARDS;
+
+	_LevelCounter = 0;
+
+	_IsInsideRoguelite = false;
 }
 
 float UYokaiShokanGameInstance::GetCurrentHealthPercentage()
@@ -36,6 +40,8 @@ void UYokaiShokanGameInstance::SetCurrentLevel(ECurrentLevel currentLevel)
 void UYokaiShokanGameInstance::SetIsInsideRoguelite(bool isInside)
 {
 	_IsInsideRoguelite = isInside;
+
+	_LevelCounter = 0;
 }
 
 ERewards UYokaiShokanGameInstance::GetCurrentReward()
