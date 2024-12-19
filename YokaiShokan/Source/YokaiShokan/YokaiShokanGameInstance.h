@@ -50,16 +50,76 @@ protected:
 
 	float _CurrentHealth;
 
+//************************// Permanent Settings Options //************************//
+public:
+
+	UFUNCTION(BlueprintPure, Category = "Settings | Audio")
+	float GetMasterVolume();
+
+	UFUNCTION(BlueprintCallable, Category = "Settings | Audio")
+	void SetMasterVolume(float value);
+
+	UFUNCTION(BlueprintPure, Category = "Settings | Audio")
+	float GetMusicVolume();
+
+	UFUNCTION(BlueprintCallable, Category = "Settings | Audio")
+	void SetMusicVolume(float value);
+
+	UFUNCTION(BlueprintPure, Category = "Settings | Audio")
+	float GetSFXVolume();
+
+	UFUNCTION(BlueprintCallable, Category = "Settings | Audio")
+	void SetSFXVolume(float value);
+
+	UFUNCTION(BlueprintPure, Category = "Settings | Audio")
+	float GetDialogueVolume();
+
+	UFUNCTION(BlueprintCallable, Category = "Settings | Audio")
+	void SetDialogueVolume(float value);
+
+	UFUNCTION(BlueprintPure, Category = "Settings | Audio")
+	float GetEnviromentVolume();
+
+	UFUNCTION(BlueprintCallable, Category = "Settings | Audio")
+	void SetEnviromentVolume(float value);
+
+	UFUNCTION(BlueprintPure, Category = "Settings | Audio")
+	float GetUIVolume();
+
+	UFUNCTION(BlueprintCallable, Category = "Settings | Audio")
+	void SetUIVolume(float value);
+	
+protected:
+
+	float _MasterVolume;
+
+	float _MusicVolume;
+
+	float _SFXVolume;
+
+	float _DialogueVolume;
+
+	float _EnviromentVolume;
+
+	float _UIVolume;
+
+
 //************************// Level Randomization //************************//
 public:
 
-	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")
+	UFUNCTION(BlueprintPure, Category = "Levels | Randomization")
 	ECurrentLevel GetCurrentLevel();
 
 	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")
 	void SetCurrentLevel(ECurrentLevel currentLevel);
 
 	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")
+	ECurrentLevel GetDifferentLevel();
+
+	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")
+	void IncrementLevelCounter();
+
+	UFUNCTION(BlueprintPure, Category = "Levels | Randomization")
 	ERewards GetCurrentReward();
 
 	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")

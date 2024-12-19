@@ -239,7 +239,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokai
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetCurrentLevel", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::YokaiShokanGameInstance_eventGetCurrentLevel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetCurrentLevel", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::YokaiShokanGameInstance_eventGetCurrentLevel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel_Statics::YokaiShokanGameInstance_eventGetCurrentLevel_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel()
 {
@@ -284,7 +284,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokai
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetCurrentReward", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::YokaiShokanGameInstance_eventGetCurrentReward_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetCurrentReward", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::YokaiShokanGameInstance_eventGetCurrentReward_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward_Statics::YokaiShokanGameInstance_eventGetCurrentReward_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward()
 {
@@ -303,6 +303,93 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetCurrentReward)
 	P_NATIVE_END;
 }
 // End Class UYokaiShokanGameInstance Function GetCurrentReward
+
+// Begin Class UYokaiShokanGameInstance Function GetDialogueVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventGetDialogueVolume_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetDialogueVolume_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetDialogueVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::YokaiShokanGameInstance_eventGetDialogueVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::YokaiShokanGameInstance_eventGetDialogueVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetDialogueVolume)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetDialogueVolume();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetDialogueVolume
+
+// Begin Class UYokaiShokanGameInstance Function GetDifferentLevel
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics
+{
+	struct YokaiShokanGameInstance_eventGetDifferentLevel_Parms
+	{
+		ECurrentLevel ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Levels | Randomization" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetDifferentLevel_Parms, ReturnValue), Z_Construct_UEnum_YokaiShokan_ECurrentLevel, METADATA_PARAMS(0, nullptr) }; // 2511653475
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::NewProp_ReturnValue_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetDifferentLevel", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::YokaiShokanGameInstance_eventGetDifferentLevel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::YokaiShokanGameInstance_eventGetDifferentLevel_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetDifferentLevel)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(ECurrentLevel*)Z_Param__Result=P_THIS->GetDifferentLevel();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetDifferentLevel
 
 // Begin Class UYokaiShokanGameInstance Function GetDifferentReward
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward_Statics
@@ -348,6 +435,246 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetDifferentReward)
 	P_NATIVE_END;
 }
 // End Class UYokaiShokanGameInstance Function GetDifferentReward
+
+// Begin Class UYokaiShokanGameInstance Function GetEnviromentVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventGetEnviromentVolume_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetEnviromentVolume_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetEnviromentVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::YokaiShokanGameInstance_eventGetEnviromentVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::YokaiShokanGameInstance_eventGetEnviromentVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetEnviromentVolume)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetEnviromentVolume();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetEnviromentVolume
+
+// Begin Class UYokaiShokanGameInstance Function GetMasterVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventGetMasterVolume_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetMasterVolume_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetMasterVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::YokaiShokanGameInstance_eventGetMasterVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::YokaiShokanGameInstance_eventGetMasterVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetMasterVolume)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetMasterVolume();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetMasterVolume
+
+// Begin Class UYokaiShokanGameInstance Function GetMusicVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventGetMusicVolume_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetMusicVolume_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetMusicVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::YokaiShokanGameInstance_eventGetMusicVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::YokaiShokanGameInstance_eventGetMusicVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetMusicVolume)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetMusicVolume();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetMusicVolume
+
+// Begin Class UYokaiShokanGameInstance Function GetSFXVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventGetSFXVolume_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetSFXVolume_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetSFXVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::YokaiShokanGameInstance_eventGetSFXVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::YokaiShokanGameInstance_eventGetSFXVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetSFXVolume)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetSFXVolume();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetSFXVolume
+
+// Begin Class UYokaiShokanGameInstance Function GetUIVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventGetUIVolume_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetUIVolume_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetUIVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::YokaiShokanGameInstance_eventGetUIVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::YokaiShokanGameInstance_eventGetUIVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetUIVolume)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetUIVolume();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetUIVolume
+
+// Begin Class UYokaiShokanGameInstance Function IncrementLevelCounter
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Levels | Randomization" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "IncrementLevelCounter", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execIncrementLevelCounter)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncrementLevelCounter();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function IncrementLevelCounter
 
 // Begin Class UYokaiShokanGameInstance Function SetCurrentLevel
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentLevel_Statics
@@ -441,6 +768,92 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetCurrentReward)
 }
 // End Class UYokaiShokanGameInstance Function SetCurrentReward
 
+// Begin Class UYokaiShokanGameInstance Function SetDialogueVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventSetDialogueVolume_Parms
+	{
+		float value;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_value;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetDialogueVolume_Parms, value), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::NewProp_value,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "SetDialogueVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::YokaiShokanGameInstance_eventSetDialogueVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::YokaiShokanGameInstance_eventSetDialogueVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetDialogueVolume)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_value);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetDialogueVolume(Z_Param_value);
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function SetDialogueVolume
+
+// Begin Class UYokaiShokanGameInstance Function SetEnviromentVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventSetEnviromentVolume_Parms
+	{
+		float value;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_value;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetEnviromentVolume_Parms, value), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::NewProp_value,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "SetEnviromentVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::YokaiShokanGameInstance_eventSetEnviromentVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::YokaiShokanGameInstance_eventSetEnviromentVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetEnviromentVolume)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_value);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetEnviromentVolume(Z_Param_value);
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function SetEnviromentVolume
+
 // Begin Class UYokaiShokanGameInstance Function SetIsInsideRoguelite
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetIsInsideRoguelite_Statics
 {
@@ -489,6 +902,178 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetIsInsideRoguelite)
 }
 // End Class UYokaiShokanGameInstance Function SetIsInsideRoguelite
 
+// Begin Class UYokaiShokanGameInstance Function SetMasterVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventSetMasterVolume_Parms
+	{
+		float value;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_value;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetMasterVolume_Parms, value), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::NewProp_value,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "SetMasterVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::YokaiShokanGameInstance_eventSetMasterVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::YokaiShokanGameInstance_eventSetMasterVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetMasterVolume)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_value);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetMasterVolume(Z_Param_value);
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function SetMasterVolume
+
+// Begin Class UYokaiShokanGameInstance Function SetMusicVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventSetMusicVolume_Parms
+	{
+		float value;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_value;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetMusicVolume_Parms, value), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::NewProp_value,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "SetMusicVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::YokaiShokanGameInstance_eventSetMusicVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::YokaiShokanGameInstance_eventSetMusicVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetMusicVolume)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_value);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetMusicVolume(Z_Param_value);
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function SetMusicVolume
+
+// Begin Class UYokaiShokanGameInstance Function SetSFXVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventSetSFXVolume_Parms
+	{
+		float value;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_value;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetSFXVolume_Parms, value), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::NewProp_value,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "SetSFXVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::YokaiShokanGameInstance_eventSetSFXVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::YokaiShokanGameInstance_eventSetSFXVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetSFXVolume)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_value);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetSFXVolume(Z_Param_value);
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function SetSFXVolume
+
+// Begin Class UYokaiShokanGameInstance Function SetUIVolume
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics
+{
+	struct YokaiShokanGameInstance_eventSetUIVolume_Parms
+	{
+		float value;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Settings | Audio" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_value;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetUIVolume_Parms, value), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::NewProp_value,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "SetUIVolume", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::YokaiShokanGameInstance_eventSetUIVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::YokaiShokanGameInstance_eventSetUIVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetUIVolume)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_value);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetUIVolume(Z_Param_value);
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function SetUIVolume
+
 // Begin Class UYokaiShokanGameInstance
 void UYokaiShokanGameInstance::StaticRegisterNativesUYokaiShokanGameInstance()
 {
@@ -498,10 +1083,24 @@ void UYokaiShokanGameInstance::StaticRegisterNativesUYokaiShokanGameInstance()
 		{ "GetCurrentHealthPercentage", &UYokaiShokanGameInstance::execGetCurrentHealthPercentage },
 		{ "GetCurrentLevel", &UYokaiShokanGameInstance::execGetCurrentLevel },
 		{ "GetCurrentReward", &UYokaiShokanGameInstance::execGetCurrentReward },
+		{ "GetDialogueVolume", &UYokaiShokanGameInstance::execGetDialogueVolume },
+		{ "GetDifferentLevel", &UYokaiShokanGameInstance::execGetDifferentLevel },
 		{ "GetDifferentReward", &UYokaiShokanGameInstance::execGetDifferentReward },
+		{ "GetEnviromentVolume", &UYokaiShokanGameInstance::execGetEnviromentVolume },
+		{ "GetMasterVolume", &UYokaiShokanGameInstance::execGetMasterVolume },
+		{ "GetMusicVolume", &UYokaiShokanGameInstance::execGetMusicVolume },
+		{ "GetSFXVolume", &UYokaiShokanGameInstance::execGetSFXVolume },
+		{ "GetUIVolume", &UYokaiShokanGameInstance::execGetUIVolume },
+		{ "IncrementLevelCounter", &UYokaiShokanGameInstance::execIncrementLevelCounter },
 		{ "SetCurrentLevel", &UYokaiShokanGameInstance::execSetCurrentLevel },
 		{ "SetCurrentReward", &UYokaiShokanGameInstance::execSetCurrentReward },
+		{ "SetDialogueVolume", &UYokaiShokanGameInstance::execSetDialogueVolume },
+		{ "SetEnviromentVolume", &UYokaiShokanGameInstance::execSetEnviromentVolume },
 		{ "SetIsInsideRoguelite", &UYokaiShokanGameInstance::execSetIsInsideRoguelite },
+		{ "SetMasterVolume", &UYokaiShokanGameInstance::execSetMasterVolume },
+		{ "SetMusicVolume", &UYokaiShokanGameInstance::execSetMusicVolume },
+		{ "SetSFXVolume", &UYokaiShokanGameInstance::execSetSFXVolume },
+		{ "SetUIVolume", &UYokaiShokanGameInstance::execSetUIVolume },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -528,12 +1127,26 @@ struct Z_Construct_UClass_UYokaiShokanGameInstance_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentHealth, "GetCurrentHealth" }, // 480227573
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentHealthPercentage, "GetCurrentHealthPercentage" }, // 1430771872
-		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel, "GetCurrentLevel" }, // 524536052
-		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward, "GetCurrentReward" }, // 3994782522
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel, "GetCurrentLevel" }, // 87789901
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward, "GetCurrentReward" }, // 1011067332
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume, "GetDialogueVolume" }, // 3516143033
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel, "GetDifferentLevel" }, // 884787038
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward, "GetDifferentReward" }, // 1419401698
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume, "GetEnviromentVolume" }, // 3336832557
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume, "GetMasterVolume" }, // 3263111949
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume, "GetMusicVolume" }, // 362910556
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume, "GetSFXVolume" }, // 668703066
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume, "GetUIVolume" }, // 1601227542
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter, "IncrementLevelCounter" }, // 3007303996
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentLevel, "SetCurrentLevel" }, // 3818652800
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward, "SetCurrentReward" }, // 897470113
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume, "SetDialogueVolume" }, // 1100322039
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetEnviromentVolume, "SetEnviromentVolume" }, // 4249386688
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetIsInsideRoguelite, "SetIsInsideRoguelite" }, // 3515282623
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume, "SetMasterVolume" }, // 1659968934
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume, "SetMusicVolume" }, // 3398612190
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume, "SetSFXVolume" }, // 1644755972
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume, "SetUIVolume" }, // 1589086514
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -591,10 +1204,10 @@ struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_
 		{ ERewards_StaticEnum, TEXT("ERewards"), &Z_Registration_Info_UEnum_ERewards, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 312126965U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UYokaiShokanGameInstance, UYokaiShokanGameInstance::StaticClass, TEXT("UYokaiShokanGameInstance"), &Z_Registration_Info_UClass_UYokaiShokanGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UYokaiShokanGameInstance), 1124828805U) },
+		{ Z_Construct_UClass_UYokaiShokanGameInstance, UYokaiShokanGameInstance::StaticClass, TEXT("UYokaiShokanGameInstance"), &Z_Registration_Info_UClass_UYokaiShokanGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UYokaiShokanGameInstance), 836006754U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_180605865(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_374626630(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::EnumInfo));

@@ -21,8 +21,22 @@ enum class ERewards : uint8;
 	DECLARE_FUNCTION(execGetDifferentReward); \
 	DECLARE_FUNCTION(execSetCurrentReward); \
 	DECLARE_FUNCTION(execGetCurrentReward); \
+	DECLARE_FUNCTION(execIncrementLevelCounter); \
+	DECLARE_FUNCTION(execGetDifferentLevel); \
 	DECLARE_FUNCTION(execSetCurrentLevel); \
 	DECLARE_FUNCTION(execGetCurrentLevel); \
+	DECLARE_FUNCTION(execSetUIVolume); \
+	DECLARE_FUNCTION(execGetUIVolume); \
+	DECLARE_FUNCTION(execSetEnviromentVolume); \
+	DECLARE_FUNCTION(execGetEnviromentVolume); \
+	DECLARE_FUNCTION(execSetDialogueVolume); \
+	DECLARE_FUNCTION(execGetDialogueVolume); \
+	DECLARE_FUNCTION(execSetSFXVolume); \
+	DECLARE_FUNCTION(execGetSFXVolume); \
+	DECLARE_FUNCTION(execSetMusicVolume); \
+	DECLARE_FUNCTION(execGetMusicVolume); \
+	DECLARE_FUNCTION(execSetMasterVolume); \
+	DECLARE_FUNCTION(execGetMasterVolume); \
 	DECLARE_FUNCTION(execGetCurrentHealth); \
 	DECLARE_FUNCTION(execGetCurrentHealthPercentage);
 
