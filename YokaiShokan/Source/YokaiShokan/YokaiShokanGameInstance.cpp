@@ -6,8 +6,25 @@
 
 void UYokaiShokanGameInstance::Init()
 {
+	Super::Init();
+
 	//Character Stats
 	_CurrentHealth = MaxHealth;
+
+
+	//SkillTree Stats
+	for (size_t i{ 0 }; i < 10; ++i)
+	{
+		_SkillPointAvailability.Add(ESkillPointAvailability::DISABLED);
+	}
+
+	_SkillPointAvailability[0] = ESkillPointAvailability::AVAILABLE;
+
+	_SkillPointAvailability[1] = ESkillPointAvailability::AVAILABLE;
+
+	_AmountOfSkillPoints = 0;
+
+	_PlayerLevel = 1;
 	
 	//Level Randomization
 	_CurrentLevel = ECurrentLevel::TOTAL_LEVEL;
@@ -63,6 +80,42 @@ bool UYokaiShokanGameInstance::DamagePlayer(float damage)
 	UGameplayStatics::OpenLevel(this, "L_MainMenu");
 
 	return false;
+}
+
+TArray<ESkillPointAvailability> UYokaiShokanGameInstance::GetSkillPointAvailability()
+{
+	return _SkillPointAvailability;
+}
+
+void UYokaiShokanGameInstance::SetSkillPointAvailability(int index, ESkillPointAvailability skillPointStatus)
+{
+	_SkillPointAvailability[index] = skillPointStatus;
+}
+
+
+int UYokaiShokanGameInstance::GetAmountOfSkillPoints()
+{
+	return _AmountOfSkillPoints;
+}
+
+void UYokaiShokanGameInstance::IncrementSkillPoints()
+{
+	_AmountOfSkillPoints++;
+}
+
+void UYokaiShokanGameInstance::RemoveSkillPoints(int quantity)
+{
+	_AmountOfSkillPoints -= quantity;
+}
+
+int UYokaiShokanGameInstance::GetPlayerLevel()
+{
+	return _PlayerLevel;
+}
+
+void UYokaiShokanGameInstance::IncrementPlayerLevel()
+{
+	_PlayerLevel++;
 }
 
 //Setttings Functions
@@ -166,6 +219,12 @@ void UYokaiShokanGameInstance::SetIsInsideRoguelite(bool isInside)
 
 	_LevelCounter = 0;
 }
+
+bool UYokaiShokanGameInstance::GetIsInsideRoguelite()
+{
+	return _IsInsideRoguelite;
+}
+
 
 ERewards UYokaiShokanGameInstance::GetCurrentReward()
 {

@@ -16,6 +16,7 @@ YOKAISHOKAN_API UClass* Z_Construct_UClass_UYokaiShokanGameInstance();
 YOKAISHOKAN_API UClass* Z_Construct_UClass_UYokaiShokanGameInstance_NoRegister();
 YOKAISHOKAN_API UEnum* Z_Construct_UEnum_YokaiShokan_ECurrentLevel();
 YOKAISHOKAN_API UEnum* Z_Construct_UEnum_YokaiShokan_ERewards();
+YOKAISHOKAN_API UEnum* Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability();
 // End Cross Module References
 
 // Begin Enum ECurrentLevel
@@ -127,6 +128,104 @@ UEnum* Z_Construct_UEnum_YokaiShokan_ERewards()
 	return Z_Registration_Info_UEnum_ERewards.InnerSingleton;
 }
 // End Enum ERewards
+
+// Begin Enum ESkillPointAvailability
+static FEnumRegistrationInfo Z_Registration_Info_UEnum_ESkillPointAvailability;
+static UEnum* ESkillPointAvailability_StaticEnum()
+{
+	if (!Z_Registration_Info_UEnum_ESkillPointAvailability.OuterSingleton)
+	{
+		Z_Registration_Info_UEnum_ESkillPointAvailability.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability, (UObject*)Z_Construct_UPackage__Script_YokaiShokan(), TEXT("ESkillPointAvailability"));
+	}
+	return Z_Registration_Info_UEnum_ESkillPointAvailability.OuterSingleton;
+}
+template<> YOKAISHOKAN_API UEnum* StaticEnum<ESkillPointAvailability>()
+{
+	return ESkillPointAvailability_StaticEnum();
+}
+struct Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+		{ "ACQUIRED.Name", "ESkillPointAvailability::ACQUIRED" },
+		{ "AVAILABLE.Name", "ESkillPointAvailability::AVAILABLE" },
+		{ "BlueprintType", "true" },
+		{ "DISABLED.Name", "ESkillPointAvailability::DISABLED" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+		{ "TOTAL_AVAILABILITY.Name", "ESkillPointAvailability::TOTAL_AVAILABILITY" },
+	};
+#endif // WITH_METADATA
+	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "ESkillPointAvailability::AVAILABLE", (int64)ESkillPointAvailability::AVAILABLE },
+		{ "ESkillPointAvailability::DISABLED", (int64)ESkillPointAvailability::DISABLED },
+		{ "ESkillPointAvailability::ACQUIRED", (int64)ESkillPointAvailability::ACQUIRED },
+		{ "ESkillPointAvailability::TOTAL_AVAILABILITY", (int64)ESkillPointAvailability::TOTAL_AVAILABILITY },
+	};
+	static const UECodeGen_Private::FEnumParams EnumParams;
+};
+const UECodeGen_Private::FEnumParams Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability_Statics::EnumParams = {
+	(UObject*(*)())Z_Construct_UPackage__Script_YokaiShokan,
+	nullptr,
+	"ESkillPointAvailability",
+	"ESkillPointAvailability",
+	Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability_Statics::Enumerators,
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	UE_ARRAY_COUNT(Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability_Statics::Enumerators),
+	EEnumFlags::None,
+	(uint8)UEnum::ECppForm::EnumClass,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability_Statics::Enum_MetaDataParams), Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability_Statics::Enum_MetaDataParams)
+};
+UEnum* Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability()
+{
+	if (!Z_Registration_Info_UEnum_ESkillPointAvailability.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_ESkillPointAvailability.InnerSingleton, Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability_Statics::EnumParams);
+	}
+	return Z_Registration_Info_UEnum_ESkillPointAvailability.InnerSingleton;
+}
+// End Enum ESkillPointAvailability
+
+// Begin Class UYokaiShokanGameInstance Function GetAmountOfSkillPoints
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics
+{
+	struct YokaiShokanGameInstance_eventGetAmountOfSkillPoints_Parms
+	{
+		int32 ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetAmountOfSkillPoints_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetAmountOfSkillPoints", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::YokaiShokanGameInstance_eventGetAmountOfSkillPoints_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::YokaiShokanGameInstance_eventGetAmountOfSkillPoints_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetAmountOfSkillPoints)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetAmountOfSkillPoints();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetAmountOfSkillPoints
 
 // Begin Class UYokaiShokanGameInstance Function GetCurrentHealth
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentHealth_Statics
@@ -478,6 +577,53 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetEnviromentVolume)
 }
 // End Class UYokaiShokanGameInstance Function GetEnviromentVolume
 
+// Begin Class UYokaiShokanGameInstance Function GetIsInsideRoguelite
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics
+{
+	struct YokaiShokanGameInstance_eventGetIsInsideRoguelite_Parms
+	{
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Levels | Randomization" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((YokaiShokanGameInstance_eventGetIsInsideRoguelite_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(YokaiShokanGameInstance_eventGetIsInsideRoguelite_Parms), &Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetIsInsideRoguelite", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::YokaiShokanGameInstance_eventGetIsInsideRoguelite_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::YokaiShokanGameInstance_eventGetIsInsideRoguelite_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetIsInsideRoguelite)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->GetIsInsideRoguelite();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetIsInsideRoguelite
+
 // Begin Class UYokaiShokanGameInstance Function GetMasterVolume
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume_Statics
 {
@@ -562,6 +708,48 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetMusicVolume)
 }
 // End Class UYokaiShokanGameInstance Function GetMusicVolume
 
+// Begin Class UYokaiShokanGameInstance Function GetPlayerLevel
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics
+{
+	struct YokaiShokanGameInstance_eventGetPlayerLevel_Parms
+	{
+		int32 ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetPlayerLevel_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetPlayerLevel", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::YokaiShokanGameInstance_eventGetPlayerLevel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::YokaiShokanGameInstance_eventGetPlayerLevel_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetPlayerLevel)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetPlayerLevel();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetPlayerLevel
+
 // Begin Class UYokaiShokanGameInstance Function GetSFXVolume
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume_Statics
 {
@@ -603,6 +791,60 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetSFXVolume)
 	P_NATIVE_END;
 }
 // End Class UYokaiShokanGameInstance Function GetSFXVolume
+
+// Begin Class UYokaiShokanGameInstance Function GetSkillPointAvailability
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics
+{
+	struct YokaiShokanGameInstance_eventGetSkillPointAvailability_Parms
+	{
+		TArray<ESkillPointAvailability> ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//SkillTree\n" },
+#endif
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "SkillTree" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Inner_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::NewProp_ReturnValue_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability, METADATA_PARAMS(0, nullptr) }; // 1887813998
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetSkillPointAvailability_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 1887813998
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::NewProp_ReturnValue_Inner_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::NewProp_ReturnValue_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetSkillPointAvailability", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::YokaiShokanGameInstance_eventGetSkillPointAvailability_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::YokaiShokanGameInstance_eventGetSkillPointAvailability_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetSkillPointAvailability)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(TArray<ESkillPointAvailability>*)Z_Param__Result=P_THIS->GetSkillPointAvailability();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetSkillPointAvailability
 
 // Begin Class UYokaiShokanGameInstance Function GetUIVolume
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume_Statics
@@ -675,6 +917,109 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execIncrementLevelCounter)
 	P_NATIVE_END;
 }
 // End Class UYokaiShokanGameInstance Function IncrementLevelCounter
+
+// Begin Class UYokaiShokanGameInstance Function IncrementPlayerLevel
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementPlayerLevel_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementPlayerLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "IncrementPlayerLevel", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementPlayerLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementPlayerLevel_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementPlayerLevel()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementPlayerLevel_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execIncrementPlayerLevel)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncrementPlayerLevel();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function IncrementPlayerLevel
+
+// Begin Class UYokaiShokanGameInstance Function IncrementSkillPoints
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementSkillPoints_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementSkillPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "IncrementSkillPoints", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementSkillPoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementSkillPoints_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementSkillPoints()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementSkillPoints_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execIncrementSkillPoints)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncrementSkillPoints();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function IncrementSkillPoints
+
+// Begin Class UYokaiShokanGameInstance Function RemoveSkillPoints
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics
+{
+	struct YokaiShokanGameInstance_eventRemoveSkillPoints_Parms
+	{
+		int32 quantity;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_quantity;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::NewProp_quantity = { "quantity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventRemoveSkillPoints_Parms, quantity), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::NewProp_quantity,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "RemoveSkillPoints", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::YokaiShokanGameInstance_eventRemoveSkillPoints_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::YokaiShokanGameInstance_eventRemoveSkillPoints_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execRemoveSkillPoints)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_quantity);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->RemoveSkillPoints(Z_Param_quantity);
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function RemoveSkillPoints
 
 // Begin Class UYokaiShokanGameInstance Function SetCurrentLevel
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentLevel_Statics
@@ -1031,6 +1376,57 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetSFXVolume)
 }
 // End Class UYokaiShokanGameInstance Function SetSFXVolume
 
+// Begin Class UYokaiShokanGameInstance Function SetSkillPointAvailability
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics
+{
+	struct YokaiShokanGameInstance_eventSetSkillPointAvailability_Parms
+	{
+		int32 index;
+		ESkillPointAvailability skillPointStatus;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_index;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_skillPointStatus_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_skillPointStatus;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::NewProp_index = { "index", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetSkillPointAvailability_Parms, index), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::NewProp_skillPointStatus_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::NewProp_skillPointStatus = { "skillPointStatus", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventSetSkillPointAvailability_Parms, skillPointStatus), Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability, METADATA_PARAMS(0, nullptr) }; // 1887813998
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::NewProp_index,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::NewProp_skillPointStatus_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::NewProp_skillPointStatus,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "SetSkillPointAvailability", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::YokaiShokanGameInstance_eventSetSkillPointAvailability_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::YokaiShokanGameInstance_eventSetSkillPointAvailability_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execSetSkillPointAvailability)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_index);
+	P_GET_ENUM(ESkillPointAvailability,Z_Param_skillPointStatus);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetSkillPointAvailability(Z_Param_index,ESkillPointAvailability(Z_Param_skillPointStatus));
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function SetSkillPointAvailability
+
 // Begin Class UYokaiShokanGameInstance Function SetUIVolume
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume_Statics
 {
@@ -1079,6 +1475,7 @@ void UYokaiShokanGameInstance::StaticRegisterNativesUYokaiShokanGameInstance()
 {
 	UClass* Class = UYokaiShokanGameInstance::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "GetAmountOfSkillPoints", &UYokaiShokanGameInstance::execGetAmountOfSkillPoints },
 		{ "GetCurrentHealth", &UYokaiShokanGameInstance::execGetCurrentHealth },
 		{ "GetCurrentHealthPercentage", &UYokaiShokanGameInstance::execGetCurrentHealthPercentage },
 		{ "GetCurrentLevel", &UYokaiShokanGameInstance::execGetCurrentLevel },
@@ -1087,11 +1484,17 @@ void UYokaiShokanGameInstance::StaticRegisterNativesUYokaiShokanGameInstance()
 		{ "GetDifferentLevel", &UYokaiShokanGameInstance::execGetDifferentLevel },
 		{ "GetDifferentReward", &UYokaiShokanGameInstance::execGetDifferentReward },
 		{ "GetEnviromentVolume", &UYokaiShokanGameInstance::execGetEnviromentVolume },
+		{ "GetIsInsideRoguelite", &UYokaiShokanGameInstance::execGetIsInsideRoguelite },
 		{ "GetMasterVolume", &UYokaiShokanGameInstance::execGetMasterVolume },
 		{ "GetMusicVolume", &UYokaiShokanGameInstance::execGetMusicVolume },
+		{ "GetPlayerLevel", &UYokaiShokanGameInstance::execGetPlayerLevel },
 		{ "GetSFXVolume", &UYokaiShokanGameInstance::execGetSFXVolume },
+		{ "GetSkillPointAvailability", &UYokaiShokanGameInstance::execGetSkillPointAvailability },
 		{ "GetUIVolume", &UYokaiShokanGameInstance::execGetUIVolume },
 		{ "IncrementLevelCounter", &UYokaiShokanGameInstance::execIncrementLevelCounter },
+		{ "IncrementPlayerLevel", &UYokaiShokanGameInstance::execIncrementPlayerLevel },
+		{ "IncrementSkillPoints", &UYokaiShokanGameInstance::execIncrementSkillPoints },
+		{ "RemoveSkillPoints", &UYokaiShokanGameInstance::execRemoveSkillPoints },
 		{ "SetCurrentLevel", &UYokaiShokanGameInstance::execSetCurrentLevel },
 		{ "SetCurrentReward", &UYokaiShokanGameInstance::execSetCurrentReward },
 		{ "SetDialogueVolume", &UYokaiShokanGameInstance::execSetDialogueVolume },
@@ -1100,6 +1503,7 @@ void UYokaiShokanGameInstance::StaticRegisterNativesUYokaiShokanGameInstance()
 		{ "SetMasterVolume", &UYokaiShokanGameInstance::execSetMasterVolume },
 		{ "SetMusicVolume", &UYokaiShokanGameInstance::execSetMusicVolume },
 		{ "SetSFXVolume", &UYokaiShokanGameInstance::execSetSFXVolume },
+		{ "SetSkillPointAvailability", &UYokaiShokanGameInstance::execSetSkillPointAvailability },
 		{ "SetUIVolume", &UYokaiShokanGameInstance::execSetUIVolume },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -1125,6 +1529,7 @@ struct Z_Construct_UClass_UYokaiShokanGameInstance_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetAmountOfSkillPoints, "GetAmountOfSkillPoints" }, // 1704723709
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentHealth, "GetCurrentHealth" }, // 480227573
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentHealthPercentage, "GetCurrentHealthPercentage" }, // 1430771872
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel, "GetCurrentLevel" }, // 87789901
@@ -1133,11 +1538,17 @@ struct Z_Construct_UClass_UYokaiShokanGameInstance_Statics
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel, "GetDifferentLevel" }, // 884787038
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward, "GetDifferentReward" }, // 1419401698
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume, "GetEnviromentVolume" }, // 3336832557
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite, "GetIsInsideRoguelite" }, // 2402711800
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume, "GetMasterVolume" }, // 3263111949
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume, "GetMusicVolume" }, // 362910556
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel, "GetPlayerLevel" }, // 4140460456
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume, "GetSFXVolume" }, // 668703066
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability, "GetSkillPointAvailability" }, // 1108192212
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume, "GetUIVolume" }, // 1601227542
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter, "IncrementLevelCounter" }, // 3007303996
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementPlayerLevel, "IncrementPlayerLevel" }, // 1692563744
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementSkillPoints, "IncrementSkillPoints" }, // 2565205507
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_RemoveSkillPoints, "RemoveSkillPoints" }, // 4239783497
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentLevel, "SetCurrentLevel" }, // 3818652800
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetCurrentReward, "SetCurrentReward" }, // 897470113
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetDialogueVolume, "SetDialogueVolume" }, // 1100322039
@@ -1146,6 +1557,7 @@ struct Z_Construct_UClass_UYokaiShokanGameInstance_Statics
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetMasterVolume, "SetMasterVolume" }, // 1659968934
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetMusicVolume, "SetMusicVolume" }, // 3398612190
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetSFXVolume, "SetSFXVolume" }, // 1644755972
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetSkillPointAvailability, "SetSkillPointAvailability" }, // 1997238434
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_SetUIVolume, "SetUIVolume" }, // 1589086514
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -1202,12 +1614,13 @@ struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ ECurrentLevel_StaticEnum, TEXT("ECurrentLevel"), &Z_Registration_Info_UEnum_ECurrentLevel, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2511653475U) },
 		{ ERewards_StaticEnum, TEXT("ERewards"), &Z_Registration_Info_UEnum_ERewards, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 312126965U) },
+		{ ESkillPointAvailability_StaticEnum, TEXT("ESkillPointAvailability"), &Z_Registration_Info_UEnum_ESkillPointAvailability, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1887813998U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UYokaiShokanGameInstance, UYokaiShokanGameInstance::StaticClass, TEXT("UYokaiShokanGameInstance"), &Z_Registration_Info_UClass_UYokaiShokanGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UYokaiShokanGameInstance), 836006754U) },
+		{ Z_Construct_UClass_UYokaiShokanGameInstance, UYokaiShokanGameInstance::StaticClass, TEXT("UYokaiShokanGameInstance"), &Z_Registration_Info_UClass_UYokaiShokanGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UYokaiShokanGameInstance), 2347164260U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_374626630(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_2175780811(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::EnumInfo));

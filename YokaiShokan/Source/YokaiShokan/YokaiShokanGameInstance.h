@@ -23,6 +23,14 @@ enum class ERewards : uint8
 	TOTAL_REWARDS
 };
 
+UENUM(BlueprintType)
+enum class ESkillPointAvailability : uint8
+{
+	AVAILABLE,
+	DISABLED,
+	ACQUIRED,
+	TOTAL_AVAILABILITY
+};
 
 UCLASS()
 class YOKAISHOKAN_API UYokaiShokanGameInstance : public UGameInstance
@@ -46,9 +54,38 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Character | Stats")
 	float MaxHealth;
 
+	UFUNCTION(BlueprintPure, Category = "Character | Stats")
+	int GetPlayerLevel();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void IncrementPlayerLevel();
+
+	//SkillTree
+	
+	UFUNCTION(BlueprintPure, Category = "Character | Stats")
+	TArray<ESkillPointAvailability> GetSkillPointAvailability();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void SetSkillPointAvailability(int index, ESkillPointAvailability skillPointStatus);
+
+	UFUNCTION(BlueprintPure, Category = "Character | Stats")
+	int GetAmountOfSkillPoints();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void IncrementSkillPoints();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void RemoveSkillPoints(int quantity);
+
 protected:
 
 	float _CurrentHealth;
+
+	TArray<ESkillPointAvailability> _SkillPointAvailability;
+
+	int _AmountOfSkillPoints;
+
+	int _PlayerLevel;
 
 //************************// Permanent Settings Options //************************//
 public:
@@ -130,6 +167,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Levels | Randomization")
 	void SetIsInsideRoguelite(bool isInside);
+
+	UFUNCTION(BlueprintPure, Category = "Levels | Randomization")
+	bool GetIsInsideRoguelite();
 
 	virtual void Init() override;
 
