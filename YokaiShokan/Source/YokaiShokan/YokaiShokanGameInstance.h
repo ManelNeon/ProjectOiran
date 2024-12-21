@@ -37,6 +37,10 @@ class YOKAISHOKAN_API UYokaiShokanGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 
+public:
+
+	virtual void Init() override;
+
 //************************// Character Permanent Stats //************************//
 public:
 
@@ -45,6 +49,18 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Character | Stats", meta = (DisplayName = "Get HP"))
 	float GetCurrentHealth();
+
+	UFUNCTION(BlueprintPure, Category = "Character | Stats")
+	float GetMaxHealth();
+
+	UFUNCTION(BlueprintPure, Category = "Character | Stats")
+	float GetDamageStat();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void IncreasePlayerHealth();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void IncreasePlayerDamage();
 
 	void HealPlayer(float amount);
 
@@ -61,7 +77,6 @@ public:
 	void IncrementPlayerLevel();
 
 	//SkillTree
-	
 	UFUNCTION(BlueprintPure, Category = "Character | Stats")
 	TArray<ESkillPointAvailability> GetSkillPointAvailability();
 
@@ -81,11 +96,14 @@ protected:
 
 	float _CurrentHealth;
 
+	int _PlayerLevel;
+
+	float _DamageStat;
+
+	//SkillTree
 	TArray<ESkillPointAvailability> _SkillPointAvailability;
 
 	int _AmountOfSkillPoints;
-
-	int _PlayerLevel;
 
 //************************// Permanent Settings Options //************************//
 public:
@@ -171,8 +189,6 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Levels | Randomization")
 	bool GetIsInsideRoguelite();
 
-	virtual void Init() override;
-
 protected:
 
 	//Counts the level we're in so that we teleport the player to the boss in the end
@@ -182,6 +198,5 @@ protected:
 
 	ERewards _CurrentReward;
 
-	bool _IsInsideRoguelite;
-	
+	bool _IsInsideRoguelite;	
 };

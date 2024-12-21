@@ -46,6 +46,10 @@ enum class ESkillPointAvailability : uint8;
 	DECLARE_FUNCTION(execGetSkillPointAvailability); \
 	DECLARE_FUNCTION(execIncrementPlayerLevel); \
 	DECLARE_FUNCTION(execGetPlayerLevel); \
+	DECLARE_FUNCTION(execIncreasePlayerDamage); \
+	DECLARE_FUNCTION(execIncreasePlayerHealth); \
+	DECLARE_FUNCTION(execGetDamageStat); \
+	DECLARE_FUNCTION(execGetMaxHealth); \
 	DECLARE_FUNCTION(execGetCurrentHealth); \
 	DECLARE_FUNCTION(execGetCurrentHealthPercentage);
 

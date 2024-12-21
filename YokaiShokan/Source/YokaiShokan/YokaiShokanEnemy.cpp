@@ -2,6 +2,7 @@
 
 
 #include "YokaiShokanEnemy.h"
+#include "YokaiShokanGameInstance.h"
 
 // Sets default values
 AYokaiShokanEnemy::AYokaiShokanEnemy()
@@ -15,7 +16,17 @@ void AYokaiShokanEnemy::BeginPlay()
 {
 	Super::BeginPlay();
 
-	_CurrentHealth = _MaxHealth;
+	int playerLevel = Cast<UYokaiShokanGameInstance>(GetGameInstance())->GetPlayerLevel();
+	
+	if (playerLevel == 1)
+	{
+		_CurrentHealth = _MaxHealth; 
+		return;
+	}
+
+	_CurrentHealth = _MaxHealth + (playerLevel * 5);
+
+	_DamageValue += (playerLevel * 2);
 }
 
 void AYokaiShokanEnemy::SetLevelRandomizer(ALevelRandomizer* levelManager)
@@ -36,4 +47,10 @@ void AYokaiShokanEnemy::DamageThis(float damage)
 
 	if (_CurrentHealth > _MaxHealth) _CurrentHealth = _MaxHealth;
 }
+
+float AYokaiShokanEnemy::GetDamageValue()
+{
+	return _DamageValue;
+}
+
 

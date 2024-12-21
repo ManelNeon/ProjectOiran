@@ -51,14 +51,6 @@ class AYokaiShokanCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category =Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* DashAction;
 
-	/** Light Attack Input Action */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
-	UInputAction* LightAttackAction;
-
-	/** Heavy Attack Input Action */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
-	UInputAction* HeavyAttackAction;
-
 	/** Special One Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* SpecialOneAction;
@@ -95,8 +87,6 @@ public:
 protected:
 	virtual void BeginPlay();
 
-	virtual void Jump() override;
-
 public:
 		
 	/** Look Input Action */
@@ -111,10 +101,6 @@ protected:
 	void Look(const FInputActionValue& Value);
 
 	void Dash();
-
-	void LightAttack();
-
-	void HeavyAttack();
 
 	void SpecialAttackOne();
 

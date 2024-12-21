@@ -56,10 +56,6 @@ void AYokaiShokanCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 	// Set up action bindings
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
-		// Jumping
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
-
 		// Moving
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AYokaiShokanCharacter::Move);
 
@@ -67,10 +63,6 @@ void AYokaiShokanCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AYokaiShokanCharacter::Look);
 
 		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::Dash);
-
-		EnhancedInputComponent->BindAction(LightAttackAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::LightAttack);
-
-		EnhancedInputComponent->BindAction(HeavyAttackAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::HeavyAttack);
 
 		EnhancedInputComponent->BindAction(SpecialOneAction, ETriggerEvent::Started, this, &AYokaiShokanCharacter::SpecialAttackOne);
 
@@ -112,13 +104,6 @@ void AYokaiShokanCharacter::Look(const FInputActionValue& Value)
 	}
 }
 
-void AYokaiShokanCharacter::Jump()
-{
-	if (_IsDashing) return;
-
-	Super::Jump();
-}
-
 void AYokaiShokanCharacter::HealPlayer(float amount)
 {
 	auto gameInstance = GetGameInstance();
@@ -148,6 +133,8 @@ void AYokaiShokanCharacter::DamagePlayer(float damage)
 
 void AYokaiShokanCharacter::Dash()
 {
+	if (!Cast<UYokaiShokanGameInstance>(GetGameInstance())->GetIsInsideRoguelite()) return;
+
 	if (_IsDashing)
 	{
 		_IsDashing = false;
@@ -193,21 +180,20 @@ bool AYokaiShokanCharacter::GetDashAvailability()
 	return _CanDash;
 }
 
-void AYokaiShokanCharacter::LightAttack()
-{
-}
-
-void AYokaiShokanCharacter::HeavyAttack()
-{
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Heavy Attack"));
-}
-
 void AYokaiShokanCharacter::SpecialAttackOne()
 {
+	auto yokaiGameInstance = Cast<UYokaiShokanGameInstance>(GetGameInstance());
+
+	if (yokaiGameInstance->GetSkillPointAvailability()[4] != ESkillPointAvailability::ACQUIRED) return;
+
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Special Attack One"));
 }
 
 void AYokaiShokanCharacter::SpecialAttackTwo()
 {
+	auto yokaiGameInstance = Cast<UYokaiShokanGameInstance>(GetGameInstance());
+
+	if (yokaiGameInstance->GetSkillPointAvailability()[9] != ESkillPointAvailability::ACQUIRED) return;
+	
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Special Attack Two"));
 }

@@ -25,6 +25,9 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Enemy | Stats")
 	void DamageThis(float damage);
 
+	UFUNCTION(BlueprintPure, Category = "Enemy | Stats")
+	float GetDamageValue();
+
 	ALevelRandomizer* _LevelManager;
 
 	float _CurrentHealth;

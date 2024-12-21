@@ -11,6 +11,7 @@ void UYokaiShokanGameInstance::Init()
 	//Character Stats
 	_CurrentHealth = MaxHealth;
 
+	_DamageStat = 25;
 
 	//SkillTree Stats
 	for (size_t i{ 0 }; i < 10; ++i)
@@ -59,6 +60,27 @@ float UYokaiShokanGameInstance::GetCurrentHealthPercentage()
 float UYokaiShokanGameInstance::GetCurrentHealth()
 {
 	return _CurrentHealth;
+}
+
+float UYokaiShokanGameInstance::GetMaxHealth()
+{
+	return MaxHealth;
+}
+
+float UYokaiShokanGameInstance::GetDamageStat()
+{
+	return _DamageStat;
+}
+
+void UYokaiShokanGameInstance::IncreasePlayerHealth()
+{
+	MaxHealth += 30;
+	_CurrentHealth = MaxHealth;
+}
+
+void UYokaiShokanGameInstance::IncreasePlayerDamage()
+{
+	_DamageStat += 10;
 }
 
 void UYokaiShokanGameInstance::HealPlayer(float amount)
@@ -116,6 +138,12 @@ int UYokaiShokanGameInstance::GetPlayerLevel()
 void UYokaiShokanGameInstance::IncrementPlayerLevel()
 {
 	_PlayerLevel++;
+
+	_DamageStat += 5;
+
+	MaxHealth += 15;
+
+	_CurrentHealth = MaxHealth;
 }
 
 //Setttings Functions

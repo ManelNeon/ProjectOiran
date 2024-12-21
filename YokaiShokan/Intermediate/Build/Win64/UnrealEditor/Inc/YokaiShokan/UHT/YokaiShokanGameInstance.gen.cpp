@@ -403,6 +403,48 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetCurrentReward)
 }
 // End Class UYokaiShokanGameInstance Function GetCurrentReward
 
+// Begin Class UYokaiShokanGameInstance Function GetDamageStat
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics
+{
+	struct YokaiShokanGameInstance_eventGetDamageStat_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetDamageStat_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetDamageStat", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::YokaiShokanGameInstance_eventGetDamageStat_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::YokaiShokanGameInstance_eventGetDamageStat_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetDamageStat)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetDamageStat();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetDamageStat
+
 // Begin Class UYokaiShokanGameInstance Function GetDialogueVolume
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume_Statics
 {
@@ -666,6 +708,48 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetMasterVolume)
 }
 // End Class UYokaiShokanGameInstance Function GetMasterVolume
 
+// Begin Class UYokaiShokanGameInstance Function GetMaxHealth
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics
+{
+	struct YokaiShokanGameInstance_eventGetMaxHealth_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanGameInstance_eventGetMaxHealth_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "GetMaxHealth", nullptr, nullptr, Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::YokaiShokanGameInstance_eventGetMaxHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::YokaiShokanGameInstance_eventGetMaxHealth_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetMaxHealth)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetMaxHealth();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function GetMaxHealth
+
 // Begin Class UYokaiShokanGameInstance Function GetMusicVolume
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume_Statics
 {
@@ -887,6 +971,66 @@ DEFINE_FUNCTION(UYokaiShokanGameInstance::execGetUIVolume)
 	P_NATIVE_END;
 }
 // End Class UYokaiShokanGameInstance Function GetUIVolume
+
+// Begin Class UYokaiShokanGameInstance Function IncreasePlayerDamage
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerDamage_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "IncreasePlayerDamage", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerDamage_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerDamage_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerDamage()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerDamage_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execIncreasePlayerDamage)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncreasePlayerDamage();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function IncreasePlayerDamage
+
+// Begin Class UYokaiShokanGameInstance Function IncreasePlayerHealth
+struct Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerHealth_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanGameInstance.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UYokaiShokanGameInstance, nullptr, "IncreasePlayerHealth", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerHealth_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerHealth()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerHealth_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UYokaiShokanGameInstance::execIncreasePlayerHealth)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncreasePlayerHealth();
+	P_NATIVE_END;
+}
+// End Class UYokaiShokanGameInstance Function IncreasePlayerHealth
 
 // Begin Class UYokaiShokanGameInstance Function IncrementLevelCounter
 struct Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter_Statics
@@ -1480,17 +1624,21 @@ void UYokaiShokanGameInstance::StaticRegisterNativesUYokaiShokanGameInstance()
 		{ "GetCurrentHealthPercentage", &UYokaiShokanGameInstance::execGetCurrentHealthPercentage },
 		{ "GetCurrentLevel", &UYokaiShokanGameInstance::execGetCurrentLevel },
 		{ "GetCurrentReward", &UYokaiShokanGameInstance::execGetCurrentReward },
+		{ "GetDamageStat", &UYokaiShokanGameInstance::execGetDamageStat },
 		{ "GetDialogueVolume", &UYokaiShokanGameInstance::execGetDialogueVolume },
 		{ "GetDifferentLevel", &UYokaiShokanGameInstance::execGetDifferentLevel },
 		{ "GetDifferentReward", &UYokaiShokanGameInstance::execGetDifferentReward },
 		{ "GetEnviromentVolume", &UYokaiShokanGameInstance::execGetEnviromentVolume },
 		{ "GetIsInsideRoguelite", &UYokaiShokanGameInstance::execGetIsInsideRoguelite },
 		{ "GetMasterVolume", &UYokaiShokanGameInstance::execGetMasterVolume },
+		{ "GetMaxHealth", &UYokaiShokanGameInstance::execGetMaxHealth },
 		{ "GetMusicVolume", &UYokaiShokanGameInstance::execGetMusicVolume },
 		{ "GetPlayerLevel", &UYokaiShokanGameInstance::execGetPlayerLevel },
 		{ "GetSFXVolume", &UYokaiShokanGameInstance::execGetSFXVolume },
 		{ "GetSkillPointAvailability", &UYokaiShokanGameInstance::execGetSkillPointAvailability },
 		{ "GetUIVolume", &UYokaiShokanGameInstance::execGetUIVolume },
+		{ "IncreasePlayerDamage", &UYokaiShokanGameInstance::execIncreasePlayerDamage },
+		{ "IncreasePlayerHealth", &UYokaiShokanGameInstance::execIncreasePlayerHealth },
 		{ "IncrementLevelCounter", &UYokaiShokanGameInstance::execIncrementLevelCounter },
 		{ "IncrementPlayerLevel", &UYokaiShokanGameInstance::execIncrementPlayerLevel },
 		{ "IncrementSkillPoints", &UYokaiShokanGameInstance::execIncrementSkillPoints },
@@ -1534,17 +1682,21 @@ struct Z_Construct_UClass_UYokaiShokanGameInstance_Statics
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentHealthPercentage, "GetCurrentHealthPercentage" }, // 1430771872
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentLevel, "GetCurrentLevel" }, // 87789901
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetCurrentReward, "GetCurrentReward" }, // 1011067332
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDamageStat, "GetDamageStat" }, // 1828409199
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDialogueVolume, "GetDialogueVolume" }, // 3516143033
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentLevel, "GetDifferentLevel" }, // 884787038
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetDifferentReward, "GetDifferentReward" }, // 1419401698
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetEnviromentVolume, "GetEnviromentVolume" }, // 3336832557
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetIsInsideRoguelite, "GetIsInsideRoguelite" }, // 2402711800
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetMasterVolume, "GetMasterVolume" }, // 3263111949
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetMaxHealth, "GetMaxHealth" }, // 348087410
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetMusicVolume, "GetMusicVolume" }, // 362910556
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetPlayerLevel, "GetPlayerLevel" }, // 4140460456
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetSFXVolume, "GetSFXVolume" }, // 668703066
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetSkillPointAvailability, "GetSkillPointAvailability" }, // 1108192212
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_GetUIVolume, "GetUIVolume" }, // 1601227542
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerDamage, "IncreasePlayerDamage" }, // 2548830792
+		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncreasePlayerHealth, "IncreasePlayerHealth" }, // 1140872987
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementLevelCounter, "IncrementLevelCounter" }, // 3007303996
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementPlayerLevel, "IncrementPlayerLevel" }, // 1692563744
 		{ &Z_Construct_UFunction_UYokaiShokanGameInstance_IncrementSkillPoints, "IncrementSkillPoints" }, // 2565205507
@@ -1617,10 +1769,10 @@ struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_
 		{ ESkillPointAvailability_StaticEnum, TEXT("ESkillPointAvailability"), &Z_Registration_Info_UEnum_ESkillPointAvailability, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1887813998U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UYokaiShokanGameInstance, UYokaiShokanGameInstance::StaticClass, TEXT("UYokaiShokanGameInstance"), &Z_Registration_Info_UClass_UYokaiShokanGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UYokaiShokanGameInstance), 2347164260U) },
+		{ Z_Construct_UClass_UYokaiShokanGameInstance, UYokaiShokanGameInstance::StaticClass, TEXT("UYokaiShokanGameInstance"), &Z_Registration_Info_UClass_UYokaiShokanGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UYokaiShokanGameInstance), 2904706943U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_2175780811(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_915873723(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_Statics::EnumInfo));
