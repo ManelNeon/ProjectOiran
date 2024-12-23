@@ -40,10 +40,22 @@
     <ClInclude Include="..\..\Source\YokaiShokan\DialogueBox.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\InventoryGameInstanceSubsystem.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\InventoryGameInstanceSubsystem.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\LevelRandomizer.cpp">
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\LevelRandomizer.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\LoreItem.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\LoreItem.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\NPCCharacter.cpp">
