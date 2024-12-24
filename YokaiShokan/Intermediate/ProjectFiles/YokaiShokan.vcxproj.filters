@@ -46,6 +46,12 @@
     <ClInclude Include="..\..\Source\YokaiShokan\InventoryGameInstanceSubsystem.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\LevelManagerInstanceSubsystem.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\LevelManagerInstanceSubsystem.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\LevelRandomizer.cpp">
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
@@ -68,6 +74,18 @@
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\PickUp.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\SettingsGameInstanceSubsystem.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\SettingsGameInstanceSubsystem.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\StatsGameInstanceSubsystem.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\StatsGameInstanceSubsystem.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
     <None Include="..\..\Source\YokaiShokan\YokaiShokan.Build.cs">

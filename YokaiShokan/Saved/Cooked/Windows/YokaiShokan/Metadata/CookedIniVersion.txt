@@ -1,7 +1,7 @@
 [UsedSettings]
 Windows.Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Game/FirstPerson/GameInstance/BP_GameInstance.BP_GameInstance_C
 Windows.Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Levels/Game/L_MainMenu.L_MainMenu
-Windows.Engine:/Script/EngineSettings.GameMapsSettings:ServerDefaultMap:0=/Engine/Maps/Entry
+Windows.Engine:/Script/EngineSettings.GameMapsSettings:ServerDefaultMap:0=/Engine/Maps/Entry.Entry
 Windows.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/FirstPerson/Blueprints/BP_FirstPersonGameMode.BP_FirstPersonGameMode_C
 Windows.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultServerGameMode:0=None
 Windows.Engine:Core.System:CanUseUnversionedPropertySerialization:0=True
@@ -149,13 +149,15 @@ MetaHumanProjectUtilities:/Script/MetaHumanProjectUtilities.MetaHumanProjectUtil
 Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Game/FirstPerson/GameInstance/BP_GameInstance.BP_GameInstance_C
 Engine:/Script/EngineSettings.GameMapsSettings:EditorStartupMap:0=/Game/FirstPerson/Maps/FirstPersonMap.FirstPersonMap
 Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Levels/Game/L_MainMenu.L_MainMenu
-Engine:/Script/EngineSettings.GameMapsSettings:ServerDefaultMap:0=/Engine/Maps/Entry
+Engine:/Script/EngineSettings.GameMapsSettings:ServerDefaultMap:0=/Engine/Maps/Entry.Entry
 Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/FirstPerson/Blueprints/BP_FirstPersonGameMode.BP_FirstPersonGameMode_C
 Engine:/Script/EngineSettings.GameMapsSettings:LocalMapOptions:0=
-Engine:/Script/EngineSettings.GameMapsSettings:TransitionMap:0=
+Engine:/Script/EngineSettings.GameMapsSettings:TransitionMap:0=None
 Engine:/Script/EngineSettings.GameMapsSettings:bUseSplitscreen:0=True
 Engine:/Script/EngineSettings.GameMapsSettings:TwoPlayerSplitscreenLayout:0=Horizontal
 Engine:/Script/EngineSettings.GameMapsSettings:ThreePlayerSplitscreenLayout:0=FavorTop
+Engine:/Script/EngineSettings.GameMapsSettings:FourPlayerSplitscreenLayout:0=Grid
+Engine:/Script/EngineSettings.GameMapsSettings:bOffsetPlayerGamepadIds:0=False
 Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultServerGameMode:0=None
 Engine:InstallBundleManager:EditorModuleName:0=NullInstallBundleManager
 Engine:URL:Protocol:0=unreal
@@ -437,7 +439,6 @@ Engine:DevOptions.Shaders:bLogJobCompletionTimes:0=False
 Engine:DevOptions.Shaders:ProcessGameThreadTargetTime:0=.01
 Engine:DevOptions.Shaders:WorkerTimeToLive:0=20
 Engine:DevOptions.Shaders:BuildWorkerTimeToLive:0=1200
-Engine:DevOptions.Shaders:WorkerProcessPriority:0=-1
 Engine:DevOptions.Shaders:bForceUseSCWMemoryPressureLimits:0=False
 Engine:LogFiles:PurgeLogsDays:0=5
 Engine:LogFiles:MaxLogFilesOnDisk:0=10
@@ -765,7 +766,7 @@ Engine:/Script/ChaosVD.ChaosVDEditorSettings:SimOnlyMeshesMaterial:0=/ChaosVD/Ma
 Engine:/Script/ChaosVD.ChaosVDEditorSettings:InstancedMeshesMaterial:0=/ChaosVD/Materials/ChaosVDInstanced.ChaosVDInstanced
 Engine:/Script/ChaosVD.ChaosVDEditorSettings:InstancedMeshesQueryOnlyMaterial:0=/ChaosVD/Materials/ChaosVDInstancedQueryOnly.ChaosVDInstancedQueryOnly
 Engine:/Script/ChaosVD.ChaosVDEditorSettings:SkySphereActorClass:0=/ChaosVD/BP_CVD_SkySphere.BP_CVD_SkySphere_C
-Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:StagingDirectory:0=(Path="C/GameDev/Builds/A_Tayus_Nightmare_0.0.2")
+Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:StagingDirectory:0=(Path="C/GameDev/Builds/A_Tayus_Nightmare_0.0.3")
 Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:PerPlatformBuildConfig:0=(("Windows", PPBC_Shipping))
 Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:LaunchOnTarget:0=
 Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:PerPlatformTargetFlavorName:0=(("Android", "Android_ASTC"))

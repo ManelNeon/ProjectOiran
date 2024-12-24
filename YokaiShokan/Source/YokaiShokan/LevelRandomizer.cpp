@@ -4,6 +4,7 @@
 #include "LevelRandomizer.h"
 #include "YokaiShokanEnemy.h"
 #include "YokaiShokanGameInstance.h"
+#include "LevelManagerInstanceSubsystem.h"
 #include "PickUp.h"
 
 // Sets default values
@@ -91,7 +92,7 @@ void ALevelRandomizer::WaveEnder()
 
 void ALevelRandomizer::LevelEnder()
 {
-	auto gameInstance = Cast<UYokaiShokanGameInstance>(GetGameInstance());
+	auto gameInstance = GetGameInstance()->GetSubsystem<ULevelManagerInstanceSubsystem>();
 
 	if (!gameInstance) return;
 

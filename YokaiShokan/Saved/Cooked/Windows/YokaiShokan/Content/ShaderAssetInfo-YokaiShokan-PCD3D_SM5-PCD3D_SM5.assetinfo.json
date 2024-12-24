@@ -393,9 +393,21 @@
 			]
 		},
 		{
+			"ShaderMapHash": "0AD97AA147304C0167E2829F6EE5C22A510F683A",
+			"Assets": [
+				"/Game/Materials/M_Translucent"
+			]
+		},
+		{
 			"ShaderMapHash": "83BF2FAACE2A5A03DB2110BD8144EB4A00E5E623",
 			"Assets": [
 				"/ControlRig/Controls/ControlRigXRayMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "B9C6DAAD12200B8DC0B80C39EDA2478A7FEA5815",
+			"Assets": [
+				"/Engine/MapTemplates/Materials/BasicAsset03"
 			]
 		},
 		{

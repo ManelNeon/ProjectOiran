@@ -2,7 +2,7 @@
 
 
 #include "YokaiShokanEnemy.h"
-#include "YokaiShokanGameInstance.h"
+#include "StatsGameInstanceSubsystem.h"
 
 // Sets default values
 AYokaiShokanEnemy::AYokaiShokanEnemy()
@@ -16,7 +16,7 @@ void AYokaiShokanEnemy::BeginPlay()
 {
 	Super::BeginPlay();
 
-	int playerLevel = Cast<UYokaiShokanGameInstance>(GetGameInstance())->GetPlayerLevel();
+	int playerLevel = GetGameInstance()->GetSubsystem<UStatsGameInstanceSubsystem>()->GetPlayerLevel();
 	
 	if (playerLevel == 1)
 	{

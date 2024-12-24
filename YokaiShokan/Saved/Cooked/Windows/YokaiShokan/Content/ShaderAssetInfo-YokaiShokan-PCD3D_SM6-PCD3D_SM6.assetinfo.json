@@ -98,6 +98,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "86CF241ED08DCB67F2B84EEE7334D44C2854DC5F",
+			"Assets": [
+				"/Engine/MapTemplates/Materials/BasicAsset03"
+			]
+		},
+		{
 			"ShaderMapHash": "3CB22E20F2F64C5707CC2207B4870EDA29F8D701",
 			"Assets": [
 				"/Engine/OpenWorldTemplate/LandscapeMaterial/MI_ProcGrid"
@@ -506,6 +512,12 @@
 			"ShaderMapHash": "EA230CDF0F566125379FDD79B24ED876D58FB19C",
 			"Assets": [
 				"/Engine/EditorMaterials/Dataflow/DataflowVertexMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "7AC857E15C8BCD088F96E036CDEEF4D55E4AAFA5",
+			"Assets": [
+				"/Game/Materials/M_Translucent"
 			]
 		},
 		{

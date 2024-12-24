@@ -7,6 +7,8 @@
         "Includes": [
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\yokaishokan\\definitions.yokaishokan.h",
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\yokaishokanenemy.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\levelrandomizer.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealgame\\inc\\yokaishokan\\uht\\levelrandomizer.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
@@ -15,7 +17,9 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\rootmotionsource.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\character.generated.h",
-            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealgame\\inc\\yokaishokan\\uht\\yokaishokanenemy.generated.h"
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealgame\\inc\\yokaishokan\\uht\\yokaishokanenemy.generated.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\yokaishokangameinstance.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealgame\\inc\\yokaishokan\\uht\\yokaishokangameinstance.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

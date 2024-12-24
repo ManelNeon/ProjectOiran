@@ -9,7 +9,8 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "KismetMathLibrary.generated.h"
-#include "YokaiShokanGameInstance.h"
+#include "StatsGameInstanceSubsystem.h"
+#include "LevelManagerInstanceSubsystem.h"
 #include "Kismet/GameplayStatics.h"
 #include "Engine/LocalPlayer.h"
 
@@ -108,7 +109,7 @@ void AYokaiShokanCharacter::HealPlayer(float amount)
 {
 	auto gameInstance = GetGameInstance();
 
-	auto yokaiGameInstance = Cast<UYokaiShokanGameInstance>(gameInstance);
+	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UStatsGameInstanceSubsystem>();
 
 	yokaiGameInstance->HealPlayer(amount);
 
@@ -119,7 +120,7 @@ void AYokaiShokanCharacter::DamagePlayer(float damage)
 {
 	auto gameInstance = GetGameInstance();
 
-	auto yokaiGameInstance = Cast<UYokaiShokanGameInstance>(gameInstance);
+	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UStatsGameInstanceSubsystem>();
 
 	if (yokaiGameInstance->DamagePlayer(damage))
 	{
@@ -133,7 +134,7 @@ void AYokaiShokanCharacter::DamagePlayer(float damage)
 
 void AYokaiShokanCharacter::Dash()
 {
-	if (!Cast<UYokaiShokanGameInstance>(GetGameInstance())->GetIsInsideRoguelite()) return;
+	if (!GetGameInstance()->GetSubsystem<ULevelManagerInstanceSubsystem>()->GetIsInsideRoguelite()) return;
 
 	if (_IsDashing)
 	{
@@ -182,7 +183,7 @@ bool AYokaiShokanCharacter::GetDashAvailability()
 
 void AYokaiShokanCharacter::SpecialAttackOne()
 {
-	auto yokaiGameInstance = Cast<UYokaiShokanGameInstance>(GetGameInstance());
+	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UStatsGameInstanceSubsystem>();
 
 	if (yokaiGameInstance->GetSkillPointAvailability()[4] != ESkillPointAvailability::ACQUIRED) return;
 
@@ -191,7 +192,7 @@ void AYokaiShokanCharacter::SpecialAttackOne()
 
 void AYokaiShokanCharacter::SpecialAttackTwo()
 {
-	auto yokaiGameInstance = Cast<UYokaiShokanGameInstance>(GetGameInstance());
+	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UStatsGameInstanceSubsystem>();
 
 	if (yokaiGameInstance->GetSkillPointAvailability()[9] != ESkillPointAvailability::ACQUIRED) return;
 	
