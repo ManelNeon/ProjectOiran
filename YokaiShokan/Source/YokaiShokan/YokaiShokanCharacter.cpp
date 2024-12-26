@@ -112,8 +112,6 @@ void AYokaiShokanCharacter::HealPlayer(float amount)
 	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UStatsGameInstanceSubsystem>();
 
 	yokaiGameInstance->HealPlayer(amount);
-
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Healed Player"));
 }
 
 void AYokaiShokanCharacter::DamagePlayer(float damage)
@@ -125,11 +123,8 @@ void AYokaiShokanCharacter::DamagePlayer(float damage)
 	if (yokaiGameInstance->DamagePlayer(damage))
 	{
 		//damge player animation only
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Damaged Player"));
 		return;
 	}
-
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Dead Player"));
 }
 
 void AYokaiShokanCharacter::Dash()

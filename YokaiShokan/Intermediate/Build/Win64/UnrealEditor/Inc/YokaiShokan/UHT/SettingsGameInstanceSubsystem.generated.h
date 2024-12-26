@@ -14,21 +14,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define YOKAISHOKAN_SettingsGameInstanceSubsystem_generated_h
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_SettingsGameInstanceSubsystem_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execSetUIVolume); \
-	DECLARE_FUNCTION(execGetUIVolume); \
-	DECLARE_FUNCTION(execSetEnviromentVolume); \
-	DECLARE_FUNCTION(execGetEnviromentVolume); \
-	DECLARE_FUNCTION(execSetDialogueVolume); \
-	DECLARE_FUNCTION(execGetDialogueVolume); \
-	DECLARE_FUNCTION(execSetSFXVolume); \
-	DECLARE_FUNCTION(execGetSFXVolume); \
-	DECLARE_FUNCTION(execSetMusicVolume); \
-	DECLARE_FUNCTION(execGetMusicVolume); \
-	DECLARE_FUNCTION(execSetMasterVolume); \
-	DECLARE_FUNCTION(execGetMasterVolume);
-
-
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_SettingsGameInstanceSubsystem_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUSettingsGameInstanceSubsystem(); \
@@ -56,7 +41,6 @@ public: \
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_SettingsGameInstanceSubsystem_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_SettingsGameInstanceSubsystem_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_SettingsGameInstanceSubsystem_h_15_INCLASS_NO_PURE_DECLS \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_SettingsGameInstanceSubsystem_h_15_ENHANCED_CONSTRUCTORS \
 private: \
