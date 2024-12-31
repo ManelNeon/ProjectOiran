@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealgame\\inc\\yokaishokan\\uht\\settingsgameinstancesubsystem.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\x64\\yokaishokan\\development\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\x64\\unrealgame\\development\\yokaishokan\\definitions.yokaishokan.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\settingsgameinstancesubsystem.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealgame\\inc\\yokaishokan\\uht\\settingsgameinstancesubsystem.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

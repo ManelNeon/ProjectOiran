@@ -14,6 +14,7 @@ class YOKAISHOKAN_API UAudioManagerInstanceSubsystem : public UGameInstanceSubsy
 {
 	GENERATED_BODY()
 	
+//Subsystem Specific Functions
 public:
 
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
@@ -21,6 +22,22 @@ public:
 	virtual void Deinitialize() override;
 
 	virtual bool ShouldCreateSubsystem(UObject* Outer) const override;
+
+//Audio Manager Functions and Variables
+public:
+
+	UFUNCTION(BlueprintCallable, Category = "Audio Manager | Functions")
+	void PlaySound(USoundWave* sound);
+
+	UFUNCTION(BlueprintCallable, Category = "Audio Manager | Functions")
+	void PlayMusic(USoundWave* music);
+
+protected:
+
+	UAudioComponent* _CurrentMusic;
+
+//Audio Settings Variables and Functions
+public:
 
 	UFUNCTION(BlueprintPure, Category = "Settings | Audio")
 	float GetMasterVolume();

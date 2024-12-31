@@ -49,9 +49,6 @@ public:
 	//returns True if player is alive, false if he is dead
 	bool DamagePlayer(float damage);
 
-	UPROPERTY(EditAnywhere, Category = "Character | Stats")
-	float MaxHealth;
-
 	UFUNCTION(BlueprintPure, Category = "Character | Stats")
 	int GetPlayerLevel();
 
@@ -75,6 +72,8 @@ public:
 	void RemoveSkillPoints(int quantity);
 
 protected:
+
+	float _MaxHealth;
 
 	float _CurrentHealth;
 

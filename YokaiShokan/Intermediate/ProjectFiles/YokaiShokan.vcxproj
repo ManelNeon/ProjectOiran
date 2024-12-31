@@ -263,6 +263,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\AudioManagerInstanceSubsystem.h"/>
+    <ClCompile Include="..\..\Source\YokaiShokan\BaseEnemyAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\BaseEnemyAnimInstance.h"/>
     <ClCompile Include="..\..\Source\YokaiShokan\DialogueBox.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -291,6 +295,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\PickUp.h"/>
+    <ClCompile Include="..\..\Source\YokaiShokan\PlayerAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\PlayerAnimInstance.h"/>
     <ClCompile Include="..\..\Source\YokaiShokan\SettingsGameInstanceSubsystem.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -299,6 +307,14 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\StatsGameInstanceSubsystem.h"/>
+    <ClCompile Include="..\..\Source\YokaiShokan\TutorialEnemy.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\TutorialEnemy.h"/>
+    <ClCompile Include="..\..\Source\YokaiShokan\TutorialGameMode.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\TutorialGameMode.h"/>
     <None Include="..\..\Source\YokaiShokan\YokaiShokan.Build.cs"/>
     <ClCompile Include="..\..\Source\YokaiShokan\YokaiShokan.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

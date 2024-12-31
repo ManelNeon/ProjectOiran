@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+	<RuntimeProperties>
+		<CrashVersion>3</CrashVersion>
+		<ExecutionGuid>D1A28A1145E3B0649B0134BF0342093B</ExecutionGuid>
+		<CrashGUID>UECC-Windows-8545987B4CD65E56A4B0BAB51A189F9A_0000</CrashGUID>
+		<IsEnsure>true</IsEnsure>
+		<IsStall>false</IsStall>
+		<IsAssert>false</IsAssert>
+		<CrashType>Ensure</CrashType>
+		<ErrorMessage>Ensure condition failed: bSuccess [File:D:\build\++UE5\Sync\Engine\Source\Runtime\MoviePlayer\Private\MoviePlayerThreading.cpp] [Line: 198] Only one system can use the SlateThread at the same time. GetMoviePlayer is not compatible with PreLoadScreen. Stack: 0x00007ff63f8499dd YokaiShokan.exe!FSlateLoadingThreadTask::Init() [] 0x00007ff63a6854bf YokaiShokan.exe!FRunnableThreadWin::Run() [] 0x00007ff63a679037 YokaiShokan.exe!FRunnableThreadWin::GuardedRun() [] 0x00007ffb987a259d KERNEL32.DLL!UnknownFunction [] 0x00007ffb9aaeaf38 ntdll.dll!UnknownFunction []</ErrorMessage>
+		<CrashReporterMessage />
+		<CrashReporterMessage>Attended</CrashReporterMessage>
+		<ProcessId>22180</ProcessId>
+		<SecondsSinceStart>0</SecondsSinceStart>
+		<IsInternalBuild>false</IsInternalBuild>
+		<IsPerforceBuild>false</IsPerforceBuild>
+		<IsWithDebugInfo>false</IsWithDebugInfo>
+		<IsSourceDistribution>false</IsSourceDistribution>
+		<GameName>UE-YokaiShokan</GameName>
+		<ExecutableName>YokaiShokan</ExecutableName>
+		<BuildConfiguration>Development</BuildConfiguration>
+		<GameSessionID />
+		<PlatformName>Windows</PlatformName>
+		<PlatformFullName>Win64 [Windows 11 (23H2) [10.0.22631.4602]  64b]</PlatformFullName>
+		<PlatformNameIni>Windows</PlatformNameIni>
+		<EngineMode>Game</EngineMode>
+		<EngineModeEx>Unset</EngineModeEx>
+		<DeploymentName />
+		<EngineVersion>5.4.4-35576357+++UE5+Release-5.4</EngineVersion>
+		<EngineCompatibleVersion>5.4.4-35576357+++UE5+Release-5.4</EngineCompatibleVersion>
+		<CommandLine>CommandLineRemoved</CommandLine>
+		<LanguageLCID>0</LanguageLCID>
+		<AppDefaultLocale>pt-PT</AppDefaultLocale>
+		<BuildVersion>++UE5+Release-5.4-CL-35576357</BuildVersion>
+		<Symbols>**UE5*Release-5.4-CL-35576357-Win64-Development</Symbols>
+		<IsUERelease>true</IsUERelease>
+		<IsRequestingExit>false</IsRequestingExit>
+		<UserName />
+		<BaseDir>C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Binaries/Win64/</BaseDir>
+		<RootDir>C:/Program Files/Epic Games/UE_5.4/</RootDir>
+		<MachineId>98CEB3604A79FD1BE77010BCB8139F60</MachineId>
+		<LoginId>98ceb3604a79fd1be77010bcb8139f60</LoginId>
+		<EpicAccountId>ab499f4fc405459fbc834d66f706419d</EpicAccountId>
+		<SourceContext />
+		<UserDescription>Sent in the unattended mode</UserDescription>
+		<UserActivityHint />
+		<CrashDumpMode>0</CrashDumpMode>
+		<GameStateName />
+		<Misc.NumberOfCores>6</Misc.NumberOfCores>
+		<Misc.NumberOfCoresIncludingHyperthreads>12</Misc.NumberOfCoresIncludingHyperthreads>
+		<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+		<Misc.CPUVendor>AuthenticAMD</Misc.CPUVendor>
+		<Misc.CPUBrand>AMD Ryzen 5 5600H with Radeon Graphics</Misc.CPUBrand>
+		<Misc.PrimaryGPUBrand>NVIDIA GeForce RTX 3060 Laptop GPU</Misc.PrimaryGPUBrand>
+		<Misc.OSVersionMajor>Windows 11 (23H2) [10.0.22631.4602]</Misc.OSVersionMajor>
+		<Misc.OSVersionMinor />
+		<Misc.AnticheatProvider />
+		<MemoryStats.TotalPhysical>17024741376</MemoryStats.TotalPhysical>
+		<MemoryStats.TotalVirtual>38165221376</MemoryStats.TotalVirtual>
+		<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+		<MemoryStats.TotalPhysicalGB>16</MemoryStats.TotalPhysicalGB>
+		<MemoryStats.AvailablePhysical>1518235648</MemoryStats.AvailablePhysical>
+		<MemoryStats.AvailableVirtual>5890842624</MemoryStats.AvailableVirtual>
+		<MemoryStats.UsedPhysical>962322432</MemoryStats.UsedPhysical>
+		<MemoryStats.PeakUsedPhysical>971374592</MemoryStats.PeakUsedPhysical>
+		<MemoryStats.UsedVirtual>1119084544</MemoryStats.UsedVirtual>
+		<MemoryStats.PeakUsedVirtual>1119084544</MemoryStats.PeakUsedVirtual>
+		<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+		<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+		<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+		<NumMinidumpFramesToIgnore>6</NumMinidumpFramesToIgnore>
+		<CallStack>YokaiShokan!FSlateLoadingThreadTask::Init()
+YokaiShokan!FRunnableThreadWin::Run()</CallStack>
+		<PCallStack>YokaiShokan 0x00007ff638f50000 + 68f99dd YokaiShokan 0x00007ff638f50000 + 17354bf YokaiShokan 0x00007ff638f50000 + 1729037 KERNEL32 0x00007ffb98790000 + 1259d</PCallStack>
+		<PCallStackHash>895A5BAAE954412BA6832A0A8E315B233E9CD98F</PCallStackHash>
+		<TimeOfCrash>638709197661510000</TimeOfCrash>
+		<bAllowToBeContacted>1</bAllowToBeContacted>
+		<CPUBrand>AMD Ryzen 5 5600H with Radeon Graphics</CPUBrand>
+		<CrashReportClientVersion>1.0</CrashReportClientVersion>
+		<Modules>C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Binaries\Win64\YokaiShokan.exe
+C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Binaries\Win64\D3D12\D3D12Core.dll
+C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\ThirdParty\Windows\XAudio2_9\x64\xaudio2_9redist.dll
+C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\ThirdParty\Vorbis\Win64\VS2015\libvorbis_64.dll
+C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\ThirdParty\Ogg\Win64\VS2015\libogg_64.dll
+C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\ThirdParty\NVIDIA\NVaftermath\Win64\GFSDK_Aftermath_Lib.x64.dll
+C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\ThirdParty\DbgHelp\dbghelp.dll
+C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\ThirdParty\Vorbis\Win64\VS2015\libvorbisfile_64.dll
+C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\ThirdParty\Windows\WinPixEventRuntime\x64\WinPixEventRuntime.dll
+C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Binaries\Win64\tbbmalloc.dll</Modules>
+	</RuntimeProperties>
+	<PlatformProperties>
+		<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+		<IsRunningOnBattery>true</IsRunningOnBattery>
+		<DriveStats.Project.Name>C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Binaries/Win64/</DriveStats.Project.Name>
+		<DriveStats.Project.Type>NVMe</DriveStats.Project.Type>
+		<DriveStats.Project.FreeSpaceKb>5701064</DriveStats.Project.FreeSpaceKb>
+		<PlatformCallbackResult>0</PlatformCallbackResult>
+		<CrashTrigger>0</CrashTrigger>
+	</PlatformProperties>
+	<EngineData>
+		<MatchingDPStatus>WindowsNo errors</MatchingDPStatus>
+		<RHI.IntegratedGPU>false</RHI.IntegratedGPU>
+		<RHI.DriverDenylisted>false</RHI.DriverDenylisted>
+		<RHI.D3DDebug>false</RHI.D3DDebug>
+		<RHI.Breadcrumbs>true</RHI.Breadcrumbs>
+		<RHI.DRED>false</RHI.DRED>
+		<RHI.DREDMarkersOnly>true</RHI.DREDMarkersOnly>
+		<RHI.DREDContext>false</RHI.DREDContext>
+		<RHI.Aftermath>true</RHI.Aftermath>
+		<RHI.RHIName>D3D12</RHI.RHIName>
+		<RHI.AdapterName>NVIDIA GeForce RTX 3060 Laptop GPU</RHI.AdapterName>
+		<RHI.UserDriverVersion>546.30</RHI.UserDriverVersion>
+		<RHI.InternalDriverVersion>31.0.15.4630</RHI.InternalDriverVersion>
+		<RHI.DriverDate>11-30-2023</RHI.DriverDate>
+		<RHI.FeatureLevel>SM6</RHI.FeatureLevel>
+		<RHI.GPUVendor>NVIDIA</RHI.GPUVendor>
+		<RHI.DeviceId>2560</RHI.DeviceId>
+		<DeviceProfile.Name>Windows</DeviceProfile.Name>
+	</EngineData>
+	<GameData />
+</FGenericCrashContext>

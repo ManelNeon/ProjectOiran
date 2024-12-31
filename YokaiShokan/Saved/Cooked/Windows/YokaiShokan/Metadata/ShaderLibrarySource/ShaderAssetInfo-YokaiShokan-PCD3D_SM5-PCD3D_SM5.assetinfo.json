@@ -2,12 +2,6 @@
 	"AssetInfoVersion": 2,
 	"ShaderCodeToAssets": [
 		{
-			"ShaderMapHash": "E7FF4802CB06CAE67A87BBB71FC9BF6664C94F4A",
-			"Assets": [
-				"/Game/VFX/TreeVFX/MI_TreeGodRays"
-			]
-		},
-		{
 			"ShaderMapHash": "EAAB7D03C257D32B317B33AECB3FB2D64178F596",
 			"Assets": [
 				"/Engine/EngineMaterials/Widget3DPassThrough_Masked"
@@ -35,12 +29,6 @@
 			"ShaderMapHash": "7B7A06117D58074167E94E998B5B125F6F43D873",
 			"Assets": [
 				"/Engine/EditorMaterials/Dataflow/DataflowVertexMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "E3231C11BAE2FB3C10AE337E860C38EF42CBE688",
-			"Assets": [
-				"/Engine/EngineSky/M_Sky_Panning_Clouds2"
 			]
 		},
 		{
@@ -75,23 +63,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "0537642356EC791285C92262B286ABD26173628A",
-			"Assets": [
-				"/Game/Meshes/Test/Meshes/image1_Mat",
-				"/Game/Meshes/Test/Meshes/image2_Mat",
-				"/Game/Meshes/Test/Meshes/image_Mat"
-			]
-		},
-		{
 			"ShaderMapHash": "7C6D492817E725D9490C1B8804BFB3E89059DAB6",
 			"Assets": [
 				"/Paper2D/DefaultSpriteMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "80AE8B2D356A64FCE206CFC626BED8C6D4E74FB7",
-			"Assets": [
-				"/Engine/OpenWorldTemplate/LandscapeMaterial/MI_ProcGrid"
 			]
 		},
 		{
@@ -125,21 +99,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "D14AE63E8859339B4CC825C638D3AB4A20241C9B",
-			"Assets": [
-				"/Engine/EngineSky/M_SimpleSkyDome"
-			]
-		},
-		{
 			"ShaderMapHash": "BCDCD243BCE5E2A9A901BA93DF6A0CFB9C76DFEB",
 			"Assets": [
 				"/Engine/EngineMaterials/FlattenMaterial_WS_Normal_VT"
-			]
-		},
-		{
-			"ShaderMapHash": "3C6783460CB46B09BE3E67FDE3362BE582D6613F",
-			"Assets": [
-				"/Game/FirstPersonArms/Character/Materials/Instances/Manny/MI_Manny_02"
 			]
 		},
 		{
@@ -245,12 +207,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "B462F064ED9389E881DB46BD2CBC982C141B43CC",
-			"Assets": [
-				"/Engine/OpenWorldTemplate/LandscapeMaterial/M_ProcGrid"
-			]
-		},
-		{
 			"ShaderMapHash": "7754556757CDE3B6339979C9B23F6026BB72D09E",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Opaque_DS"
@@ -260,12 +216,6 @@
 			"ShaderMapHash": "F163C269B687F8870796785B40BDBAD246CCB7AA",
 			"Assets": [
 				"/Game/Meshes/Character/M_Sleeves"
-			]
-		},
-		{
-			"ShaderMapHash": "F8BBC7690A73A99607590DC7E492C8D61B669D81",
-			"Assets": [
-				"/Game/VFX/Material_Instance/M_Mat01"
 			]
 		},
 		{
@@ -306,19 +256,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "E9EFC1898F01C8A80218EE15D56C56AAA0F0EAC8",
-			"Assets": [
-				"/Game/VFX/Material_Instance/M_Mat01_Inst1"
-			]
-		},
-		{
-			"ShaderMapHash": "33C9CB8C787B925343FCEC842C5479D8FEB9B391",
-			"Assets": [
-				"/Engine/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01",
-				"/Game/VFX/TreeVFX/M_EV_TreeGodRays"
-			]
-		},
-		{
 			"ShaderMapHash": "212FC190F1BAC93CD8A6C0FE94AA4E79FC8333AA",
 			"Assets": [
 				"/Engine/EngineMaterials/EmissiveMeshMaterial"
@@ -356,13 +293,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "1C63369BA300C38A984C7AF15FDD9343A2D24FEB",
-			"Assets": [
-				"/Game/FirstPersonArms/Character/Materials/Instances/Manny/MI_Manny_01",
-				"/Game/FirstPersonArms/Character/Materials/M_Mannequin"
-			]
-		},
-		{
 			"ShaderMapHash": "F3FB609ECA543AF843927ECE8177771D824E7C83",
 			"Assets": [
 				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided"
@@ -393,21 +323,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "0AD97AA147304C0167E2829F6EE5C22A510F683A",
-			"Assets": [
-				"/Game/Materials/M_Translucent"
-			]
-		},
-		{
 			"ShaderMapHash": "83BF2FAACE2A5A03DB2110BD8144EB4A00E5E623",
 			"Assets": [
 				"/ControlRig/Controls/ControlRigXRayMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "B9C6DAAD12200B8DC0B80C39EDA2478A7FEA5815",
-			"Assets": [
-				"/Engine/MapTemplates/Materials/BasicAsset03"
 			]
 		},
 		{
@@ -471,12 +389,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "682BCECB1BDC9CFE22AEA8B7E9021353784ED54D",
-			"Assets": [
-				"/Game/VFX/TreeVFX/M_MagicDust"
-			]
-		},
-		{
 			"ShaderMapHash": "110B72CF298E3BA257BD69E7527CF8474D0D68BB",
 			"Assets": [
 				"/Engine/EngineMaterials/DefaultDeferredDecalMaterial"
@@ -528,12 +440,6 @@
 			"ShaderMapHash": "EF51A9E5F882F642A7FD387E342F66DD00DF7ADD",
 			"Assets": [
 				"/Engine/EngineMaterials/M_InvalidLightmapSettings"
-			]
-		},
-		{
-			"ShaderMapHash": "9C5703E632187CED078DE377E2CFB01D1B842079",
-			"Assets": [
-				"/Game/Meshes/QuixelBridge/Materials/Tatami_Material"
 			]
 		},
 		{

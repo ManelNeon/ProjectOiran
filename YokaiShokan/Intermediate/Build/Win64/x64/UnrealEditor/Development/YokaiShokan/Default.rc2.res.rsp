@@ -77,7 +77,7 @@
 /DNDEBUG=1
 /DUE_BUILD_DEVELOPMENT=1
 /DORIGINAL_FILE_NAME="UnrealEditor-YokaiShokan.dll"
-/DBUILD_ICON_FILE_NAME="\"C:\\GameDev\\UnrealProjects\\YokaiShokan\\YokaiShokan\\Build\\Windows\\Application.ico\""
+/DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME="A Tayus Nightmare"
 /DPROJECT_PRODUCT_IDENTIFIER=YokaiShokan

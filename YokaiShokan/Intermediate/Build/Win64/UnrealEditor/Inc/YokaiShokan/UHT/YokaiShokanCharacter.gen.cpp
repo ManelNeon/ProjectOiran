@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeYokaiShokanCharacter() {}
 
 // Begin Cross Module References
+COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
@@ -79,12 +80,41 @@ UEnum* Z_Construct_UEnum_YokaiShokan_AttackState()
 }
 // End Enum AttackState
 
+// Begin Class AYokaiShokanCharacter Function BP_PlayerDeath
+static FName NAME_AYokaiShokanCharacter_BP_PlayerDeath = FName(TEXT("BP_PlayerDeath"));
+void AYokaiShokanCharacter::BP_PlayerDeath()
+{
+	ProcessEvent(FindFunctionChecked(NAME_AYokaiShokanCharacter_BP_PlayerDeath),NULL);
+}
+struct Z_Construct_UFunction_AYokaiShokanCharacter_BP_PlayerDeath_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Tutorial Enemy | Functions" },
+		{ "ModuleRelativePath", "YokaiShokanCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AYokaiShokanCharacter_BP_PlayerDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYokaiShokanCharacter, nullptr, "BP_PlayerDeath", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_BP_PlayerDeath_Statics::Function_MetaDataParams), Z_Construct_UFunction_AYokaiShokanCharacter_BP_PlayerDeath_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_AYokaiShokanCharacter_BP_PlayerDeath()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AYokaiShokanCharacter_BP_PlayerDeath_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class AYokaiShokanCharacter Function BP_PlayerDeath
+
 // Begin Class AYokaiShokanCharacter Function DamagePlayer
 struct Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics
 {
 	struct YokaiShokanCharacter_eventDamagePlayer_Parms
 	{
 		float damage;
+		FVector direction;
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -93,15 +123,18 @@ struct Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_damage;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_direction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanCharacter_eventDamagePlayer_Parms, damage), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::NewProp_direction = { "direction", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(YokaiShokanCharacter_eventDamagePlayer_Parms, direction), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::NewProp_damage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::NewProp_direction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYokaiShokanCharacter, nullptr, "DamagePlayer", nullptr, nullptr, Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers), sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::YokaiShokanCharacter_eventDamagePlayer_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::Function_MetaDataParams), Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYokaiShokanCharacter, nullptr, "DamagePlayer", nullptr, nullptr, Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::PropPointers), sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::YokaiShokanCharacter_eventDamagePlayer_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::Function_MetaDataParams), Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer_Statics::YokaiShokanCharacter_eventDamagePlayer_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer()
 {
@@ -115,9 +148,10 @@ UFunction* Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer()
 DEFINE_FUNCTION(AYokaiShokanCharacter::execDamagePlayer)
 {
 	P_GET_PROPERTY(FFloatProperty,Z_Param_damage);
+	P_GET_STRUCT(FVector,Z_Param_direction);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->DamagePlayer(Z_Param_damage);
+	P_THIS->DamagePlayer(Z_Param_damage,Z_Param_direction);
 	P_NATIVE_END;
 }
 // End Class AYokaiShokanCharacter Function DamagePlayer
@@ -368,7 +402,8 @@ struct Z_Construct_UClass_AYokaiShokanCharacter_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer, "DamagePlayer" }, // 1125324742
+		{ &Z_Construct_UFunction_AYokaiShokanCharacter_BP_PlayerDeath, "BP_PlayerDeath" }, // 2548604851
+		{ &Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer, "DamagePlayer" }, // 171836236
 		{ &Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability, "GetDashAvailability" }, // 3140069004
 		{ &Z_Construct_UFunction_AYokaiShokanCharacter_HealPlayer, "HealPlayer" }, // 3961645477
 	};
@@ -448,10 +483,10 @@ struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_
 		{ AttackState_StaticEnum, TEXT("AttackState"), &Z_Registration_Info_UEnum_AttackState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3798270245U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AYokaiShokanCharacter, AYokaiShokanCharacter::StaticClass, TEXT("AYokaiShokanCharacter"), &Z_Registration_Info_UClass_AYokaiShokanCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AYokaiShokanCharacter), 4033735781U) },
+		{ Z_Construct_UClass_AYokaiShokanCharacter, AYokaiShokanCharacter::StaticClass, TEXT("AYokaiShokanCharacter"), &Z_Registration_Info_UClass_AYokaiShokanCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AYokaiShokanCharacter), 3009612670U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_1482142275(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_2919070122(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::EnumInfo));

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "LevelRandomizer.h"
 #include "GameFramework/Character.h"
+#include "Blueprint/UserWidget.h"
 #include "YokaiShokanEnemy.generated.h"
 
 UCLASS()
@@ -18,12 +19,15 @@ public:
 
 	void SetLevelRandomizer(ALevelRandomizer* levelManager);
 
+	UFUNCTION(BlueprintCallable, Category = "Enemy | Widget")
+	void SetMarkerWidget(UUserWidget* widget);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Enemy | Stats")
-	void DamageThis(float damage);
+	void DamageThis(float damage, FVector hitDirection);
 
 	UFUNCTION(BlueprintPure, Category = "Enemy | Stats")
 	float GetDamageValue();
@@ -32,9 +36,11 @@ protected:
 
 	float _CurrentHealth;
 
-	UPROPERTY(EditAnywhere, Category = "Enemy | Stats")
 	float _MaxHealth;
 
-	UPROPERTY(EditAnywhere, Category = "Enemy | Stats")
 	float _DamageValue;
+
+	bool _IsDead;
+
+	UUserWidget* _Marker;
 };

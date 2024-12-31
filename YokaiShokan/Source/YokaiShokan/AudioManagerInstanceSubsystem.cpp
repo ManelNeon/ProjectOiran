@@ -2,11 +2,19 @@
 
 
 #include "AudioManagerInstanceSubsystem.h"
+#include "Kismet/GameplayStatics.h"
+#include "Components/AudioComponent.h"
 
+//Subsystem Specific Functions
 void UAudioManagerInstanceSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Audio Manager Initialized"));
 
+	//Audio Manager  Variables
+
+	_CurrentMusic = nullptr;
+
+	//Audio Settings Variables
 	_MasterVolume = 1;
 
 	_MusicVolume = 1;
@@ -32,6 +40,27 @@ bool UAudioManagerInstanceSubsystem::ShouldCreateSubsystem(UObject* Outer) const
 	return false;
 }
 
+//Audio Manager Functions
+void UAudioManagerInstanceSubsystem::PlaySound(USoundWave* sound)
+{
+	float randomPitch = FMath::FRandRange(0.9, 1.1);
+
+	UGameplayStatics::SpawnSound2D(GetWorld(), sound, 1, randomPitch, 0, nullptr, true, true);
+}
+
+void UAudioManagerInstanceSubsystem::PlayMusic(USoundWave* music)
+{
+	return;
+
+	/*if (_CurrentMusic != nullptr)
+	{
+		return;
+	}
+
+	_CurrentMusic = UGameplayStatics::SpawnSound2D(GetWorld(), music, 1, 1, 0, nullptr, true, false);*/
+}
+
+//Audio Settings Functions
 float UAudioManagerInstanceSubsystem::GetMasterVolume()
 {
 	return _MasterVolume;

@@ -3399,6 +3399,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Runtime/PreLoadScreenMoviePlayer/PreLoadScreenMoviePlayer.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Runtime/ProceduralMeshComponent/ProceduralMeshComponent.uplugin",
 			"Type": "UFS"
 		},
@@ -3586,6 +3590,7 @@
 		"PluginBrowser",
 		"PluginUtils",
 		"PortableObjectFileDataSource",
+		"PreLoadScreenMoviePlayer",
 		"ProceduralMeshComponent",
 		"PropertyAccessEditor",
 		"PropertyAccessNode",

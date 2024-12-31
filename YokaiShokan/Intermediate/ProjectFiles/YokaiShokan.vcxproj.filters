@@ -40,6 +40,12 @@
     <ClInclude Include="..\..\Source\YokaiShokan\AudioManagerInstanceSubsystem.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\BaseEnemyAnimInstance.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\BaseEnemyAnimInstance.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\DialogueBox.cpp">
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
@@ -82,6 +88,12 @@
     <ClInclude Include="..\..\Source\YokaiShokan\PickUp.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\PlayerAnimInstance.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\PlayerAnimInstance.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\SettingsGameInstanceSubsystem.cpp">
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
@@ -92,6 +104,18 @@
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\StatsGameInstanceSubsystem.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\TutorialEnemy.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\TutorialEnemy.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\TutorialGameMode.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\TutorialGameMode.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
     <None Include="..\..\Source\YokaiShokan\YokaiShokan.Build.cs">

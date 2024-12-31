@@ -3406,6 +3406,14 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Runtime/PreLoadScreenMoviePlayer/Binaries/Win64/UnrealEditor-PreLoadScreenMoviePlayer.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Runtime/PreLoadScreenMoviePlayer/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UnrealEditor-ProceduralMeshComponent.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -26572,6 +26580,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Runtime/PreLoadScreenMoviePlayer/PreLoadScreenMoviePlayer.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Runtime/ProceduralMeshComponent/ProceduralMeshComponent.uplugin",
 			"Type": "UFS"
 		},
@@ -26770,6 +26782,7 @@
 		"PluginBrowser",
 		"PluginUtils",
 		"PortableObjectFileDataSource",
+		"PreLoadScreenMoviePlayer",
 		"ProceduralMeshComponent",
 		"PropertyAccessEditor",
 		"PropertyAccessNode",

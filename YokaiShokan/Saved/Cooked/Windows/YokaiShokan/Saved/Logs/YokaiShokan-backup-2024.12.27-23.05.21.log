@@ -1,0 +1,1166 @@
+﻿Log file open, 12/27/24 23:05:02
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogProfilingDebugging: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../../../../Program Files/Epic Games/UE_5.4/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogWindows: Custom abort handler registered for crash reporting.
+LogCore: UTS: Unreal Trace Server launched successfully
+LogTrace: Initializing trace...
+LogTrace: Finished trace initialization.
+LogCsvProfiler: Display: Metadata set : platform="Windows"
+LogCsvProfiler: Display: Metadata set : config="Development"
+LogCsvProfiler: Display: Metadata set : buildversion="++UE5+Release-5.4-CL-35576357"
+LogCsvProfiler: Display: Metadata set : engineversion="5.4.4-35576357+++UE5+Release-5.4"
+LogCsvProfiler: Display: Metadata set : os="Windows 11 (23H2) [10.0.22631.4602] "
+LogCsvProfiler: Display: Metadata set : cpu="AuthenticAMD|AMD Ryzen 5 5600H with Radeon Graphics"
+LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+LogCsvProfiler: Display: Metadata set : pgoprofilingenabled="0"
+LogCsvProfiler: Display: Metadata set : ltoenabled="0"
+LogCsvProfiler: Display: Metadata set : asan="0"
+LogCsvProfiler: Display: Metadata set : commandline=""""
+LogCsvProfiler: Display: Metadata set : loginid="98ceb3604a79fd1be77010bcb8139f60"
+LogCsvProfiler: Display: Metadata set : llm="0"
+LogInit: Display: No sandbox specified, assuming ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Cooked/Windows/
+LogStats: Stats thread started at 0.778780
+LogAssetRegistry: Premade AssetRegistry loaded from '../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/AssetRegistry.bin'
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Session CrashGUID >====================================================
+         Session CrashGUID >   UECC-Windows-4E13050E490456DE447D4EAC6C4F720B
+         Session CrashGUID >====================================================
+LogConfig: No local boot hotfix file found at: [../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
+LogPluginManager: Mounting Engine plugin Bridge
+LogPluginManager: Mounting Engine plugin ChaosCloth
+LogPluginManager: Mounting Engine plugin CmdLinkServer
+LogPluginManager: Mounting Engine plugin FastBuildController
+LogPluginManager: Mounting Engine plugin EnhancedInput
+LogPluginManager: Found config from plugin[EnhancedInput] Input
+LogPluginManager: Mounting Engine plugin ChaosVD
+LogPluginManager: Found config from plugin[ChaosVD] Engine
+LogPluginManager: Mounting Engine plugin MeshPainting
+LogPluginManager: Mounting Engine plugin RenderGraphInsights
+LogPluginManager: Mounting Engine plugin TraceUtilities
+LogPluginManager: Mounting Engine plugin WorldMetrics
+LogPluginManager: Mounting Engine plugin XGEController
+LogPluginManager: Mounting Engine plugin AnimationModifierLibrary
+LogPluginManager: Mounting Engine plugin AnimationData
+LogPluginManager: Mounting Engine plugin ControlRigModules
+LogPluginManager: Mounting Engine plugin ControlRigSpline
+LogPluginManager: Mounting Engine plugin ControlRig
+LogPluginManager: Mounting Engine plugin BlendSpaceMotionAnalysis
+LogPluginManager: Mounting Engine plugin ACLPlugin
+LogPluginManager: Mounting Engine plugin IKRig
+LogPluginManager: Mounting Engine plugin AssetManagerEditor
+LogPluginManager: Mounting Engine plugin VisualStudioTools
+LogPluginManager: Mounting Engine plugin BlueprintHeaderView
+LogPluginManager: Mounting Engine plugin ChangelistReview
+LogPluginManager: Mounting Engine plugin CryptoKeys
+LogPluginManager: Mounting Engine plugin DataValidation
+LogPluginManager: Mounting Engine plugin EditorDebugTools
+LogPluginManager: Mounting Engine plugin CurveEditorTools
+LogPluginManager: Mounting Engine plugin SpeedTreeImporter
+LogPluginManager: Mounting Engine plugin FacialAnimation
+LogPluginManager: Mounting Engine plugin EngineAssetDefinitions
+LogPluginManager: Mounting Engine plugin EditorScriptingUtilities
+LogPluginManager: Mounting Engine plugin GameplayTagsEditor
+LogPluginManager: Mounting Engine plugin MacGraphicsSwitching
+LogPluginManager: Mounting Engine plugin GeometryMode
+LogPluginManager: Mounting Engine plugin MaterialAnalyzer
+LogPluginManager: Mounting Engine plugin PluginBrowser
+LogPluginManager: Mounting Engine plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting Engine plugin SequencerAnimTools
+LogPluginManager: Mounting Engine plugin UVEditor
+LogPluginManager: Mounting Engine plugin WorldPartitionHLODUtilities
+LogPluginManager: Mounting Engine plugin AlembicImporter
+LogPluginManager: Mounting Engine plugin InterchangeTests
+LogPluginManager: Mounting Engine plugin InterchangeEditor
+LogPluginManager: Mounting Engine plugin TcpMessaging
+LogPluginManager: Mounting Engine plugin Interchange
+LogPluginManager: Mounting Engine plugin AndroidMedia
+LogPluginManager: Mounting Engine plugin UdpMessaging
+LogPluginManager: Mounting Engine plugin AvfMedia
+LogPluginManager: Mounting Engine plugin MediaPlate
+LogPluginManager: Mounting Engine plugin ImgMedia
+LogPluginManager: Mounting Engine plugin MediaCompositing
+LogPluginManager: Mounting Engine plugin MediaPlayerEditor
+LogPluginManager: Mounting Engine plugin ActorSequence
+LogPluginManager: Mounting Engine plugin WebMMedia
+LogPluginManager: Mounting Engine plugin WmfMedia
+LogPluginManager: Mounting Engine plugin LevelSequenceEditor
+LogPluginManager: Mounting Engine plugin ActorLayerUtilities
+LogPluginManager: Mounting Engine plugin SequencerScripting
+LogPluginManager: Mounting Engine plugin TemplateSequence
+LogPluginManager: Mounting Engine plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin AndroidFileServer
+LogPluginManager: Mounting Engine plugin AndroidMoviePlayer
+LogPluginManager: Mounting Engine plugin AndroidPermission
+LogPluginManager: Mounting Engine plugin AppleImageUtils
+LogPluginManager: Mounting Engine plugin AppleMoviePlayer
+LogPluginManager: Mounting Engine plugin ArchVisCharacter
+LogPluginManager: Mounting Engine plugin AssetTags
+LogPluginManager: Mounting Engine plugin AudioCapture
+LogPluginManager: Mounting Engine plugin AudioSynesthesia
+LogPluginManager: Mounting Engine plugin AudioWidgets
+LogPluginManager: Mounting Engine plugin ChunkDownloader
+LogPluginManager: Mounting Engine plugin CableComponent
+LogPluginManager: Mounting Engine plugin CustomMeshComponent
+LogPluginManager: Mounting Engine plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin GoogleCloudMessaging
+LogPluginManager: Mounting Engine plugin GeometryProcessing
+LogPluginManager: Mounting Engine plugin GeometryCache
+LogPluginManager: Mounting Engine plugin GooglePAD
+LogPluginManager: Mounting Engine plugin InputDebugging
+LogPluginManager: Found config from plugin[InputDebugging] Input
+LogPluginManager: Mounting Engine plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin LocationServicesBPLibrary
+LogPluginManager: Mounting Engine plugin Metasound
+LogPluginManager: Mounting Engine plugin MsQuic
+LogPluginManager: Mounting Engine plugin MobilePatchingUtils
+LogPluginManager: Mounting Engine plugin PreLoadScreenMoviePlayer
+LogPluginManager: Mounting Engine plugin ProceduralMeshComponent
+LogPluginManager: Mounting Engine plugin PropertyAccessEditor
+LogPluginManager: Mounting Engine plugin ResonanceAudio
+LogPluginManager: Mounting Engine plugin SignificanceManager
+LogPluginManager: Mounting Engine plugin RigVM
+LogPluginManager: Mounting Engine plugin SoundFields
+LogPluginManager: Mounting Engine plugin WaveTable
+LogPluginManager: Mounting Engine plugin Synthesis
+LogPluginManager: Mounting Engine plugin WebMMoviePlayer
+LogPluginManager: Mounting Engine plugin WindowsDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin WindowsMoviePlayer
+LogPluginManager: Mounting Engine plugin EnvironmentQueryEditor
+LogPluginManager: Mounting Engine plugin AISupport
+LogPluginManager: Mounting Engine plugin Takes
+LogPluginManager: Mounting Engine plugin CameraShakePreviewer
+LogPluginManager: Mounting Engine plugin GameplayCameras
+LogPluginManager: Mounting Engine plugin OodleNetwork
+LogPluginManager: Mounting Engine plugin DatasmithContent
+LogPluginManager: Mounting Engine plugin GLTFExporter
+LogPluginManager: Mounting Engine plugin VariantManager
+LogPluginManager: Mounting Engine plugin VariantManagerContent
+LogPluginManager: Mounting Engine plugin AutomationUtils
+LogPluginManager: Mounting Engine plugin BackChannel
+LogPluginManager: Mounting Engine plugin ChaosCaching
+LogPluginManager: Mounting Engine plugin ChaosEditor
+LogPluginManager: Mounting Engine plugin ChaosSolverPlugin
+LogPluginManager: Mounting Engine plugin ChaosNiagara
+LogPluginManager: Mounting Engine plugin ChaosUserDataPT
+LogPluginManager: Mounting Engine plugin CharacterAI
+LogPluginManager: Mounting Engine plugin Dataflow
+LogPluginManager: Mounting Engine plugin Fracture
+LogPluginManager: Mounting Engine plugin FullBodyIK
+LogPluginManager: Mounting Engine plugin GeometryCollectionPlugin
+LogPluginManager: Mounting Engine plugin LocalizableMessage
+LogPluginManager: Mounting Engine plugin OpenImageDenoise
+LogPluginManager: Mounting Engine plugin PlatformCrypto
+LogPluginManager: Mounting Engine plugin PythonScriptPlugin
+LogPluginManager: Mounting Engine plugin SkeletalReduction
+LogPluginManager: Mounting Engine plugin StructUtils
+LogPluginManager: Mounting Engine plugin StudioTelemetry
+LogPluginManager: Mounting Engine plugin ToolPresets
+LogPluginManager: Mounting Engine plugin Niagara
+LogPluginManager: Mounting Engine plugin LauncherChunkInstaller
+LogPluginManager: Mounting Engine plugin NiagaraSimCaching
+LogPluginManager: Mounting Engine plugin AnimationSharing
+LogPluginManager: Mounting Engine plugin CLionSourceCodeAccess
+LogPluginManager: Mounting Engine plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting Engine plugin Paper2D
+LogPluginManager: Mounting Engine plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting Engine plugin DumpGPUServices
+LogPluginManager: Mounting Engine plugin NullSourceCodeAccess
+LogPluginManager: Mounting Engine plugin GitSourceControl
+LogPluginManager: Mounting Engine plugin N10XSourceCodeAccess
+LogPluginManager: Mounting Engine plugin PerforceSourceControl
+LogPluginManager: Mounting Engine plugin PixWinPlugin
+LogPluginManager: Mounting Engine plugin PlasticSourceControl
+LogPluginManager: Mounting Engine plugin PluginUtils
+LogPluginManager: Mounting Engine plugin PropertyAccessNode
+LogPluginManager: Mounting Engine plugin RenderDocPlugin
+LogPluginManager: Mounting Engine plugin RiderSourceCodeAccess
+LogPluginManager: Mounting Engine plugin SubversionSourceControl
+LogPluginManager: Mounting Engine plugin TraceDataFilters
+LogPluginManager: Mounting Engine plugin TextureFormatOodle
+LogPluginManager: Mounting Engine plugin UObjectPlugin
+LogPluginManager: Mounting Engine plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting Engine plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting Engine plugin OnlineBase
+LogPluginManager: Mounting Engine plugin OnlineServices
+LogPluginManager: Mounting Engine plugin OnlineSubsystem
+LogPluginManager: Mounting Engine plugin OnlineSubsystemNull
+LogPluginManager: Mounting Engine plugin OnlineSubsystemUtils
+LogPluginManager: Mounting Engine plugin ObjectMixer
+LogPluginManager: Mounting Engine plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting Engine plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting Engine plugin XInputDevice
+LogPluginManager: Mounting Engine plugin MetaHumanProjectUtilities
+LogPluginManager: Mounting Engine plugin LightMixer
+LogPluginManager: Mounting Engine plugin PortableObjectFileDataSource
+LogWindows: Failed to load 'WinPixGpuCapturer.dll' (GetLastError=126)
+LogWindows: File 'WinPixGpuCapturer.dll' does not exist
+PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
+LogConfig: Applying CVar settings from Section [/Script/RenderDocPlugin.RenderDocPluginSettings] File [Engine]
+RenderDocPlugin: Display: RenderDoc plugin will not be loaded. Use '-AttachRenderDoc' on the cmd line or enable 'renderdoc.AutoAttach' in the plugin settings.
+LogInit: Using libcurl 8.4.0
+LogInit:  - built for Windows
+LogInit:  - supports SSL with OpenSSL/1.1.1t
+LogInit:  - supports HTTP deflate (compression) using libz 1.3
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: CreateHttpThread using FCurlHttpThread
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: Created online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+LogInit: ExecutableName: YokaiShokan.exe
+LogInit: Build: ++UE5+Release-5.4-CL-35576357
+LogInit: Platform=Windows
+LogInit: MachineId=98ceb3604a79fd1be77010bcb8139f60
+LogInit: DeviceId=
+LogInit: Engine Version: 5.4.4-35576357+++UE5+Release-5.4
+LogInit: Compatible Engine Version: 5.4.0-33043543+++UE5+Release-5.4
+LogInit: Net CL: 33043543
+LogInit: OS: Windows 11 (23H2) [10.0.22631.4602] (), CPU: AMD Ryzen 5 5600H with Radeon Graphics         , GPU: NVIDIA GeForce RTX 3060 Laptop GPU
+LogInit: Compiled (64-bit): Aug 16 2024 04:15:50
+LogInit: Architecture: x64
+LogInit: Compiled with Visual C++: 19.38.33130.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE5+Release-5.4
+LogInit: Command Line: 
+LogInit: Base Directory: C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Binaries/Win64/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+LogDevObjectVersion: Number of dev versions registered: 39
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 20
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 48
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 134
+LogDevObjectVersion:   FortniteValkyrie (8DBC2C5B-54A7-43E0-A768-FCBB7DA29060): 8
+LogDevObjectVersion:   FortniteSeason (5B4C06B7-2463-4AF8-805B-BF70CDF5D0DD): 12
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 13
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   UE5-Main (697DD581-E64F-41AB-AA4A-51ECBEB7B628): 119
+LogDevObjectVersion:   UE5-Release (D89B5E42-24BD-4D46-8412-ACA8DF641779): 51
+LogDevObjectVersion:   UE5-PrivateFrosty (59DA5D52-1232-4948-B878-597870B8E98B): 8
+LogDevObjectVersion:   UE5-Dev-Cooker (26075A32-730F-4708-88E9-8C32F1599D05): 0
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogDevObjectVersion:   UE5-Dev-LWCRendering (30D58BE3-95EA-4282-A6E3-B159D8EBB06A): 1
+LogDevObjectVersion:   Dev-RigVM (DC49959B-53C0-4DE7-9156-EA885E7C5D39): 9
+LogDevObjectVersion:   Dev-ControlRig (A7820CFB-20A7-4359-8C54-2C149623CF50): 30
+LogDevObjectVersion:   Dev-IKRig (F6DFBB78-BB50-A0E4-4018-B84D60CBAF23): 2
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: true, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Set CVar [[con.DebugEarlyDefault:1]]
+LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
+LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
+LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable created
+LogConfig: Set CVar [[r.setres:1280x720]]
+LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variable created
+LogConfig: Set CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
+LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable created
+LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
+LogConfig: Set CVar [[D3D12.Bindless.ResourceDescriptorHeapSize:100000]]
+LogConfig: Set CVar [[D3D12.Bindless.SamplerDescriptorHeapSize:2048]]
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [Engine]
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[VisualizeCalibrationColorMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationColor.PPM_DefaultCalibrationColor]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[VisualizeCalibrationGrayscaleMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale.PPM_DefaultCalibrationGrayscale]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: Set CVar [[r.GPUCrashDebugging:0]]
+[2024.12.27-23.05.02:673][  0]LogConfig: CVar [[MaxSkinBones:(Default=65536,PerPlatform=(("Mobile", 256)))]] deferred - dummy variable created
+[2024.12.27-23.05.02:673][  0]LogConfig: Set CVar [[r.ReflectionMethod:1]]
+[2024.12.27-23.05.02:673][  0]LogConfig: Set CVar [[r.GenerateMeshDistanceFields:1]]
+[2024.12.27-23.05.02:673][  0]LogConfig: Set CVar [[r.DynamicGlobalIlluminationMethod:1]]
+[2024.12.27-23.05.02:673][  0]LogConfig: Set CVar [[r.Mobile.EnableNoPrecomputedLightingCSMShader:1]]
+[2024.12.27-23.05.02:673][  0]LogConfig: Set CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[r.Shadow.Virtual.Enable:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[r.DefaultFeature.LocalExposure.HighlightContrastScale:0.8]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[r.DefaultFeature.LocalExposure.ShadowContrastScale:0.8]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[r.Shaders.RemoveUnusedInterpolators:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [Engine]
+[2024.12.27-23.05.02:674][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [Engine]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.AsyncLoadingThreadEnabled:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.EventDrivenLoaderEnabled:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.UseBackgroundLevelStreaming:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2024.12.27-23.05.02:674][  0]LogConfig: CVar [[s.MaxPackageSummarySize:16384]] deferred - dummy variable created
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[s.FlushStreamingOnExit:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__SoundBase]] deferred - dummy variable created
+[2024.12.27-23.05.02:674][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__MaterialInterface]] deferred - dummy variable created
+[2024.12.27-23.05.02:674][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__DeviceProfileManager]] deferred - dummy variable created
+[2024.12.27-23.05.02:674][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [Engine]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.FlushStreamingOnGC:0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.AllowParallelGC:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.MaxObjectsInEditor:25165824]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.CreateGCClusters:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.MinGCClusterSize:5]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.AssetClustreringEnabled:0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.ActorClusteringEnabled:0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.UseDisregardForGCOnDedicatedServers:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.VerifyUObjectsAreNotFGCObjects:0]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Set CVar [[gc.GarbageEliminationEnabled:1]]
+[2024.12.27-23.05.02:674][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [Engine]
+[2024.12.27-23.05.02:674][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Average",ToolTip="Simulates average internet conditions")]] deferred - dummy variable created
+[2024.12.27-23.05.02:674][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Bad",ToolTip="Simulates laggy internet conditions")]] deferred - dummy variable created
+[2024.12.27-23.05.02:688][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [Scalability]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.SkeletalMeshLODBias:0]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.ViewDistanceScale:1.0]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [Scalability]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.FXAA.Quality:4]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.TemporalAA.Quality:2]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.TSR.History.R11G11B10:1]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.TSR.History.ScreenPercentage:200]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.TSR.History.UpdateQuality:3]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.TSR.ShadingRejection.Flickering:1]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.TSR.RejectionAntiAliasingQuality:2]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.TSR.Resurrection:1]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Scalability]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.LightFunctionQuality:1]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.ShadowQuality:5]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.Shadow.MaxResolution:2048]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.Shadow.DistanceScale:1.0]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.DistanceFieldShadowing:1]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.VolumetricFog:1]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2024.12.27-23.05.02:688][  0]LogConfig: Set CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.LightMaxDrawDistanceScale:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.CapsuleShadows:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.MaxPhysicalPages:4096]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectional:-1.5]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving:-1.5]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocal:0.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocalMoving:1.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountDirectional:8]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayDirectional:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountLocal:8]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayLocal:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@3] File [Scalability]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DistanceFieldAO:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.AOQuality:2]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.DiffuseIndirect.Allow:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.ProbeSpacing:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.HemisphereProbeResolution:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.TraceMeshSDFs.Allow:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.ProbeResolution:32]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.NumProbesToTraceBudget:300]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.DownsampleFactor:16]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TracingOctahedronResolution:8]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.IrradianceFormat:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.StochasticInterpolation:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.FullResolutionJitterWidth:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TwoSidedFoliageBackfaceDiffuse:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ScreenTraces.HZBTraversal.FullResDepth:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.HardwareRayTracing:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.GridPixelSize:32]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TraceFromVolume:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TracingOctahedronResolution:3]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.ProbeResolution:8]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.NumProbesToTraceBudget:200]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Applying CVar settings from Section [ReflectionQuality@3] File [Scalability]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SSR.Quality:3]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SSR.HalfResSceneColor:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.Reflections.Allow:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.Reflections.DownsampleFactor:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.Reflections.MaxRoughnessToTraceForFoliage:0.4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.TonemapStrength:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Allow:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Enable:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [Scalability]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.MotionBlurQuality:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.MotionBlur.HalfResGather:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.AmbientOcclusionLevels:-1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DepthOfFieldQuality:2]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.RenderTargetPoolMin:400]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.LensFlareQuality:2]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SceneColorFringeQuality:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.EyeAdaptationQuality:2]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.BloomQuality:5]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Bloom.ScreenPercentage:50.000]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.FastBlurThreshold:100]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Upscale.Quality:3]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.LightShaftQuality:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Filter.SizeScale:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Tonemapper.Quality:5]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Gather.ResolutionDivisor:2         ; lower gathering resolution]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [Scalability]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Streaming.MipBias:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Streaming.Boost:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.MaxAnisotropy:8]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.VT.MaxAnisotropy:8]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Streaming.PoolSize:1000]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [Scalability]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.RefractionQuality:2]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SceneColorFormat:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.DetailMode:3]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.TranslucencyVolumeBlur:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SSS.Scale:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SSS.SampleSet:2]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SSS.Quality:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SSS.HalfRes:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SSGI.Quality:3]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.EmitterSpawnRateScale:1.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.ParticleLightQuality:2]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[fx.Niagara.QualityLevel:3]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.Refraction.OffsetQuality:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [Scalability]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[foliage.DensityScale:1.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[grass.DensityScale:1.0]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [Scalability]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Set CVar [[r.AnisotropicMaterials:1]]
+[2024.12.27-23.05.02:689][  0]LogConfig: Applying CVar settings from Section [LandscapeQuality@3] File [Scalability]
+[2024.12.27-23.05.02:695][  0]LogRHI: Using Default RHI: D3D12
+[2024.12.27-23.05.02:695][  0]LogRHI: Using Highest Feature Level of D3D12: SM6
+[2024.12.27-23.05.02:695][  0]LogRHI: Loading RHI module D3D12RHI
+[2024.12.27-23.05.02:697][  0]LogD3D12RHI: Aftermath initialized
+[2024.12.27-23.05.02:697][  0]LogD3D12RHI: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../../../../Program Files/Epic Games/UE_5.4/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+[2024.12.27-23.05.02:697][  0]LogRHI: Checking if RHI D3D12 with Feature Level SM6 is supported by your system.
+[2024.12.27-23.05.02:923][  0]LogD3D12RHI: Found D3D12 adapter 0: NVIDIA GeForce RTX 3060 Laptop GPU (VendorId: 10de, DeviceId: 2560, SubSysId: 3a8117aa, Revision: 00a1
+[2024.12.27-23.05.02:923][  0]LogD3D12RHI:   Max supported Feature Level 12_2, shader model 6.7, binding tier 3, wave ops supported, atomic64 supported
+[2024.12.27-23.05.02:923][  0]LogD3D12RHI:   Adapter has 6010MB of dedicated video memory, 0MB of dedicated system memory, and 8118MB of shared system memory, 2 output[s]
+[2024.12.27-23.05.02:923][  0]LogD3D12RHI:   Driver Version: 546.30 (internal:31.0.15.4630, unified:546.30)
+[2024.12.27-23.05.02:923][  0]LogD3D12RHI:      Driver Date: 11-30-2023
+[2024.12.27-23.05.02:931][  0]LogD3D12RHI: Found D3D12 adapter 1: Microsoft Basic Render Driver (VendorId: 1414, DeviceId: 008c, SubSysId: 0000, Revision: 0000
+[2024.12.27-23.05.02:931][  0]LogD3D12RHI:   Max supported Feature Level 12_1, shader model 6.2, binding tier 3, wave ops supported, atomic64 unsupported
+[2024.12.27-23.05.02:931][  0]LogD3D12RHI:   Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8118MB of shared system memory, 0 output[s]
+[2024.12.27-23.05.02:931][  0]LogD3D12RHI: DirectX Agility SDK runtime found.
+[2024.12.27-23.05.02:931][  0]LogD3D12RHI: Chosen D3D12 Adapter Id = 0
+[2024.12.27-23.05.02:931][  0]LogRHI: RHI D3D12 with Feature Level SM6 is supported and will be used.
+[2024.12.27-23.05.02:931][  0]LogInit: Selected Device Profile: [Windows]
+[2024.12.27-23.05.02:932][  0]LogHAL: Display: Platform has ~ 16 GB [17024741376 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2024.12.27-23.05.02:932][  0]LogDeviceProfileManager: Going up to parent DeviceProfile []
+[2024.12.27-23.05.02:932][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../../../../Program Files/Epic Games/UE_5.4/Engine/Config/ConsoleVariables.ini]
+[2024.12.27-23.05.02:932][  0]LogConfig: Set CVar [[r.DumpShaderDebugInfo:2]]
+[2024.12.27-23.05.02:932][  0]LogConfig: Set CVar [[r.Shaders.WarningsAsErrors:0 ;; 0: off, 1: global shaders, 2: all]]
+[2024.12.27-23.05.02:932][  0]LogConfig: Set CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2024.12.27-23.05.02:932][  0]LogConfig: Set CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2024.12.27-23.05.02:932][  0]LogConfig: Applying CVar settings from Section [Startup_Windows] File [../../../../../../Program Files/Epic Games/UE_5.4/Engine/Config/ConsoleVariables.ini]
+[2024.12.27-23.05.02:932][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2024.12.27-23.05.02:932][  0]LogConfig: Set CVar [[memory.MemoryPressureCriticalThresholdMB:512]]
+[2024.12.27-23.05.02:932][  0]LogInit: Computer: NEONSPC
+[2024.12.27-23.05.02:932][  0]LogInit: User: neone
+[2024.12.27-23.05.02:932][  0]LogInit: CPU Page size=4096, Cores=6
+[2024.12.27-23.05.02:932][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2024.12.27-23.05.03:104][  0]LogMemory: Process is running as part of a Windows Job with separate resource limits
+[2024.12.27-23.05.03:104][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx) Virtual=31.7GB
+[2024.12.27-23.05.03:104][  0]LogMemory: Platform Memory Stats for Windows
+[2024.12.27-23.05.03:104][  0]LogMemory: Process Physical Memory: 170.26 MB used, 178.98 MB peak
+[2024.12.27-23.05.03:104][  0]LogMemory: Process Virtual Memory: 136.37 MB used, 136.37 MB peak
+[2024.12.27-23.05.03:104][  0]LogMemory: Physical Memory: 14383.32 MB used,  1852.74 MB free, 16236.06 MB total
+[2024.12.27-23.05.03:104][  0]LogMemory: Virtual Memory: 24460.65 MB used,  8011.46 MB free, 32472.12 MB total
+[2024.12.27-23.05.03:104][  0]LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+[2024.12.27-23.05.03:105][  0]LogWindows: WindowsPlatformFeatures enabled
+[2024.12.27-23.05.03:108][  0]LogInit: Physics initialised using underlying interface: Chaos
+[2024.12.27-23.05.03:108][  0]LogInit: Using OS detected language (pt-PT).
+[2024.12.27-23.05.03:108][  0]LogInit: Using OS detected locale (pt-PT).
+[2024.12.27-23.05.03:111][  0]LogTextLocalizationManager: No localization for 'pt-PT' exists, so 'en' will be used for the language.
+[2024.12.27-23.05.03:113][  0]LogTextLocalizationManager: No localization for 'pt-PT' exists, so 'en' will be used for the locale.
+[2024.12.27-23.05.03:130][  0]LogWindowsTextInputMethodSystem: Available input methods:
+[2024.12.27-23.05.03:131][  0]LogWindowsTextInputMethodSystem:   - Português (Portugal) - (Keyboard).
+[2024.12.27-23.05.03:131][  0]LogWindowsTextInputMethodSystem:   - Português (Portugal) - Correção de Introdução por Toque (TSF IME).
+[2024.12.27-23.05.03:131][  0]LogWindowsTextInputMethodSystem: Activated input method: Português (Portugal) - (Keyboard).
+[2024.12.27-23.05.03:176][  0]LogSlate: New Slate User Created. Platform User Id 0, User Index 0, Is Virtual User: 0
+[2024.12.27-23.05.03:176][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2024.12.27-23.05.03:256][  0]LogRHI: Using Default RHI: D3D12
+[2024.12.27-23.05.03:256][  0]LogRHI: Using Highest Feature Level of D3D12: SM6
+[2024.12.27-23.05.03:256][  0]LogRHI: Loading RHI module D3D12RHI
+[2024.12.27-23.05.03:256][  0]LogRHI: Checking if RHI D3D12 with Feature Level SM6 is supported by your system.
+[2024.12.27-23.05.03:256][  0]LogRHI: RHI D3D12 with Feature Level SM6 is supported and will be used.
+[2024.12.27-23.05.03:256][  0]LogD3D12RHI: Display: Creating D3D12 RHI with Max Feature Level SM6
+[2024.12.27-23.05.03:257][  0]LogWindows: Attached monitors:
+[2024.12.27-23.05.03:257][  0]LogWindows:     resolution: 1536x864, work area: (-1920, 0) -> (-384, 816), device: '\\.\DISPLAY1'
+[2024.12.27-23.05.03:257][  0]LogWindows:     resolution: 1920x1080, work area: (0, 0) -> (1920, 1032), device: '\\.\DISPLAY2' [PRIMARY]
+[2024.12.27-23.05.03:257][  0]LogWindows: Found 2 attached monitors.
+[2024.12.27-23.05.03:257][  0]LogWindows: Gathering driver information using Windows Setup API
+[2024.12.27-23.05.03:257][  0]LogRHI: RHI Adapter Info:
+[2024.12.27-23.05.03:257][  0]LogRHI:             Name: NVIDIA GeForce RTX 3060 Laptop GPU
+[2024.12.27-23.05.03:257][  0]LogRHI:   Driver Version: 546.30 (internal:31.0.15.4630, unified:546.30)
+[2024.12.27-23.05.03:257][  0]LogRHI:      Driver Date: 11-30-2023
+[2024.12.27-23.05.03:258][  0]LogD3D12RHI:     GPU DeviceId: 0x2560 (for the marketing name, search the web for "GPU Device Id")
+[2024.12.27-23.05.03:258][  0]LogD3D12RHI: InitD3DDevice: -D3DDebug = off -D3D12GPUValidation = off
+[2024.12.27-23.05.03:266][  0]LogD3D12RHI: [Aftermath] Aftermath crash dumping enabled
+[2024.12.27-23.05.03:266][  0]LogD3D12RHI: [DRED] Dred breadcrumb context enabled
+[2024.12.27-23.05.03:266][  0]LogD3D12RHI: [DRED] Using lightweight DRED.
+[2024.12.27-23.05.03:266][  0]LogD3D12RHI: Emitting draw events for PIX profiling.
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: [Aftermath] Aftermath enabled and primed
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: [Aftermath] Aftermath resource tracking enabled
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: ID3D12Device1 is supported.
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: ID3D12Device2 is supported.
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: ID3D12Device3 is supported.
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: ID3D12Device4 is supported.
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: ID3D12Device5 is supported.
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: ID3D12Device6 is supported.
+[2024.12.27-23.05.03:384][  0]LogD3D12RHI: ID3D12Device7 is supported.
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: ID3D12Device8 is supported.
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: ID3D12Device9 is supported.
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: ID3D12Device10 is supported.
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: ID3D12Device11 is supported.
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: ID3D12Device12 is supported.
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: Bindless resources are supported
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: Stencil ref from pixel shader is not supported
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: Raster order views are supported
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: Wave Operations are supported (wave size: min=32 max=32).
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: D3D12 ray tracing tier 1.1 and bindless resources are supported.
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: Mesh shader tier 1.0 is supported
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: AtomicInt64OnTypedResource is supported
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: AtomicInt64OnGroupShared is supported
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: AtomicInt64OnDescriptorHeapResource is supported
+[2024.12.27-23.05.03:385][  0]LogD3D12RHI: Shader Model 6.6 atomic64 is supported
+[2024.12.27-23.05.03:466][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for DiagnosticBuffer (3D)
+[2024.12.27-23.05.03:466][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for DiagnosticBuffer (Copy)
+[2024.12.27-23.05.03:467][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for DiagnosticBuffer (Compute)
+[2024.12.27-23.05.03:495][  0]LogD3D12RHI: Display: Not using pipeline state disk cache per r.D3D12.PSO.DiskCache=0
+[2024.12.27-23.05.03:495][  0]LogD3D12RHI: Display: Not using driver-optimized pipeline state disk cache per r.D3D12.PSO.DriverOptimizedDiskCache=0
+[2024.12.27-23.05.03:495][  0]LogRHI: Texture pool is 3302 MB (70% of 4717 MB)
+[2024.12.27-23.05.03:496][  0]LogD3D12RHI: Async texture creation enabled
+[2024.12.27-23.05.03:496][  0]LogD3D12RHI: RHI has support for 64 bit atomics
+[2024.12.27-23.05.03:523][  0]LogVRS: Current RHI supports Variable Rate Shading
+[2024.12.27-23.05.03:529][  0]LogInit: Initializing FReadOnlyCVARCache
+[2024.12.27-23.05.03:539][  0]LogRendererCore: Ray tracing is disabled. Reason: disabled through project setting (r.RayTracing=0).
+[2024.12.27-23.05.03:541][  0]LogShaderLibrary: Display: Using ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/ShaderArchive-Global-PCD3D_SM6-PCD3D_SM6.ushaderbytecode for material shader code. Total 4964 unique shaders.
+[2024.12.27-23.05.03:541][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library Global
+[2024.12.27-23.05.03:541][  0]LogShaderLibrary: Display: Logical shader library 'Global' has been created as a monolithic library
+[2024.12.27-23.05.03:541][  0]LogShaderLibrary: Display: Running without a pakfile/IoStore and did not find a monolithic library 'Global_SC' - attempting disk search for its chunks
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display:    ....  not found
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'Global_SC', but could not find it neither as a monolithic library nor as a chunked one.
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'ChaosVD', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'Bridge', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'ControlRig', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'ControlRigModules', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'MediaPlate', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'UVEditor', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'BlueprintHeaderView', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'Interchange', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'MediaCompositing', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'TraceUtilities', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'ACLPlugin', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'SpeedTreeImporter', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'IKRig', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'ControlRigSpline', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'GeometryMode', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'SequencerScripting', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'AudioWidgets', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:542][  0]LogShaderLibrary: Display: Tried to open shader library 'AudioSynesthesia', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'GeometryProcessing', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'Takes', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'GameplayCameras', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'Metasound', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'DatasmithContent', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'RigVM', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'GLTFExporter', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'ChaosSolverPlugin', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'PreLoadScreenMoviePlayer', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'Synthesis', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'ChaosNiagara', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'ChaosCaching', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'ResonanceAudio', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'Dataflow', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'FullBodyIK', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'WaveTable', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'ToolPresets', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'GeometryCollectionPlugin', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'PythonScriptPlugin', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'Paper2D', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'ObjectMixer', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'Niagara', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'AnimationSharing', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'NiagaraSimCaching', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'MetaHumanProjectUtilities', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogShaderLibrary: Display: Tried to open shader library 'LightMixer', but could not find it (only tried to open it as a monolithic library).
+[2024.12.27-23.05.03:543][  0]LogTemp: Display: Clearing the OS Cache
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: --- StereoAspects begin ---
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: Platform=PCD3D_SM6 (49)
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bInstancedStereo = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bMobilePlatform = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bMobilePostprocessing = 1
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bMobileMultiView = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bMultiViewportCapable = 1
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bInstancedStereoNative = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: ---
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bMobileMultiViewCoreSupport = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bMobileMultiViewNative = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bMobileMultiViewFallback = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: ---
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bInstancedMultiViewportEnabled = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bInstancedStereoEnabled = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: bMobileMultiViewEnabled = 0
+[2024.12.27-23.05.03:635][  0]LogInit: FStereoShaderAspects: --- StereoAspects end ---
+[2024.12.27-23.05.03:646][  0]LogInit: XR: Instanced Stereo Rendering is Disabled
+[2024.12.27-23.05.03:646][  0]LogInit: XR: MultiViewport is Disabled
+[2024.12.27-23.05.03:646][  0]LogInit: XR: Mobile Multiview is Disabled
+[2024.12.27-23.05.03:651][  0]LogSlate: Using FreeType 2.10.0
+[2024.12.27-23.05.03:654][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2024.12.27-23.05.03:724][  0]LogMoviePlayer: Initializing movie player
+[2024.12.27-23.05.03:794][  0]LogShaderLibrary: Display: Using ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/ShaderArchive-YokaiShokan-PCD3D_SM6-PCD3D_SM6.ushaderbytecode for material shader code. Total 1890 unique shaders.
+[2024.12.27-23.05.03:794][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library YokaiShokan
+[2024.12.27-23.05.03:794][  0]LogShaderLibrary: Display: Logical shader library 'YokaiShokan' has been created as a monolithic library
+[2024.12.27-23.05.03:794][  0]LogRHI: Could not open FPipelineCacheFile: ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/PipelineCaches/Windows/YokaiShokan_PCD3D_SM6.stable.upipelinecache
+[2024.12.27-23.05.03:794][  0]LogRHI: Could not open FPipelineCacheFile: ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/PipelineCaches/Windows/YokaiShokan_PCD3D_SM6.stable.upipelinecache
+[2024.12.27-23.05.03:795][  0]LogRHI: Could not open FPipelineCacheFile: ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Content/PipelineCaches/Windows/YokaiShokan_PCD3D_SM6.stable.upipelinecache
+[2024.12.27-23.05.03:795][  0]LogInit: Using OS detected language (pt-PT).
+[2024.12.27-23.05.03:795][  0]LogInit: Using OS detected locale (pt-PT).
+[2024.12.27-23.05.03:795][  0]LogTextLocalizationManager: No localization for 'pt-PT' exists, so 'en' will be used for the language.
+[2024.12.27-23.05.03:795][  0]LogTextLocalizationManager: No localization for 'pt-PT' exists, so 'en' will be used for the locale.
+[2024.12.27-23.05.03:797][  0]LogAssetRegistry: FAssetRegistry took 0.0017 seconds to start up
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Bridge.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChaosCloth.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CmdLinkServer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/FastBuildController.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/EnhancedInput.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChaosVD.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MeshPainting.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/RenderGraphInsights.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/TraceUtilities.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/WorldMetrics.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/XGEController.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AnimationModifierLibrary.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AnimationData.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ControlRigModules.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ControlRigSpline.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ControlRig.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/BlendSpaceMotionAnalysis.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ACLPlugin.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/IKRig.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AssetManagerEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/VisualStudioTools.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/BlueprintHeaderView.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChangelistReview.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CryptoKeys.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/DataValidation.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/EditorDebugTools.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CurveEditorTools.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/SpeedTreeImporter.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/FacialAnimation.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/EngineAssetDefinitions.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/EditorScriptingUtilities.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GameplayTagsEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MacGraphicsSwitching.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GeometryMode.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MaterialAnalyzer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PluginBrowser.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MobileLauncherProfileWizard.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/SequencerAnimTools.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/UVEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/WorldPartitionHLODUtilities.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AlembicImporter.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/InterchangeTests.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/InterchangeEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/TcpMessaging.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Interchange.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AndroidMedia.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/UdpMessaging.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AvfMedia.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MediaPlate.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ImgMedia.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MediaCompositing.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MediaPlayerEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ActorSequence.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/WebMMedia.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/WmfMedia.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/LevelSequenceEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ActorLayerUtilities.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/SequencerScripting.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/TemplateSequence.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AndroidDeviceProfileSelector.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AndroidFileServer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AndroidMoviePlayer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AndroidPermission.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AppleImageUtils.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AppleMoviePlayer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ArchVisCharacter.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AssetTags.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AudioCapture.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AudioSynesthesia.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AudioWidgets.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChunkDownloader.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CableComponent.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CustomMeshComponent.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ExampleDeviceProfileSelector.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GoogleCloudMessaging.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GeometryProcessing.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GeometryCache.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GooglePAD.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/InputDebugging.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/IOSDeviceProfileSelector.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/LinuxDeviceProfileSelector.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/LocationServicesBPLibrary.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:798][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Metasound.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MsQuic.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MobilePatchingUtils.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PreLoadScreenMoviePlayer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ProceduralMeshComponent.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PropertyAccessEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ResonanceAudio.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/SignificanceManager.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/RigVM.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/SoundFields.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/WaveTable.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Synthesis.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/WebMMoviePlayer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/WindowsDeviceProfileSelector.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/WindowsMoviePlayer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/EnvironmentQueryEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AISupport.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Takes.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CameraShakePreviewer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GameplayCameras.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/OodleNetwork.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/DatasmithContent.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GLTFExporter.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/VariantManager.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/VariantManagerContent.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AutomationUtils.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/BackChannel.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChaosCaching.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChaosEditor.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChaosSolverPlugin.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChaosNiagara.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ChaosUserDataPT.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CharacterAI.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Dataflow.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Fracture.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/FullBodyIK.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GeometryCollectionPlugin.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/LocalizableMessage.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/OpenImageDenoise.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PlatformCrypto.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PythonScriptPlugin.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/SkeletalReduction.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/StructUtils.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/StudioTelemetry.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ToolPresets.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Niagara.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/LauncherChunkInstaller.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/NiagaraSimCaching.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/AnimationSharing.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CLionSourceCodeAccess.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/CodeLiteSourceCodeAccess.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/Paper2D.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/KDevelopSourceCodeAccess.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/DumpGPUServices.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/NullSourceCodeAccess.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/GitSourceControl.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/N10XSourceCodeAccess.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PerforceSourceControl.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PixWinPlugin.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PlasticSourceControl.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PluginUtils.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PropertyAccessNode.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/RenderDocPlugin.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/RiderSourceCodeAccess.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/SubversionSourceControl.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/TraceDataFilters.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/TextureFormatOodle.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/UObjectPlugin.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/VisualStudioCodeSourceCodeAccess.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/VisualStudioSourceCodeAccess.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/OnlineBase.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/OnlineServices.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/OnlineSubsystem.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/OnlineSubsystemNull.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/OnlineSubsystemUtils.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ObjectMixer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ContentBrowserAssetDataSource.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/ContentBrowserClassDataSource.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/XInputDevice.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/MetaHumanProjectUtilities.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/LightMixer.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:799][  0]LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../../../Program Files/Epic Games/UE_5.4/../../../GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Saved/Config/Windows/PortableObjectFileDataSource.ini. Please use FConfigCacheIni::NormalizeConfigIniPath before accessing INI files through ConfigCache.
+[2024.12.27-23.05.03:965][  0]LogStreaming: Display: FlushAsyncLoading(1): 1 QueuedPackages, 0 AsyncPackages
+[2024.12.27-23.05.03:966][  0]LogPackageLocalizationCache: Processed 46 localized package path(s) for 1 prioritized culture(s) in 0.000669 seconds
+[2024.12.27-23.05.03:978][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.12.27-23.05.04:016][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+[2024.12.27-23.05.04:016][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+[2024.12.27-23.05.04:017][  0]LogDeviceProfileManager: Active device profile: [000002136F5F6A00][0000021369AB6DC0 66] Windows
+[2024.12.27-23.05.04:017][  0]LogCsvProfiler: Display: Metadata set : deviceprofile="Windows"
+[2024.12.27-23.05.04:056][  0]LogTextureEncodingSettings: Display: Texture Encode Speed: Final (cook).
+[2024.12.27-23.05.04:056][  0]LogTextureEncodingSettings: Display: Oodle Texture Encode Speed settings: Fast: RDO Off Lambda=0, Effort=Normal Final: RDO Off Lambda=0, Effort=Normal
+[2024.12.27-23.05.04:056][  0]LogTextureEncodingSettings: Display: Shared linear texture encoding: Disabled
+[2024.12.27-23.05.04:322][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2024.12.27-23.05.04:322][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2024.12.27-23.05.04:394][  0]LogLiveCoding: Display: Starting LiveCoding
+[2024.12.27-23.05.04:394][  0]LogLiveCoding: Display: LiveCodingConsole Arguments: YokaiShokan Win64 Development
+[2024.12.27-23.05.04:394][  0]LogLiveCoding: Display: Detected running instance in process group "UE_YokaiShokan_0x4729b6a4", connecting to console process (PID: 23668)
+[2024.12.27-23.05.04:394][  0]LogLiveCoding: Display: Waiting for server
+[2024.12.27-23.05.04:395][  0]LogLiveCoding: Display: Successfully initialized, removing startup thread
+[2024.12.27-23.05.04:501][  0]LogAudio: Display: Registering Engine Module Parameter Interfaces...
+[2024.12.27-23.05.04:503][  0]LogMetasoundEngine: MetaSound Engine Initialized
+[2024.12.27-23.05.04:507][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: 9DCC80076D4A46478000000000003600 | Instance: A2B36B844488D4F9417F56B16EF040ED (NEONSPC-9436).
+[2024.12.27-23.05.04:514][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2024.12.27-23.05.04:530][  0]LogUObjectArray: 24819 objects as part of root set at end of initial load.
+[2024.12.27-23.05.04:531][  0]LogUObjectArray: 49 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2024.12.27-23.05.04:531][  0]LogUObjectAllocator: 5351712 out of 0 bytes used by permanent object pool.
+[2024.12.27-23.05.04:531][  0]LogUObjectArray: CloseDisregardForGC: 24819/24819 objects in disregard for GC pool
+[2024.12.27-23.05.04:534][  0]LogEngine: Initializing Engine...
+[2024.12.27-23.05.04:537][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2024.12.27-23.05.04:590][  0]LogNetVersion: Set ProjectVersion to 0.0.0.1. Version Checksum will be recalculated on next use.
+[2024.12.27-23.05.04:590][  0]LogInit: Texture streaming: Enabled
+[2024.12.27-23.05.04:591][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2024.12.27-23.05.04:591][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2024.12.27-23.05.04:591][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2024.12.27-23.05.04:591][  0]LogAudio: Display: AudioInfo: 'OPUS' Registered
+[2024.12.27-23.05.04:597][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2024.12.27-23.05.04:597][  0]LogAudio: Display: AudioInfo: 'OGG' Registered
+[2024.12.27-23.05.04:597][  0]LogAudio: Display: AudioInfo: 'ADPCM' Registered
+[2024.12.27-23.05.04:597][  0]LogAudio: Display: AudioInfo: 'PCM' Registered
+[2024.12.27-23.05.04:597][  0]LogAudio: Display: AudioInfo: 'BINKA' Registered
+[2024.12.27-23.05.04:597][  0]LogAudio: Display: AudioInfo: 'RADA' Registered
+[2024.12.27-23.05.04:597][  0]LogAudio: Display: Audio Device Manager Initialized
+[2024.12.27-23.05.04:598][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2024.12.27-23.05.04:598][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.12.27-23.05.04:598][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.12.27-23.05.04:598][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.12.27-23.05.04:598][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.12.27-23.05.04:598][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.12.27-23.05.04:598][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.12.27-23.05.04:598][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.12.27-23.05.04:598][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.12.27-23.05.04:599][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.12.27-23.05.04:599][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.12.27-23.05.04:599][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.12.27-23.05.04:603][  0]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.12.27-23.05.04:670][  0]LogAudioMixer: Display: Using Audio Hardware Device Altifalantes (2- CORSAIR HS55 SURROUND USB Adapter)
+[2024.12.27-23.05.04:672][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.12.27-23.05.04:674][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.12.27-23.05.04:676][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.12.27-23.05.04:678][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2024.12.27-23.05.04:678][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=1
+[2024.12.27-23.05.04:679][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2024.12.27-23.05.04:679][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=1
+[2024.12.27-23.05.04:679][  0]LogInit: FAudioDevice initialized with ID 1.
+[2024.12.27-23.05.04:680][  0]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 1
+[2024.12.27-23.05.04:680][  0]LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2024.12.27-23.05.04:694][  0]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.12.27-23.05.04:716][  0]LogTemp: Warning: Inventory System Initialized
+[2024.12.27-23.05.04:716][  0]LogTemp: Warning: Level Manager Initialized
+[2024.12.27-23.05.04:716][  0]LogTemp: Warning: Settings Manager Initialized
+[2024.12.27-23.05.04:716][  0]LogTemp: Warning: Stats Manager Initialized
+[2024.12.27-23.05.04:716][  0]LogTemp: Warning: Audio Manager Initialized
+[2024.12.27-23.05.04:716][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2024.12.27-23.05.04:719][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.12.27-23.05.04:720][  0]LogInit: Display: Game Engine Initialized.
+[2024.12.27-23.05.04:722][  0]LogRHI: Display: Encountered a new compute PSO: 1985946213
+[2024.12.27-23.05.04:724][  0]LogInit: Display: Starting Game.
+[2024.12.27-23.05.04:724][  0]LogGlobalStatus: UEngine::Browse Started Browse: "/Game/Levels/Game/L_MainMenu?Name=Player"
+[2024.12.27-23.05.04:724][  0]LogNet: Browse: /Game/Levels/Game/L_MainMenu?Name=Player
+[2024.12.27-23.05.04:724][  0]LogRHI: Display: Encountered a new compute PSO: 1428619795
+[2024.12.27-23.05.04:726][  0]LogRHI: Display: Encountered a new compute PSO: 4063335720
+[2024.12.27-23.05.05:196][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.385 s
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: 
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: Ensure condition failed: bSuccess  [File:D:\build\++UE5\Sync\Engine\Source\Runtime\MoviePlayer\Private\MoviePlayerThreading.cpp] [Line: 198] 
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: Only one system can use the SlateThread at the same time. GetMoviePlayer is not compatible with PreLoadScreen.
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: Stack: 
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: [Callstack] 0x00007ff6bb3f99dd YokaiShokan.exe!FSlateLoadingThreadTask::Init() []
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: [Callstack] 0x00007ff6b62354bf YokaiShokan.exe!FRunnableThreadWin::Run() []
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: [Callstack] 0x00007ff6b6229037 YokaiShokan.exe!FRunnableThreadWin::GuardedRun() []
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: [Callstack] 0x00007ffb987a259d KERNEL32.DLL!UnknownFunction []
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: [Callstack] 0x00007ffb9aaeaf38 ntdll.dll!UnknownFunction []
+[2024.12.27-23.05.05:196][  0]LogOutputDevice: Error: 
+[2024.12.27-23.05.05:205][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2024.12.27-23.05.05:491][  0]LogStats:                    SendNewReport -  0.286 s
+[2024.12.27-23.05.05:491][  0]LogStats:             FDebug::EnsureFailed -  0.680 s
+[2024.12.27-23.05.05:492][  0]LogLoad: LoadMap: /Game/Levels/Game/L_MainMenu?Name=Player
+[2024.12.27-23.05.05:493][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2024.12.27-23.05.05:496][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2024.12.27-23.05.05:501][  0]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.12.27-23.05.05:501][  0]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.12.27-23.05.05:548][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.12.27-23.05.05:567][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2024.12.27-23.05.05:642][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'L_MainMenu'.
+[2024.12.27-23.05.05:642][  0]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.12.27-23.05.05:649][  0]LogLoad: Game class is 'BP_MainMenuGameMode_C'
+[2024.12.27-23.05.05:652][  0]LogWorld: Bringing World /Game/Levels/Game/L_MainMenu.L_MainMenu up for play (max tick rate 0) at 2024.12.27-23.05.05
+[2024.12.27-23.05.05:655][  0]LogWorld: Bringing up level for play took: 0.003574
+[2024.12.27-23.05.05:661][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2024.12.27-23.05.05:709][  0]LogRHI: Display: Encountered a new graphics PSO: 3697508464
+[2024.12.27-23.05.05:735][  0]LogRHI: Display: Encountered a new graphics PSO: 553144757
+[2024.12.27-23.05.05:736][  0]LogRHI: Display: Encountered a new graphics PSO: 1480385642
+[2024.12.27-23.05.09:899][  0]LogLoad: Took 4.406903 seconds to LoadMap(/Game/Levels/Game/L_MainMenu)
+[2024.12.27-23.05.09:899][  0]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Levels/Game/L_MainMenu
+[2024.12.27-23.05.09:904][  1]LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
+[2024.12.27-23.05.09:904][  1]LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
+[2024.12.27-23.05.09:904][  1]LogRHI: Display: ShaderPipelineCache: Batching Resumed.
+[2024.12.27-23.05.09:911][  1]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2024.12.27-23.05.09:911][  1]LogLoad: (Engine Initialization) Total time: 8.48 seconds
+[2024.12.27-23.05.09:937][  1]LogContentStreaming: Texture pool size now 1000 MB
+[2024.12.27-23.05.09:937][  1]LogCsvProfiler: Display: Metadata set : streamingpoolsizemb="1000"
+[2024.12.27-23.05.09:945][  1]LogSlate: Took 0.000889 seconds to synchronously load lazily loaded font '../../../../../../Program Files/Epic Games/UE_5.4/Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2024.12.27-23.05.09:982][  1]LogStreaming: Display: FlushAsyncLoading(55): 1 QueuedPackages, 0 AsyncPackages
+[2024.12.27-23.05.09:993][  1]LogSlate: Took 0.000951 seconds to synchronously load lazily loaded font '../../../../../../Program Files/Epic Games/UE_5.4/Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new graphics PSO: 2484791650
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 4188668841
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 3066176302
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 3767645477
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new graphics PSO: 609465502
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 2584459113
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 3463999945
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new graphics PSO: 3093059691
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 1363446119
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 826317088
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 3016901838
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 1501249235
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 2714542174
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 991035869
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 3978336390
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 1437865455
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 1241629650
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 989998931
+[2024.12.27-23.05.10:184][  2]LogRHI: Display: Encountered a new compute PSO: 3204070436
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 1335924234
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1441774464
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 733467776
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3041469007
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3262353171
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 763078999
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1777824844
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 529456739
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 181843231
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2269158753
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 985041011
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 766098805
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3500427752
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3774044442
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1744009190
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 1458302147
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3247850357
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 755079178
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 4069030907
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1446261480
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 78052408
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 4065620706
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 3366029367
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3174137632
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 895717398
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3313584943
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3032915879
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1353665459
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1378653325
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2321745495
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3302992009
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3912335495
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2097877857
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3578567352
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 4173443662
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 26330889
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2830592730
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1289095396
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2779775670
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 549472865
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 252931312
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 1555456529
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 576365864
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3841928732
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 646753278
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3103787047
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 98092841
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 3240984411
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2782119393
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2996597590
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2484482707
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1814902648
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 1522353498
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 941453398
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3885016037
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 3496187278
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 323560463
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2819046710
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 4209213404
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2976825142
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 434158337
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2049184558
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 1829824113
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2188627990
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 788782481
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 3121995136
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 890068366
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new compute PSO: 2150718415
+[2024.12.27-23.05.10:186][  2]LogRHI: Display: Encountered a new graphics PSO: 3392940474
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new graphics PSO: 1476529720
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 1611279799
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 2202713512
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new graphics PSO: 2250920135
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 3532654478
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 3223131886
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 3092716485
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 3648397297
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 3880928867
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 1419963234
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 800230722
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 1414181958
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new compute PSO: 106794541
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new graphics PSO: 1454705710
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new graphics PSO: 1832972510
+[2024.12.27-23.05.10:187][  2]LogRHI: Display: Encountered a new graphics PSO: 2599242744
+[2024.12.27-23.05.10:188][  2]LogRHI: Display: Encountered a new graphics PSO: 1070760924
+[2024.12.27-23.05.10:207][  2]LogRHI: Display: Encountered a new graphics PSO: 2184596891
+[2024.12.27-23.05.10:207][  2]LogRHI: Display: Encountered a new graphics PSO: 964239923
+[2024.12.27-23.05.10:223][  3]LogRHI: Display: Encountered a new compute PSO: 3548587239
+[2024.12.27-23.05.10:257][  3]LogRHI: Display: Encountered a new compute PSO: 1612619848
+[2024.12.27-23.05.10:257][  3]LogRHI: Display: Encountered a new compute PSO: 1957116234
+[2024.12.27-23.05.10:257][  3]LogRHI: Display: Encountered a new compute PSO: 154047005
+[2024.12.27-23.05.10:257][  3]LogRHI: Display: Encountered a new compute PSO: 3953088470
+[2024.12.27-23.05.10:257][  3]LogRHI: Display: Encountered a new compute PSO: 1402352343
+[2024.12.27-23.05.10:257][  3]LogRHI: Display: Encountered a new compute PSO: 4125810004
+[2024.12.27-23.05.10:257][  3]LogRHI: Display: Encountered a new graphics PSO: 104822522
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 870980173
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new graphics PSO: 2857564543
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 797405437
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 25799498
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new graphics PSO: 1577009753
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 815451083
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 3561037973
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 2907807209
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 1401519718
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new graphics PSO: 4173367933
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new graphics PSO: 3812736319
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new graphics PSO: 2293407659
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new graphics PSO: 3634157506
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new graphics PSO: 2449073506
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new graphics PSO: 263422358
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 1322516561
+[2024.12.27-23.05.10:258][  3]LogRHI: Display: Encountered a new compute PSO: 4242974518
+[2024.12.27-23.05.10:261][  3]LogRHI: Display: Encountered a new compute PSO: 3292568173
+[2024.12.27-23.05.10:261][  3]LogRHI: Display: Encountered a new compute PSO: 2587087033
+[2024.12.27-23.05.10:261][  3]LogRHI: Display: Encountered a new compute PSO: 4148543444
+[2024.12.27-23.05.10:261][  3]LogRHI: Display: Encountered a new compute PSO: 928063994
+[2024.12.27-23.05.10:261][  3]LogRHI: Display: Encountered a new graphics PSO: 2443642255
+[2024.12.27-23.05.10:290][  4]LogRHI: Display: Encountered a new compute PSO: 2262809900
+[2024.12.27-23.05.12:392][310]Closing by request
+[2024.12.27-23.05.12:392][310]LogWindows: FPlatformMisc::RequestExit(0, UGameEngine::HandleExitCommand)
+[2024.12.27-23.05.12:393][310]LogWindows: FPlatformMisc::RequestExitWithStatus(0, 0, UGameEngine::HandleExitCommand)
+[2024.12.27-23.05.12:393][310]LogCore: Engine exit requested (reason: Win RequestExit)
+[2024.12.27-23.05.12:397][311]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2024.12.27-23.05.12:410][311]LogInit: Display: PreExit Game.
+[2024.12.27-23.05.12:411][311]LogWorld: BeginTearingDown for /Game/Levels/Game/L_MainMenu
+[2024.12.27-23.05.12:418][311]LogTemp: Warning: Inventory System DeInitialized
+[2024.12.27-23.05.12:418][311]LogTemp: Warning: Level Manager DeInitialized
+[2024.12.27-23.05.12:418][311]LogTemp: Warning: Settings Manager DeInitialized
+[2024.12.27-23.05.12:418][311]LogTemp: Warning: Stats Manager DeInitialized
+[2024.12.27-23.05.12:418][311]LogTemp: Warning: Audio Manager DeInitialized
+[2024.12.27-23.05.12:418][311]LogWorld: UWorld::CleanupWorld for L_MainMenu, bSessionEnded=true, bCleanupResources=true
+[2024.12.27-23.05.12:419][311]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.12.27-23.05.12:419][311]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.12.27-23.05.12:419][311]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.12.27-23.05.12:545][311]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2024.12.27-23.05.12:545][311]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2024.12.27-23.05.12:545][311]LogAudio: Display: Audio Device unregistered from world 'L_MainMenu'.
+[2024.12.27-23.05.12:545][311]LogAudio: Display: Shutting down audio device while 1 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2024.12.27-23.05.12:581][311]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.12.27-23.05.12:582][311]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.12.27-23.05.12:589][311]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID -1
+[2024.12.27-23.05.12:590][311]LogAudio: Display: Audio Device Manager Shutdown
+[2024.12.27-23.05.12:590][311]LogSlate: Request Window 'A Tayu's Nightmare A Tayu's Nightmare ' being destroyed
+[2024.12.27-23.05.12:590][311]LogSlate: Window 'A Tayu's Nightmare A Tayu's Nightmare ' being destroyed
+[2024.12.27-23.05.12:592][311]LogWindowsTextInputMethodSystem: Activated input method: Português (Portugal) - (Keyboard).
+[2024.12.27-23.05.12:597][311]LogWindowsTextInputMethodSystem: Activated input method: Português (Portugal) - (Keyboard).
+[2024.12.27-23.05.12:605][311]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2024.12.27-23.05.12:605][311]LogExit: Preparing to exit.
+[2024.12.27-23.05.12:606][311]LogMoviePlayer: Shutting down movie player
+[2024.12.27-23.05.12:632][311]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.12.27-23.05.12:643][311]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2024.12.27-23.05.12:648][311]LogExit: Game engine shut down
+[2024.12.27-23.05.12:764][311]LogExit: Object subsystem successfully closed.
+[2024.12.27-23.05.21:678][311]RenderDocPlugin: plugin has been unloaded.
+[2024.12.27-23.05.21:684][311]LogPakFile: Destroying PakPlatformFile
+[2024.12.27-23.05.21:836][311]LogD3D12RHI: ~FD3D12DynamicRHI
+[2024.12.27-23.05.21:844][311]LogExit: Exiting.
+[2024.12.27-23.05.21:866][311]Log file closed, 12/27/24 23:05:21

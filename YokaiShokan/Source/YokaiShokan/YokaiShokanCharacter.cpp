@@ -11,6 +11,7 @@
 #include "KismetMathLibrary.generated.h"
 #include "StatsGameInstanceSubsystem.h"
 #include "LevelManagerInstanceSubsystem.h"
+#include "TutorialGameMode.h"
 #include "Kismet/GameplayStatics.h"
 #include "Engine/LocalPlayer.h"
 
@@ -79,6 +80,16 @@ void AYokaiShokanCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 void AYokaiShokanCharacter::Move(const FInputActionValue& Value)
 {
+	auto gamemode = Cast<ATutorialGameMode>(GetWorld()->GetAuthGameMode());
+
+	if (gamemode != nullptr)
+	{
+		if (gamemode->GetIsFirstDash())
+		{
+			return;
+		}
+	}
+
 	if (_IsDashing) return;
 	
 	// input is a Vector2D
@@ -94,6 +105,16 @@ void AYokaiShokanCharacter::Move(const FInputActionValue& Value)
 
 void AYokaiShokanCharacter::Look(const FInputActionValue& Value)
 {
+	auto gamemode = Cast<ATutorialGameMode>(GetWorld()->GetAuthGameMode());
+
+	if (gamemode != nullptr)
+	{
+		if (gamemode->GetIsFirstDash())
+		{
+			return;
+		}
+	}
+
 	// input is a Vector2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
 
@@ -114,8 +135,19 @@ void AYokaiShokanCharacter::HealPlayer(float amount)
 	yokaiGameInstance->HealPlayer(amount);
 }
 
-void AYokaiShokanCharacter::DamagePlayer(float damage)
+void AYokaiShokanCharacter::DamagePlayer(float damage, FVector direction)
 {
+	auto gamemode = Cast<ATutorialGameMode>(GetWorld()->GetAuthGameMode());
+
+	if (gamemode != nullptr)
+	{
+		if (gamemode->GetIsFirstDash())
+		{
+			gamemode->BP_TookAHit();
+			return;
+		}
+	}
+
 	auto gameInstance = GetGameInstance();
 
 	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UStatsGameInstanceSubsystem>();
@@ -123,12 +155,35 @@ void AYokaiShokanCharacter::DamagePlayer(float damage)
 	if (yokaiGameInstance->DamagePlayer(damage))
 	{
 		//damge player animation only
+
+		LaunchCharacter(direction, false, false);
+
 		return;
 	}
+
+	BP_PlayerDeath();
 }
 
 void AYokaiShokanCharacter::Dash()
 {
+	auto gamemode = Cast<ATutorialGameMode>(GetWorld()->GetAuthGameMode());
+
+	if (gamemode != nullptr)
+	{
+		if (gamemode->GetIsFirstDash())
+		{
+			gamemode->SetIsFirstDash(false);
+
+			UGameplayStatics::PlaySound2D(GetWorld(), DashSound);
+
+			LaunchCharacter(FVector(-4500, 0, 0), false, false);
+
+			gamemode->BP_FirstTimeDash();
+
+			return;
+		}
+	}
+
 	if (!GetGameInstance()->GetSubsystem<ULevelManagerInstanceSubsystem>()->GetIsInsideRoguelite()) return;
 
 	if (_IsDashing)

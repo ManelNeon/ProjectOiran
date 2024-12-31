@@ -82,10 +82,13 @@ public:
 	void HealPlayer(float amount);
 
 	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
-	void DamagePlayer(float damage);
+	void DamagePlayer(float damage, FVector direction);
 
 protected:
 	virtual void BeginPlay();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Tutorial Enemy | Functions")
+	void BP_PlayerDeath();
 
 public:
 		

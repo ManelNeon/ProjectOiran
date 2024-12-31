@@ -20,12 +20,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "718DE4069724785756357EAE42F2B7C28C41FCD7",
-			"Assets": [
-				"/Game/VFX/TreeVFX/M_MagicDust"
-			]
-		},
-		{
 			"ShaderMapHash": "78F47407D9D24E2E6607843C2B0242B68931B4B4",
 			"Assets": [
 				"/Engine/EngineMaterials/GizmoMaterial"
@@ -35,12 +29,6 @@
 			"ShaderMapHash": "806A8D0AA0E9AAE358FBAEC9E3011DA0C213886C",
 			"Assets": [
 				"/Engine/EngineMaterials/FlattenMaterial_WS_Normal_VT"
-			]
-		},
-		{
-			"ShaderMapHash": "EC5FB20AA1113953991365D299959A8A0F1ABDB7",
-			"Assets": [
-				"/Game/Meshes/QuixelBridge/Materials/Tatami_Material"
 			]
 		},
 		{
@@ -80,12 +68,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "9CA9F51B3FE5F158809A32A3CACF38E7F9F955C0",
-			"Assets": [
-				"/Engine/EngineSky/M_SimpleSkyDome"
-			]
-		},
-		{
 			"ShaderMapHash": "EBDC1B1CA9FCEEDE58BDE01755528A801F2EE7A2",
 			"Assets": [
 				"/Interchange/gltf/M_Default"
@@ -95,18 +77,6 @@
 			"ShaderMapHash": "56B8A11D1B446197ACFB386731ABEAA8D5277017",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Opaque_DS"
-			]
-		},
-		{
-			"ShaderMapHash": "86CF241ED08DCB67F2B84EEE7334D44C2854DC5F",
-			"Assets": [
-				"/Engine/MapTemplates/Materials/BasicAsset03"
-			]
-		},
-		{
-			"ShaderMapHash": "3CB22E20F2F64C5707CC2207B4870EDA29F8D701",
-			"Assets": [
-				"/Engine/OpenWorldTemplate/LandscapeMaterial/MI_ProcGrid"
 			]
 		},
 		{
@@ -170,12 +140,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "B83EBD43E467AAEB4AA7CDC1086B3A23A507B71C",
-			"Assets": [
-				"/Game/VFX/Material_Instance/M_Mat01_Inst1"
-			]
-		},
-		{
 			"ShaderMapHash": "68C21D4461266B7FE70DE0EF467CFA4EC0EE0368",
 			"Assets": [
 				"/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud"
@@ -231,33 +195,15 @@
 			]
 		},
 		{
-			"ShaderMapHash": "E8F326678AA09D0DAEE4E5B53240351119DAA341",
-			"Assets": [
-				"/Game/VFX/Material_Instance/M_Mat01"
-			]
-		},
-		{
 			"ShaderMapHash": "289EAE69F8064777A2FD2968950DB619276E2B43",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Default_Opaque_DS"
 			]
 		},
 		{
-			"ShaderMapHash": "367EFE6D3B207AE7A266B47E7D1BF8EC0E8A3215",
-			"Assets": [
-				"/Game/FirstPersonArms/Character/Materials/Instances/Manny/MI_Manny_02"
-			]
-		},
-		{
 			"ShaderMapHash": "32CF716F28ECB113E0A7F3FD8A8D622D7B7B5019",
 			"Assets": [
 				"/Engine/EngineMaterials/RemoveSurfaceMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "241B367037F22EAD651926357C683536DEA1B8AE",
-			"Assets": [
-				"/Engine/OpenWorldTemplate/LandscapeMaterial/M_ProcGrid"
 			]
 		},
 		{
@@ -312,12 +258,6 @@
 			"ShaderMapHash": "E9F95394C4920F2ACDC5BD5C400683B3D5D61FC2",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Sheen_Blend"
-			]
-		},
-		{
-			"ShaderMapHash": "F5622697C900B29A5AEBF0A5CEA2CA00C9EDDF2B",
-			"Assets": [
-				"/Engine/EngineSky/M_Sky_Panning_Clouds2"
 			]
 		},
 		{
@@ -472,13 +412,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "A7F18BD01AA58B1FEE2B0ACA4A9B96F5F9A567B1",
-			"Assets": [
-				"/Engine/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01",
-				"/Game/VFX/TreeVFX/M_EV_TreeGodRays"
-			]
-		},
-		{
 			"ShaderMapHash": "3B4AA5D0B6690C5FB108B67CA0D7EEE7D1354621",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Opaque_DS"
@@ -515,42 +448,15 @@
 			]
 		},
 		{
-			"ShaderMapHash": "7AC857E15C8BCD088F96E036CDEEF4D55E4AAFA5",
-			"Assets": [
-				"/Game/Materials/M_Translucent"
-			]
-		},
-		{
 			"ShaderMapHash": "C8F0EBE168A73E589D727206843550C1D741B458",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Blend_DS"
 			]
 		},
 		{
-			"ShaderMapHash": "B45D59E3C757CD6F6B91F765453DB6980AD14A37",
-			"Assets": [
-				"/Game/FirstPersonArms/Character/Materials/Instances/Manny/MI_Manny_01",
-				"/Game/FirstPersonArms/Character/Materials/M_Mannequin"
-			]
-		},
-		{
 			"ShaderMapHash": "C4D42BE8EEF4C1BF956EB5C830AF5C7E5D4D7713",
 			"Assets": [
 				"/Interchange/gltf/M_ClearCoat"
-			]
-		},
-		{
-			"ShaderMapHash": "28E556E99679B60F9FFC15AECE78429B3F547339",
-			"Assets": [
-				"/Game/VFX/TreeVFX/MI_TreeGodRays"
-			]
-		},
-		{
-			"ShaderMapHash": "8B7FDCEAEDCC7DADEF76F918718D461573E08317",
-			"Assets": [
-				"/Game/Meshes/Test/Meshes/image1_Mat",
-				"/Game/Meshes/Test/Meshes/image2_Mat",
-				"/Game/Meshes/Test/Meshes/image_Mat"
 			]
 		},
 		{

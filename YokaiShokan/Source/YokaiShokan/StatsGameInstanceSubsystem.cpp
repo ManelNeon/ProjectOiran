@@ -2,13 +2,14 @@
 
 
 #include "StatsGameInstanceSubsystem.h"
-#include "Kismet/GameplayStatics.h"
 
 void UStatsGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Stats Manager Initialized"));
 
-	_CurrentHealth = MaxHealth;
+	_MaxHealth = 100;
+
+	_CurrentHealth = _MaxHealth;
 
 	_DamageStat = 25;
 
@@ -35,7 +36,7 @@ void UStatsGameInstanceSubsystem::Deinitialize()
 
 float UStatsGameInstanceSubsystem::GetCurrentHealthPercentage()
 {
-	return _CurrentHealth / MaxHealth;
+	return _CurrentHealth / _MaxHealth;
 }
 
 float UStatsGameInstanceSubsystem::GetCurrentHealth()
@@ -45,7 +46,7 @@ float UStatsGameInstanceSubsystem::GetCurrentHealth()
 
 float UStatsGameInstanceSubsystem::GetMaxHealth()
 {
-	return MaxHealth;
+	return _MaxHealth;
 }
 
 float UStatsGameInstanceSubsystem::GetDamageStat()
@@ -55,8 +56,8 @@ float UStatsGameInstanceSubsystem::GetDamageStat()
 
 void UStatsGameInstanceSubsystem::IncreasePlayerHealth()
 {
-	MaxHealth += 30;
-	_CurrentHealth = MaxHealth;
+	_MaxHealth += 30;
+	_CurrentHealth = _MaxHealth;
 }
 
 void UStatsGameInstanceSubsystem::IncreasePlayerDamage()
@@ -68,19 +69,16 @@ void UStatsGameInstanceSubsystem::HealPlayer(float amount)
 {
 	_CurrentHealth += amount;
 
-	if (_CurrentHealth > MaxHealth) _CurrentHealth = MaxHealth;
+	if (_CurrentHealth > _MaxHealth) _CurrentHealth = _MaxHealth;
 }
 
 bool UStatsGameInstanceSubsystem::DamagePlayer(float damage)
 {
 	_CurrentHealth -= damage;
 
-	if (_CurrentHealth > 0)
-		return true;
+	if (_CurrentHealth > 0) return true;
 
 	_CurrentHealth = 0;
-
-	UGameplayStatics::OpenLevel(this, "L_MainMenu");
 
 	return false;
 }
@@ -122,7 +120,7 @@ void UStatsGameInstanceSubsystem::IncrementPlayerLevel()
 
 	_DamageStat += 5;
 
-	MaxHealth += 15;
+	_MaxHealth += 15;
 
-	_CurrentHealth = MaxHealth;
+	_CurrentHealth = _MaxHealth;
 }
