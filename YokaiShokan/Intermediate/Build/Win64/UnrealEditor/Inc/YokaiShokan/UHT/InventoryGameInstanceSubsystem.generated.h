@@ -15,11 +15,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define YOKAISHOKAN_InventoryGameInstanceSubsystem_generated_h
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_InventoryGameInstanceSubsystem_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execClearBeforeRun); \
+	DECLARE_FUNCTION(execAddTemporaryCurrency); \
 	DECLARE_FUNCTION(execAddCurrency); \
 	DECLARE_FUNCTION(execTakeCurrency); \
 	DECLARE_FUNCTION(execGetCurrency); \
 	DECLARE_FUNCTION(execGetIfPlayerGotAllLoreItems); \
 	DECLARE_FUNCTION(execSetRandomPossessionLoreItem); \
+	DECLARE_FUNCTION(execFinishRunVariables); \
+	DECLARE_FUNCTION(execSetRandomPossessionLoreItemInRun); \
 	DECLARE_FUNCTION(execGetCurrentLoreItems);
 
 

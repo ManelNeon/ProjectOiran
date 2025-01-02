@@ -32,8 +32,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Audio Manager | Functions")
 	void PlayMusic(USoundWave* music);
 
+	UFUNCTION(BlueprintCallable, Category = "Audio Manager | Functions")
+	void FadeOutCurrentMusic();
+
 protected:
 
+	UPROPERTY()
 	UAudioComponent* _CurrentMusic;
 
 //Audio Settings Variables and Functions

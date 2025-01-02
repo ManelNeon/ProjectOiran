@@ -9,17 +9,19 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UUserWidget;
 #ifdef YOKAISHOKAN_YokaiShokanEnemy_generated_h
 #error "YokaiShokanEnemy.generated.h already included, missing '#pragma once' in YokaiShokanEnemy.h"
 #endif
 #define YOKAISHOKAN_YokaiShokanEnemy_generated_h
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetDamageValue); \
-	DECLARE_FUNCTION(execDamageThis);
+	DECLARE_FUNCTION(execDamageThis); \
+	DECLARE_FUNCTION(execSetMarkerWidget);
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAYokaiShokanEnemy(); \
 	friend struct Z_Construct_UClass_AYokaiShokanEnemy_Statics; \
@@ -28,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AYokaiShokanEnemy)
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AYokaiShokanEnemy(AYokaiShokanEnemy&&); \
@@ -40,13 +42,13 @@ public: \
 	NO_API virtual ~AYokaiShokanEnemy();
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_10_PROLOG
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_13_GENERATED_BODY \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_11_PROLOG
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_13_INCLASS_NO_PURE_DECLS \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_13_ENHANCED_CONSTRUCTORS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_INCLASS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

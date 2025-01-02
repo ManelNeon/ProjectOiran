@@ -6,4 +6,16 @@
 void UYokaiShokanGameInstance::Init()
 {
 	Super::Init();
+
+	_IsFirstTimeInHub = true;
+}
+
+bool UYokaiShokanGameInstance::GetIfIsFirstTimeInHub()
+{
+	return _IsFirstTimeInHub;
+}
+
+void UYokaiShokanGameInstance::NoLongerFirstTimeInHub()
+{
+	_IsFirstTimeInHub = false;
 }

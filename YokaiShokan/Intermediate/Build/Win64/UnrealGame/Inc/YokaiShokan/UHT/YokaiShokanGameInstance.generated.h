@@ -14,6 +14,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define YOKAISHOKAN_YokaiShokanGameInstance_generated_h
 
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execNoLongerFirstTimeInHub); \
+	DECLARE_FUNCTION(execGetIfIsFirstTimeInHub);
+
+
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUYokaiShokanGameInstance(); \
@@ -41,6 +46,7 @@ public: \
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_13_INCLASS_NO_PURE_DECLS \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanGameInstance_h_13_ENHANCED_CONSTRUCTORS \
 private: \

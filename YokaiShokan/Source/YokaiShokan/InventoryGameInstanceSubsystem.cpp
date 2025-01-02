@@ -20,6 +20,60 @@ TArray<bool> UInventoryGameInstanceSubsystem::GetCurrentLoreItems()
 	return _CurrentLoreItemsPosession;
 }
 
+void UInventoryGameInstanceSubsystem::SetRandomPossessionLoreItemInRun()
+{
+	if (GetIfPlayerGotAllLoreItems()) return;
+
+	int arraySize = _CurrentLoreItemsPosession.Num() - 1;
+
+	int index = FMath::RandRange(0, arraySize);
+
+	bool isStillRunning = true;
+
+	while (isStillRunning)
+	{
+		index = FMath::RandRange(0, arraySize);
+
+		if (!_CurrentLoreItemsPosession[index]) isStillRunning = false;
+
+		int arrayInRun = _LoreItemsToAdd.Num() - 1;
+
+		if (arrayInRun == -1)
+		{
+			isStillRunning = false;
+		}
+		else
+		{
+			for (size_t i{ 0 }; i < arrayInRun; ++i)
+			{
+				if (_LoreItemsToAdd[i] == index)
+				{
+					isStillRunning = true;
+					break;
+				}
+			}
+		}
+	}
+
+	_LoreItemsToAdd.Add(index);
+}
+
+void UInventoryGameInstanceSubsystem::FinishRunVariables()
+{
+	int arrayInRun = _LoreItemsToAdd.Num() - 1;
+
+	for (size_t i{ 0 }; i < arrayInRun; ++i)
+	{
+		_CurrentLoreItemsPosession[_LoreItemsToAdd[i]] = true;
+	}
+
+	_LoreItemsToAdd.Empty();
+
+	_Currency += _CurrencyToAdd;
+
+	_CurrencyToAdd = 0;
+}
+
 void UInventoryGameInstanceSubsystem::SetRandomPossessionLoreItem()
 {
 	if (GetIfPlayerGotAllLoreItems()) return;
@@ -59,4 +113,16 @@ void UInventoryGameInstanceSubsystem::TakeCurrency(int quantity)
 void UInventoryGameInstanceSubsystem::AddCurrency(int quantity)
 {
 	_Currency += quantity;
+}
+
+void UInventoryGameInstanceSubsystem::AddTemporaryCurrency(int quantity)
+{
+	_CurrencyToAdd += quantity;
+}
+
+void UInventoryGameInstanceSubsystem::ClearBeforeRun()
+{
+	_CurrencyToAdd = 0;
+
+	_LoreItemsToAdd.Empty();
 }

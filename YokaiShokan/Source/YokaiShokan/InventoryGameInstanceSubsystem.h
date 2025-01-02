@@ -21,6 +21,12 @@ public:
 	TArray<bool> GetCurrentLoreItems();
 
 	UFUNCTION(BlueprintCallable, Category = "Inventory System")
+	void SetRandomPossessionLoreItemInRun();
+
+	UFUNCTION(BlueprintCallable, Category = "Inventory System")
+	void FinishRunVariables();
+
+	UFUNCTION(BlueprintCallable, Category = "Inventory System")
 	void SetRandomPossessionLoreItem();
 
 	UFUNCTION(BlueprintPure, Category = "Inventory System")
@@ -35,10 +41,20 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Inventory System")
 	void AddCurrency(int quantity);
 
+	UFUNCTION(BlueprintCallable, Category = "Inventory System")
+	void AddTemporaryCurrency(int quantity);
+
+	UFUNCTION(BlueprintCallable, Category = "Inventory System")
+	void ClearBeforeRun();
+
 protected:
 
 	int _Currency;
 
 	//True if has, false if doesn't
 	TArray<bool> _CurrentLoreItemsPosession;
+
+	TArray<int> _LoreItemsToAdd;
+
+	int _CurrencyToAdd;
 };

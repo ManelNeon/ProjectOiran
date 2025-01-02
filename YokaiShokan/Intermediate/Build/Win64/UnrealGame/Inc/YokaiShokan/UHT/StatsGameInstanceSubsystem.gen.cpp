@@ -631,13 +631,7 @@ struct Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "StatsGameInstanceSubsystem.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealth_MetaData[] = {
-		{ "Category", "Character | Stats" },
-		{ "ModuleRelativePath", "StatsGameInstanceSubsystem.h" },
-	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxHealth;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_GetAmountOfSkillPoints, "GetAmountOfSkillPoints" }, // 374895683
@@ -660,11 +654,6 @@ struct Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UStatsGameInstanceSubsystem, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealth_MetaData), NewProp_MaxHealth_MetaData) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::NewProp_MaxHealth,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UGameInstanceSubsystem,
 	(UObject* (*)())Z_Construct_UPackage__Script_YokaiShokan,
@@ -676,11 +665,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UStatsGameInstanceSubsy
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	FuncInfo,
-	Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::PropPointers,
+	nullptr,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
-	UE_ARRAY_COUNT(Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::PropPointers),
+	0,
 	0,
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::Class_MetaDataParams), Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics::Class_MetaDataParams)
@@ -709,10 +698,10 @@ struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_
 		{ ESkillPointAvailability_StaticEnum, TEXT("ESkillPointAvailability"), &Z_Registration_Info_UEnum_ESkillPointAvailability, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 435019943U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UStatsGameInstanceSubsystem, UStatsGameInstanceSubsystem::StaticClass, TEXT("UStatsGameInstanceSubsystem"), &Z_Registration_Info_UClass_UStatsGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStatsGameInstanceSubsystem), 3596097295U) },
+		{ Z_Construct_UClass_UStatsGameInstanceSubsystem, UStatsGameInstanceSubsystem::StaticClass, TEXT("UStatsGameInstanceSubsystem"), &Z_Registration_Info_UClass_UStatsGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStatsGameInstanceSubsystem), 58121819U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_1603006780(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_1881786525(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_Statics::EnumInfo));

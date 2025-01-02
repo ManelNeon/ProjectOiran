@@ -60,7 +60,7 @@ class AYokaiShokanCharacter : public ACharacter
 	UInputAction* SpecialTwoAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sounds | Input", meta = (AllowPrivateAccess = "true"))
-	USoundBase* DashSound;
+	USoundWave* DashSound;
 	
 public:
 	AYokaiShokanCharacter();
@@ -104,6 +104,8 @@ protected:
 	void Look(const FInputActionValue& Value);
 
 	void Dash();
+
+	void DashEndFunction();
 
 	void SpecialAttackOne();
 

@@ -71,6 +71,15 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
 	void RemoveSkillPoints(int quantity);
 
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void IncrementSkillPointsInRun();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void ClearTheSkillPoinsInRun();
+
+	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
+	void SetSkillPointsInRunToZero();
+
 protected:
 
 	float _MaxHealth;
@@ -83,6 +92,8 @@ protected:
 
 	//SkillTree
 	TArray<ESkillPointAvailability> _SkillPointAvailability;
+
+	int _SkillPointsToAdd;
 
 	int _AmountOfSkillPoints;
 };

@@ -28,6 +28,7 @@ class USoundWave;
 	DECLARE_FUNCTION(execGetMusicVolume); \
 	DECLARE_FUNCTION(execSetMasterVolume); \
 	DECLARE_FUNCTION(execGetMasterVolume); \
+	DECLARE_FUNCTION(execFadeOutCurrentMusic); \
 	DECLARE_FUNCTION(execPlayMusic); \
 	DECLARE_FUNCTION(execPlaySound);
 

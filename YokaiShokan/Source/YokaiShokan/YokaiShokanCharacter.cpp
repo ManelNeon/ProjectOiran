@@ -11,8 +11,8 @@
 #include "KismetMathLibrary.generated.h"
 #include "StatsGameInstanceSubsystem.h"
 #include "LevelManagerInstanceSubsystem.h"
+#include "AudioManagerInstanceSubsystem.h"
 #include "TutorialGameMode.h"
-#include "Kismet/GameplayStatics.h"
 #include "Engine/LocalPlayer.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
@@ -174,7 +174,9 @@ void AYokaiShokanCharacter::Dash()
 		{
 			gamemode->SetIsFirstDash(false);
 
-			UGameplayStatics::PlaySound2D(GetWorld(), DashSound);
+			auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UAudioManagerInstanceSubsystem>();
+
+			yokaiGameInstance->PlaySound(DashSound);
 
 			LaunchCharacter(FVector(-4500, 0, 0), false, false);
 
@@ -186,21 +188,7 @@ void AYokaiShokanCharacter::Dash()
 
 	if (!GetGameInstance()->GetSubsystem<ULevelManagerInstanceSubsystem>()->GetIsInsideRoguelite()) return;
 
-	if (_IsDashing)
-	{
-		_IsDashing = false;
-
-		GetWorldTimerManager().SetTimer(_MemberTimerHandle, this, &AYokaiShokanCharacter::Dash, 1, false, DashCooldown - .2);
-
-		return;
-	}
-
-	if (!_CanDash)
-	{
-		_CanDash = true;
-
-		return;
-	}
+	if (_IsDashing || !_CanDash) return;
 
 	_CanDash = false;
 	
@@ -219,11 +207,32 @@ void AYokaiShokanCharacter::Dash()
 		finalDirection.Y /= DashJumpNerf;
 	}
 
-	UGameplayStatics::PlaySound2D(GetWorld(), DashSound);
+	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UAudioManagerInstanceSubsystem>();
+
+	yokaiGameInstance->PlaySound(DashSound);
 
 	LaunchCharacter(finalDirection, false, false);
 
-	GetWorldTimerManager().SetTimer(_MemberTimerHandle, this, &AYokaiShokanCharacter::Dash, 1, false, .2);
+	GetWorldTimerManager().SetTimer(_MemberTimerHandle, this, &AYokaiShokanCharacter::DashEndFunction, 1, false, .2);
+}
+
+void AYokaiShokanCharacter::DashEndFunction()
+{
+	if (_IsDashing)
+	{
+		_IsDashing = false;
+
+		GetWorldTimerManager().SetTimer(_MemberTimerHandle, this, &AYokaiShokanCharacter::DashEndFunction, 1, false, DashCooldown - .2);
+
+		return;
+	}
+
+	if (!_CanDash)
+	{
+		_CanDash = true;
+
+		return;
+	}
 }
 
 bool AYokaiShokanCharacter::GetDashAvailability()

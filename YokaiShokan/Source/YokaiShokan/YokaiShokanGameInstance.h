@@ -15,4 +15,14 @@ class YOKAISHOKAN_API UYokaiShokanGameInstance : public UGameInstance
 public:
 
 	virtual void Init() override;
+
+	UFUNCTION(BlueprintPure, Category = "Game Instance | General Functions")
+	bool GetIfIsFirstTimeInHub();
+
+	UFUNCTION(BlueprintCallable, Category = "Game Instance | General Functions")
+	void NoLongerFirstTimeInHub();
+
+protected:
+
+	bool _IsFirstTimeInHub;
 };

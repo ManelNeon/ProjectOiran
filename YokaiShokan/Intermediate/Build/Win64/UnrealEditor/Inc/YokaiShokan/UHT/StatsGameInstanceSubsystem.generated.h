@@ -16,6 +16,9 @@ enum class ESkillPointAvailability : uint8;
 #define YOKAISHOKAN_StatsGameInstanceSubsystem_generated_h
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execSetSkillPointsInRunToZero); \
+	DECLARE_FUNCTION(execClearTheSkillPoinsInRun); \
+	DECLARE_FUNCTION(execIncrementSkillPointsInRun); \
 	DECLARE_FUNCTION(execRemoveSkillPoints); \
 	DECLARE_FUNCTION(execIncrementSkillPoints); \
 	DECLARE_FUNCTION(execGetAmountOfSkillPoints); \

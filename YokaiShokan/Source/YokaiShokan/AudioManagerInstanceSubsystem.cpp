@@ -50,14 +50,19 @@ void UAudioManagerInstanceSubsystem::PlaySound(USoundWave* sound)
 
 void UAudioManagerInstanceSubsystem::PlayMusic(USoundWave* music)
 {
-	return;
+	FadeOutCurrentMusic();
 
-	/*if (_CurrentMusic != nullptr)
+	_CurrentMusic = UGameplayStatics::SpawnSound2D(GetWorld(), music, 1, 1, 0, nullptr, true, false);
+}
+
+void UAudioManagerInstanceSubsystem::FadeOutCurrentMusic()
+{
+	if (_CurrentMusic != nullptr)
 	{
-		return;
-	}
+		_CurrentMusic->FadeOut(1, 0, EAudioFaderCurve::Linear);
 
-	_CurrentMusic = UGameplayStatics::SpawnSound2D(GetWorld(), music, 1, 1, 0, nullptr, true, false);*/
+		_CurrentMusic = nullptr;
+	}
 }
 
 //Audio Settings Functions

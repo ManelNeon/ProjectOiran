@@ -25,6 +25,8 @@ void UStatsGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Collectio
 
 	_AmountOfSkillPoints = 0;
 
+	_SkillPointsToAdd = 0;
+
 	_PlayerLevel = 1;
 }
 
@@ -109,6 +111,18 @@ void UStatsGameInstanceSubsystem::RemoveSkillPoints(int quantity)
 	_AmountOfSkillPoints -= quantity;
 }
 
+void UStatsGameInstanceSubsystem::IncrementSkillPointsInRun()
+{
+	_SkillPointsToAdd++;
+}
+
+void UStatsGameInstanceSubsystem::ClearTheSkillPoinsInRun()
+{
+	_AmountOfSkillPoints += _SkillPointsToAdd;
+
+	_SkillPointsToAdd = 0;
+}
+
 int UStatsGameInstanceSubsystem::GetPlayerLevel()
 {
 	return _PlayerLevel;
@@ -123,4 +137,9 @@ void UStatsGameInstanceSubsystem::IncrementPlayerLevel()
 	_MaxHealth += 15;
 
 	_CurrentHealth = _MaxHealth;
+}
+
+void UStatsGameInstanceSubsystem::SetSkillPointsInRunToZero()
+{
+	_SkillPointsToAdd = 0;
 }
