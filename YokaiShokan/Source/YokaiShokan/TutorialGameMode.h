@@ -30,6 +30,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Tutorial | Functions")
 	void TrueifyIsFirstEnemy();
 
+	UFUNCTION(BlueprintPure, Category = "Tutorial | Functions")
 	bool GetIsFirstDash();
 
 	void SetIsFirstDash(bool state);

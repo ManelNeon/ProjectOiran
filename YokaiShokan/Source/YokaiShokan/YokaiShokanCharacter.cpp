@@ -8,7 +8,6 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
-#include "KismetMathLibrary.generated.h"
 #include "StatsGameInstanceSubsystem.h"
 #include "LevelManagerInstanceSubsystem.h"
 #include "AudioManagerInstanceSubsystem.h"
@@ -43,6 +42,8 @@ AYokaiShokanCharacter::AYokaiShokanCharacter()
 	_IsDashing = false;
 
 	_CanDash = true;
+
+	_IsDead = false;
 }
 
 void AYokaiShokanCharacter::BeginPlay()
@@ -137,6 +138,8 @@ void AYokaiShokanCharacter::HealPlayer(float amount)
 
 void AYokaiShokanCharacter::DamagePlayer(float damage, FVector direction)
 {
+	if (_IsDead) return;
+
 	auto gamemode = Cast<ATutorialGameMode>(GetWorld()->GetAuthGameMode());
 
 	if (gamemode != nullptr)
@@ -162,6 +165,8 @@ void AYokaiShokanCharacter::DamagePlayer(float damage, FVector direction)
 	}
 
 	BP_PlayerDeath();
+
+	_IsDead = true;
 }
 
 void AYokaiShokanCharacter::Dash()

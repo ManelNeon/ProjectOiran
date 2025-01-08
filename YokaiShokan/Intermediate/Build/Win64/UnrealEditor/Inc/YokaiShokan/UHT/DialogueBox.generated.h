@@ -9,10 +9,15 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UTextBlock;
 #ifdef YOKAISHOKAN_DialogueBox_generated_h
 #error "DialogueBox.generated.h already included, missing '#pragma once' in DialogueBox.h"
 #endif
 #define YOKAISHOKAN_DialogueBox_generated_h
+
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_DialogueBox_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetTextBlock);
+
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_DialogueBox_h_13_INCLASS_NO_PURE_DECLS \
 private: \
@@ -41,6 +46,7 @@ public: \
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_DialogueBox_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_DialogueBox_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_DialogueBox_h_13_INCLASS_NO_PURE_DECLS \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_DialogueBox_h_13_ENHANCED_CONSTRUCTORS \
 private: \

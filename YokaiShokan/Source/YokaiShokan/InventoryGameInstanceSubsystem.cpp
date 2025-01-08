@@ -7,7 +7,7 @@ void UInventoryGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Colle
 {
 	UE_LOG(LogTemp, Warning, TEXT("Inventory System Initialized"));
 
-	for (size_t i{ 0 }; i < 4; ++i) _CurrentLoreItemsPosession.Add(false);
+	for (size_t i{ 0 }; i < 9; ++i) _CurrentLoreItemsPosession.Add(false);
 }
 
 void UInventoryGameInstanceSubsystem::Deinitialize()
@@ -36,18 +36,27 @@ void UInventoryGameInstanceSubsystem::SetRandomPossessionLoreItemInRun()
 
 		if (!_CurrentLoreItemsPosession[index]) isStillRunning = false;
 
+		UE_LOG(LogTemp, Warning, TEXT("Before setting array size."));
+
 		int arrayInRun = _LoreItemsToAdd.Num() - 1;
+
+		UE_LOG(LogTemp, Warning, TEXT("After setting array size."));
 
 		if (arrayInRun == -1)
 		{
 			isStillRunning = false;
+
+			UE_LOG(LogTemp, Warning, TEXT("The array is empty."));
 		}
 		else
 		{
 			for (size_t i{ 0 }; i < arrayInRun; ++i)
 			{
+				UE_LOG(LogTemp, Warning, TEXT("Looping through obtained in this run lore items."));
+
 				if (_LoreItemsToAdd[i] == index)
 				{
+					UE_LOG(LogTemp, Warning, TEXT("The array has found a spot."));
 					isStillRunning = true;
 					break;
 				}

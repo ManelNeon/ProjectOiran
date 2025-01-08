@@ -115,6 +115,8 @@ protected:
 
 	bool _IsDashing;
 
+	bool _IsDead;
+
 	FTimerHandle _MemberTimerHandle;
 
 protected:

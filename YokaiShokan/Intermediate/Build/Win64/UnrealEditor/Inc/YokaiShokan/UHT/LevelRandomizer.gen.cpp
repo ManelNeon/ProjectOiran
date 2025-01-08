@@ -20,6 +20,34 @@ YOKAISHOKAN_API UClass* Z_Construct_UClass_ALevelRandomizer();
 YOKAISHOKAN_API UClass* Z_Construct_UClass_ALevelRandomizer_NoRegister();
 // End Cross Module References
 
+// Begin Class ALevelRandomizer Function BP_RotatePlayerTowardsExit
+static FName NAME_ALevelRandomizer_BP_RotatePlayerTowardsExit = FName(TEXT("BP_RotatePlayerTowardsExit"));
+void ALevelRandomizer::BP_RotatePlayerTowardsExit()
+{
+	ProcessEvent(FindFunctionChecked(NAME_ALevelRandomizer_BP_RotatePlayerTowardsExit),NULL);
+}
+struct Z_Construct_UFunction_ALevelRandomizer_BP_RotatePlayerTowardsExit_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Level Randomizer" },
+		{ "ModuleRelativePath", "LevelRandomizer.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ALevelRandomizer_BP_RotatePlayerTowardsExit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ALevelRandomizer, nullptr, "BP_RotatePlayerTowardsExit", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ALevelRandomizer_BP_RotatePlayerTowardsExit_Statics::Function_MetaDataParams), Z_Construct_UFunction_ALevelRandomizer_BP_RotatePlayerTowardsExit_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_ALevelRandomizer_BP_RotatePlayerTowardsExit()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ALevelRandomizer_BP_RotatePlayerTowardsExit_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ALevelRandomizer Function BP_RotatePlayerTowardsExit
+
 // Begin Class ALevelRandomizer Function DeleteEnemyFromList
 struct Z_Construct_UFunction_ALevelRandomizer_DeleteEnemyFromList_Statics
 {
@@ -62,6 +90,95 @@ DEFINE_FUNCTION(ALevelRandomizer::execDeleteEnemyFromList)
 	P_NATIVE_END;
 }
 // End Class ALevelRandomizer Function DeleteEnemyFromList
+
+// Begin Class ALevelRandomizer Function GetZoneDivider
+struct Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics
+{
+	struct LevelRandomizer_eventGetZoneDivider_Parms
+	{
+		AActor* ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Level Randomizer" },
+		{ "ModuleRelativePath", "LevelRandomizer.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(LevelRandomizer_eventGetZoneDivider_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ALevelRandomizer, nullptr, "GetZoneDivider", nullptr, nullptr, Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::PropPointers), sizeof(Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::LevelRandomizer_eventGetZoneDivider_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::Function_MetaDataParams), Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::LevelRandomizer_eventGetZoneDivider_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ALevelRandomizer::execGetZoneDivider)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(AActor**)Z_Param__Result=P_THIS->GetZoneDivider();
+	P_NATIVE_END;
+}
+// End Class ALevelRandomizer Function GetZoneDivider
+
+// Begin Class ALevelRandomizer Function IsLastEnemy
+struct Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics
+{
+	struct LevelRandomizer_eventIsLastEnemy_Parms
+	{
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Level Randomizer" },
+		{ "ModuleRelativePath", "LevelRandomizer.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((LevelRandomizer_eventIsLastEnemy_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(LevelRandomizer_eventIsLastEnemy_Parms), &Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ALevelRandomizer, nullptr, "IsLastEnemy", nullptr, nullptr, Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::PropPointers), sizeof(Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::LevelRandomizer_eventIsLastEnemy_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::Function_MetaDataParams), Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::LevelRandomizer_eventIsLastEnemy_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ALevelRandomizer::execIsLastEnemy)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->IsLastEnemy();
+	P_NATIVE_END;
+}
+// End Class ALevelRandomizer Function IsLastEnemy
 
 // Begin Class ALevelRandomizer Function LevelEnder
 struct Z_Construct_UFunction_ALevelRandomizer_LevelEnder_Statics
@@ -177,6 +294,8 @@ void ALevelRandomizer::StaticRegisterNativesALevelRandomizer()
 	UClass* Class = ALevelRandomizer::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "DeleteEnemyFromList", &ALevelRandomizer::execDeleteEnemyFromList },
+		{ "GetZoneDivider", &ALevelRandomizer::execGetZoneDivider },
+		{ "IsLastEnemy", &ALevelRandomizer::execIsLastEnemy },
 		{ "LevelEnder", &ALevelRandomizer::execLevelEnder },
 		{ "SpawnEnemies", &ALevelRandomizer::execSpawnEnemies },
 		{ "WaveEnder", &ALevelRandomizer::execWaveEnder },
@@ -259,7 +378,10 @@ struct Z_Construct_UClass_ALevelRandomizer_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_ALevelRandomizer_BP_RotatePlayerTowardsExit, "BP_RotatePlayerTowardsExit" }, // 809687257
 		{ &Z_Construct_UFunction_ALevelRandomizer_DeleteEnemyFromList, "DeleteEnemyFromList" }, // 1064690428
+		{ &Z_Construct_UFunction_ALevelRandomizer_GetZoneDivider, "GetZoneDivider" }, // 2020962628
+		{ &Z_Construct_UFunction_ALevelRandomizer_IsLastEnemy, "IsLastEnemy" }, // 659943918
 		{ &Z_Construct_UFunction_ALevelRandomizer_LevelEnder, "LevelEnder" }, // 3538240947
 		{ &Z_Construct_UFunction_ALevelRandomizer_SpawnEnemies, "SpawnEnemies" }, // 2166272928
 		{ &Z_Construct_UFunction_ALevelRandomizer_WaveEnder, "WaveEnder" }, // 291003555
@@ -337,10 +459,10 @@ ALevelRandomizer::~ALevelRandomizer() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ALevelRandomizer, ALevelRandomizer::StaticClass, TEXT("ALevelRandomizer"), &Z_Registration_Info_UClass_ALevelRandomizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALevelRandomizer), 581721438U) },
+		{ Z_Construct_UClass_ALevelRandomizer, ALevelRandomizer::StaticClass, TEXT("ALevelRandomizer"), &Z_Registration_Info_UClass_ALevelRandomizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALevelRandomizer), 4171045802U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_2076422079(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_3671181166(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

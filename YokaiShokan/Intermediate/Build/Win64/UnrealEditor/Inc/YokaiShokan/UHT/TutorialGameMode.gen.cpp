@@ -72,6 +72,53 @@ UFunction* Z_Construct_UFunction_ATutorialGameMode_BP_TookAHit()
 }
 // End Class ATutorialGameMode Function BP_TookAHit
 
+// Begin Class ATutorialGameMode Function GetIsFirstDash
+struct Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics
+{
+	struct TutorialGameMode_eventGetIsFirstDash_Parms
+	{
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Tutorial | Functions" },
+		{ "ModuleRelativePath", "TutorialGameMode.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((TutorialGameMode_eventGetIsFirstDash_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(TutorialGameMode_eventGetIsFirstDash_Parms), &Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATutorialGameMode, nullptr, "GetIsFirstDash", nullptr, nullptr, Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::PropPointers), sizeof(Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::TutorialGameMode_eventGetIsFirstDash_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::TutorialGameMode_eventGetIsFirstDash_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ATutorialGameMode::execGetIsFirstDash)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->GetIsFirstDash();
+	P_NATIVE_END;
+}
+// End Class ATutorialGameMode Function GetIsFirstDash
+
 // Begin Class ATutorialGameMode Function GetIsFirstEnemy
 struct Z_Construct_UFunction_ATutorialGameMode_GetIsFirstEnemy_Statics
 {
@@ -154,6 +201,7 @@ void ATutorialGameMode::StaticRegisterNativesATutorialGameMode()
 {
 	UClass* Class = ATutorialGameMode::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "GetIsFirstDash", &ATutorialGameMode::execGetIsFirstDash },
 		{ "GetIsFirstEnemy", &ATutorialGameMode::execGetIsFirstEnemy },
 		{ "TrueifyIsFirstEnemy", &ATutorialGameMode::execTrueifyIsFirstEnemy },
 	};
@@ -181,6 +229,7 @@ struct Z_Construct_UClass_ATutorialGameMode_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ATutorialGameMode_BP_FirstTimeDash, "BP_FirstTimeDash" }, // 2483607757
 		{ &Z_Construct_UFunction_ATutorialGameMode_BP_TookAHit, "BP_TookAHit" }, // 1941890469
+		{ &Z_Construct_UFunction_ATutorialGameMode_GetIsFirstDash, "GetIsFirstDash" }, // 95114737
 		{ &Z_Construct_UFunction_ATutorialGameMode_GetIsFirstEnemy, "GetIsFirstEnemy" }, // 268584881
 		{ &Z_Construct_UFunction_ATutorialGameMode_TrueifyIsFirstEnemy, "TrueifyIsFirstEnemy" }, // 3527576667
 	};
@@ -231,10 +280,10 @@ ATutorialGameMode::~ATutorialGameMode() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_TutorialGameMode_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATutorialGameMode, ATutorialGameMode::StaticClass, TEXT("ATutorialGameMode"), &Z_Registration_Info_UClass_ATutorialGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATutorialGameMode), 4077424529U) },
+		{ Z_Construct_UClass_ATutorialGameMode, ATutorialGameMode::StaticClass, TEXT("ATutorialGameMode"), &Z_Registration_Info_UClass_ATutorialGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATutorialGameMode), 2294691868U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_TutorialGameMode_h_3823237463(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_TutorialGameMode_h_3235011686(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_TutorialGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_TutorialGameMode_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

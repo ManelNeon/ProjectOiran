@@ -44,7 +44,11 @@ void ALevelRandomizer::DeleteEnemyFromList(AActor* actor)
 		}
 	}
 	
-	if (index == -1) UE_LOG(LogTemp, Warning, TEXT("Index is Out Of Range"));
+	if (index == -1)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Index is Out Of Range"));
+		return;
+	}
 
 	_EnemyList.RemoveAt(index);
 
@@ -79,10 +83,7 @@ void ALevelRandomizer::WaveEnder()
 		return;
 	}
 
-	//now that we have gone through all the waves, we'll destroy the _ZoneDivider if it's not a nullptr and we'll set the wave to zero and increment the zone, spawning new enemies
-	_ZoneDivider->Destroy();
-
-	_ZoneDivider = nullptr;
+	BP_RotatePlayerTowardsExit();
 
 	_CurrentWave = 0;
 	_CurrentZone++;
@@ -127,6 +128,13 @@ void ALevelRandomizer::LevelEnder()
 	pickUp->SetActorLocation(_RewardSpawnLocation);
 }
 
+bool ALevelRandomizer::IsLastEnemy()
+{
+	int size = _EnemyList.Num();
+
+	return (size == 1);
+}
+
 void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 {
 	_EnemyList.Empty();
@@ -149,4 +157,9 @@ void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 
 		UE_LOG(LogTemp, Warning, TEXT("Enemy Added"));
 	}
+}
+
+AActor* ALevelRandomizer::GetZoneDivider()
+{
+	return _ZoneDivider;
 }

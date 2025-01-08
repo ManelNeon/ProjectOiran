@@ -45,7 +45,6 @@ void AYokaiShokanEnemy::SetMarkerWidget(UUserWidget* widget)
 	_Marker = widget;
 }
 
-
 void AYokaiShokanEnemy::DamageThis(float damage, FVector hitDirection)
 {
 	auto animInstance = Cast<UBaseEnemyAnimInstance>(GetMesh()->GetAnimInstance());

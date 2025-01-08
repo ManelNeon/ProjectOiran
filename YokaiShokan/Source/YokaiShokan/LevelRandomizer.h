@@ -24,6 +24,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
 	void LevelEnder();
 
+	UFUNCTION(BlueprintPure, Category = "Level Randomizer")
+	bool IsLastEnemy();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -59,6 +62,12 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
 	void SpawnEnemies(int minimumQuantity, int maxQuantity);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Level Randomizer")
+	void BP_RotatePlayerTowardsExit();
+
+	UFUNCTION(BlueprintPure, Category = "Level Randomizer")
+	AActor* GetZoneDivider();
 
 	TArray<AActor*> _EnemyList;
 

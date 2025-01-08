@@ -14,6 +14,7 @@ class YOKAISHOKAN_API UDialogueBox : public UUserWidget
 
 public:
 
+	UFUNCTION(BlueprintCallable, Category = "Dialogue Box | Functions")
 	UTextBlock* GetTextBlock();
 
 protected:
