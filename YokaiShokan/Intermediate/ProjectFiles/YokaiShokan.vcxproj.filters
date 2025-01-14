@@ -13,6 +13,7 @@
     </None>
     <None Include="..\..\.vsconfig" />
     <None Include="..\..\ICO_Toki_White (1).ico" />
+    <None Include="..\..\YokaiShokan.png" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -46,10 +47,22 @@
     <ClInclude Include="..\..\Source\YokaiShokan\BaseEnemyAnimInstance.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\CloseUpEnemy.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\CloseUpEnemy.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\DialogueBox.cpp">
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\DialogueBox.h">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\YokaiShokan\FromAfarEnemy.cpp">
+      <Filter>Source\YokaiShokan</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\YokaiShokan\FromAfarEnemy.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\InventoryGameInstanceSubsystem.cpp">

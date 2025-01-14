@@ -15,6 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define YOKAISHOKAN_TutorialGameMode_generated_h
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_TutorialGameMode_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetIsFirstDash); \
 	DECLARE_FUNCTION(execTrueifyIsFirstEnemy); \
 	DECLARE_FUNCTION(execGetIsFirstEnemy);
 

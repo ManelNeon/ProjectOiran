@@ -16,7 +16,7 @@ public:
 	ALevelRandomizer();
 
 	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
-	void DeleteEnemyFromList(AActor* actor);
+	void DeleteEnemyFromList(AActor* actor, bool isCloseUpEnemy);
 
 	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
 	void WaveEnder();
@@ -26,6 +26,9 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "Level Randomizer")
 	bool IsLastEnemy();
+
+	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
+	void SetANewEnemyToAttack();
 
 protected:
 	// Called when the game starts or when spawned
@@ -49,7 +52,10 @@ protected:
 	AActor* _ZoneDivider;
 	
 	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
-	UClass* _BaseEnemyClass;
+	UClass* _CloseUpEnemyClass;
+
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	UClass* _FromAfarEnemyClass;
 
 	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
 	UClass* _HealthPickupBP;
@@ -66,12 +72,21 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Level Randomizer")
 	void BP_RotatePlayerTowardsExit();
 
+	AActor* GetRandomEnemy();
+
 	UFUNCTION(BlueprintPure, Category = "Level Randomizer")
 	AActor* GetZoneDivider();
 
-	TArray<AActor*> _EnemyList;
+	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
+	void SetZoneDividerNull();
+
+	TArray<AActor*> _CloseUpEnemiesList;
+
+	TArray<AActor*> _FromAfarEnemiesList;
 
 	int _CurrentWave;
 
 	int _CurrentZone;
+
+	AActor* _AttackingEnemy;
 };

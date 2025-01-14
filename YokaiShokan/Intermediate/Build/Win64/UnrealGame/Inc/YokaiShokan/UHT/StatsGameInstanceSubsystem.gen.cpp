@@ -74,6 +74,36 @@ UEnum* Z_Construct_UEnum_YokaiShokan_ESkillPointAvailability()
 }
 // End Enum ESkillPointAvailability
 
+// Begin Class UStatsGameInstanceSubsystem Function ClearTheSkillPoinsInRun
+struct Z_Construct_UFunction_UStatsGameInstanceSubsystem_ClearTheSkillPoinsInRun_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "StatsGameInstanceSubsystem.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UStatsGameInstanceSubsystem_ClearTheSkillPoinsInRun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UStatsGameInstanceSubsystem, nullptr, "ClearTheSkillPoinsInRun", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UStatsGameInstanceSubsystem_ClearTheSkillPoinsInRun_Statics::Function_MetaDataParams), Z_Construct_UFunction_UStatsGameInstanceSubsystem_ClearTheSkillPoinsInRun_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UStatsGameInstanceSubsystem_ClearTheSkillPoinsInRun()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UStatsGameInstanceSubsystem_ClearTheSkillPoinsInRun_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UStatsGameInstanceSubsystem::execClearTheSkillPoinsInRun)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->ClearTheSkillPoinsInRun();
+	P_NATIVE_END;
+}
+// End Class UStatsGameInstanceSubsystem Function ClearTheSkillPoinsInRun
+
 // Begin Class UStatsGameInstanceSubsystem Function GetAmountOfSkillPoints
 struct Z_Construct_UFunction_UStatsGameInstanceSubsystem_GetAmountOfSkillPoints_Statics
 {
@@ -502,6 +532,36 @@ DEFINE_FUNCTION(UStatsGameInstanceSubsystem::execIncrementSkillPoints)
 }
 // End Class UStatsGameInstanceSubsystem Function IncrementSkillPoints
 
+// Begin Class UStatsGameInstanceSubsystem Function IncrementSkillPointsInRun
+struct Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementSkillPointsInRun_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "StatsGameInstanceSubsystem.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementSkillPointsInRun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UStatsGameInstanceSubsystem, nullptr, "IncrementSkillPointsInRun", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementSkillPointsInRun_Statics::Function_MetaDataParams), Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementSkillPointsInRun_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementSkillPointsInRun()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementSkillPointsInRun_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UStatsGameInstanceSubsystem::execIncrementSkillPointsInRun)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncrementSkillPointsInRun();
+	P_NATIVE_END;
+}
+// End Class UStatsGameInstanceSubsystem Function IncrementSkillPointsInRun
+
 // Begin Class UStatsGameInstanceSubsystem Function RemoveSkillPoints
 struct Z_Construct_UFunction_UStatsGameInstanceSubsystem_RemoveSkillPoints_Statics
 {
@@ -596,11 +656,42 @@ DEFINE_FUNCTION(UStatsGameInstanceSubsystem::execSetSkillPointAvailability)
 }
 // End Class UStatsGameInstanceSubsystem Function SetSkillPointAvailability
 
+// Begin Class UStatsGameInstanceSubsystem Function SetSkillPointsInRunToZero
+struct Z_Construct_UFunction_UStatsGameInstanceSubsystem_SetSkillPointsInRunToZero_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Stats" },
+		{ "ModuleRelativePath", "StatsGameInstanceSubsystem.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UStatsGameInstanceSubsystem_SetSkillPointsInRunToZero_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UStatsGameInstanceSubsystem, nullptr, "SetSkillPointsInRunToZero", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UStatsGameInstanceSubsystem_SetSkillPointsInRunToZero_Statics::Function_MetaDataParams), Z_Construct_UFunction_UStatsGameInstanceSubsystem_SetSkillPointsInRunToZero_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UStatsGameInstanceSubsystem_SetSkillPointsInRunToZero()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UStatsGameInstanceSubsystem_SetSkillPointsInRunToZero_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UStatsGameInstanceSubsystem::execSetSkillPointsInRunToZero)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetSkillPointsInRunToZero();
+	P_NATIVE_END;
+}
+// End Class UStatsGameInstanceSubsystem Function SetSkillPointsInRunToZero
+
 // Begin Class UStatsGameInstanceSubsystem
 void UStatsGameInstanceSubsystem::StaticRegisterNativesUStatsGameInstanceSubsystem()
 {
 	UClass* Class = UStatsGameInstanceSubsystem::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "ClearTheSkillPoinsInRun", &UStatsGameInstanceSubsystem::execClearTheSkillPoinsInRun },
 		{ "GetAmountOfSkillPoints", &UStatsGameInstanceSubsystem::execGetAmountOfSkillPoints },
 		{ "GetCurrentHealth", &UStatsGameInstanceSubsystem::execGetCurrentHealth },
 		{ "GetCurrentHealthPercentage", &UStatsGameInstanceSubsystem::execGetCurrentHealthPercentage },
@@ -612,8 +703,10 @@ void UStatsGameInstanceSubsystem::StaticRegisterNativesUStatsGameInstanceSubsyst
 		{ "IncreasePlayerHealth", &UStatsGameInstanceSubsystem::execIncreasePlayerHealth },
 		{ "IncrementPlayerLevel", &UStatsGameInstanceSubsystem::execIncrementPlayerLevel },
 		{ "IncrementSkillPoints", &UStatsGameInstanceSubsystem::execIncrementSkillPoints },
+		{ "IncrementSkillPointsInRun", &UStatsGameInstanceSubsystem::execIncrementSkillPointsInRun },
 		{ "RemoveSkillPoints", &UStatsGameInstanceSubsystem::execRemoveSkillPoints },
 		{ "SetSkillPointAvailability", &UStatsGameInstanceSubsystem::execSetSkillPointAvailability },
+		{ "SetSkillPointsInRunToZero", &UStatsGameInstanceSubsystem::execSetSkillPointsInRunToZero },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -634,6 +727,7 @@ struct Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_ClearTheSkillPoinsInRun, "ClearTheSkillPoinsInRun" }, // 3490941490
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_GetAmountOfSkillPoints, "GetAmountOfSkillPoints" }, // 374895683
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_GetCurrentHealth, "GetCurrentHealth" }, // 328614273
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_GetCurrentHealthPercentage, "GetCurrentHealthPercentage" }, // 3325647167
@@ -645,8 +739,10 @@ struct Z_Construct_UClass_UStatsGameInstanceSubsystem_Statics
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncreasePlayerHealth, "IncreasePlayerHealth" }, // 2724160140
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementPlayerLevel, "IncrementPlayerLevel" }, // 303612375
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementSkillPoints, "IncrementSkillPoints" }, // 184126496
+		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_IncrementSkillPointsInRun, "IncrementSkillPointsInRun" }, // 1373615730
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_RemoveSkillPoints, "RemoveSkillPoints" }, // 3628073729
 		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_SetSkillPointAvailability, "SetSkillPointAvailability" }, // 711901200
+		{ &Z_Construct_UFunction_UStatsGameInstanceSubsystem_SetSkillPointsInRunToZero, "SetSkillPointsInRunToZero" }, // 290369782
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -698,10 +794,10 @@ struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_
 		{ ESkillPointAvailability_StaticEnum, TEXT("ESkillPointAvailability"), &Z_Registration_Info_UEnum_ESkillPointAvailability, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 435019943U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UStatsGameInstanceSubsystem, UStatsGameInstanceSubsystem::StaticClass, TEXT("UStatsGameInstanceSubsystem"), &Z_Registration_Info_UClass_UStatsGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStatsGameInstanceSubsystem), 58121819U) },
+		{ Z_Construct_UClass_UStatsGameInstanceSubsystem, UStatsGameInstanceSubsystem::StaticClass, TEXT("UStatsGameInstanceSubsystem"), &Z_Registration_Info_UClass_UStatsGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStatsGameInstanceSubsystem), 4003015760U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_1881786525(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_2443373442(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_StatsGameInstanceSubsystem_h_Statics::EnumInfo));

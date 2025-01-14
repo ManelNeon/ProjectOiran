@@ -60,6 +60,109 @@ DEFINE_FUNCTION(UInventoryGameInstanceSubsystem::execAddCurrency)
 }
 // End Class UInventoryGameInstanceSubsystem Function AddCurrency
 
+// Begin Class UInventoryGameInstanceSubsystem Function AddTemporaryCurrency
+struct Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics
+{
+	struct InventoryGameInstanceSubsystem_eventAddTemporaryCurrency_Parms
+	{
+		int32 quantity;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Inventory System" },
+		{ "ModuleRelativePath", "InventoryGameInstanceSubsystem.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_quantity;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::NewProp_quantity = { "quantity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(InventoryGameInstanceSubsystem_eventAddTemporaryCurrency_Parms, quantity), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::NewProp_quantity,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInventoryGameInstanceSubsystem, nullptr, "AddTemporaryCurrency", nullptr, nullptr, Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::PropPointers), sizeof(Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::InventoryGameInstanceSubsystem_eventAddTemporaryCurrency_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::Function_MetaDataParams), Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::InventoryGameInstanceSubsystem_eventAddTemporaryCurrency_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UInventoryGameInstanceSubsystem::execAddTemporaryCurrency)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_quantity);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->AddTemporaryCurrency(Z_Param_quantity);
+	P_NATIVE_END;
+}
+// End Class UInventoryGameInstanceSubsystem Function AddTemporaryCurrency
+
+// Begin Class UInventoryGameInstanceSubsystem Function ClearBeforeRun
+struct Z_Construct_UFunction_UInventoryGameInstanceSubsystem_ClearBeforeRun_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Inventory System" },
+		{ "ModuleRelativePath", "InventoryGameInstanceSubsystem.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UInventoryGameInstanceSubsystem_ClearBeforeRun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInventoryGameInstanceSubsystem, nullptr, "ClearBeforeRun", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UInventoryGameInstanceSubsystem_ClearBeforeRun_Statics::Function_MetaDataParams), Z_Construct_UFunction_UInventoryGameInstanceSubsystem_ClearBeforeRun_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UInventoryGameInstanceSubsystem_ClearBeforeRun()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UInventoryGameInstanceSubsystem_ClearBeforeRun_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UInventoryGameInstanceSubsystem::execClearBeforeRun)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->ClearBeforeRun();
+	P_NATIVE_END;
+}
+// End Class UInventoryGameInstanceSubsystem Function ClearBeforeRun
+
+// Begin Class UInventoryGameInstanceSubsystem Function FinishRunVariables
+struct Z_Construct_UFunction_UInventoryGameInstanceSubsystem_FinishRunVariables_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Inventory System" },
+		{ "ModuleRelativePath", "InventoryGameInstanceSubsystem.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UInventoryGameInstanceSubsystem_FinishRunVariables_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInventoryGameInstanceSubsystem, nullptr, "FinishRunVariables", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UInventoryGameInstanceSubsystem_FinishRunVariables_Statics::Function_MetaDataParams), Z_Construct_UFunction_UInventoryGameInstanceSubsystem_FinishRunVariables_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UInventoryGameInstanceSubsystem_FinishRunVariables()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UInventoryGameInstanceSubsystem_FinishRunVariables_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UInventoryGameInstanceSubsystem::execFinishRunVariables)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->FinishRunVariables();
+	P_NATIVE_END;
+}
+// End Class UInventoryGameInstanceSubsystem Function FinishRunVariables
+
 // Begin Class UInventoryGameInstanceSubsystem Function GetCurrency
 struct Z_Construct_UFunction_UInventoryGameInstanceSubsystem_GetCurrency_Statics
 {
@@ -224,6 +327,36 @@ DEFINE_FUNCTION(UInventoryGameInstanceSubsystem::execSetRandomPossessionLoreItem
 }
 // End Class UInventoryGameInstanceSubsystem Function SetRandomPossessionLoreItem
 
+// Begin Class UInventoryGameInstanceSubsystem Function SetRandomPossessionLoreItemInRun
+struct Z_Construct_UFunction_UInventoryGameInstanceSubsystem_SetRandomPossessionLoreItemInRun_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Inventory System" },
+		{ "ModuleRelativePath", "InventoryGameInstanceSubsystem.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UInventoryGameInstanceSubsystem_SetRandomPossessionLoreItemInRun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInventoryGameInstanceSubsystem, nullptr, "SetRandomPossessionLoreItemInRun", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UInventoryGameInstanceSubsystem_SetRandomPossessionLoreItemInRun_Statics::Function_MetaDataParams), Z_Construct_UFunction_UInventoryGameInstanceSubsystem_SetRandomPossessionLoreItemInRun_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UInventoryGameInstanceSubsystem_SetRandomPossessionLoreItemInRun()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UInventoryGameInstanceSubsystem_SetRandomPossessionLoreItemInRun_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UInventoryGameInstanceSubsystem::execSetRandomPossessionLoreItemInRun)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetRandomPossessionLoreItemInRun();
+	P_NATIVE_END;
+}
+// End Class UInventoryGameInstanceSubsystem Function SetRandomPossessionLoreItemInRun
+
 // Begin Class UInventoryGameInstanceSubsystem Function TakeCurrency
 struct Z_Construct_UFunction_UInventoryGameInstanceSubsystem_TakeCurrency_Statics
 {
@@ -273,10 +406,14 @@ void UInventoryGameInstanceSubsystem::StaticRegisterNativesUInventoryGameInstanc
 	UClass* Class = UInventoryGameInstanceSubsystem::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AddCurrency", &UInventoryGameInstanceSubsystem::execAddCurrency },
+		{ "AddTemporaryCurrency", &UInventoryGameInstanceSubsystem::execAddTemporaryCurrency },
+		{ "ClearBeforeRun", &UInventoryGameInstanceSubsystem::execClearBeforeRun },
+		{ "FinishRunVariables", &UInventoryGameInstanceSubsystem::execFinishRunVariables },
 		{ "GetCurrency", &UInventoryGameInstanceSubsystem::execGetCurrency },
 		{ "GetCurrentLoreItems", &UInventoryGameInstanceSubsystem::execGetCurrentLoreItems },
 		{ "GetIfPlayerGotAllLoreItems", &UInventoryGameInstanceSubsystem::execGetIfPlayerGotAllLoreItems },
 		{ "SetRandomPossessionLoreItem", &UInventoryGameInstanceSubsystem::execSetRandomPossessionLoreItem },
+		{ "SetRandomPossessionLoreItemInRun", &UInventoryGameInstanceSubsystem::execSetRandomPossessionLoreItemInRun },
 		{ "TakeCurrency", &UInventoryGameInstanceSubsystem::execTakeCurrency },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -299,10 +436,14 @@ struct Z_Construct_UClass_UInventoryGameInstanceSubsystem_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddCurrency, "AddCurrency" }, // 3274544717
+		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_AddTemporaryCurrency, "AddTemporaryCurrency" }, // 165048295
+		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_ClearBeforeRun, "ClearBeforeRun" }, // 71784356
+		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_FinishRunVariables, "FinishRunVariables" }, // 4114684476
 		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_GetCurrency, "GetCurrency" }, // 2468147898
 		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_GetCurrentLoreItems, "GetCurrentLoreItems" }, // 1789926027
 		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_GetIfPlayerGotAllLoreItems, "GetIfPlayerGotAllLoreItems" }, // 718833698
 		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_SetRandomPossessionLoreItem, "SetRandomPossessionLoreItem" }, // 3016222319
+		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_SetRandomPossessionLoreItemInRun, "SetRandomPossessionLoreItemInRun" }, // 206321743
 		{ &Z_Construct_UFunction_UInventoryGameInstanceSubsystem_TakeCurrency, "TakeCurrency" }, // 2256601302
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -352,10 +493,10 @@ UInventoryGameInstanceSubsystem::~UInventoryGameInstanceSubsystem() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_InventoryGameInstanceSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UInventoryGameInstanceSubsystem, UInventoryGameInstanceSubsystem::StaticClass, TEXT("UInventoryGameInstanceSubsystem"), &Z_Registration_Info_UClass_UInventoryGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInventoryGameInstanceSubsystem), 2158097647U) },
+		{ Z_Construct_UClass_UInventoryGameInstanceSubsystem, UInventoryGameInstanceSubsystem::StaticClass, TEXT("UInventoryGameInstanceSubsystem"), &Z_Registration_Info_UClass_UInventoryGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInventoryGameInstanceSubsystem), 3497325981U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_InventoryGameInstanceSubsystem_h_2546199379(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_InventoryGameInstanceSubsystem_h_2557914438(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_InventoryGameInstanceSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_InventoryGameInstanceSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

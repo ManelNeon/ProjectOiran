@@ -46,6 +46,7 @@ struct Z_Construct_UEnum_YokaiShokan_EEnemyState_Statics
 		{ "ROARING_STATE.Name", "EEnemyState::ROARING_STATE" },
 		{ "RUNNING_STATE.Name", "EEnemyState::RUNNING_STATE" },
 		{ "TOTAL_STATE.Name", "EEnemyState::TOTAL_STATE" },
+		{ "WALKING_BACKWARDS_STATE.Name", "EEnemyState::WALKING_BACKWARDS_STATE" },
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -53,6 +54,7 @@ struct Z_Construct_UEnum_YokaiShokan_EEnemyState_Statics
 		{ "EEnemyState::RUNNING_STATE", (int64)EEnemyState::RUNNING_STATE },
 		{ "EEnemyState::RIGHT_STRAFE_STATE", (int64)EEnemyState::RIGHT_STRAFE_STATE },
 		{ "EEnemyState::LEFT_STRAFE_STATE", (int64)EEnemyState::LEFT_STRAFE_STATE },
+		{ "EEnemyState::WALKING_BACKWARDS_STATE", (int64)EEnemyState::WALKING_BACKWARDS_STATE },
 		{ "EEnemyState::ATTACK_STATE", (int64)EEnemyState::ATTACK_STATE },
 		{ "EEnemyState::HIT_STATE", (int64)EEnemyState::HIT_STATE },
 		{ "EEnemyState::DEAD_STATE", (int64)EEnemyState::DEAD_STATE },
@@ -102,7 +104,7 @@ struct Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseEnemyAnimInstance_eventGetCurrentState_Parms, ReturnValue), Z_Construct_UEnum_YokaiShokan_EEnemyState, METADATA_PARAMS(0, nullptr) }; // 1520141558
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseEnemyAnimInstance_eventGetCurrentState_Parms, ReturnValue), Z_Construct_UEnum_YokaiShokan_EEnemyState, METADATA_PARAMS(0, nullptr) }; // 3425015096
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState_Statics::NewProp_ReturnValue,
@@ -147,7 +149,7 @@ struct Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState_Statics::NewProp_state_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState_Statics::NewProp_state = { "state", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseEnemyAnimInstance_eventSetCurrentState_Parms, state), Z_Construct_UEnum_YokaiShokan_EEnemyState, METADATA_PARAMS(0, nullptr) }; // 1520141558
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState_Statics::NewProp_state = { "state", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseEnemyAnimInstance_eventSetCurrentState_Parms, state), Z_Construct_UEnum_YokaiShokan_EEnemyState, METADATA_PARAMS(0, nullptr) }; // 3425015096
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState_Statics::NewProp_state_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState_Statics::NewProp_state,
@@ -207,8 +209,8 @@ struct Z_Construct_UClass_UBaseEnemyAnimInstance_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState, "GetCurrentState" }, // 2852120516
-		{ &Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState, "SetCurrentState" }, // 600567966
+		{ &Z_Construct_UFunction_UBaseEnemyAnimInstance_GetCurrentState, "GetCurrentState" }, // 1859583110
+		{ &Z_Construct_UFunction_UBaseEnemyAnimInstance_SetCurrentState, "SetCurrentState" }, // 3143102089
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -217,7 +219,7 @@ struct Z_Construct_UClass_UBaseEnemyAnimInstance_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UBaseEnemyAnimInstance_Statics::NewProp__CurrentState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UBaseEnemyAnimInstance_Statics::NewProp__CurrentState = { "_CurrentState", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseEnemyAnimInstance, _CurrentState), Z_Construct_UEnum_YokaiShokan_EEnemyState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__CurrentState_MetaData), NewProp__CurrentState_MetaData) }; // 1520141558
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UBaseEnemyAnimInstance_Statics::NewProp__CurrentState = { "_CurrentState", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseEnemyAnimInstance, _CurrentState), Z_Construct_UEnum_YokaiShokan_EEnemyState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__CurrentState_MetaData), NewProp__CurrentState_MetaData) }; // 3425015096
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBaseEnemyAnimInstance_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseEnemyAnimInstance_Statics::NewProp__CurrentState_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseEnemyAnimInstance_Statics::NewProp__CurrentState,
@@ -264,13 +266,13 @@ UBaseEnemyAnimInstance::~UBaseEnemyAnimInstance() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EEnemyState_StaticEnum, TEXT("EEnemyState"), &Z_Registration_Info_UEnum_EEnemyState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1520141558U) },
+		{ EEnemyState_StaticEnum, TEXT("EEnemyState"), &Z_Registration_Info_UEnum_EEnemyState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3425015096U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBaseEnemyAnimInstance, UBaseEnemyAnimInstance::StaticClass, TEXT("UBaseEnemyAnimInstance"), &Z_Registration_Info_UClass_UBaseEnemyAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBaseEnemyAnimInstance), 1155119914U) },
+		{ Z_Construct_UClass_UBaseEnemyAnimInstance, UBaseEnemyAnimInstance::StaticClass, TEXT("UBaseEnemyAnimInstance"), &Z_Registration_Info_UClass_UBaseEnemyAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBaseEnemyAnimInstance), 549486096U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_1077078136(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_4240549083(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_Statics::EnumInfo));

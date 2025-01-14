@@ -23,7 +23,9 @@
 			"ShaderMapHash": "171606064EA4501A5D0F37D0F682F17E731AF1AD",
 			"Assets": [
 				"/Game/Meshes/Enemy/Alpha_Body_MAT",
-				"/Game/Meshes/Enemy/Alpha_Joints_MAT"
+				"/Game/Meshes/Enemy/Alpha_Joints_MAT",
+				"/Game/Meshes/Enemy/Animations/Alpha_Body_MAT",
+				"/Game/Meshes/Enemy/Animations/Alpha_Joints_MAT"
 			]
 		},
 		{
@@ -120,6 +122,12 @@
 			"ShaderMapHash": "F329F724E138CBA0432C0F4B27E06E6E6947531A",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Default_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "40BF7828C0401325F61D59CD4F01D5E1B51E0B6D",
+			"Assets": [
+				"/Engine/MapTemplates/Materials/BasicAsset01"
 			]
 		},
 		{
@@ -306,6 +314,7 @@
 		{
 			"ShaderMapHash": "563585875C6ECA70B8E3F024D9531B67ACD0F5AE",
 			"Assets": [
+				"/Engine/EngineDebugMaterials/M_SimpleOpaque",
 				"/Engine/VREditor/TransformGizmo/Xray"
 			]
 		},

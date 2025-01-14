@@ -2,7 +2,7 @@
 
 
 #include "LevelRandomizer.h"
-#include "YokaiShokanEnemy.h"
+#include "CloseUpEnemy.h"
 #include "YokaiShokanGameInstance.h"
 #include "LevelManagerInstanceSubsystem.h"
 #include "PickUp.h"
@@ -24,42 +24,68 @@ void ALevelRandomizer::BeginPlay()
 	Super::BeginPlay();
 }
 
-void ALevelRandomizer::DeleteEnemyFromList(AActor* actor)
+void ALevelRandomizer::DeleteEnemyFromList(AActor* actor, bool isCloseUpEnemy)
 {
 	int index = -1;
 
-	int numberOfEnemies = _EnemyList.Num();
+	int numberOfFromAfarEnemies = _FromAfarEnemiesList.Num();
 
-	UE_LOG(LogTemp, Warning, TEXT("Got Amount Of Enemies"));
+	int numberOfCloseUpEnemies = _CloseUpEnemiesList.Num();
 
-	for (int i{ 0 }; i < numberOfEnemies; ++i)
+	if (isCloseUpEnemy)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Looping Through Array"));
-		
-		if (_EnemyList[i] == actor)
+		for (int i{ 0 }; i < numberOfCloseUpEnemies; ++i)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("Found Index"));
-			index = i;
-			break;
+			UE_LOG(LogTemp, Warning, TEXT("Looping Through Array"));
+
+			if (_CloseUpEnemiesList[i] == actor)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Found Index"));
+				index = i;
+				break;
+			}
 		}
+
+		if (index == -1)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Index is Out Of Range"));
+			return;
+		}
+
+		_CloseUpEnemiesList.RemoveAt(index);
 	}
-	
-	if (index == -1)
+	else
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Index is Out Of Range"));
-		return;
+		UE_LOG(LogTemp, Warning, TEXT("Got Amount Of Enemies"));
+
+		for (int i{ 0 }; i < numberOfFromAfarEnemies; ++i)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Looping Through Array"));
+
+			if (_FromAfarEnemiesList[i] == actor)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Found Index"));
+				index = i;
+				break;
+			}
+		}
+
+		if (index == -1)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Index is Out Of Range"));
+			return;
+		}
+
+		_FromAfarEnemiesList.RemoveAt(index);
 	}
 
-	_EnemyList.RemoveAt(index);
+	numberOfFromAfarEnemies = _FromAfarEnemiesList.Num();
 
-	UE_LOG(LogTemp, Warning, TEXT("Removed Index"));
+	numberOfCloseUpEnemies = _CloseUpEnemiesList.Num();
 
-	numberOfEnemies = _EnemyList.Num();
-
-	UE_LOG(LogTemp, Warning, TEXT("Enemy List Size: %d"), numberOfEnemies);
+	int numberOfEnemies = numberOfFromAfarEnemies + numberOfCloseUpEnemies;
 
 	//Until Here, We're Deleting the enemy from the array, now we'll check if the number of enemies is 0 and move on to the next wave
-
 	if (numberOfEnemies != 0) return;
 
 	UE_LOG(LogTemp, Warning, TEXT("No Enemies"));
@@ -130,20 +156,43 @@ void ALevelRandomizer::LevelEnder()
 
 bool ALevelRandomizer::IsLastEnemy()
 {
-	int size = _EnemyList.Num();
+	int size = _CloseUpEnemiesList.Num();
 
 	return (size == 1);
 }
 
 void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 {
-	_EnemyList.Empty();
+	_CloseUpEnemiesList.Empty();
+
+	_FromAfarEnemiesList.Empty();
 
 	int randomNumber = FMath::RandRange(minimumQuantity, maxQuantity);
 
+	int amountOfAfarEnemies = randomNumber / 3;
+
+	if (amountOfAfarEnemies == 0) amountOfAfarEnemies = 1;
+
+	for (size_t i{ 0 }; i < amountOfAfarEnemies; ++i)
+	{
+		_FromAfarEnemiesList.Add(GetWorld()->SpawnActor(_FromAfarEnemyClass));
+
+		float xRangeValue = _ZonesEpicentersRange[_CurrentZone].X;
+
+		float yRangeValue = _ZonesEpicentersRange[_CurrentZone].Y;
+
+		FVector randomLocation = FVector(_ZonesEpicenters[_CurrentZone].X + FMath::RandRange(-xRangeValue, xRangeValue), _ZonesEpicenters[_CurrentZone].Y + FMath::RandRange(-yRangeValue, yRangeValue), _ZonesEpicenters[_CurrentZone].Z);
+
+		Cast<AYokaiShokanEnemy>(_FromAfarEnemiesList[i])->SetLevelRandomizer(this);
+
+		_FromAfarEnemiesList[i]->SetActorLocation(randomLocation);
+	}
+
+	randomNumber = randomNumber - amountOfAfarEnemies;
+
 	for (size_t i{ 0 }; i < randomNumber; ++i)
 	{
-		_EnemyList.Add(GetWorld()->SpawnActor(_BaseEnemyClass));
+		_CloseUpEnemiesList.Add(GetWorld()->SpawnActor(_CloseUpEnemyClass));
 
 		float xRangeValue = _ZonesEpicentersRange[_CurrentZone].X;
 
@@ -151,15 +200,67 @@ void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 
 		FVector randomLocation = FVector(_ZonesEpicenters[_CurrentZone].X + FMath::RandRange(-xRangeValue, xRangeValue), _ZonesEpicenters[_CurrentZone].Y + FMath::RandRange(-yRangeValue, yRangeValue), _ZonesEpicenters[_CurrentZone].Z);
 		
-		Cast<AYokaiShokanEnemy>(_EnemyList[i])->SetLevelRandomizer(this);
+		Cast<AYokaiShokanEnemy>(_CloseUpEnemiesList[i])->SetLevelRandomizer(this);
 		
-		_EnemyList[i]->SetActorLocation(randomLocation);
+		_CloseUpEnemiesList[i]->SetActorLocation(randomLocation);
 
 		UE_LOG(LogTemp, Warning, TEXT("Enemy Added"));
 	}
+
+	//Set an enemy to attack
+	auto enemyToAttack = Cast<ACloseUpEnemy>(GetRandomEnemy());
+
+	enemyToAttack->BP_SetCanAttack();
+
+	_AttackingEnemy = enemyToAttack;
+}
+
+AActor* ALevelRandomizer::GetRandomEnemy()
+{
+	int numberOfEnemies = _CloseUpEnemiesList.Num() - 1;
+
+	int randomNumber = FMath::RandRange(0, numberOfEnemies);
+
+	return _CloseUpEnemiesList[randomNumber];
 }
 
 AActor* ALevelRandomizer::GetZoneDivider()
 {
 	return _ZoneDivider;
+}
+
+void ALevelRandomizer::SetANewEnemyToAttack()
+{
+	int size = _CloseUpEnemiesList.Num();
+	
+	if (size == 0) return;
+
+	if (size == 1) 
+	{
+		_AttackingEnemy = nullptr;
+
+		auto enemyToAttack = Cast <ACloseUpEnemy>(GetRandomEnemy());
+		
+		enemyToAttack->BP_SetCanAttack();
+
+		return;
+	}
+
+	AActor* temporaryActor = _AttackingEnemy;
+
+	while (temporaryActor == _AttackingEnemy)
+	{
+		temporaryActor = GetRandomEnemy();
+	}
+
+	_AttackingEnemy = temporaryActor;
+
+	auto enemyToAttack = Cast<ACloseUpEnemy>(_AttackingEnemy);
+
+	enemyToAttack->BP_SetCanAttack();
+}
+
+void ALevelRandomizer::SetZoneDividerNull()
+{
+	_ZoneDivider = nullptr;
 }

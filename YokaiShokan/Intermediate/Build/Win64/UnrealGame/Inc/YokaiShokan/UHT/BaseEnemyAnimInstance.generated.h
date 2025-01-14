@@ -15,12 +15,12 @@ enum class EEnemyState : uint8;
 #endif
 #define YOKAISHOKAN_BaseEnemyAnimInstance_generated_h
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetCurrentState); \
 	DECLARE_FUNCTION(execGetCurrentState);
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_23_INCLASS_NO_PURE_DECLS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBaseEnemyAnimInstance(); \
 	friend struct Z_Construct_UClass_UBaseEnemyAnimInstance_Statics; \
@@ -29,7 +29,7 @@ public: \
 	DECLARE_SERIALIZER(UBaseEnemyAnimInstance)
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_23_ENHANCED_CONSTRUCTORS \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_26_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBaseEnemyAnimInstance(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -43,13 +43,13 @@ public: \
 	NO_API virtual ~UBaseEnemyAnimInstance();
 
 
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_20_PROLOG
-#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_23_GENERATED_BODY \
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_23_PROLOG
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_23_INCLASS_NO_PURE_DECLS \
-	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_23_ENHANCED_CONSTRUCTORS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_26_INCLASS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_BaseEnemyAnimInstance_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,6 +63,9 @@ template<> YOKAISHOKAN_API UClass* StaticClass<class UBaseEnemyAnimInstance>();
 #define FOREACH_ENUM_EENEMYSTATE(op) \
 	op(EEnemyState::ROARING_STATE) \
 	op(EEnemyState::RUNNING_STATE) \
+	op(EEnemyState::RIGHT_STRAFE_STATE) \
+	op(EEnemyState::LEFT_STRAFE_STATE) \
+	op(EEnemyState::WALKING_BACKWARDS_STATE) \
 	op(EEnemyState::ATTACK_STATE) \
 	op(EEnemyState::HIT_STATE) \
 	op(EEnemyState::DEAD_STATE) \

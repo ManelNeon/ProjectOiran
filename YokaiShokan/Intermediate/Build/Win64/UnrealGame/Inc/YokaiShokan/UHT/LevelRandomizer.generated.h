@@ -16,12 +16,17 @@ class AActor;
 #define YOKAISHOKAN_LevelRandomizer_generated_h
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execSetZoneDividerNull); \
+	DECLARE_FUNCTION(execGetZoneDivider); \
 	DECLARE_FUNCTION(execSpawnEnemies); \
+	DECLARE_FUNCTION(execSetANewEnemyToAttack); \
+	DECLARE_FUNCTION(execIsLastEnemy); \
 	DECLARE_FUNCTION(execLevelEnder); \
 	DECLARE_FUNCTION(execWaveEnder); \
 	DECLARE_FUNCTION(execDeleteEnemyFromList);
 
 
+#define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_12_CALLBACK_WRAPPERS
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesALevelRandomizer(); \
@@ -48,6 +53,7 @@ public: \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_12_CALLBACK_WRAPPERS \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_12_INCLASS_NO_PURE_DECLS \
 	FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_12_ENHANCED_CONSTRUCTORS \
 private: \

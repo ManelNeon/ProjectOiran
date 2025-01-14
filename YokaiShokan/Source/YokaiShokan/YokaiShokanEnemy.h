@@ -19,6 +19,9 @@ public:
 
 	void SetLevelRandomizer(ALevelRandomizer* levelManager);
 
+	UFUNCTION(BlueprintPure, Category = "Enemy | Functions")
+	ALevelRandomizer* GetLevelRandomizer();
+
 	UFUNCTION(BlueprintCallable, Category = "Enemy | Widget")
 	void SetMarkerWidget(UUserWidget* widget);
 
@@ -27,7 +30,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Enemy | Stats")
-	void DamageThis(float damage, FVector hitDirection);
+	virtual void DamageThis(float damage, FVector hitDirection);
 
 	UFUNCTION(BlueprintPure, Category = "Enemy | Stats")
 	float GetDamageValue();
@@ -36,8 +39,10 @@ protected:
 
 	float _CurrentHealth;
 
+	UPROPERTY(EditAnywhere, Category = "Enemy | Stats")
 	float _MaxHealth;
 
+	UPROPERTY(EditAnywhere, Category = "Enemy | Stats")
 	float _DamageValue;
 
 	bool _IsDead;

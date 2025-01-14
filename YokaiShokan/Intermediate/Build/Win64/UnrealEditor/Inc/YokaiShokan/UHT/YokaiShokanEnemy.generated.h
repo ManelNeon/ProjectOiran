@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ALevelRandomizer;
 class UUserWidget;
 #ifdef YOKAISHOKAN_YokaiShokanEnemy_generated_h
 #error "YokaiShokanEnemy.generated.h already included, missing '#pragma once' in YokaiShokanEnemy.h"
@@ -18,7 +19,8 @@ class UUserWidget;
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetDamageValue); \
 	DECLARE_FUNCTION(execDamageThis); \
-	DECLARE_FUNCTION(execSetMarkerWidget);
+	DECLARE_FUNCTION(execSetMarkerWidget); \
+	DECLARE_FUNCTION(execGetLevelRandomizer);
 
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_14_INCLASS_NO_PURE_DECLS \
