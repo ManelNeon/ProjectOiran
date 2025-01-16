@@ -3,7 +3,6 @@
 	{
 		"Module.YokaiShokan.cpp.obj": [
 			"AudioManagerInstanceSubsystem.gen.cpp.obj",
-			"BaseEnemyAnimInstance.gen.cpp.obj",
 			"DialogueBox.gen.cpp.obj",
 			"InventoryGameInstanceSubsystem.gen.cpp.obj",
 			"LevelManagerInstanceSubsystem.gen.cpp.obj",
@@ -36,6 +35,7 @@
 			"YokaiShokanGameInstance.cpp.obj",
 			"YokaiShokanGameMode.cpp.obj",
 			"YokaiShokanPlayerController.cpp.obj",
+			"BaseEnemyAnimInstance.gen.cpp.obj",
 			"CloseUpEnemy.gen.cpp.obj",
 			"FromAfarEnemy.gen.cpp.obj",
 			"LevelRandomizer.gen.cpp.obj",
