@@ -8,6 +8,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "71177403F44D30AC5EF17907C7B02D3107EA1DDD",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Billboard_Material/M_MS_Billboard_Material"
+			]
+		},
+		{
 			"ShaderMapHash": "EAAB7D03C257D32B317B33AECB3FB2D64178F596",
 			"Assets": [
 				"/Engine/EngineMaterials/Widget3DPassThrough_Masked"
@@ -75,11 +81,23 @@
 			]
 		},
 		{
+			"ShaderMapHash": "1D3A8E20307CC66A3AF54187BAA762EAB2680ADA",
+			"Assets": [
+				"/Game/Materials/Levels/MI_CeilingLevel_wood"
+			]
+		},
+		{
 			"ShaderMapHash": "0537642356EC791285C92262B286ABD26173628A",
 			"Assets": [
 				"/Game/Meshes/Test/Meshes/image1_Mat",
 				"/Game/Meshes/Test/Meshes/image2_Mat",
 				"/Game/Meshes/Test/Meshes/image_Mat"
+			]
+		},
+		{
+			"ShaderMapHash": "288479268D224F2069FEDA408068FAF0451CEE58",
+			"Assets": [
+				"/Game/MSPresets/M_MS_SurfaceBlend_Material/M_MS_SurfaceBlend_Material"
 			]
 		},
 		{
@@ -95,15 +113,34 @@
 			]
 		},
 		{
+			"ShaderMapHash": "D7086C3246767235168BB840B06DA538F3B2A44A",
+			"Assets": [
+				"/Game/Stylized_Tree_Pack/Materials/Master_Materials/M_Bark"
+			]
+		},
+		{
 			"ShaderMapHash": "BC34CA333E2A06EC4ED343674C56DB5301676F55",
 			"Assets": [
 				"/Engine/EngineMaterials/PhAT_JointLimitMaterial"
 			]
 		},
 		{
+			"ShaderMapHash": "9FE0213811FE2BCA8561F811518A194B74BA8508",
+			"Assets": [
+				"/Game/Meshes/Character/M_Sleeves"
+			]
+		},
+		{
 			"ShaderMapHash": "F3377F38419732478AF88ACFD1FF0AE4B2D7A714",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Default_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "418C2A3AD8F083318E52B82900805E88597BB8F4",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Default_Transmission_Material/M_MS_Default_Transmission_Material",
+				"/Game/MSPresets/M_MS_Default_Transmission_Material_VT/M_MS_Default_Transmission_Material_VT"
 			]
 		},
 		{
@@ -119,6 +156,26 @@
 			]
 		},
 		{
+			"ShaderMapHash": "D1CC493BAA72D8F88B8F1833B80E8047A5229E15",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Imperfection_Material/M_MS_Imperfection_Material",
+				"/Game/MSPresets/M_MS_Imperfection_Material_VT/M_MS_Imperfection_Material_VT"
+			]
+		},
+		{
+			"ShaderMapHash": "9AFD813D891B6D02210C7C6A38A89BEC379D9BD9",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Decal_Material/M_MS_Decal_Material",
+				"/Game/MSPresets/M_MS_Decal_Material_VT/M_MS_Decal_Material_VT"
+			]
+		},
+		{
+			"ShaderMapHash": "A0AD143E443AE9BD9629DCBFAE27A24E4924A7BF",
+			"Assets": [
+				"/Game/VFX/Ripple_Effect/M_Ripple"
+			]
+		},
+		{
 			"ShaderMapHash": "5524543EA07FD2143A89A6D159942C8319FCE9CD",
 			"Assets": [
 				"/Engine/EditorMaterials/PhAT_NoCollisionMaterial"
@@ -128,6 +185,12 @@
 			"ShaderMapHash": "D14AE63E8859339B4CC825C638D3AB4A20241C9B",
 			"Assets": [
 				"/Engine/EngineSky/M_SimpleSkyDome"
+			]
+		},
+		{
+			"ShaderMapHash": "EF80124268117AE44EA0909DC410F5875B7062AB",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Foliage_Material/M_MS_Foliage_Material"
 			]
 		},
 		{
@@ -143,15 +206,40 @@
 			]
 		},
 		{
+			"ShaderMapHash": "7240004781D4667E4C2691DD82FC158EBA138DC1",
+			"Assets": [
+				"/Game/VFX/Hit_Detection/M_Blood_Splash"
+			]
+		},
+		{
 			"ShaderMapHash": "335BBA49BACD5FFFC2319A924B942349C67A8235",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Default_Blend"
 			]
 		},
 		{
+			"ShaderMapHash": "A296654AE7E4624B81B2F9717F93BF652E75CBC3",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriCutscene/TexuresMaterials/Body/M_Kazaori_Cutscene_Body"
+			]
+		},
+		{
+			"ShaderMapHash": "80551F4F1D2821820AF94FEBFA5B343FA58D389F",
+			"Assets": [
+				"/HDRIBackdrop/Materials/HDRI_Projection_Floor",
+				"/HDRIBackdrop/Materials/MI_HDRI_Floor"
+			]
+		},
+		{
 			"ShaderMapHash": "77B8784FB82C2490CF8CB53A54EBACDB14BD5ECA",
 			"Assets": [
 				"/Engine/VREditor/TransformGizmo/Main"
+			]
+		},
+		{
+			"ShaderMapHash": "2647AE4F430A81440D915A95F3B98D12C5ED8182",
+			"Assets": [
+				"/Game/VFX/Material_Instance/M_SlashTint"
 			]
 		},
 		{
@@ -203,6 +291,13 @@
 			]
 		},
 		{
+			"ShaderMapHash": "40F6DE584B036AA672DA4101E67A87F7979CB3CA",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Imperfection_Material_Var/M_MS_Imperfection_Material_Var",
+				"/Game/MSPresets/M_MS_Imperfection_Material_VT/M_MS_Imperfection_Material_Var_VT"
+			]
+		},
+		{
 			"ShaderMapHash": "086A295957F7269B159607ED14CE2C6840F1B9A9",
 			"Assets": [
 				"/ControlRig/Controls/ControlRigGizmoMaterial"
@@ -218,7 +313,51 @@
 			"ShaderMapHash": "FC92DA5CC2AB6C80615370E473B9FE300D15AB59",
 			"Assets": [
 				"/Engine/EngineDebugMaterials/M_SimpleOpaque",
-				"/Engine/VREditor/TransformGizmo/Xray"
+				"/Engine/VREditor/TransformGizmo/Xray",
+				"/Game/Meshes/Assets/hub/doll/fabric",
+				"/Game/Meshes/Assets/hub/doll/straw_001",
+				"/Game/Meshes/Assets/hub/doll/wood",
+				"/Game/Meshes/Assets/hub/inro/cords",
+				"/Game/Meshes/Assets/hub/inro/inro",
+				"/Game/Meshes/Assets/hub/makeupbox/fabric",
+				"/Game/Meshes/Assets/hub/makeupbox/makeup_itens",
+				"/Game/Meshes/Assets/hub/makeupbox/wood_box",
+				"/Game/Meshes/Assets/hub/pillow/PillowSeat1",
+				"/Game/Meshes/Assets/hub/tree_jar/M_Jar_Ceramic",
+				"/Game/Meshes/Assets/hub/tree_jar/M_Jar_Gold",
+				"/Game/Meshes/Assets/LoreItemScroll/Textures/LoreItem_Scroll1",
+				"/Game/Meshes/Assets/MakeupBox/Textures/fabric",
+				"/Game/Meshes/Assets/MakeupBox/Textures/makeup_itens",
+				"/Game/Meshes/Assets/MakeupBox/Textures/wood_box",
+				"/Game/Meshes/Assets/Paintings/Textures/PaintingAboveStage1",
+				"/Game/Meshes/Assets/Spiderwebs/Textures/Spiderweb_big1",
+				"/Game/Meshes/Assets/Spiderwebs/Textures/Spiderweb_small1",
+				"/Game/Meshes/Assets/TallCandle/Material/TallCandleHolder1",
+				"/Game/Meshes/Assets/TempleTable/Textures/TempleTable1",
+				"/Game/Meshes/Assets/TreeJar/Textures/M_Jar_Ceramic",
+				"/Game/Meshes/Assets/TreeJar/Textures/M_Jar_Gold",
+				"/Game/Meshes/Kazaori/KazaoriCutscene/MainKimono_002",
+				"/Game/Meshes/Levels/Level1/M_Beams",
+				"/Game/Meshes/Levels/Level1/M_Cealing",
+				"/Game/Meshes/Levels/Level1/M_Floor",
+				"/Game/Meshes/Levels/Level1/M_Madeira",
+				"/Game/Meshes/Levels/Level1/M_Platform",
+				"/Game/Meshes/Levels/Level1/M_Wall",
+				"/Game/Meshes/Levels/Level2/M_Beams",
+				"/Game/Meshes/Levels/Level2/M_Cealing",
+				"/Game/Meshes/Levels/Level2/M_Floor",
+				"/Game/Meshes/Levels/Level2/M_Madeira",
+				"/Game/Meshes/Levels/Level2/M_Platform",
+				"/Game/Meshes/Levels/Level2/M_Wall",
+				"/Game/Meshes/Levels/Textures/M_Door_In",
+				"/Game/Meshes/Levels/Textures/M_Door_Out"
+			]
+		},
+		{
+			"ShaderMapHash": "39D7DE5C5336FE02429E471BA2E554C77E564A8C",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Default_Material/M_MS_Default_Material",
+				"/Game/MSPresets/M_MS_Default_Material_VT/M_MS_Default_Material_VT"
 			]
 		},
 		{
@@ -234,9 +373,21 @@
 			]
 		},
 		{
+			"ShaderMapHash": "BA02E35DD42835B836BA465BA095B1DE41FD7CA2",
+			"Assets": [
+				"/Game/VFX/Hit_Detection/M_Blood_Decal"
+			]
+		},
+		{
 			"ShaderMapHash": "7E47D25EB0F2785D4F1F143C409872EA33312E74",
 			"Assets": [
 				"/Engine/EngineMaterials/Widget3DPassThrough_Masked_OneSided"
+			]
+		},
+		{
+			"ShaderMapHash": "668216616C84F00A40D1ECF5EDE0C7A741E9D8E0",
+			"Assets": [
+				"/HDRIBackdrop/Materials/MI_HDRI_Sky"
 			]
 		},
 		{
@@ -258,18 +409,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "F163C269B687F8870796785B40BDBAD246CCB7AA",
-			"Assets": [
-				"/Game/Meshes/Character/M_Sleeves"
-			]
-		},
-		{
-			"ShaderMapHash": "F8BBC7690A73A99607590DC7E492C8D61B669D81",
-			"Assets": [
-				"/Game/VFX/Material_Instance/M_Mat01"
-			]
-		},
-		{
 			"ShaderMapHash": "1445A56D54308CCAE11A57C309C37DDCE315102D",
 			"Assets": [
 				"/Game/Meshes/Character/M_HairpinBlack",
@@ -280,6 +419,12 @@
 			"ShaderMapHash": "3F6E286E3814329023A974CFC065E99452111CBB",
 			"Assets": [
 				"/Engine/EngineDebugMaterials/DebugEditorMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "5B1D906FA73F31336F29ED873A37BA50AD5FE47D",
+			"Assets": [
+				"/HDRIBackdrop/Materials/HDRI_Projection_Sky"
 			]
 		},
 		{
@@ -313,9 +458,16 @@
 			]
 		},
 		{
-			"ShaderMapHash": "E9EFC1898F01C8A80218EE15D56C56AAA0F0EAC8",
+			"ShaderMapHash": "E890A684EF03177B75A86575826F20EAF76CAFAC",
 			"Assets": [
-				"/Game/VFX/Material_Instance/M_Mat01_Inst1"
+				"/Game/MSPresets/M_MS_ImperfectionDecal_Material/M_MS_ImperfectionDecal_Material",
+				"/Game/MSPresets/M_MS_ImperfectionDecal_Material_VT/M_MS_ImperfectionDecal_Material_VT"
+			]
+		},
+		{
+			"ShaderMapHash": "3B5210884DC2FB2D7268DF55F9B5B5580BF55D04",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/BlackUnlitMaterial"
 			]
 		},
 		{
@@ -323,6 +475,12 @@
 			"Assets": [
 				"/Engine/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01",
 				"/Game/VFX/TreeVFX/M_EV_TreeGodRays"
+			]
+		},
+		{
+			"ShaderMapHash": "6020628ECF748CCD23D086C196FE726536634FFD",
+			"Assets": [
+				"/Game/VFX/Hit_Detection/M_Blood_Drops"
 			]
 		},
 		{
@@ -363,6 +521,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "DC11C4981275FB5913044EAA110870E79F41615F",
+			"Assets": [
+				"/Game/Meshes/Assets/Lanterns/Textures/paper_part_big"
+			]
+		},
+		{
 			"ShaderMapHash": "1C63369BA300C38A984C7AF15FDD9343A2D24FEB",
 			"Assets": [
 				"/Game/FirstPersonArms/Character/Materials/Instances/Manny/MI_Manny_01",
@@ -379,6 +543,12 @@
 			"ShaderMapHash": "C922F69E00C6B2E58109F3F64D4014D01EA2D2E4",
 			"Assets": [
 				"/Engine/EditorLandscapeResources/SplineEditorMeshMat"
+			]
+		},
+		{
+			"ShaderMapHash": "1724FF9E4ACA91C1E24C9F79C104D6C2EFEA13C3",
+			"Assets": [
+				"/Game/Meshes/Assets/Lanterns/Textures/small_paper"
 			]
 		},
 		{
@@ -412,15 +582,28 @@
 			]
 		},
 		{
-			"ShaderMapHash": "B9C6DAAD12200B8DC0B80C39EDA2478A7FEA5815",
+			"ShaderMapHash": "F99AB0ABFC43C37328532A8B04A9016BF0E4469E",
 			"Assets": [
-				"/Engine/MapTemplates/Materials/BasicAsset03"
+				"/Game/Meshes/Enemy/Ch30_Body",
+				"/Game/Meshes/Enemy/Ch30_Body1"
+			]
+		},
+		{
+			"ShaderMapHash": "C37A4DAD03EB21EE66BD721CD6615E45CEAF9543",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Glass_Material/M_MS_Glass_Material"
 			]
 		},
 		{
 			"ShaderMapHash": "D0EC1AB074234DEC6CF97891374F35BC2266B59A",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Sheen_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "07B832B00DD8FF18A26A632483368CCDE36E0016",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Glass_Material/MI_MS_Glass_Material_Inst"
 			]
 		},
 		{
@@ -448,9 +631,22 @@
 			]
 		},
 		{
+			"ShaderMapHash": "F0B9A7B88C91B3211942B7E1A8E186AB612D65B5",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriCutscene/TexuresMaterials/MainKimono/M_Kazaori_Cutscene_Kimono"
+			]
+		},
+		{
 			"ShaderMapHash": "1858E9BC8D9C2641E3E679924B4F6CE2365BC7F2",
 			"Assets": [
 				"/Paper2D/OpaqueUnlitSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "BC0316BF34B045C45A303DC5D4376D1564FB7D01",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Default_Fuzz_Material/M_MS_Default_Fuzz_Material",
+				"/Game/MSPresets/M_MS_Default_Fuzz_Material_VT/M_MS_Default_Fuzz_Material_VT"
 			]
 		},
 		{
@@ -484,9 +680,22 @@
 			]
 		},
 		{
+			"ShaderMapHash": "3ABC3EC9346037E9A826399C1AD1D78DEA1496F2",
+			"Assets": [
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Willow/MI_Leaf_Willow_04"
+			]
+		},
+		{
 			"ShaderMapHash": "682BCECB1BDC9CFE22AEA8B7E9021353784ED54D",
 			"Assets": [
 				"/Game/VFX/TreeVFX/M_MagicDust"
+			]
+		},
+		{
+			"ShaderMapHash": "801202CCEEFF2F8C241D530B9EA5A8E5ACF7CB8F",
+			"Assets": [
+				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_big",
+				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_small"
 			]
 		},
 		{
@@ -517,6 +726,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "11F978DA1A5B387BA1C35E1EBE88499F899AF2F7",
+			"Assets": [
+				"/Game/Meshes/Assets/Paintings/Textures/Painting1"
+			]
+		},
+		{
 			"ShaderMapHash": "E0C46BDC639F731B623872C10A7C7BE3AE0E8441",
 			"Assets": [
 				"/Engine/EngineDebugMaterials/M_SimpleUnlitTranslucent"
@@ -538,6 +753,19 @@
 			"ShaderMapHash": "43E278DF2DFB8D936EB21D983B4FF9EB719E5A05",
 			"Assets": [
 				"/Interchange/gltf/M_Unlit"
+			]
+		},
+		{
+			"ShaderMapHash": "A39FFBDF2E3B0B9336F70A650DB75F82C1577D0E",
+			"Assets": [
+				"/Game/MSPresets/M_MS_Surface_Material/M_MS_Surface_Material",
+				"/Game/MSPresets/M_MS_Surface_Material_VT/M_MS_Surface_Material_VT"
+			]
+		},
+		{
+			"ShaderMapHash": "DAE726E1F929C9A412D7A18E905AB7DD5404E651",
+			"Assets": [
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_05"
 			]
 		},
 		{
@@ -613,13 +841,42 @@
 				"/Game/Meshes/HUB/M_Total_Roof",
 				"/Game/Meshes/HUB/M_Wall_Side",
 				"/Game/Meshes/HUB/M_Window_Roof",
-				"/Game/Meshes/HUB/M_Wood"
+				"/Game/Meshes/HUB/M_Wood",
+				"/Game/Meshes/Levels/Textures/M_Beams",
+				"/Game/Meshes/Levels/Textures/M_Floor",
+				"/Game/Meshes/Levels/Textures/M_Madeira",
+				"/Game/Meshes/Levels/Textures/M_Wall"
+			]
+		},
+		{
+			"ShaderMapHash": "C9B2F3F3F020FA8CA4FE95EEFECDC72BE38BEC7F",
+			"Assets": [
+				"/Game/Meshes/Assets/hub/stage/HUB_UV_2_M_Paint_BaseColor_Mat",
+				"/Game/Meshes/Assets/hub/stage/paintingabove/HUB_UV_2_M_Placa_Dentro_BaseColor_Mat"
 			]
 		},
 		{
 			"ShaderMapHash": "E67683F4B772943C36BB36951AE1A2908604343C",
 			"Assets": [
 				"/MeshModelingToolset/Materials/M_DynamicMeshComponentVtxColor"
+			]
+		},
+		{
+			"ShaderMapHash": "A85551F7F299BEAEFC28F8E02A48FCCA1328581E",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/LightmapResolutionMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "EAABD2FB05E2F3D314DA2C8FF8A2BE59D12275EA",
+			"Assets": [
+				"/Game/VFX/Material_Instance/M_Mat01"
+			]
+		},
+		{
+			"ShaderMapHash": "D7D25EFCDC3142E38B994A433E9DD63C359F3BE7",
+			"Assets": [
+				"/Game/Meshes/Assets/Lanterns/Textures/paper_part_big"
 			]
 		},
 		{

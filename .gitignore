@@ -72,3 +72,6 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+YokaiShokan/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
+YokaiShokan/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
+YokaiShokan/Saved/Logs/YokaiShokan.log
