@@ -43,6 +43,7 @@
 		{
 			"ShaderMapHash": "D5BEB507A2D2A9277B6E63441D40DFC1558C81F5",
 			"Assets": [
+				"/Game/MSPresets/M_MS_Imperfection_Material/M_MS_Imperfection_Material_Var",
 				"/Game/MSPresets/M_MS_Imperfection_Material_Var/M_MS_Imperfection_Material_Var",
 				"/Game/MSPresets/M_MS_Imperfection_Material_VT/M_MS_Imperfection_Material_Var_VT"
 			]
@@ -68,7 +69,12 @@
 		{
 			"ShaderMapHash": "DA28550C82BA08BD36222AAE0247CAC0C022A051",
 			"Assets": [
-				"/Game/Materials/Levels/MI_Willow_Bark_tgrpbdxu_2K"
+				"/Game/Materials/Hub/MI_Plain_Off-white_Paper_rm4ln2p0_2K",
+				"/Game/Materials/Levels/MI_CeilingLevel_wood",
+				"/Game/Materials/Levels/MI_Japanese_Shrine_Stone_Floor_ubqlfdgcw_2K",
+				"/Game/Materials/Levels/MI_Traditional_Japanese_Wooden_Facade_tlzgfavdy_2K",
+				"/Game/Materials/Levels/MI_Willow_Bark_tgrpbdxu_2K",
+				"/Game/Materials/Levels/MI_Wooden_Planks_level2"
 			]
 		},
 		{
@@ -86,7 +92,67 @@
 		{
 			"ShaderMapHash": "BF44190F9A3058D9DE1E8BA6E69C039AAEB60A34",
 			"Assets": [
-				"/Game/Stylized_Tree_Pack/Materials/Master_Materials/M_Leaf"
+				"/Game/Stylized_Tree_Pack/Materials/Master_Materials/M_Leaf",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_05"
 			]
 		},
 		{
@@ -200,12 +266,15 @@
 		{
 			"ShaderMapHash": "435EBC311777A8D6E9B33D14DF1319B0032D6FDA",
 			"Assets": [
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Willow/MI_Leaf_Willow_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Willow/MI_Leaf_Willow_03",
 				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Willow/MI_Leaf_Willow_04"
 			]
 		},
 		{
 			"ShaderMapHash": "6F92B832EA3A698B45B0330D4A3D0E629ADB6A03",
 			"Assets": [
+				"/Bridge/MSPresets/M_MS_Glass_Material/M_MS_Glass_Material",
 				"/Game/MSPresets/M_MS_Glass_Material/M_MS_Glass_Material"
 			]
 		},

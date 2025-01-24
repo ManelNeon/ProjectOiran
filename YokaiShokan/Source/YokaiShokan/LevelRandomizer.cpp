@@ -2,7 +2,7 @@
 
 
 #include "LevelRandomizer.h"
-#include "CloseUpEnemy.h"
+#include "YokaiShokanEnemy.h"
 #include "YokaiShokanGameInstance.h"
 #include "LevelManagerInstanceSubsystem.h"
 #include "PickUp.h"
@@ -53,6 +53,8 @@ void ALevelRandomizer::DeleteEnemyFromList(AActor* actor, bool isCloseUpEnemy)
 		}
 
 		_CloseUpEnemiesList.RemoveAt(index);
+
+		UE_LOG(LogTemp, Warning, TEXT("Index is Out Of Range"));
 	}
 	else
 	{
@@ -186,6 +188,8 @@ void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 		Cast<AYokaiShokanEnemy>(_FromAfarEnemiesList[i])->SetLevelRandomizer(this);
 
 		_FromAfarEnemiesList[i]->SetActorLocation(randomLocation);
+
+		UE_LOG(LogTemp, Warning, TEXT("Afar Enemy Added"));
 	}
 
 	randomNumber = randomNumber - amountOfAfarEnemies;
@@ -204,11 +208,11 @@ void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 		
 		_CloseUpEnemiesList[i]->SetActorLocation(randomLocation);
 
-		UE_LOG(LogTemp, Warning, TEXT("Enemy Added"));
+		UE_LOG(LogTemp, Warning, TEXT("Close up Enemy Added"));
 	}
 
 	//Set an enemy to attack
-	auto enemyToAttack = Cast<ACloseUpEnemy>(GetRandomEnemy());
+	auto enemyToAttack = Cast<AYokaiShokanEnemy>(GetRandomEnemy());
 
 	enemyToAttack->BP_SetCanAttack();
 
@@ -239,7 +243,7 @@ void ALevelRandomizer::SetANewEnemyToAttack()
 	{
 		_AttackingEnemy = nullptr;
 
-		auto enemyToAttack = Cast <ACloseUpEnemy>(GetRandomEnemy());
+		auto enemyToAttack = Cast <AYokaiShokanEnemy>(GetRandomEnemy());
 		
 		enemyToAttack->BP_SetCanAttack();
 
@@ -255,7 +259,7 @@ void ALevelRandomizer::SetANewEnemyToAttack()
 
 	_AttackingEnemy = temporaryActor;
 
-	auto enemyToAttack = Cast<ACloseUpEnemy>(_AttackingEnemy);
+	auto enemyToAttack = Cast<AYokaiShokanEnemy>(_AttackingEnemy);
 
 	enemyToAttack->BP_SetCanAttack();
 }

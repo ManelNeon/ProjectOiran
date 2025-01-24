@@ -25,6 +25,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Enemy | Widget")
 	void SetMarkerWidget(UUserWidget* widget);
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Level Randomizer")
+	void BP_SetCanAttack();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -44,6 +47,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Enemy | Stats")
 	float _DamageValue;
+
+	UPROPERTY(EditAnywhere, Category = "Enemy | Stats")
+	bool _IsCloseUpEnemy;
 
 	bool _IsDead;
 

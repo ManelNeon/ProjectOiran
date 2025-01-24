@@ -19,6 +19,34 @@ YOKAISHOKAN_API UClass* Z_Construct_UClass_AYokaiShokanEnemy();
 YOKAISHOKAN_API UClass* Z_Construct_UClass_AYokaiShokanEnemy_NoRegister();
 // End Cross Module References
 
+// Begin Class AYokaiShokanEnemy Function BP_SetCanAttack
+static FName NAME_AYokaiShokanEnemy_BP_SetCanAttack = FName(TEXT("BP_SetCanAttack"));
+void AYokaiShokanEnemy::BP_SetCanAttack()
+{
+	ProcessEvent(FindFunctionChecked(NAME_AYokaiShokanEnemy_BP_SetCanAttack),NULL);
+}
+struct Z_Construct_UFunction_AYokaiShokanEnemy_BP_SetCanAttack_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Level Randomizer" },
+		{ "ModuleRelativePath", "YokaiShokanEnemy.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AYokaiShokanEnemy_BP_SetCanAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYokaiShokanEnemy, nullptr, "BP_SetCanAttack", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanEnemy_BP_SetCanAttack_Statics::Function_MetaDataParams), Z_Construct_UFunction_AYokaiShokanEnemy_BP_SetCanAttack_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_AYokaiShokanEnemy_BP_SetCanAttack()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AYokaiShokanEnemy_BP_SetCanAttack_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class AYokaiShokanEnemy Function BP_SetCanAttack
+
 // Begin Class AYokaiShokanEnemy Function DamageThis
 struct Z_Construct_UFunction_AYokaiShokanEnemy_DamageThis_Statics
 {
@@ -230,12 +258,19 @@ struct Z_Construct_UClass_AYokaiShokanEnemy_Statics
 		{ "Category", "Enemy | Stats" },
 		{ "ModuleRelativePath", "YokaiShokanEnemy.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp__IsCloseUpEnemy_MetaData[] = {
+		{ "Category", "Enemy | Stats" },
+		{ "ModuleRelativePath", "YokaiShokanEnemy.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp__MaxHealth;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp__DamageValue;
+	static void NewProp__IsCloseUpEnemy_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp__IsCloseUpEnemy;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AYokaiShokanEnemy_BP_SetCanAttack, "BP_SetCanAttack" }, // 1478136365
 		{ &Z_Construct_UFunction_AYokaiShokanEnemy_DamageThis, "DamageThis" }, // 392230314
 		{ &Z_Construct_UFunction_AYokaiShokanEnemy_GetDamageValue, "GetDamageValue" }, // 1326949345
 		{ &Z_Construct_UFunction_AYokaiShokanEnemy_GetLevelRandomizer, "GetLevelRandomizer" }, // 3999653958
@@ -249,9 +284,15 @@ struct Z_Construct_UClass_AYokaiShokanEnemy_Statics
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanEnemy_Statics::NewProp__MaxHealth = { "_MaxHealth", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanEnemy, _MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__MaxHealth_MetaData), NewProp__MaxHealth_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanEnemy_Statics::NewProp__DamageValue = { "_DamageValue", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanEnemy, _DamageValue), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__DamageValue_MetaData), NewProp__DamageValue_MetaData) };
+void Z_Construct_UClass_AYokaiShokanEnemy_Statics::NewProp__IsCloseUpEnemy_SetBit(void* Obj)
+{
+	((AYokaiShokanEnemy*)Obj)->_IsCloseUpEnemy = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AYokaiShokanEnemy_Statics::NewProp__IsCloseUpEnemy = { "_IsCloseUpEnemy", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AYokaiShokanEnemy), &Z_Construct_UClass_AYokaiShokanEnemy_Statics::NewProp__IsCloseUpEnemy_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__IsCloseUpEnemy_MetaData), NewProp__IsCloseUpEnemy_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AYokaiShokanEnemy_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanEnemy_Statics::NewProp__MaxHealth,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanEnemy_Statics::NewProp__DamageValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanEnemy_Statics::NewProp__IsCloseUpEnemy,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AYokaiShokanEnemy_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AYokaiShokanEnemy_Statics::DependentSingletons[])() = {
@@ -294,10 +335,10 @@ AYokaiShokanEnemy::~AYokaiShokanEnemy() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AYokaiShokanEnemy, AYokaiShokanEnemy::StaticClass, TEXT("AYokaiShokanEnemy"), &Z_Registration_Info_UClass_AYokaiShokanEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AYokaiShokanEnemy), 1206157711U) },
+		{ Z_Construct_UClass_AYokaiShokanEnemy, AYokaiShokanEnemy::StaticClass, TEXT("AYokaiShokanEnemy"), &Z_Registration_Info_UClass_AYokaiShokanEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AYokaiShokanEnemy), 1395560972U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_957902849(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_848598908(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanEnemy_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

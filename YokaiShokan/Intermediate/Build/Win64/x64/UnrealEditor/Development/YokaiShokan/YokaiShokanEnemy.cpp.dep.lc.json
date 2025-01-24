@@ -47,7 +47,9 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\userwidget.generated.h",
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\yokaishokanenemy.generated.h",
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\statsgameinstancesubsystem.h",
-            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\statsgameinstancesubsystem.generated.h"
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\statsgameinstancesubsystem.generated.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\baseenemyaniminstance.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\baseenemyaniminstance.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
