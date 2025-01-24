@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeYokaiShokan_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x88F374B9,
+				0xED5AC2E0,
 				0xE8BF44C8,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeYokaiShokan_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_YokaiShokan.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_YokaiShokan(Z_Construct_UPackage__Script_YokaiShokan, TEXT("/Script/YokaiShokan"), Z_Registration_Info_UPackage__Script_YokaiShokan, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x88F374B9, 0xE8BF44C8));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_YokaiShokan(Z_Construct_UPackage__Script_YokaiShokan, TEXT("/Script/YokaiShokan"), Z_Registration_Info_UPackage__Script_YokaiShokan, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xED5AC2E0, 0xE8BF44C8));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
