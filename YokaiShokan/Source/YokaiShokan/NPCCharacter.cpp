@@ -7,6 +7,7 @@
 #include "InputActionValue.h"
 #include "InputMappingContext.h"
 #include "YokaiShokanCharacter.h"
+#include "AudioManagerInstanceSubsystem.h"
 #include "Kismet/KismetMathLibrary.h"
 
 
@@ -19,8 +20,6 @@ ANPCCharacter::ANPCCharacter()
 	_Target = nullptr;
 
 	_CurrentString = "";
-
-	_CharIndex = 0;
 
 	_DialogueIndex = -1;
 }
@@ -86,60 +85,25 @@ void ANPCCharacter::StartDialogue()
 
 	if (!_CurrentDialogueBox) return;
 
-	_CharIndex = 0;
+	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UAudioManagerInstanceSubsystem>();
 
-	if (_IsPlaying)
+	if (yokaiGameInstance->_CurrentDialogue != nullptr)
 	{
-		_IsPlaying = false;
-
-		_CurrentDialogueBox->GetTextBlock()->SetText(FText::FromString(DialogueArray[_DialogueIndex]));
-
-		return;
+		yokaiGameInstance->StopDialogue();
 	}
 
 	if (_DialogueIndex >= size) return;
 
 	_DialogueIndex++;
 
-	_IsPlaying = true;
+	_CurrentDialogueBox->GetTextBlock()->SetText(FText::FromString(DialogueArray[_DialogueIndex]));
 
-	_CurrentDialogueBox->GetTextBlock()->SetText(FText::FromString(""));
-
-	GetWorldTimerManager().SetTimer(_TimerHandle, this, &ANPCCharacter::RunThroughDialogue, 0.05f, false);
-}
-
-void ANPCCharacter::RunThroughDialogue()
-{
-	if (!_IsPlaying) return;
-
-	if (!_CurrentDialogueBox) return;
-
-	FString currentText = _CurrentDialogueBox->GetTextBlock()->GetText().ToString();
-
-	currentText += DialogueArray[_DialogueIndex][_CharIndex];
-
-	if (!_CurrentDialogueBox) return;
-	
-	_CurrentDialogueBox->GetTextBlock()->SetText(FText::FromString(currentText));
-
-	_CharIndex++;
-
-	if (_CharIndex >= DialogueArray[_DialogueIndex].Len())
-	{
-		_IsPlaying = false;
-		return;
-	}
-
-	GetWorldTimerManager().SetTimer(_TimerHandle, this, &ANPCCharacter::RunThroughDialogue, 0.05f, false);
+	yokaiGameInstance->PlayDialogue(DialoguesVoicesArray[_DialogueIndex]);
 }
 
 void ANPCCharacter::RestartDialogue()
 {
-	_CharIndex = 0;
-
 	_DialogueIndex = -1;
-
-	_IsPlaying = false;
 
 	_CurrentDialogueBox = nullptr;
 }

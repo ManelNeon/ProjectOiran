@@ -17,6 +17,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execDamagePlayer); \
 	DECLARE_FUNCTION(execHealPlayer); \
+	DECLARE_FUNCTION(execGetIsDashing); \
 	DECLARE_FUNCTION(execGetDashAvailability);
 
 

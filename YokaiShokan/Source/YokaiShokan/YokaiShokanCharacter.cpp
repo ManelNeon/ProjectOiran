@@ -262,3 +262,8 @@ void AYokaiShokanCharacter::SpecialAttackTwo()
 	
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Special Attack Two"));
 }
+
+bool AYokaiShokanCharacter::GetIsDashing()
+{
+	return _IsDashing;
+}

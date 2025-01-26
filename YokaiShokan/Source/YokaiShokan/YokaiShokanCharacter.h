@@ -78,6 +78,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Character | Dash Movement")
 	bool GetDashAvailability();
 
+	UFUNCTION(BlueprintPure, Category = "Character | Dash Movement")
+	bool GetIsDashing();
+
 	UFUNCTION(BlueprintCallable, Category = "Character | Stats")
 	void HealPlayer(float amount);
 

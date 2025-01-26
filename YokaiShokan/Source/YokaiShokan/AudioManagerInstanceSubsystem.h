@@ -35,6 +35,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Audio Manager | Functions")
 	void FadeOutCurrentMusic();
 
+	UPROPERTY()
+	UAudioComponent* _CurrentDialogue;
+
+	void PlayDialogue(USoundWave* dialogue);
+
+	UFUNCTION(BlueprintCallable, Category = "Audio Manager | Functions")
+	void StopDialogue();
+
 protected:
 
 	UPROPERTY()

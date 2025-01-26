@@ -15,6 +15,7 @@ COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 ENGINE_API UClass* Z_Construct_UClass_AActor();
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_USoundWave_NoRegister();
 UPackage* Z_Construct_UPackage__Script_YokaiShokan();
 YOKAISHOKAN_API UClass* Z_Construct_UClass_ALevelRandomizer();
 YOKAISHOKAN_API UClass* Z_Construct_UClass_ALevelRandomizer_NoRegister();
@@ -438,6 +439,10 @@ struct Z_Construct_UClass_ALevelRandomizer_Statics
 		{ "Category", "Level Randomizer" },
 		{ "ModuleRelativePath", "LevelRandomizer.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp__LevelEnderSFX_MetaData[] = {
+		{ "Category", "Level Randomizer" },
+		{ "ModuleRelativePath", "LevelRandomizer.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp__RewardSpawnLocation;
 	static const UECodeGen_Private::FStructPropertyParams NewProp__ZonesEpicenters_Inner;
@@ -452,6 +457,7 @@ struct Z_Construct_UClass_ALevelRandomizer_Statics
 	static const UECodeGen_Private::FClassPropertyParams NewProp__HealthPickupBP;
 	static const UECodeGen_Private::FClassPropertyParams NewProp__SkillPointsPickupBP;
 	static const UECodeGen_Private::FClassPropertyParams NewProp__LoreItemPickupBP;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp__LevelEnderSFX;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -484,6 +490,7 @@ const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ALevelRandomize
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__HealthPickupBP = { "_HealthPickupBP", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALevelRandomizer, _HealthPickupBP), Z_Construct_UClass_UClass, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__HealthPickupBP_MetaData), NewProp__HealthPickupBP_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__SkillPointsPickupBP = { "_SkillPointsPickupBP", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALevelRandomizer, _SkillPointsPickupBP), Z_Construct_UClass_UClass, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__SkillPointsPickupBP_MetaData), NewProp__SkillPointsPickupBP_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__LoreItemPickupBP = { "_LoreItemPickupBP", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALevelRandomizer, _LoreItemPickupBP), Z_Construct_UClass_UClass, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__LoreItemPickupBP_MetaData), NewProp__LoreItemPickupBP_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__LevelEnderSFX = { "_LevelEnderSFX", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALevelRandomizer, _LevelEnderSFX), Z_Construct_UClass_USoundWave_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__LevelEnderSFX_MetaData), NewProp__LevelEnderSFX_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALevelRandomizer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__RewardSpawnLocation,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__ZonesEpicenters_Inner,
@@ -498,6 +505,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALevelRan
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__HealthPickupBP,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__SkillPointsPickupBP,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__LoreItemPickupBP,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALevelRandomizer_Statics::NewProp__LevelEnderSFX,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ALevelRandomizer_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ALevelRandomizer_Statics::DependentSingletons[])() = {
@@ -540,10 +548,10 @@ ALevelRandomizer::~ALevelRandomizer() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ALevelRandomizer, ALevelRandomizer::StaticClass, TEXT("ALevelRandomizer"), &Z_Registration_Info_UClass_ALevelRandomizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALevelRandomizer), 1973932136U) },
+		{ Z_Construct_UClass_ALevelRandomizer, ALevelRandomizer::StaticClass, TEXT("ALevelRandomizer"), &Z_Registration_Info_UClass_ALevelRandomizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALevelRandomizer), 1129006092U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_1405796692(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_3035496608(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_LevelRandomizer_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -1086,6 +1086,10 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputmappingcontext.generated.h",
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\yokaishokancharacter.h",
             "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\yokaishokancharacter.generated.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\source\\yokaishokan\\audiomanagerinstancesubsystem.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\public\\subsystems\\gameinstancesubsystem.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameinstancesubsystem.generated.h",
+            "c:\\gamedev\\unrealprojects\\yokaishokan\\yokaishokan\\intermediate\\build\\win64\\unrealeditor\\inc\\yokaishokan\\uht\\audiomanagerinstancesubsystem.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl"

@@ -66,6 +66,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
 	UClass* _LoreItemPickupBP;
 
+	UPROPERTY(EditAnywhere, Category = "Level Randomizer")
+	USoundWave* _LevelEnderSFX;
+
 	UFUNCTION(BlueprintCallable, Category = "Level Randomizer")
 	void SpawnEnemies(int minimumQuantity, int maxQuantity);
 

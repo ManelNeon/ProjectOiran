@@ -52,7 +52,22 @@ void UAudioManagerInstanceSubsystem::PlayMusic(USoundWave* music)
 {
 	FadeOutCurrentMusic();
 
-	_CurrentMusic = UGameplayStatics::SpawnSound2D(GetWorld(), music, 1, 1, 0, nullptr, true, false);
+	_CurrentMusic = UGameplayStatics::SpawnSound2D(GetWorld(), music, 0.6, 1, 0, nullptr, true, false);
+}
+
+//Audio Manager Functions
+void UAudioManagerInstanceSubsystem::PlayDialogue(USoundWave* sound)
+{
+	_CurrentDialogue = UGameplayStatics::SpawnSound2D(GetWorld(), sound, 2, 1, 0, nullptr, true, true);
+}
+
+void UAudioManagerInstanceSubsystem::StopDialogue()
+{
+	if (_CurrentDialogue == nullptr) return;
+
+	_CurrentDialogue->Stop();
+
+	_CurrentDialogue = nullptr;
 }
 
 void UAudioManagerInstanceSubsystem::FadeOutCurrentMusic()

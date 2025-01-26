@@ -5,6 +5,7 @@
 #include "YokaiShokanEnemy.h"
 #include "YokaiShokanGameInstance.h"
 #include "LevelManagerInstanceSubsystem.h"
+#include "AudioManagerInstanceSubsystem.h"
 #include "PickUp.h"
 
 // Sets default values
@@ -150,6 +151,10 @@ void ALevelRandomizer::LevelEnder()
 			UE_LOG(LogTemp, Warning, TEXT("It's Nothing"));
 			break;
 	}
+
+	auto yokaiGameInstance = GetGameInstance()->GetSubsystem<UAudioManagerInstanceSubsystem>();
+
+	if (yokaiGameInstance != nullptr && _LevelEnderSFX != nullptr) yokaiGameInstance->PlaySound(_LevelEnderSFX);
 
 	if (!pickUp) return;
 

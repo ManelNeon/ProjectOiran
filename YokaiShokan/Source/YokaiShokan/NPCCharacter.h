@@ -24,6 +24,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "NPC")
 	TArray<FString> DialogueArray;
 
+	UPROPERTY(EditAnywhere, Category = "NPC")
+	TArray<USoundWave*> DialoguesVoicesArray;
+
 	UFUNCTION()
 	void RotateTowardsPlayer(AActor* Target, float RotationSpeed, float DeltaTime);
 
@@ -43,18 +46,11 @@ protected:
 	void StartDialogue();
 
 	UFUNCTION(BlueprintCallable, Category = "NPC | Functions")
-	void RunThroughDialogue();
-
-	UFUNCTION(BlueprintCallable, Category = "NPC | Functions")
 	void RestartDialogue();
 
 	UDialogueBox* _CurrentDialogueBox;
-
-	bool _IsPlaying;
 	
 	FString _CurrentString;
-
-	int _CharIndex;
 
 	int _DialogueIndex;
 

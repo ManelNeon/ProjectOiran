@@ -645,6 +645,36 @@ DEFINE_FUNCTION(UAudioManagerInstanceSubsystem::execSetUIVolume)
 }
 // End Class UAudioManagerInstanceSubsystem Function SetUIVolume
 
+// Begin Class UAudioManagerInstanceSubsystem Function StopDialogue
+struct Z_Construct_UFunction_UAudioManagerInstanceSubsystem_StopDialogue_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Audio Manager | Functions" },
+		{ "ModuleRelativePath", "AudioManagerInstanceSubsystem.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAudioManagerInstanceSubsystem_StopDialogue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAudioManagerInstanceSubsystem, nullptr, "StopDialogue", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAudioManagerInstanceSubsystem_StopDialogue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAudioManagerInstanceSubsystem_StopDialogue_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UAudioManagerInstanceSubsystem_StopDialogue()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAudioManagerInstanceSubsystem_StopDialogue_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAudioManagerInstanceSubsystem::execStopDialogue)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->StopDialogue();
+	P_NATIVE_END;
+}
+// End Class UAudioManagerInstanceSubsystem Function StopDialogue
+
 // Begin Class UAudioManagerInstanceSubsystem
 void UAudioManagerInstanceSubsystem::StaticRegisterNativesUAudioManagerInstanceSubsystem()
 {
@@ -665,6 +695,7 @@ void UAudioManagerInstanceSubsystem::StaticRegisterNativesUAudioManagerInstanceS
 		{ "SetMusicVolume", &UAudioManagerInstanceSubsystem::execSetMusicVolume },
 		{ "SetSFXVolume", &UAudioManagerInstanceSubsystem::execSetSFXVolume },
 		{ "SetUIVolume", &UAudioManagerInstanceSubsystem::execSetUIVolume },
+		{ "StopDialogue", &UAudioManagerInstanceSubsystem::execStopDialogue },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -685,11 +716,16 @@ struct Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "AudioManagerInstanceSubsystem.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp__CurrentDialogue_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "AudioManagerInstanceSubsystem.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp__CurrentMusic_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "AudioManagerInstanceSubsystem.h" },
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp__CurrentDialogue;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp__CurrentMusic;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -709,6 +745,7 @@ struct Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics
 		{ &Z_Construct_UFunction_UAudioManagerInstanceSubsystem_SetMusicVolume, "SetMusicVolume" }, // 4018933662
 		{ &Z_Construct_UFunction_UAudioManagerInstanceSubsystem_SetSFXVolume, "SetSFXVolume" }, // 4234916157
 		{ &Z_Construct_UFunction_UAudioManagerInstanceSubsystem_SetUIVolume, "SetUIVolume" }, // 2585465572
+		{ &Z_Construct_UFunction_UAudioManagerInstanceSubsystem_StopDialogue, "StopDialogue" }, // 4025670470
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -716,8 +753,10 @@ struct Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics::NewProp__CurrentDialogue = { "_CurrentDialogue", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAudioManagerInstanceSubsystem, _CurrentDialogue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__CurrentDialogue_MetaData), NewProp__CurrentDialogue_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics::NewProp__CurrentMusic = { "_CurrentMusic", nullptr, (EPropertyFlags)0x0020080000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAudioManagerInstanceSubsystem, _CurrentMusic), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp__CurrentMusic_MetaData), NewProp__CurrentMusic_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics::NewProp__CurrentDialogue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics::NewProp__CurrentMusic,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UAudioManagerInstanceSubsystem_Statics::PropPointers) < 2048);
@@ -762,10 +801,10 @@ UAudioManagerInstanceSubsystem::~UAudioManagerInstanceSubsystem() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_AudioManagerInstanceSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAudioManagerInstanceSubsystem, UAudioManagerInstanceSubsystem::StaticClass, TEXT("UAudioManagerInstanceSubsystem"), &Z_Registration_Info_UClass_UAudioManagerInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAudioManagerInstanceSubsystem), 1753149941U) },
+		{ Z_Construct_UClass_UAudioManagerInstanceSubsystem, UAudioManagerInstanceSubsystem::StaticClass, TEXT("UAudioManagerInstanceSubsystem"), &Z_Registration_Info_UClass_UAudioManagerInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAudioManagerInstanceSubsystem), 1600691731U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_AudioManagerInstanceSubsystem_h_3827192201(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_AudioManagerInstanceSubsystem_h_2410391291(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_AudioManagerInstanceSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_AudioManagerInstanceSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
