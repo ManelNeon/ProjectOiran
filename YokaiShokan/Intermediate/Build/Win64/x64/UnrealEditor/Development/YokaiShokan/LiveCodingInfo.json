@@ -2,11 +2,14 @@
 	"RemapUnityFiles": 
 	{
 		"Module.YokaiShokan.cpp.obj": [
+			"AudioManagerInstanceSubsystem.gen.cpp.obj",
 			"BaseEnemyAnimInstance.gen.cpp.obj",
 			"DialogueBox.gen.cpp.obj",
 			"InventoryGameInstanceSubsystem.gen.cpp.obj",
 			"LevelManagerInstanceSubsystem.gen.cpp.obj",
+			"LevelRandomizer.gen.cpp.obj",
 			"LoreItem.gen.cpp.obj",
+			"NPCCharacter.gen.cpp.obj",
 			"PickUp.gen.cpp.obj",
 			"PlayerAnimInstance.gen.cpp.obj",
 			"SettingsGameInstanceSubsystem.gen.cpp.obj",
@@ -17,11 +20,13 @@
 			"YokaiShokanGameInstance.gen.cpp.obj",
 			"YokaiShokanGameMode.gen.cpp.obj",
 			"YokaiShokanPlayerController.gen.cpp.obj",
+			"AudioManagerInstanceSubsystem.cpp.obj",
 			"BaseEnemyAnimInstance.cpp.obj",
 			"DialogueBox.cpp.obj",
 			"InventoryGameInstanceSubsystem.cpp.obj",
 			"LevelManagerInstanceSubsystem.cpp.obj",
 			"LoreItem.cpp.obj",
+			"NPCCharacter.cpp.obj",
 			"PickUp.cpp.obj",
 			"PlayerAnimInstance.cpp.obj",
 			"SettingsGameInstanceSubsystem.cpp.obj",
@@ -33,14 +38,9 @@
 			"YokaiShokanGameInstance.cpp.obj",
 			"YokaiShokanGameMode.cpp.obj",
 			"YokaiShokanPlayerController.cpp.obj",
-			"AudioManagerInstanceSubsystem.gen.cpp.obj",
-			"LevelRandomizer.gen.cpp.obj",
-			"NPCCharacter.gen.cpp.obj",
 			"YokaiShokan.init.gen.cpp.obj",
 			"YokaiShokanCharacter.gen.cpp.obj",
-			"AudioManagerInstanceSubsystem.cpp.obj",
 			"LevelRandomizer.cpp.obj",
-			"NPCCharacter.cpp.obj",
 			"YokaiShokanCharacter.cpp.obj"
 		]
 	}

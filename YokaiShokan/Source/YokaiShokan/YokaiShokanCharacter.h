@@ -61,6 +61,9 @@ class AYokaiShokanCharacter : public ACharacter
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sounds | Input", meta = (AllowPrivateAccess = "true"))
 	USoundWave* DashSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sounds | Input", meta = (AllowPrivateAccess = "true"))
+	USoundWave* DamagedSound;
 	
 public:
 	AYokaiShokanCharacter();

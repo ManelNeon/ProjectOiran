@@ -157,7 +157,9 @@ void AYokaiShokanCharacter::DamagePlayer(float damage, FVector direction)
 
 	if (yokaiGameInstance->DamagePlayer(damage))
 	{
-		//damge player animation only
+		auto audioGameInstance = GetGameInstance()->GetSubsystem<UAudioManagerInstanceSubsystem>();
+
+		audioGameInstance->PlaySound(DamagedSound);
 
 		LaunchCharacter(direction, false, false);
 

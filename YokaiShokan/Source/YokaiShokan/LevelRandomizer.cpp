@@ -201,14 +201,14 @@ void ALevelRandomizer::SpawnEnemies(int minimumQuantity, int maxQuantity)
 
 	for (size_t i{ 0 }; i < randomNumber; ++i)
 	{
-		_CloseUpEnemiesList.Add(GetWorld()->SpawnActor(_CloseUpEnemyClass));
-
 		float xRangeValue = _ZonesEpicentersRange[_CurrentZone].X;
 
 		float yRangeValue = _ZonesEpicentersRange[_CurrentZone].Y;
 
 		FVector randomLocation = FVector(_ZonesEpicenters[_CurrentZone].X + FMath::RandRange(-xRangeValue, xRangeValue), _ZonesEpicenters[_CurrentZone].Y + FMath::RandRange(-yRangeValue, yRangeValue), _ZonesEpicenters[_CurrentZone].Z);
-		
+
+		_CloseUpEnemiesList.Add(GetWorld()->SpawnActor(_CloseUpEnemyClass, &randomLocation));
+
 		Cast<AYokaiShokanEnemy>(_CloseUpEnemiesList[i])->SetLevelRandomizer(this);
 		
 		_CloseUpEnemiesList[i]->SetActorLocation(randomLocation);
