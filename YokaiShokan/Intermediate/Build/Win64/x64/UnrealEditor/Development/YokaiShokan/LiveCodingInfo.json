@@ -16,6 +16,8 @@
 			"StatsGameInstanceSubsystem.gen.cpp.obj",
 			"TutorialEnemy.gen.cpp.obj",
 			"TutorialGameMode.gen.cpp.obj",
+			"YokaiShokan.init.gen.cpp.obj",
+			"YokaiShokanCharacter.gen.cpp.obj",
 			"YokaiShokanEnemy.gen.cpp.obj",
 			"YokaiShokanGameInstance.gen.cpp.obj",
 			"YokaiShokanGameMode.gen.cpp.obj",
@@ -25,6 +27,7 @@
 			"DialogueBox.cpp.obj",
 			"InventoryGameInstanceSubsystem.cpp.obj",
 			"LevelManagerInstanceSubsystem.cpp.obj",
+			"LevelRandomizer.cpp.obj",
 			"LoreItem.cpp.obj",
 			"NPCCharacter.cpp.obj",
 			"PickUp.cpp.obj",
@@ -34,14 +37,11 @@
 			"TutorialEnemy.cpp.obj",
 			"TutorialGameMode.cpp.obj",
 			"YokaiShokan.cpp.obj",
+			"YokaiShokanCharacter.cpp.obj",
 			"YokaiShokanEnemy.cpp.obj",
 			"YokaiShokanGameInstance.cpp.obj",
 			"YokaiShokanGameMode.cpp.obj",
-			"YokaiShokanPlayerController.cpp.obj",
-			"YokaiShokan.init.gen.cpp.obj",
-			"YokaiShokanCharacter.gen.cpp.obj",
-			"LevelRandomizer.cpp.obj",
-			"YokaiShokanCharacter.cpp.obj"
+			"YokaiShokanPlayerController.cpp.obj"
 		]
 	}
 }

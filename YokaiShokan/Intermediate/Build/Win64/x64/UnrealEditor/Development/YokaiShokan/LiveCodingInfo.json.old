@@ -16,8 +16,6 @@
 			"StatsGameInstanceSubsystem.gen.cpp.obj",
 			"TutorialEnemy.gen.cpp.obj",
 			"TutorialGameMode.gen.cpp.obj",
-			"YokaiShokan.init.gen.cpp.obj",
-			"YokaiShokanCharacter.gen.cpp.obj",
 			"YokaiShokanEnemy.gen.cpp.obj",
 			"YokaiShokanGameInstance.gen.cpp.obj",
 			"YokaiShokanGameMode.gen.cpp.obj",
@@ -40,6 +38,8 @@
 			"YokaiShokanGameInstance.cpp.obj",
 			"YokaiShokanGameMode.cpp.obj",
 			"YokaiShokanPlayerController.cpp.obj",
+			"YokaiShokan.init.gen.cpp.obj",
+			"YokaiShokanCharacter.gen.cpp.obj",
 			"LevelRandomizer.cpp.obj",
 			"YokaiShokanCharacter.cpp.obj"
 		]
