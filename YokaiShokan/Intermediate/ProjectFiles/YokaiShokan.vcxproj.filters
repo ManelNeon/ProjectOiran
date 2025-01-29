@@ -47,22 +47,10 @@
     <ClInclude Include="..\..\Source\YokaiShokan\BaseEnemyAnimInstance.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\YokaiShokan\CloseUpEnemy.cpp">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\CloseUpEnemy.h">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\DialogueBox.cpp">
       <Filter>Source\YokaiShokan</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\DialogueBox.h">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\YokaiShokan\FromAfarEnemy.cpp">
-      <Filter>Source\YokaiShokan</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\FromAfarEnemy.h">
       <Filter>Source\YokaiShokan</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\YokaiShokan\InventoryGameInstanceSubsystem.cpp">

@@ -54,7 +54,7 @@ protected:
 	//True if has, false if doesn't
 	TArray<bool> _CurrentLoreItemsPosession;
 
-	TArray<int> _LoreItemsToAdd;
+	TArray<bool> _LoreItemsToAdd;
 
 	int _CurrencyToAdd;
 };

@@ -275,12 +275,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "0867783FD3317007450F4152E2556A848751F664",
-			"Assets": [
-				"/Game/VFX/Skillpoint/M_Orb"
-			]
-		},
-		{
 			"ShaderMapHash": "EF80124268117AE44EA0909DC410F5875B7062AB",
 			"Assets": [
 				"/Game/MSPresets/M_MS_Foliage_Material/M_MS_Foliage_Material"
@@ -390,6 +384,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "5C10BB56B21D3F348069D1FDDC190A9DE162A9C4",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Streaks"
+			]
+		},
+		{
 			"ShaderMapHash": "9B59E757AE9C14081071352103CD43DB8FF53A23",
 			"Assets": [
 				"/Engine/EngineDebugMaterials/DebugMeshMaterial"
@@ -431,15 +431,12 @@
 			"ShaderMapHash": "FC92DA5CC2AB6C80615370E473B9FE300D15AB59",
 			"Assets": [
 				"/Engine/VREditor/TransformGizmo/Xray",
-				"/Game/Meshes/Assets/hub/inro/cords",
-				"/Game/Meshes/Assets/hub/inro/inro",
 				"/Game/Meshes/Assets/hub/makeupbox/fabric",
 				"/Game/Meshes/Assets/hub/makeupbox/makeup_itens",
 				"/Game/Meshes/Assets/hub/makeupbox/wood_box",
 				"/Game/Meshes/Assets/hub/pillow/PillowSeat1",
 				"/Game/Meshes/Assets/hub/tree_jar/M_Jar_Ceramic",
 				"/Game/Meshes/Assets/hub/tree_jar/M_Jar_Gold",
-				"/Game/Meshes/Assets/LoreItemScroll/Textures/LoreItem_Scroll1",
 				"/Game/Meshes/Assets/Paintings/Textures/PaintingAboveStage1",
 				"/Game/Meshes/Assets/Spiderwebs/Textures/Spiderweb_big1",
 				"/Game/Meshes/Assets/Spiderwebs/Textures/Spiderweb_small1",
@@ -532,12 +529,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "54B1DC6C30549DA9F2A70C038BAD41D52A2BC7CB",
-			"Assets": [
-				"/Game/VFX/Skillpoint/M_Vortex_Dark"
-			]
-		},
-		{
 			"ShaderMapHash": "1445A56D54308CCAE11A57C309C37DDCE315102D",
 			"Assets": [
 				"/Game/Meshes/Character/M_HairpinBlack",
@@ -569,15 +560,15 @@
 			]
 		},
 		{
-			"ShaderMapHash": "89000D76A1EDE6574A69682B173C7B3FC87AE783",
+			"ShaderMapHash": "A219C574BDB942B076924E153BF3290C34D3140B",
 			"Assets": [
-				"/Game/Meshes/Character/M_Arms"
+				"/Game/VFX/Firebolt/M_trail"
 			]
 		},
 		{
-			"ShaderMapHash": "4482E777B696C2EA0C619DD73E1F937ABDB3CE28",
+			"ShaderMapHash": "89000D76A1EDE6574A69682B173C7B3FC87AE783",
 			"Assets": [
-				"/Game/VFX/Skillpoint/M_Heat_Distortion"
+				"/Game/Meshes/Character/M_Arms"
 			]
 		},
 		{
@@ -618,6 +609,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "DA39B4897D0FFBFA929ADB440C745E04FE1F27CA",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Vortex_Dark"
+			]
+		},
+		{
 			"ShaderMapHash": "33C9CB8C787B925343FCEC842C5479D8FEB9B391",
 			"Assets": [
 				"/Engine/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01",
@@ -646,6 +643,12 @@
 			"ShaderMapHash": "BA9AB0923322E8B43CB5B5C2355ACB7DA69D32C5",
 			"Assets": [
 				"/Interchange/gltf/M_Transmission"
+			]
+		},
+		{
+			"ShaderMapHash": "5C518E932A4852203F79F60051EAA7A59F62DD36",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_rings"
 			]
 		},
 		{
@@ -741,6 +744,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "1B3454A10B103833F5093C2188642C5C9778EB99",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Orb"
+			]
+		},
+		{
 			"ShaderMapHash": "58E2FEA3FB223D7D913C585DD64199B607C5DDF1",
 			"Assets": [
 				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Head_002"
@@ -776,6 +785,12 @@
 			"Assets": [
 				"/Bridge/MSPresets/M_MS_Glass_Material/M_MS_Glass_Material",
 				"/Game/MSPresets/M_MS_Glass_Material/M_MS_Glass_Material"
+			]
+		},
+		{
+			"ShaderMapHash": "B621A6AF7D63FC681D10367842BD0FF35F228E75",
+			"Assets": [
+				"/Game/VFX/Firebolt/M_Smoke"
 			]
 		},
 		{
@@ -858,6 +873,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "EA676AC2CFFC1A23CF1A924E3932AE5C1F4E258D",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Heat_Distortion"
+			]
+		},
+		{
 			"ShaderMapHash": "0F4BD8C27F62295114FB9ED88BF404E5E9D8FF25",
 			"Assets": [
 				"/Engine/EngineMaterials/DefaultMaterial"
@@ -896,6 +917,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "8B9249C9F21C93928143251E4BBD23BDF6B5BF56",
+			"Assets": [
+				"/Game/Meshes/Assets/hub/inro/inro"
+			]
+		},
+		{
 			"ShaderMapHash": "72B713CAF2A65840545ECB1EF504FD8A2D3D14C3",
 			"Assets": [
 				"/Game/Vefects/Candle_VFX/Shared/Materials/Glass/MM_Candle_Glass_01"
@@ -919,8 +946,10 @@
 				"/Game/Meshes/Assets/hub/doll/fabric",
 				"/Game/Meshes/Assets/hub/doll/straw_001",
 				"/Game/Meshes/Assets/hub/doll/wood",
+				"/Game/Meshes/Assets/hub/inro/cords",
 				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_big",
 				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_small",
+				"/Game/Meshes/Assets/LoreItemScroll/Textures/LoreItem_Scroll1",
 				"/Game/Meshes/Assets/MakeupBox/Textures/makeup_itens",
 				"/Game/Meshes/Assets/MakeupBox/Textures/wood_box",
 				"/Game/Meshes/Assets/museum_Paintings/FRAME",
@@ -1167,12 +1196,6 @@
 			"ShaderMapHash": "E67683F4B772943C36BB36951AE1A2908604343C",
 			"Assets": [
 				"/MeshModelingToolset/Materials/M_DynamicMeshComponentVtxColor"
-			]
-		},
-		{
-			"ShaderMapHash": "A85551F7F299BEAEFC28F8E02A48FCCA1328581E",
-			"Assets": [
-				"/Engine/EngineDebugMaterials/LightmapResolutionMaterial"
 			]
 		},
 		{

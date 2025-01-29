@@ -33,7 +33,7 @@ void ULevelManagerInstanceSubsystem::SetCurrentLevel(ECurrentLevel currentLevel)
 
 ECurrentLevel ULevelManagerInstanceSubsystem::GetDifferentLevel()
 {
-	if (_LevelCounter == 5) return ECurrentLevel::TOTAL_LEVEL;
+	if (_LevelCounter == 4) return ECurrentLevel::TOTAL_LEVEL;
 
 	int temporaryLevel = static_cast<int>(_CurrentLevel);
 

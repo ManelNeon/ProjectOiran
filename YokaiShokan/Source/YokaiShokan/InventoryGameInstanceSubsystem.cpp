@@ -8,6 +8,8 @@ void UInventoryGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Colle
 	UE_LOG(LogTemp, Warning, TEXT("Inventory System Initialized"));
 
 	for (size_t i{ 0 }; i < 9; ++i) _CurrentLoreItemsPosession.Add(false);
+
+	_LoreItemsToAdd = _CurrentLoreItemsPosession;
 }
 
 void UInventoryGameInstanceSubsystem::Deinitialize()
@@ -24,47 +26,13 @@ void UInventoryGameInstanceSubsystem::SetRandomPossessionLoreItemInRun()
 {
 	if (GetIfPlayerGotAllLoreItems()) return;
 
-	int arraySize = _CurrentLoreItemsPosession.Num() - 1;
+	int arraySize = _LoreItemsToAdd.Num() - 1;
 
 	int index = FMath::RandRange(0, arraySize);
 
-	bool isStillRunning = true;
+	while (_LoreItemsToAdd[index]) index = FMath::RandRange(0, arraySize);
 
-	while (isStillRunning)
-	{
-		index = FMath::RandRange(0, arraySize);
-
-		if (!_CurrentLoreItemsPosession[index]) isStillRunning = false;
-
-		UE_LOG(LogTemp, Warning, TEXT("Before setting array size."));
-
-		int arrayInRun = _LoreItemsToAdd.Num() - 1;
-
-		UE_LOG(LogTemp, Warning, TEXT("After setting array size."));
-
-		if (arrayInRun == -1)
-		{
-			isStillRunning = false;
-
-			UE_LOG(LogTemp, Warning, TEXT("The array is empty."));
-		}
-		else
-		{
-			for (size_t i{ 0 }; i < arrayInRun; ++i)
-			{
-				UE_LOG(LogTemp, Warning, TEXT("Looping through obtained in this run lore items."));
-
-				if (_LoreItemsToAdd[i] == index)
-				{
-					UE_LOG(LogTemp, Warning, TEXT("The array has found a spot."));
-					isStillRunning = true;
-					break;
-				}
-			}
-		}
-	}
-
-	_LoreItemsToAdd.Add(index);
+	_LoreItemsToAdd[index] = true;
 }
 
 void UInventoryGameInstanceSubsystem::FinishRunVariables()
@@ -73,10 +41,10 @@ void UInventoryGameInstanceSubsystem::FinishRunVariables()
 
 	for (size_t i{ 0 }; i < arrayInRun; ++i)
 	{
-		_CurrentLoreItemsPosession[_LoreItemsToAdd[i]] = true;
+		_CurrentLoreItemsPosession[i] = _LoreItemsToAdd[i];
 	}
 
-	_LoreItemsToAdd.Empty();
+	_LoreItemsToAdd = _CurrentLoreItemsPosession;
 
 	_Currency += _CurrencyToAdd;
 
@@ -133,5 +101,5 @@ void UInventoryGameInstanceSubsystem::ClearBeforeRun()
 {
 	_CurrencyToAdd = 0;
 
-	_LoreItemsToAdd.Empty();
+	_LoreItemsToAdd = _CurrentLoreItemsPosession;
 }

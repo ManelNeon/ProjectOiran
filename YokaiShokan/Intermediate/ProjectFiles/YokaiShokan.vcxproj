@@ -268,18 +268,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\BaseEnemyAnimInstance.h"/>
-    <ClCompile Include="..\..\Source\YokaiShokan\CloseUpEnemy.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\CloseUpEnemy.h"/>
     <ClCompile Include="..\..\Source\YokaiShokan\DialogueBox.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\YokaiShokan\DialogueBox.h"/>
-    <ClCompile Include="..\..\Source\YokaiShokan\FromAfarEnemy.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\YokaiShokan\FromAfarEnemy.h"/>
     <ClCompile Include="..\..\Source\YokaiShokan\InventoryGameInstanceSubsystem.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

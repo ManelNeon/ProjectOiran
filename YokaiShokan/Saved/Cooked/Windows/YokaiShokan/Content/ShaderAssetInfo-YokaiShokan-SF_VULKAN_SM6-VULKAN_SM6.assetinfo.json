@@ -14,6 +14,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "116B9B0330B0EED69EA2376EDB3F9C2E2AB6685D",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Orb"
+			]
+		},
+		{
 			"ShaderMapHash": "155BA50364A4AF8F7B9B7EE42CB69D2DBB5B902F",
 			"Assets": [
 				"/Game/MSPresets/M_MS_Default_Fuzz_Material/M_MS_Default_Fuzz_Material",
@@ -228,15 +234,12 @@
 			"ShaderMapHash": "A251B428A70F8B7E1CF9C2F127B7C5FFE6D971AA",
 			"Assets": [
 				"/Engine/VREditor/TransformGizmo/Xray",
-				"/Game/Meshes/Assets/hub/inro/cords",
-				"/Game/Meshes/Assets/hub/inro/inro",
 				"/Game/Meshes/Assets/hub/makeupbox/fabric",
 				"/Game/Meshes/Assets/hub/makeupbox/makeup_itens",
 				"/Game/Meshes/Assets/hub/makeupbox/wood_box",
 				"/Game/Meshes/Assets/hub/pillow/PillowSeat1",
 				"/Game/Meshes/Assets/hub/tree_jar/M_Jar_Ceramic",
 				"/Game/Meshes/Assets/hub/tree_jar/M_Jar_Gold",
-				"/Game/Meshes/Assets/LoreItemScroll/Textures/LoreItem_Scroll1",
 				"/Game/Meshes/Assets/Paintings/Textures/PaintingAboveStage1",
 				"/Game/Meshes/Assets/Spiderwebs/Textures/Spiderweb_big1",
 				"/Game/Meshes/Assets/Spiderwebs/Textures/Spiderweb_small1",
@@ -421,12 +424,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "11B42459BBA11FF6A2BF2B4C42B0C45F9FCC7BCA",
-			"Assets": [
-				"/Game/VFX/Skillpoint/M_Orb"
-			]
-		},
-		{
 			"ShaderMapHash": "C4374459C14AB930019226D8233CDEF4E176E026",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Blend_DS"
@@ -479,12 +476,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "2FB48E65B72DB5BB2A62966D89322F0672CC5FBC",
-			"Assets": [
-				"/Game/VFX/Skillpoint/M_Vortex_Dark"
-			]
-		},
-		{
 			"ShaderMapHash": "498C8C667B52E2418D4DD7A9B3D0D333E321DA7A",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Unlit_Blend"
@@ -500,6 +491,12 @@
 			"ShaderMapHash": "902E3F67AB12BD1370095403CBBF59F302CE8557",
 			"Assets": [
 				"/HDRIBackdrop/Materials/HDRI_Projection_Sky"
+			]
+		},
+		{
+			"ShaderMapHash": "8E88216883EFC2F491208A7FC95AD6A1478871A2",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Heat_Distortion"
 			]
 		},
 		{
@@ -555,6 +552,12 @@
 			"ShaderMapHash": "709F9C78809196DBC1BDD58FF5DEFF0CEB07975A",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "B6AFAC78F9D3CE6257ED0D049B1E6933627A3DCA",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Vortex_Dark"
 			]
 		},
 		{
@@ -654,12 +657,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "52EFE794E2A3145F526BDDDD2D7D03ACA78AE300",
-			"Assets": [
-				"/Game/VFX/Skillpoint/M_Heat_Distortion"
-			]
-		},
-		{
 			"ShaderMapHash": "540721960D287CD5FBBA282E7EC050C1FEFCB7ED",
 			"Assets": [
 				"/Game/VFX/Hit_Detection/M_Blood_Drops"
@@ -720,8 +717,10 @@
 				"/Game/Meshes/Assets/hub/doll/fabric",
 				"/Game/Meshes/Assets/hub/doll/straw_001",
 				"/Game/Meshes/Assets/hub/doll/wood",
+				"/Game/Meshes/Assets/hub/inro/cords",
 				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_big",
 				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_small",
+				"/Game/Meshes/Assets/LoreItemScroll/Textures/LoreItem_Scroll1",
 				"/Game/Meshes/Assets/MakeupBox/Textures/makeup_itens",
 				"/Game/Meshes/Assets/MakeupBox/Textures/wood_box",
 				"/Game/Meshes/Assets/museum_Paintings/FRAME",
@@ -971,6 +970,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "323D80C3D3436E3AE1D8F544727AD6BCA5847907",
+			"Assets": [
+				"/Game/VFX/Firebolt/M_trail"
+			]
+		},
+		{
 			"ShaderMapHash": "02D33AC706DEE2FA9EE1845A5C0FF50828D525FA",
 			"Assets": [
 				"/Interchange/gltf/M_SpecularGlossiness"
@@ -1012,6 +1017,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "E5FFB2CAB72CEE8BF81D20722FDAE1AAA71B11D3",
+			"Assets": [
+				"/Game/Meshes/Assets/hub/inro/inro"
+			]
+		},
+		{
 			"ShaderMapHash": "5A171CCCEA239A8B581969494D3772362D1514EA",
 			"Assets": [
 				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Acessories_Ambar_002"
@@ -1048,6 +1059,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "AA28F2D587DD250EACF44A48815AC767F3343525",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_rings"
+			]
+		},
+		{
 			"ShaderMapHash": "32DF0DD74DA3D66B09C4236662DC8C827ED13C7D",
 			"Assets": [
 				"/Game/Meshes/Character/M_Sleeves"
@@ -1072,6 +1089,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "D910E9D919E56C07FAAF896BBEEA741406B704E3",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Streaks"
+			]
+		},
+		{
 			"ShaderMapHash": "FF2FF9D9B443ACEAB91A5B793111E46F8B4D2DB0",
 			"Assets": [
 				"/Game/Images/Compass/M_Compass"
@@ -1081,6 +1104,12 @@
 			"ShaderMapHash": "42E5FAD9974C9D178D950C0C0FE6250CDB0BCB9C",
 			"Assets": [
 				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Acessories_metal_002"
+			]
+		},
+		{
+			"ShaderMapHash": "EA65EFDADA641B6481A0055CD02D85914BC66E61",
+			"Assets": [
+				"/Game/VFX/Firebolt/M_Smoke"
 			]
 		},
 		{
@@ -1141,12 +1170,6 @@
 			"ShaderMapHash": "896FAFE9F488FD2A0DD1C48927E62622316F9C14",
 			"Assets": [
 				"/Engine/EngineMaterials/DefaultTextMaterialOpaque"
-			]
-		},
-		{
-			"ShaderMapHash": "88EB08ED59E429C6FF2D767D576B25B54159E0F0",
-			"Assets": [
-				"/Engine/EngineDebugMaterials/LightmapResolutionMaterial"
 			]
 		},
 		{

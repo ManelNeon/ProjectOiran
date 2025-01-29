@@ -22,8 +22,6 @@
 #include "C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Source/YokaiShokan/AudioManagerInstanceSubsystem.cpp"
 #include "C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Source/YokaiShokan/BaseEnemyAnimInstance.cpp"
 #include "C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Source/YokaiShokan/DialogueBox.cpp"
-#include "C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Source/YokaiShokan/InventoryGameInstanceSubsystem.cpp"
-#include "C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Source/YokaiShokan/LevelManagerInstanceSubsystem.cpp"
 #include "C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Source/YokaiShokan/LevelRandomizer.cpp"
 #include "C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Source/YokaiShokan/LoreItem.cpp"
 #include "C:/GameDev/UnrealProjects/YokaiShokan/YokaiShokan/Source/YokaiShokan/NPCCharacter.cpp"
