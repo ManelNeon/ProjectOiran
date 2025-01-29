@@ -3211,6 +3211,26 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraCDM/ElectraCDM.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraCodecs/ElectraCodecs.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraPlayer/ElectraPlayer.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraSubtitles/ElectraSubtitles.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraUtil/ElectraUtil.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Media/ImgMedia/ImgMedia.uplugin",
 			"Type": "UFS"
 		},
@@ -3220,6 +3240,10 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Media/MediaPlate/MediaPlate.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/OpusDecoderElectra/OpusDecoderElectra.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -3496,6 +3520,11 @@
 		"DumpGPUServices",
 		"EditorDebugTools",
 		"EditorScriptingUtilities",
+		"ElectraCDM",
+		"ElectraCodecs",
+		"ElectraPlayer",
+		"ElectraSubtitles",
+		"ElectraUtil",
 		"EngineAssetDefinitions",
 		"EnhancedInput",
 		"EnvironmentQueryEditor",
@@ -3554,6 +3583,7 @@
 		"OnlineSubsystemUtils",
 		"OodleNetwork",
 		"OpenImageDenoise",
+		"OpusDecoderElectra",
 		"Paper2D",
 		"PerforceSourceControl",
 		"PixWinPlugin",

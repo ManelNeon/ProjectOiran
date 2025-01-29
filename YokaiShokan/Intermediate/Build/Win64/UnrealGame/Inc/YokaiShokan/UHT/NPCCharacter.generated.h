@@ -18,7 +18,6 @@ class UDialogueBox;
 
 #define FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execRestartDialogue); \
-	DECLARE_FUNCTION(execRunThroughDialogue); \
 	DECLARE_FUNCTION(execStartDialogue); \
 	DECLARE_FUNCTION(execSetCurrentDialogueBox); \
 	DECLARE_FUNCTION(execGetCurrentDialogueBox); \

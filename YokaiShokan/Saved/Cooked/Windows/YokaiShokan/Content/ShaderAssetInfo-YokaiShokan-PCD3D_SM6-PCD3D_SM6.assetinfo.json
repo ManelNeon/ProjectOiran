@@ -2,6 +2,12 @@
 	"AssetInfoVersion": 2,
 	"ShaderCodeToAssets": [
 		{
+			"ShaderMapHash": "32018F011602F17261133DFC67C5B00571D34F2E",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/VFX/Candle_Smoke/Materials/MM_Candle_Smoke_Horizontal"
+			]
+		},
+		{
 			"ShaderMapHash": "E20197010FF77C364D7E17889632CAEE7E20C4F5",
 			"Assets": [
 				"/Engine/EngineMaterials/DefaultLightFunctionMaterial"
@@ -11,6 +17,12 @@
 			"ShaderMapHash": "DD479C017B57F3A9EE9936D0968792947E29E6E4",
 			"Assets": [
 				"/ControlRig/Controls/ControlRigGizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "03F6FA018489555BBAA2799721ACC1BE1C25C1A7",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Vortex_Dark"
 			]
 		},
 		{
@@ -43,6 +55,7 @@
 		{
 			"ShaderMapHash": "D5BEB507A2D2A9277B6E63441D40DFC1558C81F5",
 			"Assets": [
+				"/Game/MSPresets/M_MS_Imperfection_Material/M_MS_Imperfection_Material_Var",
 				"/Game/MSPresets/M_MS_Imperfection_Material_Var/M_MS_Imperfection_Material_Var",
 				"/Game/MSPresets/M_MS_Imperfection_Material_VT/M_MS_Imperfection_Material_Var_VT"
 			]
@@ -70,6 +83,8 @@
 			"Assets": [
 				"/Game/Materials/Hub/MI_Plain_Off-white_Paper_rm4ln2p0_2K",
 				"/Game/Materials/Levels/MI_CeilingLevel_wood",
+				"/Game/Materials/Levels/MI_Japanese_Shrine_Stone_Floor_ubqlfdgcw_2K",
+				"/Game/Materials/Levels/MI_Traditional_Japanese_Wooden_Facade_tlzgfavdy_2K",
 				"/Game/Materials/Levels/MI_Willow_Bark_tgrpbdxu_2K",
 				"/Game/Materials/Levels/MI_Wooden_Planks_level2"
 			]
@@ -81,6 +96,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "B9F9F20C239547CEAD02F1DE53FCC0A10C500207",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Wick/MM_Candle_Wick_01"
+			]
+		},
+		{
 			"ShaderMapHash": "5590830E7B41B8F0F67D99219F655EF40CFD9997",
 			"Assets": [
 				"/HDRIBackdrop/Materials/HDRI_Projection_Sky"
@@ -89,7 +110,67 @@
 		{
 			"ShaderMapHash": "BF44190F9A3058D9DE1E8BA6E69C039AAEB60A34",
 			"Assets": [
-				"/Game/Stylized_Tree_Pack/Materials/Master_Materials/M_Leaf"
+				"/Game/Stylized_Tree_Pack/Materials/Master_Materials/M_Leaf",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Branch/MI_Leaf_Acacia_Branch_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Acacia/Leaf/MI_Leaf_Acacia_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Branch/MI_Leaf_Beech_Branch_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Beech/Leaf/MI_Leaf_Beech_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Joshua/MI_Leaf_Joshua_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Branch/MI_Leaf_Junifer_Branch_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Juniper/Leaf/MI_Leaf_Junifer_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Maple/MI_Leaf_Maple_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Oak/MI_Leaf_Oak_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Pine/MI_Leaf_Pine_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Branch/MI_Leaf_Spruce_Branch_05",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_02",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_03",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_04",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Spruce/Leaf/MI_Leaf_Spruce_05"
 			]
 		},
 		{
@@ -147,9 +228,9 @@
 			]
 		},
 		{
-			"ShaderMapHash": "3CB22E20F2F64C5707CC2207B4870EDA29F8D701",
+			"ShaderMapHash": "7BA1582015408AD3E2230237C69FDC64D71DE464",
 			"Assets": [
-				"/Engine/OpenWorldTemplate/LandscapeMaterial/MI_ProcGrid"
+				"/Game/VFX/Skillpoint/M_Electric_Orb"
 			]
 		},
 		{
@@ -162,6 +243,19 @@
 			"ShaderMapHash": "CA07A6260ACF140EFD575CAA583EF5F886F6D51C",
 			"Assets": [
 				"/Game/Meshes/Assets/Lanterns/Textures/paper_part_big"
+			]
+		},
+		{
+			"ShaderMapHash": "8CFA6C2702E65AD7A40A6B4CAFC22B55267C8988",
+			"Assets": [
+				"/Game/VFX/Blue_Flame/M_Enemy_Smoke_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "71571E289D0B8A86AE2401FFA3A44BD1920E6081",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Demo/Extra/Materials/MM_Extra_Frame",
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Stand/MM_Candle_Stand_01"
 			]
 		},
 		{
@@ -203,12 +297,15 @@
 		{
 			"ShaderMapHash": "435EBC311777A8D6E9B33D14DF1319B0032D6FDA",
 			"Assets": [
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Willow/MI_Leaf_Willow_01",
+				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Willow/MI_Leaf_Willow_03",
 				"/Game/Stylized_Tree_Pack/Materials/Material_Instances/Willow/MI_Leaf_Willow_04"
 			]
 		},
 		{
 			"ShaderMapHash": "6F92B832EA3A698B45B0330D4A3D0E629ADB6A03",
 			"Assets": [
+				"/Bridge/MSPresets/M_MS_Glass_Material/M_MS_Glass_Material",
 				"/Game/MSPresets/M_MS_Glass_Material/M_MS_Glass_Material"
 			]
 		},
@@ -219,9 +316,21 @@
 			]
 		},
 		{
+			"ShaderMapHash": "66C43533372F8248D1F80B3A7A81E22148B3F9AC",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Acessories_metal_002"
+			]
+		},
+		{
 			"ShaderMapHash": "D8E04833D8D42C91DA09B12F8F4010E3AE7456E1",
 			"Assets": [
 				"/Game/MSPresets/M_MS_Billboard_Material/M_MS_Billboard_Material"
+			]
+		},
+		{
+			"ShaderMapHash": "FBF9A233C615FE8B39145E71375C0D7D47261015",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Acessories_Ambar_002"
 			]
 		},
 		{
@@ -233,8 +342,27 @@
 		{
 			"ShaderMapHash": "16F73A388CB0FB80157362D197CA890FF7C16FF1",
 			"Assets": [
+				"/Game/Meshes/Assets/hub/doll/fabric",
+				"/Game/Meshes/Assets/hub/doll/straw_001",
+				"/Game/Meshes/Assets/hub/doll/wood",
 				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_big",
-				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_small"
+				"/Game/Meshes/Assets/Lanterns/Textures/paper_lantern_small",
+				"/Game/Meshes/Assets/MakeupBox/Textures/makeup_itens",
+				"/Game/Meshes/Assets/MakeupBox/Textures/wood_box",
+				"/Game/Meshes/Assets/museum_Paintings/FRAME",
+				"/Game/Meshes/Assets/temple_assets/tall_candle_holder/TallCandleHolder1"
+			]
+		},
+		{
+			"ShaderMapHash": "B852773C57AA9CFEB804E53154888F80657D0E8C",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Acessories_cord_002"
+			]
+		},
+		{
+			"ShaderMapHash": "BA9A943D7AC1D600F559E3CE63AC673ACC16CD9D",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Light/MM_LF_Flicker_01"
 			]
 		},
 		{
@@ -287,6 +415,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "3FC1F44873E4BE6F3011E0EC1051B29C8825960B",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Burley/MM_Candle_SSS_Profile_Burley_01"
+			]
+		},
+		{
 			"ShaderMapHash": "7CC76F4A2B6A310D5A725E76182E05D651A31AC9",
 			"Assets": [
 				"/Engine/EngineDebugMaterials/DebugEditorMaterial"
@@ -312,6 +446,24 @@
 			]
 		},
 		{
+			"ShaderMapHash": "A11401521AF21A78CA906C851EF2E675B9442F14",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Orb"
+			]
+		},
+		{
+			"ShaderMapHash": "0798BF56F1151A0BA4C07D545D3D9EE285A744EB",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Demo/Extra/Materials/MM_Extra_Billboard"
+			]
+		},
+		{
+			"ShaderMapHash": "E353A2586147A049037513615E5A4EAE1AB2AEB5",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Wet_eye_002"
+			]
+		},
+		{
 			"ShaderMapHash": "913DDE59DD48E8B2FD182E4DF324174D1A7B1378",
 			"Assets": [
 				"/Engine/EngineMaterials/Widget3DPassThrough_Masked"
@@ -321,6 +473,24 @@
 			"ShaderMapHash": "36FE065AACAB5DCD4E6D647661B25E9C3D00301B",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Sheen_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "0032AD5C90422E54CB4E9EF1D05D4A343DE03DEF",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Head_002"
+			]
+		},
+		{
+			"ShaderMapHash": "A7B99462ACFFE2019405001B0A0A4820CD36FF66",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/VFX/Candle_Flames/Particles/NS_Candle_Flame_01"
+			]
+		},
+		{
+			"ShaderMapHash": "C8330D647A32A47E0E8BE266CFE8170EFEEA3161",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Performant/MM_Candle_Lit_VC_GS_01"
 			]
 		},
 		{
@@ -362,6 +532,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "C30A496B64C02F7431F7F3102804BBE8243DC5CD",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Demo/Extra/Materials/MM_Extra_Grid"
+			]
+		},
+		{
 			"ShaderMapHash": "367EFE6D3B207AE7A266B47E7D1BF8EC0E8A3215",
 			"Assets": [
 				"/Game/FirstPersonArms/Character/Materials/Instances/Manny/MI_Manny_02"
@@ -381,12 +557,6 @@
 			]
 		},
 		{
-			"ShaderMapHash": "241B367037F22EAD651926357C683536DEA1B8AE",
-			"Assets": [
-				"/Engine/OpenWorldTemplate/LandscapeMaterial/M_ProcGrid"
-			]
-		},
-		{
 			"ShaderMapHash": "D41F2F716F96F6800C64F8B651C099501727189D",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Unlit_Mask"
@@ -399,9 +569,27 @@
 			]
 		},
 		{
+			"ShaderMapHash": "2AFBBC715B5EFCA36F1525E5D92F26D76B265D55",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/MainKimono_002"
+			]
+		},
+		{
+			"ShaderMapHash": "E1783873985499611290E5FEADB3B098522D9668",
+			"Assets": [
+				"/Game/Materials/Eye/M_EyeRefractive"
+			]
+		},
+		{
 			"ShaderMapHash": "4C7D0B7578F0C60A6C3977B99025122011FC3038",
 			"Assets": [
 				"/Game/VFX/Hit_Detection/M_Blood_Decal"
+			]
+		},
+		{
+			"ShaderMapHash": "D0A060752EB8E82B893FE1D44A4A559439484642",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Demo/Environment/M_Grid"
 			]
 		},
 		{
@@ -414,6 +602,24 @@
 			"ShaderMapHash": "90C9F176AE1241AD47761EDCAA75D523380C077C",
 			"Assets": [
 				"/Game/Meshes/Assets/Lanterns/Textures/paper_part_big"
+			]
+		},
+		{
+			"ShaderMapHash": "E3CD36789FDA7213ED80F2CB4F30C753CDBADCC4",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Subsurface/MM_Candle_SSS_01"
+			]
+		},
+		{
+			"ShaderMapHash": "3EB03D7A26DDE91A4D466785263F539FA36A19B2",
+			"Assets": [
+				"/Game/StarterContent/Particles/Materials/m_flare_01"
+			]
+		},
+		{
+			"ShaderMapHash": "F307787AECE7FA58CBDF8CA300C2948EA381357A",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Oiranhair"
 			]
 		},
 		{
@@ -436,9 +642,27 @@
 			]
 		},
 		{
+			"ShaderMapHash": "5E30418020FF5790F63B7536FC805C22F3C5BD60",
+			"Assets": [
+				"/Game/VFX/Blue_Flame/M_Enemy_Fire"
+			]
+		},
+		{
+			"ShaderMapHash": "46D9A88325AB2717496D75FB663661A7E2CD90CB",
+			"Assets": [
+				"/Game/Materials/Eye/M_EyeRefractive"
+			]
+		},
+		{
 			"ShaderMapHash": "2CCA5C8488301A2502A274C2E51BF7470A3FCBC8",
 			"Assets": [
 				"/Engine/EngineMaterials/DefaultPostProcessMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "8A5E7F84285C72C8359BBC158D03615C327E1A96",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Acessories_reddots_002"
 			]
 		},
 		{
@@ -456,11 +680,7 @@
 		{
 			"ShaderMapHash": "563585875C6ECA70B8E3F024D9531B67ACD0F5AE",
 			"Assets": [
-				"/Engine/EngineDebugMaterials/M_SimpleOpaque",
 				"/Engine/VREditor/TransformGizmo/Xray",
-				"/Game/Meshes/Assets/hub/doll/fabric",
-				"/Game/Meshes/Assets/hub/doll/straw_001",
-				"/Game/Meshes/Assets/hub/doll/wood",
 				"/Game/Meshes/Assets/hub/inro/cords",
 				"/Game/Meshes/Assets/hub/inro/inro",
 				"/Game/Meshes/Assets/hub/makeupbox/fabric",
@@ -470,9 +690,6 @@
 				"/Game/Meshes/Assets/hub/tree_jar/M_Jar_Ceramic",
 				"/Game/Meshes/Assets/hub/tree_jar/M_Jar_Gold",
 				"/Game/Meshes/Assets/LoreItemScroll/Textures/LoreItem_Scroll1",
-				"/Game/Meshes/Assets/MakeupBox/Textures/fabric",
-				"/Game/Meshes/Assets/MakeupBox/Textures/makeup_itens",
-				"/Game/Meshes/Assets/MakeupBox/Textures/wood_box",
 				"/Game/Meshes/Assets/Paintings/Textures/PaintingAboveStage1",
 				"/Game/Meshes/Assets/Spiderwebs/Textures/Spiderweb_big1",
 				"/Game/Meshes/Assets/Spiderwebs/Textures/Spiderweb_small1",
@@ -512,6 +729,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "26606E8D8AE0136DB47E46BF6281F90F1F97A2CB",
+			"Assets": [
+				"/Game/VFX/Kazaori_Butterflies/FX_MA_Butterfly"
+			]
+		},
+		{
 			"ShaderMapHash": "9A75808DE01412F84311A4484BB76E2FAA395110",
 			"Assets": [
 				"/Game/MSPresets/M_MS_Decal_Material/M_MS_Decal_Material",
@@ -522,6 +745,12 @@
 			"ShaderMapHash": "5FC8AD8FC56A42B12CD94DB3401BD5654D00AA8C",
 			"Assets": [
 				"/Engine/EngineMaterials/WorldGridMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "CD29B28F12F1BDA6E91DE025764E09E442037315",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/VFX/Candle_Flames/Particles/NS_Candle_Flame_01"
 			]
 		},
 		{
@@ -564,6 +793,12 @@
 			"ShaderMapHash": "EE2BC39A8254DDA1C4FB3135DC7179624B258A60",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Default_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "D0695D9C5D0709CA99CF7595F87F663B2F55BA21",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/TheEYEBROWS"
 			]
 		},
 		{
@@ -700,6 +935,18 @@
 			]
 		},
 		{
+			"ShaderMapHash": "A9CD9CBAC8656C997FB89BADCB2AAE7AF302D1F9",
+			"Assets": [
+				"/Niagara/DefaultAssets/DefaultSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "797B53BDFB97B01B7506617AEB615D4E06869701",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/EYE_002"
+			]
+		},
+		{
 			"ShaderMapHash": "03EA8DBF7A801EA6BCF7C8BA4900AEBD8854D89D",
 			"Assets": [
 				"/Engine/EditorMaterials/PreviewShadowIndicatorMaterial"
@@ -718,9 +965,21 @@
 			]
 		},
 		{
+			"ShaderMapHash": "87D01DC327D22562A4618A7CC61F1270F6FE9315",
+			"Assets": [
+				"/Game/Materials/M_Translucent"
+			]
+		},
+		{
 			"ShaderMapHash": "CCBA24C6A6B444EA6630690404F0AA0BE1F3B29B",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "8FA7B3C71DABEF975725F54A16D113855B99DA54",
+			"Assets": [
+				"/Game/Meshes/Assets/MakeupBox/Textures/fabric"
 			]
 		},
 		{
@@ -756,10 +1015,23 @@
 			]
 		},
 		{
+			"ShaderMapHash": "6845EED05BFF4EA203C29573E06E95AC1A6B7D50",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Burley/MM_Candle_SSS_Profile_Burley_VC_01",
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Burley/MM_Candle_SSS_Profile_Burley_VC_GS_01"
+			]
+		},
+		{
 			"ShaderMapHash": "ADC025D193BEB21507C0D61EAB7C9E6470B85C6E",
 			"Assets": [
 				"/HDRIBackdrop/Materials/HDRI_Projection_Floor",
 				"/HDRIBackdrop/Materials/MI_HDRI_Floor"
+			]
+		},
+		{
+			"ShaderMapHash": "56E106D4C4952BFF5319836012E201E86C0CFCAF",
+			"Assets": [
+				"/Game/Movies/NewMediaPlayer_Video_Mat"
 			]
 		},
 		{
@@ -772,6 +1044,12 @@
 			"ShaderMapHash": "3B8FAED5CC6559AACF56917E369AA345598C86FA",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Unlit_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "A217E7DA18C7D5B87CA5D13D8EAFC935747F844A",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/VFX/Candle_Flames/Materials/MM_Candle_Flame"
 			]
 		},
 		{
@@ -807,6 +1085,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "352B9DDC3A126AA374D912E9164C04970CC64E13",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/Shared/Materials/Glass/MM_Candle_Glass_01"
+			]
+		},
+		{
 			"ShaderMapHash": "9DA7EADDD5A53CDCE727466676361D745E5E6D50",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Mask"
@@ -816,12 +1100,6 @@
 			"ShaderMapHash": "EA230CDF0F566125379FDD79B24ED876D58FB19C",
 			"Assets": [
 				"/Engine/EditorMaterials/Dataflow/DataflowVertexMaterial"
-			]
-		},
-		{
-			"ShaderMapHash": "7AC857E15C8BCD088F96E036CDEEF4D55E4AAFA5",
-			"Assets": [
-				"/Game/Materials/M_Translucent"
 			]
 		},
 		{
@@ -835,6 +1113,12 @@
 			"Assets": [
 				"/Game/FirstPersonArms/Character/Materials/Instances/Manny/MI_Manny_01",
 				"/Game/FirstPersonArms/Character/Materials/M_Mannequin"
+			]
+		},
+		{
+			"ShaderMapHash": "ED3DE1E73A5CC3A6FC20CE258AF396E5CA1692C6",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Bow_002"
 			]
 		},
 		{
@@ -864,15 +1148,35 @@
 			]
 		},
 		{
+			"ShaderMapHash": "589B16EF0AA79070217237808880644645D1ADC4",
+			"Assets": [
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Body_002",
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/InnerKimono_002",
+				"/Game/Meshes/Kazaori/KazaoriNormal/Materials/Teeth_002"
+			]
+		},
+		{
 			"ShaderMapHash": "D4EBA4F04B72E7967588300439B57F7E2F72C4A7",
 			"Assets": [
 				"/Engine/EngineMaterials/PPM_DefaultCalibrationColor"
 			]
 		},
 		{
+			"ShaderMapHash": "C1F82CF7AD236DF7D8313E785F391C140CCEDF7E",
+			"Assets": [
+				"/Game/Vefects/Candle_VFX/VFX/Candle_Smoke/Materials/MM_Candle_Smoke_Vertical"
+			]
+		},
+		{
 			"ShaderMapHash": "1C7768FBA4884B06910105B03C44B053B7CB134F",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "DA3D26FC718AAD7AC7D3017DC438FF540BAF4645",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Heat_Distortion"
 			]
 		},
 		{
@@ -889,6 +1193,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "9BB5FEFD14978193A2058357D0FA427FB1C5B3FF",
+			"Assets": [
+				"/Game/VFX/Skillpoint/M_Vortex_Orb"
+			]
+		},
+		{
 			"ShaderMapHash": "9EDA61FE204E9151D5A9C753CCA81DE4966BEBBC",
 			"Assets": [
 				"/Paper2D/OpaqueUnlitSpriteMaterial"
@@ -897,6 +1207,7 @@
 		{
 			"ShaderMapHash": "625E0EFF71D5ED7E0ECA90D387DFF2F77DBAFA4E",
 			"Assets": [
+				"/Game/Meshes/AfarEnemy/lambert2",
 				"/Game/Meshes/Assets/Paintings/Textures/Painting1"
 			]
 		}

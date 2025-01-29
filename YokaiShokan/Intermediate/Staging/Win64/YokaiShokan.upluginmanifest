@@ -2497,6 +2497,339 @@
 			}
 		},
 		{
+			"File": "../../../Engine/Plugins/Media/ElectraCDM/ElectraCDM.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Electra Player Content Decryption Module",
+				"Description": "Content Decryption Module for Electra Player Media Playback",
+				"Category": "Media Players",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "https://docs.unrealengine.com/en-US/Engine/MediaFramework/Overview",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "ElectraCDM",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Media/ElectraCodecs/ElectraCodecs.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Electra Codecs",
+				"Description": "Codecs for use with Electra player.",
+				"Category": "Media Players",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "http://epicgames.com",
+				"DocsURL": "https://docs.unrealengine.com/en-US/Engine/MediaFramework/Overview",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "ElectraDecoders",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PreLoadingScreen",
+						"PlatformAllowList": [
+							"Win64",
+							"Android",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					},
+					{
+						"Name": "ElectraCodecFactory",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Android",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					},
+					{
+						"Name": "ElectraCodecFactory",
+						"Type": "Editor",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "ElectraUtil",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Media/ElectraPlayer/ElectraPlayer.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Electra Player",
+				"Description": "Next-generation playback capability.",
+				"Category": "Media Players",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "https://docs.unrealengine.com/en-US/Engine/MediaFramework/Overview",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "ElectraPlayerPluginHandler",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PreLoadingScreen",
+						"TargetDenyList": [
+							"Server"
+						]
+					},
+					{
+						"Name": "ElectraPlayerRuntime",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PreLoadingScreen",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					},
+					{
+						"Name": "ElectraPlayerPlugin",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PreLoadingScreen",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					},
+					{
+						"Name": "ElectraPlayerFactory",
+						"Type": "Editor",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					},
+					{
+						"Name": "ElectraPlayerFactory",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "ElectraUtil",
+						"Enabled": true
+					},
+					{
+						"Name": "ElectraCodecs",
+						"Enabled": true
+					},
+					{
+						"Name": "ElectraCDM",
+						"Enabled": true
+					},
+					{
+						"Name": "ElectraSubtitles",
+						"Enabled": true
+					},
+					{
+						"Name": "OpusDecoderElectra",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Media/ElectraSubtitles/ElectraSubtitles.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Electra Player Subtitle Module",
+				"Description": "Subtitle Decoder Module for Electra Player Media Playback",
+				"Category": "Media Players",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "https://docs.unrealengine.com/en-US/Engine/MediaFramework/Overview",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "ElectraSubtitles",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "ElectraUtil",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Media/ElectraUtil/ElectraUtil.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Electra Player Utilities",
+				"Description": "Reusable Base Components for Electra Player Media Playback",
+				"Category": "Media Players",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "https://docs.unrealengine.com/en-US/Engine/MediaFramework/Overview",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "ElectraBase",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					},
+					{
+						"Name": "ElectraSamples",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					},
+					{
+						"Name": "ElectraHTTPStream",
+						"Type": "RuntimeNoCommandlet",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/Media/ImgMedia/ImgMedia.uplugin",
 			"Descriptor": 
 			{
@@ -2660,6 +2993,49 @@
 						"TargetAllowList": [
 							"Editor"
 						]
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Media/OpusDecoderElectra/OpusDecoderElectra.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Opus audio decoder  for Electra",
+				"Description": "Implements Opus audio playback with the Electra media player",
+				"Category": "Media Players",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "OpusDecoderElectra",
+						"Type": "Runtime",
+						"LoadingPhase": "PostEngineInit",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"IOS",
+							"TVOS",
+							"Android",
+							"Linux"
+						],
+						"TargetDenyList": [
+							"Server"
+						]
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "ElectraCodecs",
+						"Enabled": true
 					}
 				]
 			}

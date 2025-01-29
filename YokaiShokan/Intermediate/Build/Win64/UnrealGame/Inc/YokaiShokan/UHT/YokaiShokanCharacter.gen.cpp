@@ -203,6 +203,53 @@ DEFINE_FUNCTION(AYokaiShokanCharacter::execGetDashAvailability)
 }
 // End Class AYokaiShokanCharacter Function GetDashAvailability
 
+// Begin Class AYokaiShokanCharacter Function GetIsDashing
+struct Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics
+{
+	struct YokaiShokanCharacter_eventGetIsDashing_Parms
+	{
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Character | Dash Movement" },
+		{ "ModuleRelativePath", "YokaiShokanCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((YokaiShokanCharacter_eventGetIsDashing_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(YokaiShokanCharacter_eventGetIsDashing_Parms), &Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AYokaiShokanCharacter, nullptr, "GetIsDashing", nullptr, nullptr, Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::PropPointers), sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::YokaiShokanCharacter_eventGetIsDashing_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::Function_MetaDataParams), Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::YokaiShokanCharacter_eventGetIsDashing_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AYokaiShokanCharacter::execGetIsDashing)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->GetIsDashing();
+	P_NATIVE_END;
+}
+// End Class AYokaiShokanCharacter Function GetIsDashing
+
 // Begin Class AYokaiShokanCharacter Function HealPlayer
 struct Z_Construct_UFunction_AYokaiShokanCharacter_HealPlayer_Statics
 {
@@ -253,6 +300,7 @@ void AYokaiShokanCharacter::StaticRegisterNativesAYokaiShokanCharacter()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "DamagePlayer", &AYokaiShokanCharacter::execDamagePlayer },
 		{ "GetDashAvailability", &AYokaiShokanCharacter::execGetDashAvailability },
+		{ "GetIsDashing", &AYokaiShokanCharacter::execGetIsDashing },
 		{ "HealPlayer", &AYokaiShokanCharacter::execHealPlayer },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -354,6 +402,11 @@ struct Z_Construct_UClass_AYokaiShokanCharacter_Statics
 		{ "Category", "Sounds | Input" },
 		{ "ModuleRelativePath", "YokaiShokanCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DamagedSound_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Sounds | Input" },
+		{ "ModuleRelativePath", "YokaiShokanCharacter.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DashMultiplier_MetaData[] = {
 		{ "Category", "Character | Dash Movement" },
 		{ "DisplayName", "Dash Force" },
@@ -395,6 +448,7 @@ struct Z_Construct_UClass_AYokaiShokanCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpecialOneAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpecialTwoAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DashSound;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamagedSound;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DashMultiplier;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DashCooldown;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DashJumpNerf;
@@ -405,6 +459,7 @@ struct Z_Construct_UClass_AYokaiShokanCharacter_Statics
 		{ &Z_Construct_UFunction_AYokaiShokanCharacter_BP_PlayerDeath, "BP_PlayerDeath" }, // 2548604851
 		{ &Z_Construct_UFunction_AYokaiShokanCharacter_DamagePlayer, "DamagePlayer" }, // 171836236
 		{ &Z_Construct_UFunction_AYokaiShokanCharacter_GetDashAvailability, "GetDashAvailability" }, // 3140069004
+		{ &Z_Construct_UFunction_AYokaiShokanCharacter_GetIsDashing, "GetIsDashing" }, // 1284812234
 		{ &Z_Construct_UFunction_AYokaiShokanCharacter_HealPlayer, "HealPlayer" }, // 3961645477
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -421,6 +476,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AYokaiShokanCh
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_SpecialOneAction = { "SpecialOneAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, SpecialOneAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpecialOneAction_MetaData), NewProp_SpecialOneAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_SpecialTwoAction = { "SpecialTwoAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, SpecialTwoAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpecialTwoAction_MetaData), NewProp_SpecialTwoAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashSound = { "DashSound", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, DashSound), Z_Construct_UClass_USoundWave_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DashSound_MetaData), NewProp_DashSound_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DamagedSound = { "DamagedSound", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, DamagedSound), Z_Construct_UClass_USoundWave_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DamagedSound_MetaData), NewProp_DamagedSound_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashMultiplier = { "DashMultiplier", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, DashMultiplier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DashMultiplier_MetaData), NewProp_DashMultiplier_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashCooldown = { "DashCooldown", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, DashCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DashCooldown_MetaData), NewProp_DashCooldown_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashJumpNerf = { "DashJumpNerf", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AYokaiShokanCharacter, DashJumpNerf), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DashJumpNerf_MetaData), NewProp_DashJumpNerf_MetaData) };
@@ -434,6 +490,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AYokaiSho
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_SpecialOneAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_SpecialTwoAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashSound,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DamagedSound,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashMultiplier,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashCooldown,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AYokaiShokanCharacter_Statics::NewProp_DashJumpNerf,
@@ -483,10 +540,10 @@ struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_
 		{ AttackState_StaticEnum, TEXT("AttackState"), &Z_Registration_Info_UEnum_AttackState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3798270245U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AYokaiShokanCharacter, AYokaiShokanCharacter::StaticClass, TEXT("AYokaiShokanCharacter"), &Z_Registration_Info_UClass_AYokaiShokanCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AYokaiShokanCharacter), 1197428993U) },
+		{ Z_Construct_UClass_AYokaiShokanCharacter, AYokaiShokanCharacter::StaticClass, TEXT("AYokaiShokanCharacter"), &Z_Registration_Info_UClass_AYokaiShokanCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AYokaiShokanCharacter), 3363654339U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_4035126921(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_333411990(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_YokaiShokanCharacter_h_Statics::EnumInfo));

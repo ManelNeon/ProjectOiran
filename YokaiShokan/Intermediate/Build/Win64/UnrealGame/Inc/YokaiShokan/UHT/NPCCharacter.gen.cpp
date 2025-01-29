@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeNPCCharacter() {}
 // Begin Cross Module References
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+ENGINE_API UClass* Z_Construct_UClass_USoundWave_NoRegister();
 UPackage* Z_Construct_UPackage__Script_YokaiShokan();
 YOKAISHOKAN_API UClass* Z_Construct_UClass_ANPCCharacter();
 YOKAISHOKAN_API UClass* Z_Construct_UClass_ANPCCharacter_NoRegister();
@@ -187,36 +188,6 @@ DEFINE_FUNCTION(ANPCCharacter::execRotateTowardsPlayer)
 }
 // End Class ANPCCharacter Function RotateTowardsPlayer
 
-// Begin Class ANPCCharacter Function RunThroughDialogue
-struct Z_Construct_UFunction_ANPCCharacter_RunThroughDialogue_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "NPC | Functions" },
-		{ "ModuleRelativePath", "NPCCharacter.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ANPCCharacter_RunThroughDialogue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANPCCharacter, nullptr, "RunThroughDialogue", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ANPCCharacter_RunThroughDialogue_Statics::Function_MetaDataParams), Z_Construct_UFunction_ANPCCharacter_RunThroughDialogue_Statics::Function_MetaDataParams) };
-UFunction* Z_Construct_UFunction_ANPCCharacter_RunThroughDialogue()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ANPCCharacter_RunThroughDialogue_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-DEFINE_FUNCTION(ANPCCharacter::execRunThroughDialogue)
-{
-	P_FINISH;
-	P_NATIVE_BEGIN;
-	P_THIS->RunThroughDialogue();
-	P_NATIVE_END;
-}
-// End Class ANPCCharacter Function RunThroughDialogue
-
 // Begin Class ANPCCharacter Function SetCurrentDialogueBox
 struct Z_Construct_UFunction_ANPCCharacter_SetCurrentDialogueBox_Statics
 {
@@ -345,7 +316,6 @@ void ANPCCharacter::StaticRegisterNativesANPCCharacter()
 		{ "GetTarget", &ANPCCharacter::execGetTarget },
 		{ "RestartDialogue", &ANPCCharacter::execRestartDialogue },
 		{ "RotateTowardsPlayer", &ANPCCharacter::execRotateTowardsPlayer },
-		{ "RunThroughDialogue", &ANPCCharacter::execRunThroughDialogue },
 		{ "SetCurrentDialogueBox", &ANPCCharacter::execSetCurrentDialogueBox },
 		{ "SetTarget", &ANPCCharacter::execSetTarget },
 		{ "StartDialogue", &ANPCCharacter::execStartDialogue },
@@ -369,9 +339,15 @@ struct Z_Construct_UClass_ANPCCharacter_Statics
 		{ "Category", "NPC" },
 		{ "ModuleRelativePath", "NPCCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialoguesVoicesArray_MetaData[] = {
+		{ "Category", "NPC" },
+		{ "ModuleRelativePath", "NPCCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_DialogueArray_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_DialogueArray;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DialoguesVoicesArray_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_DialoguesVoicesArray;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -379,7 +355,6 @@ struct Z_Construct_UClass_ANPCCharacter_Statics
 		{ &Z_Construct_UFunction_ANPCCharacter_GetTarget, "GetTarget" }, // 2210126401
 		{ &Z_Construct_UFunction_ANPCCharacter_RestartDialogue, "RestartDialogue" }, // 2033284533
 		{ &Z_Construct_UFunction_ANPCCharacter_RotateTowardsPlayer, "RotateTowardsPlayer" }, // 3581951209
-		{ &Z_Construct_UFunction_ANPCCharacter_RunThroughDialogue, "RunThroughDialogue" }, // 3422826927
 		{ &Z_Construct_UFunction_ANPCCharacter_SetCurrentDialogueBox, "SetCurrentDialogueBox" }, // 3455647146
 		{ &Z_Construct_UFunction_ANPCCharacter_SetTarget, "SetTarget" }, // 4026535320
 		{ &Z_Construct_UFunction_ANPCCharacter_StartDialogue, "StartDialogue" }, // 687628372
@@ -392,9 +367,13 @@ struct Z_Construct_UClass_ANPCCharacter_Statics
 };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_ANPCCharacter_Statics::NewProp_DialogueArray_Inner = { "DialogueArray", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ANPCCharacter_Statics::NewProp_DialogueArray = { "DialogueArray", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANPCCharacter, DialogueArray), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueArray_MetaData), NewProp_DialogueArray_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANPCCharacter_Statics::NewProp_DialoguesVoicesArray_Inner = { "DialoguesVoicesArray", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_USoundWave_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ANPCCharacter_Statics::NewProp_DialoguesVoicesArray = { "DialoguesVoicesArray", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANPCCharacter, DialoguesVoicesArray), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialoguesVoicesArray_MetaData), NewProp_DialoguesVoicesArray_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANPCCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCCharacter_Statics::NewProp_DialogueArray_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCCharacter_Statics::NewProp_DialogueArray,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCCharacter_Statics::NewProp_DialoguesVoicesArray_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCCharacter_Statics::NewProp_DialoguesVoicesArray,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ANPCCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ANPCCharacter_Statics::DependentSingletons[])() = {
@@ -437,10 +416,10 @@ ANPCCharacter::~ANPCCharacter() {}
 struct Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ANPCCharacter, ANPCCharacter::StaticClass, TEXT("ANPCCharacter"), &Z_Registration_Info_UClass_ANPCCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANPCCharacter), 3388590458U) },
+		{ Z_Construct_UClass_ANPCCharacter, ANPCCharacter::StaticClass, TEXT("ANPCCharacter"), &Z_Registration_Info_UClass_ANPCCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANPCCharacter), 3526221772U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_2002024372(TEXT("/Script/YokaiShokan"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_2127688985(TEXT("/Script/YokaiShokan"),
 	Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDev_UnrealProjects_YokaiShokan_YokaiShokan_Source_YokaiShokan_NPCCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
