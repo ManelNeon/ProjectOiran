@@ -26,6 +26,7 @@
 			"BaseEnemyAnimInstance.cpp.obj",
 			"DialogueBox.cpp.obj",
 			"InventoryGameInstanceSubsystem.cpp.obj",
+			"LevelManagerInstanceSubsystem.cpp.obj",
 			"LevelRandomizer.cpp.obj",
 			"LoreItem.cpp.obj",
 			"NPCCharacter.cpp.obj",
@@ -40,8 +41,7 @@
 			"YokaiShokanEnemy.cpp.obj",
 			"YokaiShokanGameInstance.cpp.obj",
 			"YokaiShokanGameMode.cpp.obj",
-			"YokaiShokanPlayerController.cpp.obj",
-			"LevelManagerInstanceSubsystem.cpp.obj"
+			"YokaiShokanPlayerController.cpp.obj"
 		]
 	}
 }

@@ -39,6 +39,18 @@ void ALevelRandomizer::DeleteEnemyFromList(AActor* actor, bool isCloseUpEnemy)
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Looping Through Array"));
 
+			if (actor == nullptr)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("This is a nullptr, probaly actor dead."));
+				if (_CloseUpEnemiesList[i] == nullptr)
+				{
+					UE_LOG(LogTemp, Warning, TEXT("Found Index of dead actor"));
+					index = i;
+					break;
+				}
+				continue;
+			}
+
 			if (_CloseUpEnemiesList[i] == actor)
 			{
 				UE_LOG(LogTemp, Warning, TEXT("Found Index"));
@@ -55,7 +67,7 @@ void ALevelRandomizer::DeleteEnemyFromList(AActor* actor, bool isCloseUpEnemy)
 
 		_CloseUpEnemiesList.RemoveAt(index);
 
-		UE_LOG(LogTemp, Warning, TEXT("Index is Out Of Range"));
+		UE_LOG(LogTemp, Warning, TEXT("Removed Close Up Enemy"));
 	}
 	else
 	{
@@ -80,6 +92,8 @@ void ALevelRandomizer::DeleteEnemyFromList(AActor* actor, bool isCloseUpEnemy)
 		}
 
 		_FromAfarEnemiesList.RemoveAt(index);
+
+		UE_LOG(LogTemp, Warning, TEXT("Removed From Afar Enemy"));
 	}
 
 	numberOfFromAfarEnemies = _FromAfarEnemiesList.Num();

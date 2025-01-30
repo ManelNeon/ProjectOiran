@@ -79,7 +79,7 @@
 /DORIGINAL_FILE_NAME="UnrealEditor-YokaiShokan.dll"
 /DBUILD_ICON_FILE_NAME="\"C:\\GameDev\\UnrealProjects\\YokaiShokan\\YokaiShokan\\Build\\Windows\\Application.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
-/DPROJECT_PRODUCT_NAME="A Tayūs Nightmare"
+/DPROJECT_PRODUCT_NAME=A_Tayūs_Nightmare
 /DPROJECT_PRODUCT_IDENTIFIER=YokaiShokan
 /fo "C:\GameDev\UnrealProjects\YokaiShokan\YokaiShokan\Intermediate\Build\Win64\x64\UnrealEditor\Development\YokaiShokan\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

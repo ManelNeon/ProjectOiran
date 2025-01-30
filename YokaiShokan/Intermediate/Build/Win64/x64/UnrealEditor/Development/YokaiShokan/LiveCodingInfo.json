@@ -25,7 +25,8 @@
 			"AudioManagerInstanceSubsystem.cpp.obj",
 			"BaseEnemyAnimInstance.cpp.obj",
 			"DialogueBox.cpp.obj",
-			"LevelRandomizer.cpp.obj",
+			"InventoryGameInstanceSubsystem.cpp.obj",
+			"LevelManagerInstanceSubsystem.cpp.obj",
 			"LoreItem.cpp.obj",
 			"NPCCharacter.cpp.obj",
 			"PickUp.cpp.obj",
@@ -40,8 +41,7 @@
 			"YokaiShokanGameInstance.cpp.obj",
 			"YokaiShokanGameMode.cpp.obj",
 			"YokaiShokanPlayerController.cpp.obj",
-			"InventoryGameInstanceSubsystem.cpp.obj",
-			"LevelManagerInstanceSubsystem.cpp.obj"
+			"LevelRandomizer.cpp.obj"
 		]
 	}
 }
